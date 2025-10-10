@@ -1,9 +1,9 @@
 ---
 title: Início rápido
-description: Saiba como começar a usar o otimizador de LLM e passar pelo processo de integração.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+description: Introdução ao Adobe LLM Optimizer - integre sua marca, desbloqueie os insights de visibilidade da IA e explore painéis para aumentar o desempenho da pesquisa.
+source-git-commit: db42183c922e6156a890e4e56732f348c26e7e44
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O processo de integração começa com a integração do seu domínio. O process
 
 ### Clientes da AEM Cloud
 
-Os Clientes da AEM Cloud (Cloud Service/Managed Services/ Edge Delivery Service) verão a opção de experimentar o LLM Optimizer através do cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Os Clientes da AEM Cloud (Cloud Service/Managed Services/ Edge Delivery Service) verão a opção de experimentar o LLM Optimizer através do cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Os prompts adicionados recentemente não aparecerão na Presença da Marca até que o processamento seja concluído. Os clientes da AEM Cloud (Cloud Service, Managed Services/Edge Delivery Service) podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts requer um contrato de licença separado. O acesso é fornecido no &quot;estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu [representante de conta] para obter mais informações.

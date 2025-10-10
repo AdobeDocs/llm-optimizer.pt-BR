@@ -1,30 +1,73 @@
 ---
-title: Documentação do LLM Optimizer
-description: Saiba como usar o Adobe LLM Optimizer para aumentar a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Otimize para obter melhor visibilidade e influência da marca.
-source-git-commit: 4277e140f2cf6cc1db01c58824e12521c36a82b4
+title: Visão geral do LLM Optimizer
+description: Saiba mais sobre como o Adobe LLM Optimizer aumenta a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Comece a otimizar hoje para obter melhor envolvimento e influência.
+source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 1%
+source-wordcount: '563'
+ht-degree: 0%
 
 ---
 
 
-# Documentação do LLM Optimizer
+# Visão geral do LLM Optimizer
 
-Bem-vindo à documentação do LLM Optimizer. O Adobe LLM Optimizer é um aplicativo gerado pela primeira IA para a Otimização do mecanismo de resposta (também chamada de Otimização do mecanismo de resposta), projetado para ajudar as marcas a melhorar sua visibilidade, precisão e influência em ambientes de pesquisa orientados por IA. Ele fornece insights sobre a presença da marca em respostas geradas por IA, oferece recomendações prescritivas de conteúdo e automatiza correções de otimização.
+Esta página descreve tudo o que você precisa saber sobre o Adobe LLM Optimizer antes de começar a usar a ferramenta:
 
-Aqui você pode encontrar informações sobre como usar o Adobe LLM Optimizer para rastrear a visibilidade da IA e fazer com que sua marca seja mencionada e citada pela IA.
+* [O que é o Adobe LLM Optimizer?](#what-is-adobe-llm-optimizer)
+* [O que são os recursos do LLM Optimizer?](#what-are-llm-optimizer-capabilities)
+* [Por que a otimização do LLM é importante para a sua marca?](#why-llm-optimization-matters-for-your-brand)
+* [Quem deve usar o Adobe LLM Optimizer?](#who-should-use-adobe-llm-optimizer)
+* [O que posso fazer com o Adobe LLM Optimizer?](#what-can-i-do-with-adobe-llm-optimizer)
 
-<!-- Add image-->
+## O que é o Adobe LLM Optimizer?
 
-## Fundamentos do LLM Optimizer
+O Adobe LLM Optimizer é um aplicativo gerado pela primeira IA para a Otimização do mecanismo de resposta (também chamada de Otimização do mecanismo de resposta), projetado para ajudar as marcas a melhorar sua visibilidade, precisão e influência em ambientes de pesquisa orientados por IA. Ele fornece insights sobre a presença da marca em respostas geradas por IA, oferece recomendações prescritivas de conteúdo e automatiza correções de otimização.
 
-Explore a documentação do LLM Optimizer para saber mais sobre os principais painéis, a configuração de configurações e a lista de Oportunidades para insights de otimização de IA. Este conjunto de documentações aborda os principais recursos fornecidos pela LLM Optimizer. Você aprenderá a navegar na interface do usuário, interpretar painéis e agir em oportunidades.
+## O que são os recursos do LLM Optimizer?
+
+O Adobe LLM Optimizer oferece um conjunto de ferramentas projetadas para a otimização gerativa de mecanismo:
+
+* **Medir a visibilidade da marca**: controle quando, onde e com que frequência sua marca aparece nos resultados de pesquisa alimentados por IA, com uma pontuação clara de visibilidade para avaliação de desempenho.
+* **Concorrentes do Benchmark**: compare a participação da sua marca em voz e presença com a dos concorrentes em mecanismos geradores.
+* **Descubra Oportunidades Acionáveis**: Identifique aprimoramentos técnicos e de conteúdo (como perguntas frequentes, resumos, esquema, rastreabilidade) para impulsionar menções e citações.
+* **Rastrear o impacto do tráfego**: monitore o tráfego de referência e o tráfego de agente (assistente de IA) para suas propriedades, vinculando a visibilidade ao envolvimento.
+* **Habilitar o Team Collaboration**: compartilhe painéis, atribua proprietários e alinhe metas entre equipes de marketing, SEO e comunicações.
+
+## Por que a otimização do LLM é importante para sua marca
+
+A otimização de LLM está se tornando cada vez mais importante:
+
+* As respostas geradas por IA estão remodelando a descoberta de consumidores.
+* A LLM Optimizer garante que sua marca seja visível, precisa e influente nesses ambientes.
+* Ele conecta a visibilidade da IA a resultados reais de negócios, como envolvimento e receita.
+* Em um mundo de jornadas de clique zero, essa ferramenta é essencial para se manter competitiva.
+
+## Quem deve usar o Adobe LLM Optimizer?
+
+A Otimização do Mecanismo Gerativo é multifuncional por natureza. O LLM Optimizer foi projetado com estas lentes para os diferentes perfis listados:
+
+* **Gerentes de marketing** medem a visibilidade da marca e a eficácia da campanha na pesquisa de IA.
+* **Analistas de SEO** rastreiam menções à marca, citações e outros insights para informar a estratégia de conteúdo.
+* **Gerentes de PR e de comunicações** rastreiam a percepção da marca em LLMs por plataformas de terceiros e abordam informações incorretas, gerenciam sentimentos e protegem a confiança da marca.
+
+## O que posso fazer com o Adobe LLM Optimizer?
+
+Com o Adobe LLM Optimizer, você pode:
+
+**Meça a visibilidade da marca** - rastreie quando, onde e com que frequência sua marca é mencionada nos resultados da pesquisa habilitada por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
+**Concorrentes de Benchmark** - Veja como sua marca se compara aos concorrentes em mecanismos geradores. Identifique a parcela de lacunas de voz e descubra vantagens competitivas.
+**Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
+**Rastrear o impacto do tráfego da IA** - Monitore o tráfego de agente (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade da GEO a um engajamento real.
+**Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO e comunicações.
 
 
-## Referências
+## Saiba mais
 
-Links
+Estes são os recursos que podem ajudar você a aproveitar ao máximo o LLM Optimizer:
+
+* O [Quickstart](/help/overview/quick-start.md) permite que você comece a trabalhar rapidamente.
+* [Visão geral dos painéis](/help/dashboards/dashboards-overview.md) descreve todos os painéis disponíveis na LLM Optimizer.
+* As [Práticas recomendadas](/help/tutorials/best-practices.md) orientam você sobre como usar a ferramenta para obter os insights necessários para sua marca.
 
 
 

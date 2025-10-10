@@ -1,9 +1,9 @@
 ---
 title: Adobe LLM Optimizer
 description: Aumente sua marca com o Adobe LLM Optimizer. Rastreie menções, descubra insights e domine a pesquisa orientada por IA. Assuma o controle de sua visibilidade - comece a otimizar agora mesmo!
-source-git-commit: 746a5d50d39a0681d5a3ff8c050bef0f010b4e55
+source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '232'
 ht-degree: 3%
 
 ---
@@ -22,12 +22,12 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
 * ./overview/quick-start.md
   {title= Quickstart guide}
   {description= Learn how to quickly get up and running with the LLM Optimizer.}
-  {image= ./assets/overview/agentic-traffic-card.png}
+  {image= /help/assets/overview/agentic-traffic-card.png}
   {target=_blank}
   {cta=Learn more}
 * ./dashboards/dashboards-overview.md
   {title= Dashboards overview}
-  {image= ./assets/overview/brand-presence-card.png}
+  {image= /help/assets/overview/brand-presence-card.png}
   {description= Learn how to get insights and get recommendations for your site with dashboards.}
   {target=_blank}
   {cta=Learn more}
@@ -39,7 +39,7 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./overview/quick-start.md" title="Guia de início rápido" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/agentic-traffic-card.png" alt="Guia de início rápido"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="Guia de início rápido"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./dashboards/dashboards-overview.md" title="Visão geral dos painéis" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/brand-presence-card.png" alt="Visão geral dos painéis"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Visão geral dos painéis"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -91,11 +91,11 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
 
 * ./tutorials/best-practices.md
   {title= Best practices for marketers and SEO analysts}
-  {image= ./assets/overview/best-practices-card.png}
+  {image= /help/assets/overview/best-practices-card.png}
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
 * https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
-  {image = ./assets/overview/business-adobe.png}
+  {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
   {cta=Learn more}
 
@@ -107,7 +107,7 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./tutorials/best-practices.md" title="Práticas recomendadas para profissionais de marketing e analistas de SEO" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/best-practices-card.png" alt="Práticas recomendadas para profissionais de marketing e analistas de SEO"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="Práticas recomendadas para profissionais de marketing e analistas de SEO"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://business.adobe.com/products/llm-optimizer.html" title="Explore os recursos do Adobe LLM Optimizer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/overview/business-adobe.png" alt="Explore os recursos do Adobe LLM Optimizer"
+                        <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="Explore os recursos do Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,3 @@ O Adobe LLM Optimizer é um aplicativo de primeira IA gerativa para a Otimizaç�
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
-## Referências
-
-Os links de referência devem ser inseridos aqui.
