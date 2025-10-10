@@ -1,10 +1,10 @@
 ---
 title: Colaboração
-description: Esta é a visão geral do artigo.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Saiba como usar o painel de colaboração para convidar membros da equipe para o espaço de trabalho do LLM Optimizer de sua organização.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 

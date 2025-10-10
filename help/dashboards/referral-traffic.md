@@ -1,9 +1,9 @@
 ---
 title: Tráfego de referência
-description: Esta é a visão geral do artigo.
-source-git-commit: c83b4929a82331534654fcfdccd41d91eefe6d92
+description: Saiba como usar o painel Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---

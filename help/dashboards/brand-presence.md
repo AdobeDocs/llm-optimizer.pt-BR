@@ -1,9 +1,9 @@
 ---
 title: Presença da marca
-description: Esta é a visão geral do artigo.
-source-git-commit: 601c17b07ed102322b674f685c65326f1ed36995
+description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---

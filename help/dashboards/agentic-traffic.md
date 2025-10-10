@@ -1,9 +1,9 @@
 ---
 title: Tráfego de agente
-description: Esta é a visão geral do artigo.
-source-git-commit: f92ca3eaa81d05135c65df60267280314c6e2d6f
+description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
