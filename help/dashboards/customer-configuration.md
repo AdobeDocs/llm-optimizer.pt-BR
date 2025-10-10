@@ -1,9 +1,9 @@
 ---
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como sua marca será monitorada e analisada na plataforma do otimizador LLM.
-source-git-commit: 7d01b35cb2153e020f0b64e493aad263fb9bb09f
+source-git-commit: 653a6be856412faac8783fa9dc7b759a7c6e1f68
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '1594'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,114 @@ ht-degree: 0%
 A Configuração do cliente é onde você define como sua marca será monitorada e analisada na plataforma do otimizador LLM. Você pode personalizar categorias (como unidades de negócios ou linhas de produtos), rastrear concorrentes e adicionar aliases de menção à marca para capturar todas as variações da sua marca em prompts. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
 
 ![Painel de configuração do cliente](/help/dashboards/assets/customer-config.png)
+
+
+## Práticas recomendadas para configurar categorias, tópicos e prompts
+
+Esta seção descreve as práticas recomendadas para decidir como você deseja configurar suas categorias, tópicos, prompts e concorrentes.
+
+Este é um primeiro passo vital. O que você decide agora determina como as informações são adaptadas ao seu contexto de negócios. Quaisquer alterações em categorias no futuro redefinirão os dados históricos.
+
+### Práticas recomendadas para categorias
+
+As categorias permitem organizar o conteúdo em unidades estratégicas de negócios ou agrupamentos lógicos. Eles são o bucket &quot;ao qual pertence&quot; e a estrutura organizacional de nível superior do seu conteúdo.
+
+Ao decidir como configurar categorias, você precisa considerar suas metas e quem precisa agir de acordo com o que você está relatando.
+
+>[!IMPORTANT]
+>
+> Verifique se as categorias estão configuradas corretamente desde o início, já que as alterações nas categorias redefinem os dados históricos. Isso significa que, se você alterá-los, perderá dados históricos anteriores à alteração.
+
+Esta é uma visão geral dos tipos de abordagens que você pode realizar e quando você escolheria uma abordagem específica:
+
+| Abordagem | Descrição | Benefício |
+|---------|----------|---------|
+| Unidade estratégica de negócios (SBU) | Use essa abordagem se sua organização for dividida por P&amp;L (por exemplo, Consumidor, Empresa, Serviços). | Você obtém relatórios limpos por linha de negócios e responsabilidade mais fácil. |
+| Diretório de nível superior do site (URL_DIR) | Use se a arquitetura de informações do site espelhar a propriedade (/products/, /support/, /docs/, /news/). | Você obtém alinhamento com a forma como as equipes publicam e mantêm conteúdo. |
+| Categoria do produto (ou serviço) | Use-o se você vender um catálogo (SKUs/serviços). | Você recebe respostas de exibições de variedade, análise de lacuna e &quot;qual categoria precisa de conteúdo&quot;. |
+
+Como decidir como você configura categorias se baseia em uma pergunta: **Quem precisa agir no relatório?**
+
+* Se você for um *líder de negócios*, escolha a abordagem **SBU**.
+* Se você for um *proprietário da Web/conteúdo*, escolha a abordagem **URL_DIR**.
+* Se você for um *gerente de merchandising/ofertas*, escolha a abordagem **Categoria de produto/serviço**.
+
+>[!IMPORTANT]
+>
+> * Escolha uma abordagem e siga-a.
+> * Você pode ter apenas **um** modelo de Categoria por conta/marca. Não misture **SBU** e **URL_DIR** ao mesmo tempo.
+
+Exemplo:
+
+| Tipo de site | Categoria | Exemplos de taxonomia de tópico |
+|---------|----------|---------|
+| Empresas com várias empresas | SBU | pequeno conjunto de intenção (Como fazer, Solução de problemas, Comparação, Preços, Política) |
+| Site pesado de documentação/suporte | URL_DIR | Como fazer, Solução de problemas, Referência, Notas de versão |
+| Catálogo de comércio eletrônico/serviços | Produto/Serviço | Comparação, análises, preços/disponibilidade, instruções, solução de problemas |
+
+### Práticas recomendadas para tópicos
+
+Os tópicos ajudam você a entender a intenção do usuário - mostram o que o usuário deseja. Elas permitem agrupar prompts com intenções de usuário semelhantes. Pense nisso como um agrupamento de prompts relevantes juntos.
+
+>[!IMPORTANT]
+>
+>Os tópicos são universais em **todas** categorias, o que significa que eles permanecem consistentes independentemente da categoria à qual estão atribuídos. Eles representam grupos de perguntas ou prompts que compartilham um propósito comum.
+
+Ao decidir sobre tópicos, você deseja criar uma lista simples e curta (máximo de 6 a 12). Por exemplo:
+
+* Produtos/Serviços
+* Como fazer (configuração/uso)
+* Solução de problemas (erros/problemas)
+* Comparação (X vs Y; &quot;melhor ... para ...&quot;)
+* Revisões e classificações
+* Preços e disponibilidade
+* Política e garantia
+* Contato de suporte
+* Corporativo / Notícias (se você realmente precisa deles)
+
+Ao criar a lista, considere o seguinte:
+
+* Um editor pode entender o tópico em 5 segundos a partir do texto do prompt? Caso contrário, renomeie/simplifique.
+* Uma equipe diferente será responsável pela correção de tópicos diferentes? Em caso afirmativo, você escolheu tópicos úteis.
+
+Algumas dicas úteis adicionais:
+
+* Use o conhecimento da sua empresa ou site para definir tópicos que se alinhem às metas estratégicas da sua marca
+* Considere como sua marca se compara aos concorrentes em tópicos específicos.
+
+>[!IMPORTANT]
+>
+> * Mantenha os tópicos com base na intenção, não organizacional.
+> * Não adicione categorias/filtros para marca/não marca/geográfico, pois você pode filtrar especificamente na guia **Marcas**.
+> * Os tópicos estão distribuídos em várias categorias. Você pode **não** ter tópicos diferentes por categoria.
+> * Um único prompt pode existir em vários tópicos ou categorias.
+
+### Práticas recomendadas para prompts
+
+Os prompts identificam as perguntas ou consultas específicas que os clientes estão fazendo, o que pode afetar seus negócios. Elas são as perguntas ou consultas reais que os usuários informam nos LLMs.
+
+Certifique-se de revisar e atualizar os prompts regularmente para garantir que eles se alinhem às necessidades do cliente e às metas de negócios.
+
+>[!TIP]
+>
+>* Você pode usar ferramentas como o LLM Optimizer e o Google Search Console com filtros de regex para identificar estruturas de perguntas comuns (por exemplo, &quot;como&quot;, &quot;o que&quot;, &quot;quando&quot;, &quot;onde&quot;).
+>* Para descobrir quais prompts são relevantes para seu site/marca, você pode usar dados de pesquisa no site, perguntas frequentes nas páginas de resultados do mecanismo de pesquisa ou até mesmo perguntar aos chatbots do LLM diretamente quais perguntas os clientes podem fazer sobre sua marca.
+
+### Práticas recomendadas para os concorrentes
+
+Os concorrentes permitem que você monitore a visibilidade e faça menções nas respostas do LLM a prompts e tópicos importantes para sua empresa.
+
+A guia [!UICONTROL **Rastreamento de Concorrente**] permite que você adicione concorrentes e rastreie sua visibilidade para prompts e tópicos específicos.
+
+Com o rastreamento de concorrentes, você pode ver com que frequência os concorrentes são mencionados junto com sua marca em diferentes regiões e categorias e comparar sua visibilidade com a sua.
+
+>[!TIP]
+>
+>Analise regularmente as menções e citações de concorrentes para identificar áreas em que sua marca pode melhorar.
+
+## Painel Configuração do cliente
+
+O Painel de configuração do cliente é uma ferramenta poderosa que fornece insights sobre a visibilidade da sua marca em LLMs. Ao configurar corretamente categorias, tópicos, prompts e concorrentes, você pode garantir que sua marca esteja bem posicionada para aparecer em respostas geradas pelo LLM. A análise regular de insights como Compartilhamento de voz, visibilidade de conteúdo e oportunidades ajudará você a adaptar sua estratégia e a ficar à frente dos concorrentes.
 
 Para configurar como o LLM Optimizer monitora e analisa a presença da sua marca em diferentes mercados e cenários competitivos, você tem acesso às seguintes guias:
 
