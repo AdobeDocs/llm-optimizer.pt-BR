@@ -1,9 +1,9 @@
 ---
 title: Oportunidades de otimização
 description: Esta é a visão geral do artigo.
-source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
+source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 
 ### Recuperar oportunidade de visibilidade de conteúdo {#recover-contet}
 
-Como dito acima, a oportunidade de visibilidade de conteúdo sinaliza as páginas em que o conteúdo principal é perdido para os agentes de IA devido à renderização do lado do cliente. Para cada página identificada, ele mostra exatamente qual conteúdo está faltando na visualização do agente de IA, ajudando a apontar as lacunas de visibilidade. Ele também é compatível com um recurso de pré-renderização baseado em borda que pode fornecer mais conteúdo HTML para tráfego agêntico sem exigir alterações no Content Management System (CMS). Observe que esse recurso está atualmente em **Acesso antecipado** e também requer configuração da equipe do LLMO para habilitar a entrega de conteúdo otimizado.
+Como dito acima, a oportunidade de visibilidade de conteúdo sinaliza as páginas em que o conteúdo principal é perdido para os agentes de IA devido à renderização do lado do cliente. Para cada página identificada, ele mostra exatamente qual conteúdo está faltando na visualização do agente de IA, ajudando a apontar as lacunas de visibilidade. Ele também é compatível com um recurso de pré-renderização baseado em borda que pode fornecer mais conteúdo HTML para tráfego agêntico sem exigir alterações no Content Management System (CMS). No momento, essa funcionalidade está em Acesso antecipado e requer configuração da equipe do LLMO. Contate `llmo-at-edge@adobe.com` para ativar a oportunidade de visibilidade de conteúdo.
 
 ### Ferramentas adicionais
 

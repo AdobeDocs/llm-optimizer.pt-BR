@@ -1,20 +1,20 @@
 ---
 title: Colaboração
 description: Esta é a visão geral do artigo.
-source-git-commit: 57d086bbdb08200d832a1374ee356e5357a64d94
+source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 4%
+source-wordcount: '94'
+ht-degree: 1%
 
 ---
 
 
-# Visão geral
+# Colaboração
 
-O Collaboration permite convidar membros da equipe para o espaço de trabalho do LLM Optimizer de sua organização, para que todos possam acessar insights e análises em um único local. Ao adicionar colegas, você garante que as equipes de marketing, SEO, PR e técnicas possam trabalhar juntas de maneira contínua em melhorias de visibilidade da marca, compartilhar resultados e tomar medidas coordenadas em relação às oportunidades.
+O Collaboration permite convidar membros da equipe para o espaço de trabalho do LLM Optimizer de sua organização, para que todos possam acessar insights e análises de um só lugar. Ao adicionar colegas, você garante que as equipes de marketing, SEO, PR e técnicas possam trabalhar juntas de maneira contínua em melhorias de visibilidade da marca, compartilhar resultados e tomar medidas coordenadas em relação às oportunidades.
 
-**Adicionar imagem aqui**
+## Como convidar membros da equipe
 
-## Filtros
+Você pode convidar membros da equipe adicionando seus emails no campo **Endereço de Email** e clicando em **Enviar Convite**. Se eles aceitarem, ingressarão no espaço de trabalho do LLM Optimizer da sua organização.
 
-Na parte superior do painel, é possível refinar a visualização ao:
+![Convite do Collaboration](/help/dashboards/assets/collaboration.png)
