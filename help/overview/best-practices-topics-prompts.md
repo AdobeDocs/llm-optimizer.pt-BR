@@ -1,9 +1,9 @@
 ---
 title: Práticas recomendadas para categorias, tópicos e prompts
 description: Otimize os insights do LLM configurando categorias, tópicos, prompts e concorrentes para o monitoramento personalizado da marca e a análise estratégica de conteúdo.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Ao criar a lista, considere o seguinte:
 
 * Um editor pode entender o tópico em 5 segundos a partir do texto do prompt? Caso contrário, renomeie/simplifique.
 * Uma equipe diferente será responsável pela correção de tópicos diferentes? Em caso afirmativo, você escolheu tópicos úteis.
-  <!-- Last bullet point does not make sense. Clarification needed.-->
+  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Algumas dicas úteis adicionais:
 
@@ -94,14 +94,20 @@ Algumas dicas úteis adicionais:
 >
 > * Mantenha os tópicos com base na intenção, não organizacional.
 > * Não adicione categorias/filtros para marca/não marca/geográfico, pois você pode filtrar especificamente na guia **[!UICONTROL Marcas]**.
-> * Os tópicos estão distribuídos em várias categorias. Você pode **não** ter tópicos diferentes por categoria.
-> * Um único prompt pode existir em vários tópicos ou categorias.
+> * Os tópicos estão distribuídos em várias categorias. Você **não pode** definir tópicos exclusivos para cada categoria.
+> * Um único prompt **pode** existe em vários tópicos ou categorias.
 
 ## Práticas recomendadas para prompts
 
 Os prompts identificam as perguntas ou consultas específicas que os clientes estão fazendo, o que pode afetar seus negócios. Elas são as perguntas ou consultas reais que os usuários informam nos LLMs.
 
 Certifique-se de revisar e atualizar os prompts regularmente para garantir que eles se alinhem às necessidades do cliente e às metas de negócios.
+
+Práticas recomendadas para prompts:
+
+* Agrupe prompts semelhantes com base no que as pessoas estão perguntando.
+* Concentre-se nos prompts que são mais importantes para seus clientes.
+* Verifique se a sua marca tem uma boa chance de ser mencionada em determinados prompts.
 
 >[!TIP]
 >

@@ -1,9 +1,9 @@
 ---
 title: Visão geral do LLM Optimizer
 description: Saiba mais sobre como o Adobe LLM Optimizer aumenta a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Comece a otimizar hoje para obter melhor envolvimento e influência.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,11 @@ A Otimização do Mecanismo Gerativo é multifuncional por natureza. O LLM Optim
 
 Com o Adobe LLM Optimizer, você pode:
 
-**Meça a visibilidade da marca** - rastreie quando, onde e com que frequência sua marca é mencionada nos resultados da pesquisa habilitada por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
-**Concorrentes de Benchmark** - Veja como sua marca se compara aos concorrentes em mecanismos geradores. Identifique a parcela de lacunas de voz e descubra vantagens competitivas.
-**Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
-**Rastrear o impacto do tráfego da IA** - Monitore o tráfego de agente (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade da GEO a um engajamento real.
-**Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO e comunicações.
-
+**Meça a visibilidade da marca** - rastreie quando, onde e com que frequência sua marca é mencionada nos resultados da pesquisa habilitada por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo. Consulte [Painel de presença da marca](/help/dashboards/brand-presence.md).
+**Concorrentes de Benchmark** - Veja como sua marca se compara aos concorrentes em mecanismos geradores. Identifique a parcela de lacunas de voz e descubra vantagens competitivas. Consulte [Painel de presença da marca](/help/dashboards/brand-presence.md).
+**Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações. Consulte [Painel de oportunidades](/help/dashboards/opportunities.md).
+**Rastrear o impacto do tráfego da IA** - Monitore o tráfego de agente (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade da GEO a um engajamento real. Consulte [Painel de Tráfego da Agência](/help/dashboards/agentic-traffic.md) e [Painel de Tráfego de Referência](/help/dashboards/referral-traffic.md).
+**Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO (otimização de mecanismo de pesquisa) e comunicações. Consulte [painel do Collaboration](/help/dashboards/collaboration.md).
 
 ## Saiba mais
 
