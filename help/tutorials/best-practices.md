@@ -1,9 +1,9 @@
 ---
 title: Práticas recomendadas do LLM Optimizer
 description: Descubra as práticas recomendadas para a otimização de LLM para aumentar a visibilidade da marca na pesquisa de IA. Insights para avaliação de desempenho e otimização de conteúdo.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: a76d348a94495682d648ef0aad268e835e321017
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ A Otimização de LLM, também chamada de Otimização de Mecanismo Gerativo (GE
 
 Se a SEO tradicional o ajudou a ganhar classificações de primeira página, a otimização de LLM ajuda a ganhar citações de IA e visibilidade dentro dos mecanismos de resposta. O Adobe LLM Optimizer permite medir e melhorar a visibilidade da sua marca nos mecanismos de resposta.
 
-Este artigo descreve as práticas recomendadas para medir e melhorar sua visibilidade e influência em ambientes de pesquisa orientados por IA usando o Adobe LLM Optimizer.
+Este artigo descreve as práticas recomendadas para medir e aprimorar sua visibilidade e influência em ambientes de pesquisa orientados por IA usando o Adobe LLM Optimizer.
 
 * [LLM versus SEO: principais diferenças](#key-differences)
 * [Planejamento de campanha estratégica](#strategic-campaign-planning)
@@ -30,7 +30,7 @@ Uma base forte de SEO oferece suporte à otimização de LLM, mas são necessár
 
 >[!NOTE]
 >
->Atualmente, o tráfego de SEO ainda é o maior gerador de tráfego para a maioria dos sites, tornando-o muito importante para a estratégia de visibilidade da sua marca.
+>Atualmente, o tráfego de SEO ainda é o maior gerador de tráfego da maioria das páginas da Web, tornando-o muito importante para a estratégia de visibilidade da sua marca.
 
 
 | SEO | LLM |
@@ -173,7 +173,7 @@ Estas são as etapas que você pode seguir para monitorar o progresso:
    * Priorizar páginas com visibilidade decrescente.
    * Atualize seu site e outros conteúdos para torná-lo mais relevante aos prompts que deseja direcionar.
    * Adicione perguntas frequentes às suas páginas que respondam a perguntas comuns que as pessoas podem fazer.
-   * Verifique se o seu conteúdo é fácil para os LLMs encontrarem e lerem. Corrija qualquer problema, como páginas bloqueadas ou problemas com o código do site.
+   * Verifique se o conteúdo é fácil de ser encontrado e lido pelos LMs. Corrija qualquer problema, como páginas bloqueadas ou problemas com o código do site.
    * Garanta que as contribuições para plataformas como a Wikipedia e o Reddit sejam imparciais, não-comerciais e de valor agregado.
    * Use o Adobe LLM Optimizer para rastrear como a visibilidade muda ao longo do tempo.
    * Se você notar que os concorrentes são mencionados com mais frequência, ajuste sua estratégia para manter-se à frente.
@@ -182,7 +182,7 @@ Estas são as etapas que você pode seguir para monitorar o progresso:
 
 >[!NOTE]
 >
->Verifique se o conteúdo está visível e acessível para LLMs. Você pode usar o plug-in do Chrome para ver o que os agentes de IA podem ver.
+>Certifique-se de que o conteúdo esteja visível e acessível para os LLMs. Você pode usar o plug-in do Chrome para ver o que os agentes de IA podem ver.
 
 ## Compreensão do tráfego de agente
 
@@ -192,12 +192,12 @@ O tráfego direto é exibido de duas maneiras: experiências com cliques nulos e
 
 ### Experiências com clique zero
 
-Na pesquisa tradicional, os usuários clicam nos sites para consumir conteúdo. Mas com LLMs usuários muitas vezes obter respostas completas diretamente na interface de bate-papo ou resultados do mecanismo de pesquisa paate sem nunca visitar o seu site. Isso é chamado de experiência de clique zero.
+Na pesquisa tradicional, os usuários clicam nos sites para consumir conteúdo. Mas com LLMs usuários muitas vezes obter respostas completas diretamente na interface de bate-papo ou resultados de mecanismo de pesquisa colar sem nunca visitar o seu site. Isso é chamado de experiência de clique zero.
 
 O que isso significa para sua marca:
 
 1. Seu conteúdo pode ser resumido ou citado por um assistente de IA.
-2. O usuário obtém as informações de que precisa sem clicar no seu link.
+2. O usuário obtém as informações de que precisa sem clicar em seu link.
 3. A visibilidade e a influência do seu site são dissociadas do tráfego.
 
 Portanto, mesmo que sua análise mostre menos visitas, sua marca ainda poderá ser altamente visível e influente nas respostas geradas pela IA.
@@ -224,7 +224,7 @@ O rastreamento do tráfego de agente ajuda você a entender como a IA vê e usa 
 Para otimizar o tráfego agêntico:
 
 * Verifique a rastreabilidade revisando as configurações de robots.txt e CDN.
-* Use o [Inspetor de URL](/help/dashboards/url-inspector.md)para analisar o desempenho da URL.
+* Use o [Inspetor de URL](/help/dashboards/url-inspector.md) para analisar o desempenho da URL.
 * Acompanhe o comportamento do bot acessando seus logs de CDN no [Painel de tráfego de agente](/help/dashboards/agentic-traffic.md).
 * Segmente o tráfego para entender os resultados de negócios. Consulte [Práticas recomendadas para categorias, tópicos, prompts e concorrentes](/help/overview/best-practices-topics-prompts.md).
 
