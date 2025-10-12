@@ -1,9 +1,9 @@
 ---
 title: Tráfego de agente
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,26 @@ Esta página detalha o seguinte:
 * [Movedores Superior e Inferior](#top-bottom-movers)
 * [Análise de desempenho de URL e agente de usuário](#user-url-performance)
 
-## Configuração da CDN {#cdn-setup}
+## Encaminhamento de log CDN {#cdn-setup}
 
-No primeiro logon, o painel Tráfego do agente fica em branco. Para exibir interações de agente, você deve configurar o **encaminhamento de log CDN**. **TBD apontar para a configuração do CDN no início rápido/integração?**
+Sem o **encaminhamento de log da CDN**, o painel Tráfego do Agente está em branco. Para exibir interações de agente, você deve configurar o **encaminhamento de log CDN**.  No primeiro logon, você verá uma mensagem como mostrado na imagem abaixo.
 
-![Configuração da CDN](/help/dashboards/assets/ag-log-forward.png)
+![Configuração da CDN](/help/dashboards/assets/ag-log-forward1.png)
+
+Selecione **Ir para Configuração** e você navegará automaticamente para a guia **Configuração da CDN** do [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
+
+![Instalação do CDN integrada](/help/dashboards/assets/ag-log-forward2.png)
+
+Nesta guia, selecione **Onboard CDN**. E a janela do provedor CDN é exibida.
+
+![Provedor da CDN](/help/dashboards/assets/ag-log-forward3.png)
+
+Na janela **Onboard CDN Provider**:
 
 1. Selecione seu provedor de CDN (por exemplo, Akamai, Fastly gerenciado pela Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou Outro).
-2. Insira um email do contato principal.
-3. Clique em **Solicitar Ativação** para habilitar o encaminhamento de log.
+2. Clique em **Integrar** para habilitar o encaminhamento de log.
+
+Se você selecionar **Outros**, precisará entrar em contato com a Adobe para obter assistência.
 
 Depois de ativados, os registros são assimilados e o painel é preenchido com métricas como total de interações do agente, taxa de sucesso, ocorrências por mercado, análise do agente do usuário e desempenho em nível de URL.
 
@@ -39,11 +50,11 @@ Depois de ativados, os registros são assimilados e o painel é preenchido com m
 Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetarão **todos** as seções presentes no painel. Você pode personalizar o seguinte:
 
 * **Intervalo de datas** - Selecione o intervalo de tempo para os dados exibidos. Por exemplo, as últimas 4 semanas. Você também pode personalizar o período de tempo selecionando a opção **Semanas personalizadas**.
-* **Categoria** - Filtre os resultados exibidos por categorias predefinidas. Você também pode adicionar categorias personalizadas a este campo (**SR**-como?).
+* **Categoria** - Filtre os resultados exibidos por categorias predefinidas ou categorias personalizadas.
 * **Plataforma** - Escolha qual mecanismo de IA analisar.
 * **Tipo de Agente** - Filtre pelo tipo de agente de IA que interagiu com o site. Você pode filtrar entre rastreadores, chatbots ou todos os agentes.
-* **Taxa de Sucesso** - Filtre pela qualidade da interação (alta, média ou baixa). Essa métrica representa a porcentagem de solicitações HTTP bem-sucedidas, incluindo respostas e redirecionamentos diretos bem-sucedidos.
-* **Tipo de Conteúdo** - Filtrar por tipo de conteúdo, HTML ou txt.
+* **Taxa de Sucesso** - Filtre pela qualidade da interação (alta, média ou baixa). Essa métrica representa a porcentagem de solicitações HTTP bem-sucedidas, incluindo respostas diretas bem-sucedidas (códigos de status 2xx) e redirecionamentos (códigos de status 3xx).
+* **Tipo de Conteúdo** - Exiba a interação de agente para diferentes tipos de conteúdo, como HTML, PDF e assim por diante.
 
 Após selecionar o filtro desejado, clique em **Aplicar Filtros** para aplicar a seleção ao painel.
 
@@ -69,10 +80,9 @@ Use o gráfico de Tendências de Tráfego Agênico para rastrear os totais seman
 
 ## Movedores Superior e Inferior {#top-bottom-movers}
 
-Essas duas métricas classificam os URLs da seguinte maneira:
+A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. Os Top Movers mostram as páginas ganhando visibilidade ou engajamento, enquanto os Bottom Movers revelam URLs com os declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está com tendência para cima, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
 
-* **Principais movimentadores** - Os URLs com o maior aumento no tráfego de agente da semana mais antiga para a mais recente.
-* **Bottom Movers** - URLs com a maior diminuição no tráfego de agente da semana mais antiga para a mais recente.
+![Movimentadores Superior e Inferior](/help/dashboards/assets/movers.png)
 
 ## Análise de desempenho de URL e agente de usuário {#user-url-performance}
 
@@ -104,6 +114,12 @@ A tabela Análise de desempenho de URL mostra uma exibição detalhada de URLs i
 * **Taxa de Êxito** - A porcentagem de solicitações HTTP bem-sucedidas, incluindo respostas e redirecionamentos diretos bem-sucedidos.
 * **Categoria** - A categoria que melhor corresponde ao conteúdo da sua página.
 
-A tabela de desempenho de URL tem um campo de pesquisa para acesso rápido a URLs. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
+A tabela de desempenho de URL tem um campo de pesquisa para acesso rápido a URLs. Você também pode exibir detalhes adicionais para cada URL clicando no ícone de informações no final de cada linha.
+
+![Detalhes da URL](/help/dashboards/assets/details.png)
+
+A visualização Detalhes do URL fornece uma compreensão holística do desempenho de uma página, mostrando a frequência com que ela é citada, o sentimento das respostas de IA onde é mencionada, os tópicos e prompts em que ela aparece, e as tendências no tráfego de referência e agêntica ao longo do tempo.
 
 >[!ENDTABS]
+
+Para ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela em relatórios executivos.

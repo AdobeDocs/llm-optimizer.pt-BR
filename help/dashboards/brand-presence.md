@@ -1,9 +1,9 @@
 ---
 title: Presença da marca
 description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,17 @@ Esta página detalha o seguinte:
 Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetarão **todos** as seções presentes no painel. Você pode personalizar o seguinte:
 
 * **Intervalo de datas** - Selecione o intervalo de tempo para os dados exibidos. Por exemplo, as últimas 4 semanas. Você também pode personalizar o período de tempo selecionando a opção **Semanas personalizadas**.
-* **Categoria** - Filtre os resultados exibidos por categorias predefinidas. Você também pode adicionar categorias personalizadas a este campo (**SR**-como?).
+* **Categoria** - Filtre os resultados exibidos por categorias predefinidas ou personalizadas.
 * **Plataforma** - Escolha qual mecanismo de IA analisar.
+* **Origem dos Prompts** - Escolha a origem dos prompts. A origem pode ser inserida pelo usuário ou gerada pela IA.
+* **Marcas do Prompt** - Filtre os resultados com ou sem marcas.
 * **Região** - Filtrar os resultados por região. Nem todas as regiões estarão disponíveis no lançamento.
 
 Após selecionar o filtro desejado, clique em **Aplicar Filtros** para aplicar a seleção ao painel.
 
 ## Métricas de visão geral {#overview-metrics}
 
-O painel destaca três métricas muito importantes na parte superior da página: pontuação de visibilidade, menções e citações. Quanto menor for a contagem dessas métricas, pior será a percepção da sua marca, e você deverá agir para melhorar a presença da sua marca. como **SR - ADICIONE o link de otimização aqui**. Apresentamos abaixo uma breve descrição de cada métrica e o que ela representa.
+O painel destaca três métricas muito importantes na parte superior da página: pontuação de visibilidade, menções e citações. Quanto menor for a contagem dessas métricas, pior será a percepção da sua marca, e você deverá agir para melhorar a presença da sua marca. Apresentamos abaixo uma breve descrição de cada métrica e o que ela representa.
 
 ![Métricas de visão geral](/help/dashboards/assets/overview-metrics.png)
 
@@ -64,7 +66,7 @@ Os concorrentes são selecionados na lista suspensa e os gráficos são atualiza
 
 ## Análise de tendência de sentimento {#sentiment-trend}
 
-Na seção Análise de tendência do sentimento, você pode acompanhar como sua marca é percebida nas respostas da IA de amostra. A métrica de tendência do sentimento pode ser positiva, neutra ou negativa. Por exemplo, pode ser positivo se as respostas destacarem a qualidade do produto, ou negativo se mencionarem um serviço ruim. O gráfico de tendências mostra as mudanças na percepção da marca semana a semana. A seção é preenchida somente depois que sua marca é mencionada.
+Na seção Análise de tendência do sentimento, você pode acompanhar como sua marca é percebida nas respostas da IA de amostra. A métrica de tendência do sentimento pode ser positiva, neutra ou negativa. Por exemplo, pode ser positivo se as respostas destacarem a qualidade do produto ou negativo se mencionarem um serviço ruim. O gráfico de tendências mostra as mudanças na percepção da marca semana a semana. A seção é preenchida somente depois que sua marca é mencionada.
 
 ![Tendência de sentimento](/help/dashboards/assets/sentiment-trend.png)
 
@@ -84,25 +86,26 @@ Clique nas guias abaixo para obter detalhes sobre cada tabela e as métricas ass
 
 A tabela de insights de dados ajuda a explorar tópicos e prompts do usuário para avaliar e otimizar o impacto do conteúdo. Ela exibe as seguintes métricas:
 
-* **Categoria** - A categoria de tópico representa as palavras-chave da SEO e as perguntas do usuário relacionadas à sua marca. Você pode clicar em para expandir cada tópico e ver prompts individuais analisados para a presença da marca. Cada tópico e botão tem um botão **Detalhes** quando você passa o mouse sobre ele. Clicar no botão exibirá uma janela separada com mais detalhes.
+* **Tópico** - A categoria de tópico representa as palavras-chave da SEO e as perguntas do usuário relacionadas à sua marca. Você pode clicar em para expandir cada tópico e ver prompts individuais analisados para a presença da marca. Cada tópico e botão tem um botão **Detalhes** quando você passa o mouse sobre ele. Clicar no botão exibirá uma janela separada com mais detalhes.
+* **Região** - exibe a região dos prompts.
 * **Popularidade** - A categoria de popularidade representa o volume de pesquisa deste tópico em relação a todos os outros tópicos da análise. O valor pode ser Alto, Medium ou Baixo.
-* **Pontuação de visibilidade** - A Pontuação de visibilidade desse tópico. Ele reflete fatores ponderados como menções, citações, sentimento e classificação.
+* **Pontuação de visibilidade** - A pontuação de visibilidade desse tópico. Ele reflete fatores ponderados como menções, citações, sentimento e classificação.
 * **Menções** - O número de vezes que sua marca foi mencionada nas respostas da IA para este tópico ou esta combinação de tópico/prompt.
-* **Sentimento** - A percepção da marca nas respostas da IA, pois está relacionada a cada tópico. A métrica de sentimento pode ser positiva, neutra ou negativa.
-* **Posição** - O quão cedo sua marca aparece na resposta da IA, calculada como uma média em todas as semanas.
+* **Sentimento** - A percepção da marca nas respostas da IA, pois está relacionada a cada tópico, calculada como uma média em todas as semanas. Preenchido somente quando sua marca é realmente mencionada
+* **Posição** - A proeminência relativa da sua marca em respostas de IA, calculada como uma média em todas as semanas.
 * **Todas as citações** - O número de fontes exclusivas citadas nas respostas da IA para este tópico ou esta combinação de tópico/prompt (inclui citações próprias).
 * **Citações próprias** - O número de vezes que sua marca foi citada em respostas de IA para esta palavra-chave ou esta combinação de palavra-chave/pergunta.
 
 >[!TAB Compartilhamento de Voz]
 
-A tabela **share of voice** compara a voz da sua marca com a de outros concorrentes em vários tópicos. Ela exibe as seguintes métricas:
+A tabela Compartilhamento de voz fornece uma visão comparativa de como sua marca atua entre os principais tópicos nas respostas geradoras de IA. Ele ajuda a identificar lacunas de visibilidade, rastrear o desempenho competitivo e priorizar áreas para otimização. Ela exibe as seguintes métricas:
 
 * **Tópico** - O tópico analisado.
 * **Popularidade** - O volume de pesquisa do tópico relativo a todos os outros tópicos da análise.
 * **Menções** - Número de vezes que sua marca foi mencionada nas respostas da IA para o tópico ou a combinação de tópico/prompt.
 * **Classificação** - A classificação do Compartilhamento de Voz da sua marca, relativo a todos os concorrentes identificados.
-* **Compartilhamento de voz** - A porcentagem de tempo em que uma marca é mencionada, relativa a todas as menções nas respostas de IA.
-* **Cinco principais concorrentes** - Os cinco principais concorrentes organizados por seu Share of Voice (do mais alto ao mais baixo).
+* **Compartilhamento de voz** - A porcentagem do total de menções que sua marca retém nas respostas geradas por IA.
+* **Cinco principais concorrentes** - As cinco principais marcas mencionadas com mais frequência para os mesmos tópicos. Os concorrentes são organizados pela sua participação na voz (do mais alto ao mais baixo).
 
 >[!ENDTABS]
 
