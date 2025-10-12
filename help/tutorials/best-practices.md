@@ -1,29 +1,62 @@
 ---
 title: Práticas recomendadas do LLM Optimizer
 description: Descubra as práticas recomendadas para a otimização de LLM para aumentar a visibilidade da marca na pesquisa de IA. Insights para avaliação de desempenho e otimização de conteúdo.
-source-git-commit: 70d0b8c042cbdd87bab1c9ef3139af9c72a4a09d
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
 
 
-# Práticas recomendadas
-
-[RASCUNHO]
+# Práticas recomendadas do LLM Optimizer
 
 A Otimização de LLM, também chamada de Otimização de Mecanismo Gerativo (GEO), ou Otimização de Mecanismo de Resposta (AEO), ou Otimização de IA (AIO), é a forma como você torna sua marca e conteúdo visíveis, confiáveis e recuperáveis nas respostas geradas por IA - através do ChatGPT, Perplexity, Copilot, Gemini e outros assistentes orientados por LLM.
 
 Se a SEO tradicional o ajudou a ganhar classificações de primeira página, a otimização de LLM ajuda a ganhar citações de IA e visibilidade dentro dos mecanismos de resposta. O Adobe LLM Optimizer permite medir e melhorar a visibilidade da sua marca nos mecanismos de resposta.
 
-Este artigo descreve as práticas recomendadas para medir e aprimorar a visibilidade e a influência em ambientes de pesquisa orientados por IA usando o Adobe LLM Optimizer.
+Este artigo descreve as práticas recomendadas para medir e melhorar sua visibilidade e influência em ambientes de pesquisa orientados por IA usando o Adobe LLM Optimizer.
+
+* [LLM versus SEO](#key-differences)
+* [Desbloquear a visibilidade da marca LLM](#unlocking-llm-brand-visibility)
+* [Planejamento de campanha estratégica](#strategic-campaign-planning)
+* [Etapas de otimização acionáveis](#actionable-optimization-steps)
+* [Otimização externa para visibilidade do LLM](#offsite-optimization-for-llm-visibility)
+* [Medição da visibilidade do LLM](#measuring-llm-visibility)
+* [Rastreamento de alterações de visibilidade](#tracking-visibility-changes)
+
+## LLM versus SEO: principais diferenças {#key-differences}
+
+Uma base forte de SEO oferece suporte à otimização de LLM, mas são necessárias novas táticas para garantir a visibilidade das respostas geradas por IA.
+
+>[!NOTE]
+>
+>Atualmente, o tráfego de SEO ainda é o maior gerador de tráfego para a maioria dos sites, tornando-o muito importante para a estratégia de visibilidade da sua marca.
+
+
+| SEO | LLM |
+|---------|----------|
+| Baseado em índice | *Com base em token (dados treinados) |
+| Assuntos de autoridade de link | **As menções à marca são mais importantes |
+| Renderização JS suportada | Renderização muito limitada de JS no lado do cliente |
+| Indexação em tempo real | ***RAG (Retrieval-Augmented Generation, geração aumentada para recuperação) para atualização |
+
+*Embora os resultados de LLM não usem páginas indexadas, os LLMs usam mecanismos de pesquisa para aprimorar as respostas de prompt por meio da Geração aumentada de nível de recuperação (RAG).
+
+** Os LLMs priorizam a relevância do conteúdo e a presença da marca nos backlinks.
+
+*** RAG reduz alucinações
+
+Outras considerações para a otimização de LLM:
+
+* A novidade do conteúdo é importante: os LLMs priorizam o conteúdo atualizado recentemente. (Os mecanismos de pesquisa também priorizam isso para consultas sensíveis ao tempo, mas dependem de outros valores com mais intensidade.)
+* O ganho (de terceiros) na forma de menções e citações é muito importante.
 
 ## Desbloquear a visibilidade da marca LLM
 
-A otimização do Modelo de linguagem grande (LLM) está transformando a forma como as marcas são descobertas e referenciadas em ambientes orientados por IA. O LLM Optimizer da Adobe fornece uma abordagem estruturada para melhorar a visibilidade da marca.
+A visibilidade do LLM diz respeito à frequência e ao destaque que sua marca aparece nas respostas geradas por IA.
 
-Siga estas etapas para melhorar a visibilidade do LLM:
+Para melhorar a visibilidade,
 
 1. **Analisar:** analise como sua marca aparece nos principais prompts de clientes em todos os LLMs.
 2. **Plano:** clusters de destino de prompts com intenção semelhante para campanhas focalizadas.
@@ -34,33 +67,16 @@ Siga estas etapas para melhorar a visibilidade do LLM:
 
 Entender e aproveitar essas etapas pode ajudar sua marca a permanecer relevante à medida que a IA se torna central para a descoberta de informações.
 
-## LLM versus SEO: principais diferenças
-
-Uma boa estratégia de LLM se baseia em uma boa estratégia de SEO. Uma estratégia de SEO é fundamental para qualquer otimização de LLM. Atualmente, o tráfego de SEO ainda é o maior gerador de tráfego para a maioria dos sites, tornando-o muito importante para a estratégia de visibilidade da sua marca.
-
-É importante entender que a otimização para LLMs difere do SEO tradicional por causa de algumas diferenças importantes:
-
-* Os LLMs usam tokens, não índices: os resultados são gerados a partir de dados treinados, não de páginas da Web indexadas, mas os LLMs usam mecanismos de pesquisa para aprimorar as respostas de prompt por meio da Geração aumentada de nível de recuperação (RAG).
-* Informações em tempo real via RAG: os mecanismos de pesquisa usam dados em tempo real, enquanto o RAG permite aos LLMs obter informações atualizadas, reduzindo as alucinações.
-* Renderização limitada de JS do lado do cliente: no momento, os LLMs não processam o JavaScript do lado do cliente, afetando o conteúdo que está visível.
-
-Devido a algumas dessas diferenças fundamentais, com a estratégia do LLM, é necessário considerar o seguinte:
-
-* As menções de marca são mais importantes do que os links para LLMs: os LLMs priorizam a relevância do conteúdo e a presença da marca nos links posteriores. Ao contrário do SEO, os LLMs não usam links para determinar a autoridade.
-* A novidade do conteúdo é importante: os LLMs priorizam o conteúdo atualizado recentemente. (Os mecanismos de pesquisa também priorizam isso para consultas sensíveis ao tempo, mas dependem de outros valores com mais intensidade.)
-* O ganho (de terceiros) na forma de menções e citações é muito importante.
-
-## Planejamento Estratégico de Campanha
+## Planejamento de campanha estratégica
 
 A criação de uma campanha de otimização do LLM bem-sucedida envolve:
 
-Identificar tópicos de alto valor: alinhe a intenção imediata com as metas de negócios e as necessidades do cliente.
-Menções de concorrentes ocasionais: concentre-se em prompts nos quais os concorrentes são citados, indicando a oportunidade de inclusão da marca.
-Agrupar prompts por intenção: use tópicos e campos de pesquisa para agrupar metas de usuário semelhantes para visibilidade de benchmarking.
-Avalie a inclusão realista da marca: avalie se sua marca pode ser mencionada de forma confiável, considerando fatores como os padrões EEAT (Experiência, Experiência, Autoritatividade, Confiabilidade) e YMYL (Seu Dinheiro ou Sua Vida).
+* Identificar tópicos de alto valor: alinhe a intenção imediata com as metas de negócios e as necessidades do cliente.
+* Menções de concorrentes ocasionais: concentre-se em prompts nos quais os concorrentes são citados, indicando a oportunidade de inclusão da marca.
+* Agrupar prompts por intenção: use tópicos e campos de pesquisa para agrupar metas de usuário semelhantes para visibilidade de benchmarking.
+* Avalie a inclusão realista da marca: avalie se sua marca pode ser mencionada de forma confiável, considerando fatores como os padrões EEAT (Experiência, Experiência, Autoritatividade, Confiabilidade) e YMYL (Seu Dinheiro ou Sua Vida).
 
 Essa abordagem estratégica garante melhorias direcionadas e orientadas por dados na visibilidade do LLM.
-
 
 ## Etapas de otimização acionáveis
 
@@ -76,33 +92,47 @@ Estas são algumas ações práticas a serem consideradas para aumentar a visibi
 
 A execução consistente dessas etapas pode melhorar significativamente a presença da sua marca nos resultados de pesquisa orientados por IA.
 
+## Otimização externa para visibilidade do LLM
 
+A otimização externa se concentra em melhorar a visibilidade da sua marca em respostas geradas por IA, influenciando fontes de conteúdo de terceiros citadas frequentemente pelos LLMs.
 
-## O que é visibilidade do LLM?
+Principais canais externos:
 
-A visibilidade do LLM tem a ver com a frequência e o quão bem sua marca aparece nas respostas geradas por ferramentas como o ChatGPT ou outros modelos de IA.
+* Wikipedia: certifique-se de que as páginas estejam atualizadas, bem-originadas e escritas de forma neutra.
+* Reddit &amp; Quora: Participe de discussões com contribuições autênticas e úteis.
+* Artigos e análises de afiliados: colabore com editores para obter conteúdo de alta qualidade.
+* YouTube e mídias sociais: crie vídeos e publicações que respondam a perguntas comuns.
+* News &amp; PR: Cobertura segura em meios de comunicação respeitáveis.
 
-## Como medir o progresso do LLM
+Práticas recomendadas:
 
-Para avaliar a visibilidade do site e ver como seus esforços estão funcionando, rastreie estas métricas principais:
+* Diversifique sua área de ocupação externa.
+* Monitorar citações usando o LLM Optimizer da Adobe.
+* Atualize o conteúdo obsoleto e busque novas oportunidades de inclusão.
+* Coordenar com equipes de RP e sociais.
+* Garantir que as contribuições sejam imparciais e informativas.
+
+## Medição da visibilidade do LLM
+
+Para fazer o benchmark da visibilidade do site ou ver melhorias de visibilidade, rastreie estas métricas principais:
 
 * **Menções:** quantas vezes sua marca é mencionada nas respostas.
 * **Citações:** com que frequência os LLMs usam seu conteúdo ou suas fontes para responder a perguntas.
 * **Sentimento:** se a menção da sua marca é positiva, neutra ou negativa.
 * **Posição:** onde sua marca é mencionada na resposta (por exemplo, primeiro, meio ou último).
 
-Todos esses fatores se combinam em uma pontuação de **visibilidade**, que informa a intensidade da presença de sua marca nas respostas do LLM.
+Essas métricas se combinam em uma pontuação de **visibilidade**, que informa a intensidade da presença de sua marca nas respostas do LLM. Consulte o painel [Presença da marca](/help/dashboards/brand-presence.md).
 
-## Como rastrear alterações de visibilidade
+## Rastreamento de alterações de visibilidade
 
-Veja como você pode acompanhar a visibilidade da sua marca em LLMs:
+Estas são as etapas que você pode seguir para monitorar o progresso:
 
 1. Verifique sua visibilidade atual
-   * O Adobe LLM Optimizer mostra a frequência com que sua marca é mencionada e citada, e qual é o sentimento nas respostas do LLM. Consulte o painel Presença da marca.
-   * Observe os prompts (perguntas) em que a sua marca é mencionada e onde ela está ausente.
-   * Compare sua visibilidade com seus concorrentes para ver como você se compara.
-   * Verifique como você está aparecendo em plataformas geradas por usuários como Reddit, Quora e Wikipedia, pois elas são frequentemente citadas por LLMs para encontrar informações.
-   * Verifique como você está aparecendo no tráfego de agente. O tráfego de agente geralmente não vai para a página inicial. Vale a pena ver quais páginas os agentes visitam.
+   * Use o Adobe LLM Optimizer para mostrar a frequência com que sua marca é mencionada e citada, e qual é o sentimento nas respostas do LLM. Consulte o painel [Presença da marca](/help/dashboards/brand-presence.md).
+   * Analise os prompts em que sua marca aparece e em que ela não aparece.
+   * Referencial em relação aos concorrentes.
+   * Revise a visibilidade em plataformas geradas pelo usuário como Reddit, Quora e Wikipedia. Essas plataformas UGC são frequentemente citadas por LLMs para encontrar informações.
+   * Monitore o tráfego direto para entender quais páginas os LLMs visitam. O tráfego de agente frequentemente **não** vai para a home page, mas para outras páginas na parte inferior da hierarquia. Consulte o painel [Tráfego de agente](/help/assets/overview/agentic-traffic-card.png).
    * Verifique se o conteúdo está visível e acessível para LLMs. Você pode usar o plug-in do Chrome para ver o que os agentes de IA podem ver.
 
 1. Planeje sua estratégia
@@ -120,6 +150,60 @@ Veja como você pode acompanhar a visibilidade da sua marca em LLMs:
    * Use o Adobe LLM Optimizer para rastrear como a visibilidade muda ao longo do tempo.
    * Se você notar que os concorrentes são mencionados com mais frequência, ajuste sua estratégia para manter-se à frente.
    * Continue atualizando seu conteúdo para corresponder ao que as pessoas estão procurando e perguntando sobre.
+
+## Compreensão de tráfego de agente
+
+O tráfego de agente se refere às visitas de agentes de IA como ChatGPT, modo/visões gerais de IA do Google, Copilot ou Perplexidade. Esses agentes rastreiam o site para coletar informações para gerar respostas.
+
+O tráfego direto é exibido de duas maneiras: experiências com cliques nulos e visibilidade sem cliques.
+
+### Experiências com clique zero
+
+Na pesquisa tradicional, os usuários clicam nos sites para consumir conteúdo. Mas com LLMs usuários muitas vezes obter respostas completas diretamente na interface de bate-papo ou resultados do mecanismo de pesquisa paate sem nunca visitar o seu site. Isso é chamado de experiência de clique zero.
+
+O que isso significa para sua marca:
+
+1. Seu conteúdo pode ser resumido ou citado por um assistente de IA.
+2. O usuário obtém as informações de que precisa sem clicar no seu link.
+3. A visibilidade e a influência do seu site são dissociadas do tráfego.
+
+Portanto, mesmo que sua análise mostre menos visitas, sua marca ainda poderá ser altamente visível e influente nas respostas geradas pela IA.
+
+### Visibilidade sem cliques
+
+O tráfego de agente se refere aos bots de IA que visitam seu site para coletar informações para treinar ou responder prompts.
+
+Esses bots fazem o seguinte:
+
+1. Rastrear suas páginas para extrair fatos, estrutura e contexto.
+2. Use esses dados para gerar respostas para os usuários.
+3. Pode citar sua marca ou conteúdo, mesmo se nenhum humano clicar.
+
+Por que isso é importante:
+
+* Seu conteúdo pode moldar as decisões do usuário indiretamente.
+* Você pode estar influenciando o comportamento de compra, a percepção da marca ou a confiança sem as métricas tradicionais de envolvimento.
+
+O rastreamento do tráfego de agente ajuda você a entender como a IA vê e usa seu conteúdo.
+
+### Como otimizar para tráfego de agente:
+
+Para otimizar o tráfego agêntico:
+
+* Verifique a rastreabilidade revisando as configurações de robots.txt e CDN.
+* Use o [Inspetor de URL](/help/dashboards/url-inspector.md)para analisar o desempenho da URL.
+* Acompanhe o comportamento do bot acessando seus logs de CDN no [Painel de tráfego de agente](/help/dashboards/agentic-traffic.md).
+* Segmente o tráfego para entender os resultados de negócios. Consulte [Práticas recomendadas para categorias, tópicos, prompts e concorrentes](/help/overview/best-practices-topics-prompts.md).
+
+Estas são as métricas que devem ser monitoradas:
+
+* Ocorrências do agente por URL
+* Taxa de sucesso de solicitações de bot
+* Frequência de citação por página
+* Sentimento e colocação de menções à marca
+* Tendências de pontuação de visibilidade ao longo do tempo
+
+<!-- Add screenshot when available in demo environment>
 
 
 <!-- Use the "Share of Voice" feature to see which competitors are dominating specific topics and adjust your strategy accordingly.-->
