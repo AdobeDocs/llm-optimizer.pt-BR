@@ -1,10 +1,10 @@
 ---
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como sua marca será monitorada e analisada na plataforma do otimizador LLM.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +98,7 @@ Nessa guia, é possível configurar os fluxos de CDN para permitir que o Adobe L
 
 Na janela **Onboard CDN Provider**:
 
-1. Selecione seu provedor de CDN (por exemplo, Akamai, Fastly gerenciado pela Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou Outro).
+1. Selecione seu provedor de CDN.
 2. Clique em **Integrar** para habilitar o encaminhamento de log.
 
 Se você selecionar **Outros**, precisará entrar em contato com a Adobe para obter assistência.

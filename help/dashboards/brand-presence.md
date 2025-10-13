@@ -1,7 +1,7 @@
 ---
 title: Presença da marca
 description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O painel Presença da marca fornece uma visão geral detalhada sobre como sua marca é percebida no nível de respostas geradas por IA. Ele mostra onde, com que frequência e em que contexto sua marca é mencionada. Você pode usar o painel para medir a visibilidade, rastrear a citação e explorar as tendências do sentimento. O painel é dividido em várias seções, cada uma fornecendo insights diferentes. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
-![Presença na marca](/help/dashboards/assets/brand-main1.png)
+![Presença na marca](/help/dashboards/assets/brand-main.png)
 
 Esta página detalha o seguinte:
 
@@ -60,7 +60,7 @@ Os indicadores de tendência para cada métrica principal mostram como esses val
 
 Na seção de comparação de outras marcas, é possível selecionar até cinco outras marcas e comparar suas menções e citações com a sua marca. Dessa forma, você pode visualizar e comparar seu desempenho em relação a outras marcas.
 
-![Outra Comparação](/help/dashboards/assets/competitor-comparison1.png)
+![Outra Comparação](/help/dashboards/assets/other-comparison.png)
 
 As outras marcas são selecionadas na lista suspensa e os gráficos são atualizados quando você clica em **Aplicar Filtros**. Os gráficos exibem menções semanais e citações semanais lado a lado. Você também pode passar o mouse ao longo do gráfico para ver a evolução dos dados ao longo do período semanal.
 
