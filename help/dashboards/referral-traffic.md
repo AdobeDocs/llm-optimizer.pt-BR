@@ -1,7 +1,7 @@
 ---
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ As tabelas Detalhes das fontes de referência e Análise de desempenho de URL aj
 
 A visualização Detalhes das fontes de referência detalha o tráfego proveniente de diferentes plataformas, como OpenAI, Microsoft, Google e Perplexity. Ele exibe métricas principais como visitas, taxa de rejeição e tipo de canal, ajudando você a entender quais fontes de IA e pesquisa estão direcionando o tráfego mais envolvido para o site.
 
-**Source** - A origem do tráfego de referência.
-**Visitas** - O número total de visitas para cada origem.
-**Taxa de rejeição** - A porcentagem de sessões da fonte de referência que não tiveram evento de envolvimento.
-**Canal** - O canal da origem, recebido, pago ou ambos.
+* **Source** - A origem do tráfego de referência.
+* **Visitas** - O número total de visitas para cada origem.
+* **Taxa de rejeição** - A porcentagem de sessões da fonte de referência que não tiveram evento de envolvimento.
+* **Canal** - O canal da origem, recebido, pago ou ambos.
 
 >[!TAB Análise de Desempenho de URL]
 
