@@ -1,17 +1,17 @@
 ---
-title: Práticas recomendadas para categorias, tópicos e prompts
-description: Otimize os insights do LLM configurando categorias, tópicos, prompts e concorrentes para o monitoramento personalizado da marca e a análise estratégica de conteúdo.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+title: Práticas recomendadas para categorias, tópicos, prompts e outros
+description: Otimize os insights do LLM configurando categorias, tópicos, prompts e outras marcas para rastrear, incluindo concorrentes para o monitoramento personalizado da marca e a análise estratégica de conteúdo.
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
 
 
-# Práticas recomendadas para configurar categorias, tópicos, prompts e concorrentes
+# Práticas recomendadas para configurar categorias, tópicos, prompts e outros para rastrear
 
-Esta seção descreve as práticas recomendadas para decidir como você deseja configurar suas categorias, tópicos, prompts e concorrentes.
+Esta seção descreve as práticas recomendadas para decidir como você deseja configurar suas categorias, tópicos, prompts e outros para rastrear.
 
 Este é um primeiro passo vital. O que você decide agora determina como as informações são adaptadas ao seu contexto de negócios. Quaisquer alterações em categorias no futuro redefinirão os dados históricos.
 
@@ -19,7 +19,7 @@ O painel [[!UICONTROL Configuração do cliente]](/help/dashboards/customer-conf
 
 ![Janela de configuração do cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-No painel [!UICONTROL Configuração do cliente], você pode personalizar categorias (como unidades de negócios ou linhas de produtos), rastrear concorrentes e adicionar aliases de menção à marca para capturar todas as variações da sua marca em prompts. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
+No painel [!UICONTROL Configuração do cliente], você pode personalizar categorias (como unidades de negócios ou linhas de produtos), rastrear outras marcas e adicionar aliases de menção à marca para capturar todas as variações da sua marca em prompts. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
 
 ## Práticas recomendadas para categorias
 
@@ -44,6 +44,8 @@ Como decidir como você configura categorias se baseia em uma pergunta: **Quem p
 * Se você for um *líder de negócios*, escolha a abordagem **SBU**.
 * Se você for um *proprietário da Web/conteúdo*, escolha a abordagem **URL_DIR**.
 * Se você for um *gerente de merchandising/ofertas*, escolha a abordagem **Categoria de produto/serviço**.
+
+![Adicionando categorias no LLM Optimizer](/help/assets/best-practices/add-category.png)
 
 >[!IMPORTANT]
 >
@@ -79,6 +81,8 @@ Ao decidir sobre tópicos, você deseja criar uma lista simples e curta (máximo
 * Contato de suporte
 * Corporativo/Notícias (se você realmente precisar disso)
 
+![Adicionando tópicos no LLM Optimizer](/help/assets/best-practices/add-topic.png)
+
 Ao criar a lista, considere o seguinte:
 
 * Um editor pode entender o tópico em 5 segundos a partir do texto do prompt? Caso contrário, renomeie/simplifique.
@@ -88,7 +92,7 @@ Ao criar a lista, considere o seguinte:
 Algumas dicas úteis adicionais:
 
 * Use o conhecimento da sua empresa ou site para definir tópicos que se alinhem às metas estratégicas da sua marca
-* Considere como sua marca se compara aos concorrentes em tópicos específicos.
+* Considere a comparação de sua marca com outras marcas em tópicos específicos.
 
 >[!IMPORTANT]
 >
@@ -114,20 +118,20 @@ Práticas recomendadas para prompts:
 >* Você pode usar ferramentas como o Adobe LLM Optimizer e o Google Search Console com filtros de regex para identificar estruturas de perguntas comuns (por exemplo, &quot;como&quot;, &quot;o que&quot;, &quot;quando&quot;, &quot;onde&quot;) e descobrir quais prompts as pessoas estão usando para visitar seu site.
 >* Para descobrir quais prompts são relevantes para seu site/marca, você pode usar dados de pesquisa no site, perguntas frequentes nas páginas de resultados do mecanismo de pesquisa ou até mesmo perguntar aos chatbots do LLM diretamente quais perguntas os clientes podem fazer sobre sua marca.
 
-## Práticas recomendadas para os concorrentes
+## Práticas recomendadas para rastrear outras marcas
 
-Os concorrentes permitem que você monitore a visibilidade e faça menções nas respostas do LLM a prompts e tópicos importantes para sua empresa.
+O rastreamento de Outros permite monitorar a visibilidade e menções em respostas LLM para prompts e tópicos importantes para sua empresa.
 
-A guia [!UICONTROL **Rastreamento de Concorrente**] permite que você adicione concorrentes e rastreie sua visibilidade para prompts e tópicos específicos.
+A guia [!UICONTROL **Others Tracking**] permite adicionar outros, incluindo concorrentes, para rastrear sua visibilidade de prompts e tópicos específicos.
 
-Com o rastreamento de concorrentes, você pode ver com que frequência os concorrentes são mencionados junto com sua marca em diferentes regiões e categorias e comparar sua visibilidade com a sua.
+Com outros rastreadores, você pode ver com que frequência outras marcas são mencionadas ao lado da sua marca em diferentes regiões e categorias e comparar sua visibilidade com a sua.
 
 >[!TIP]
 >
->Analise regularmente as menções e citações de concorrentes para identificar áreas em que sua marca pode melhorar.
+>Analise regularmente menções e citações de concorrentes ou de outros para identificar áreas em que sua marca pode melhorar.
 
 ## Saiba mais
 
-* O [Painel de Configuração do Cliente](/help/dashboards/customer-configuration.md) é onde você configura as categorias, os tópicos, os prompts e os concorrentes.
+* O [painel de Configuração do Cliente](/help/dashboards/customer-configuration.md) é onde você configura suas categorias, tópicos, prompts e outros controles.
 * [Práticas recomendadas da LLM Optimizer](/help/tutorials/best-practices.md) descreve as práticas recomendadas para a otimização de LLM
 

@@ -1,9 +1,9 @@
 ---
 title: Noções básicas do LLM Optimizer
 description: Saiba mais sobre como o Adobe LLM Optimizer aumenta a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Comece a otimizar hoje para obter melhor envolvimento e influência.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O Adobe LLM Optimizer é um aplicativo gerado pela primeira IA para a Otimizaç�
 O Adobe LLM Optimizer oferece um conjunto de ferramentas projetadas para a otimização gerativa de mecanismo:
 
 * Meça a visibilidade da marca: controle quando, onde e com que frequência sua marca aparece nos resultados de pesquisa alimentados por IA, com uma pontuação de visibilidade clara para benchmarking.
-* Concorrentes de benchmark: compare a participação da sua marca em voz e presença com a dos concorrentes em mecanismos geradores.
+* Benchmark Others: compare a participação da sua marca em voz e presença com os concorrentes e outros em mecanismos geradores.
 * Descubra oportunidades acionáveis: identifique melhorias técnicas e de conteúdo (como perguntas frequentes, resumos, esquema, rastreabilidade) para impulsionar menções e citações.
 * Rastrear o impacto do tráfego: monitore o tráfego agêntrico (assistente de IA) e de referência para suas propriedades, vinculando a visibilidade ao envolvimento.
 * Ativar o Team Collaboration: compartilhe painéis, atribua proprietários e alinhe metas entre equipes de marketing, SEO e comunicações.
@@ -53,7 +53,7 @@ A Otimização do Mecanismo Gerativo é multifuncional por natureza. O LLM Optim
 Com o Adobe LLM Optimizer, você pode:
 
 **Meça a visibilidade da marca** - rastreie quando, onde e com que frequência sua marca é mencionada nos resultados da pesquisa habilitada por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
-**Concorrentes de Benchmark** - Veja como sua marca se compara aos concorrentes em mecanismos geradores. Identifique a parcela de lacunas de voz e descubra vantagens competitivas.
+**Referencie outros** - Veja como sua marca se compara a outras pessoas em mecanismos geradores. Identifique a parcela de lacunas de voz e descubra vantagens competitivas.
 **Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
 **Rastrear o impacto do tráfego da IA** - Monitore o tráfego de agente (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade da GEO a um engajamento real.
 **Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO e comunicações.
