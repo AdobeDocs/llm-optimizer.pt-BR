@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Tráfego de referência
 
-O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. Os dados são obtidos dos logs CDN ou da [Telemetria Operacional do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ambas as fontes preservam a privacidade e não capturam dados pessoais do usuário. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. Os dados são obtidos dos logs CDN ou da [Telemetria Operacional do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ambas as fontes preservam a privacidade e não capturam dados pessoais do usuário. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
 ![Página de indicação](/help/dashboards/assets/referral-traffic.png)
 
