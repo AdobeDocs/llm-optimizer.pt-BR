@@ -1,9 +1,9 @@
 ---
 title: Presença da marca
 description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Presença da marca {#brand-presence}
 
-O painel Presença da marca fornece uma visão geral detalhada sobre como sua marca é percebida no nível de respostas geradas por IA. Ele mostra onde, com que frequência e em que contexto sua marca é mencionada. Você pode usar o painel para medir a visibilidade, rastrear citações, comparar concorrentes e explorar tendências de sentimentos. O painel é dividido em várias seções, cada uma fornecendo insights diferentes. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+O painel Presença da marca fornece uma visão geral detalhada sobre como sua marca é percebida no nível de respostas geradas por IA. Ele mostra onde, com que frequência e em que contexto sua marca é mencionada. Você pode usar o painel para medir a visibilidade, rastrear a citação e explorar as tendências do sentimento. O painel é dividido em várias seções, cada uma fornecendo insights diferentes. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
-![Presença na marca](/help/dashboards/assets/brand-main.png)
+![Presença na marca](/help/dashboards/assets/brand-main1.png)
 
 Esta página detalha o seguinte:
 
 * [Filtros](#filters)
 * [Métricas de visão geral](##key-metrics)
-* [Comparação com concorrentes](##competitor-comparison)
+* [Comparação de outros](##others-comparison)
 * [Tendência do sentimento](#sentiment-trend)
 * [Insights de dados](#data-insights)
 
@@ -56,13 +56,13 @@ Essa métrica representa o número de vezes que seu site foi referenciado como u
 
 Os indicadores de tendência para cada métrica principal mostram como esses valores estão mudando com o tempo em comparação ao período anterior.
 
-## Comparação com concorrentes {#competitor-comparison}
+## Comparação de outros {#others-comparison}
 
-Na seção de comparação de concorrentes, você pode selecionar até cinco concorrentes e comparar suas menções e citações em relação à sua marca. Dessa forma, você pode visualizar e avaliar seu desempenho em relação à concorrência.
+Na seção de comparação de outras marcas, é possível selecionar até cinco outras marcas e comparar suas menções e citações com a sua marca. Dessa forma, você pode visualizar e comparar seu desempenho em relação a outras marcas.
 
-![Comparação com Concorrentes](/help/dashboards/assets/competitor-comparison.png)
+![Outra Comparação](/help/dashboards/assets/competitor-comparison1.png)
 
-Os concorrentes são selecionados na lista suspensa e os gráficos são atualizados quando você clica em **Aplicar Filtros**. Os gráficos exibem menções semanais e citações semanais lado a lado. Você também pode passar o mouse ao longo do gráfico para ver a evolução dos dados ao longo do período semanal.
+As outras marcas são selecionadas na lista suspensa e os gráficos são atualizados quando você clica em **Aplicar Filtros**. Os gráficos exibem menções semanais e citações semanais lado a lado. Você também pode passar o mouse ao longo do gráfico para ver a evolução dos dados ao longo do período semanal.
 
 ## Análise de tendência de sentimento {#sentiment-trend}
 
@@ -74,7 +74,7 @@ Na seção Análise de tendência do sentimento, você pode acompanhar como sua 
 
 Ao arredondar o painel para cima, temos duas tabelas importantes: insights de dados e compartilhamento de voz. As informações apresentadas nessas tabelas ajudarão você a identificar onde sua marca é forte e onde a otimização é necessária.
 
-Usando a tabela **insights de dados**, você pode explorar tópicos e perguntas ao usuário para avaliar e otimizar o impacto do conteúdo. Os resultados são detalhados por tópicos e prompts. Enquanto isso, a tabela **share of voice** compara a voz da sua marca com a de outros concorrentes em vários tópicos, ajudando você a identificar lacunas e priorizar tópicos futuros.
+Usando a tabela **insights de dados**, você pode explorar tópicos e perguntas ao usuário para avaliar e otimizar o impacto do conteúdo. Os resultados são detalhados por tópicos e prompts. Enquanto isso, a tabela **compartilhamento de voz** compara a voz da sua marca a outras marcas em vários tópicos e ajuda você a identificar lacunas e priorizar tópicos futuros.
 
 ![Insights de Dados](/help/dashboards/assets/data-insights.png)
 
@@ -105,9 +105,9 @@ A tabela Compartilhamento de voz fornece uma visão comparativa de como sua marc
 * **Tópico** - O tópico analisado.
 * **Popularidade** - O volume de pesquisa do tópico relativo a todos os outros tópicos da análise.
 * **Menções** - Número de vezes que sua marca foi mencionada nas respostas da IA para o tópico ou a combinação de tópico/prompt.
-* **Classificação** - A classificação do Compartilhamento de Voz da sua marca, relativo a todos os concorrentes identificados.
+* **Classificação** - A classificação da Ação de Voz da sua marca, relativa a todas as outras marcas identificadas.
 * **Compartilhamento de voz** - A porcentagem do total de menções que sua marca retém nas respostas geradas por IA.
-* **Cinco principais concorrentes** - As cinco principais marcas mencionadas com mais frequência para os mesmos tópicos. Os concorrentes são organizados pela sua participação na voz (do mais alto ao mais baixo).
+* **Cinco principais** - As cinco principais marcas mencionadas com mais frequência para os mesmos tópicos. As marcas são organizadas por seu Share of Voice (do mais alto para o mais baixo).
 
 >[!ENDTABS]
 
@@ -119,5 +119,5 @@ Principais maneiras de usar a tabela:
 
 * Priorize tópicos de alta popularidade com baixa visibilidade - otimização de foco onde a demanda de público-alvo é forte, mas a presença da sua marca é fraca.
 * Rastrear as alterações do sentimento - detecte tópicos onde as menções são tendenciosas, negativas ou neutras, e coordene sua resposta.
-* Comparar citações versus citações próprias - identifique prompts nos quais sua marca é mencionada, mas o conteúdo do concorrente é citado, sinalizando uma lacuna de conteúdo.
+* Comparar citações versus citações próprias - identifique prompts nos quais sua marca é mencionada, mas o conteúdo de outra marca é citado, sinalizando uma lacuna de conteúdo.
 * Avaliar a faixa de posição - monitore se sua marca aparece antecipadamente nas respostas de IA (posições 1-3) ou mais abaixo (6-10).

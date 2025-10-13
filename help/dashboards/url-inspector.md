@@ -1,7 +1,7 @@
 ---
 title: Inspetor de URL
 description: Saiba como usar o Inspetor de URL para analisar o desempenho de páginas específicas do seu domínio em pesquisas de IA.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Os URLs de tendência que competem pela visualização de citações destacam UR
 As seguintes métricas são fornecidas:
 
 * **URL** - a URL analisada
-* **Tipo de Conteúdo** - O tipo de conteúdo (próprio, social, ganho, concorrente).
+* **Tipo de Conteúdo** - O tipo de conteúdo (próprio, social, ganho, outro).
 * **Citações** - O número de vezes que a URL foi citada em respostas geradas por IA.
 * **Solicitações citadas em** - O número de solicitações de IA exclusivas que citaram a URL.
 * **Categorias** - As categorias de produtos ou os tópicos associados à URL.

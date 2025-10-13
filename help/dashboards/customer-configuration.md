@@ -1,9 +1,9 @@
 ---
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como sua marca será monitorada e analisada na plataforma do otimizador LLM.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # Configuração do cliente {#customer-configuration}
 
-O Painel de configuração do cliente é uma ferramenta poderosa que fornece insights sobre a visibilidade da sua marca em LLMs. Ao configurar corretamente categorias, tópicos, prompts e concorrentes, você pode garantir que sua marca esteja bem posicionada para aparecer em respostas geradas pelo LLM. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
+O Painel de configuração do cliente é uma ferramenta poderosa que fornece insights sobre a visibilidade da sua marca em LLMs. Ao configurar corretamente categorias, tópicos, prompts, você pode garantir que sua marca esteja bem posicionada para aparecer em respostas geradas pelo LLM. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
 
 ![Painel de configuração do cliente](/help/dashboards/assets/customer-config.png)
 
 Para configurar como o LLM Optimizer monitora e analisa a presença da sua marca em diferentes mercados e cenários competitivos, você tem acesso às seguintes guias:
 
 * [Categorias](#categories)
-* [Rastreamento do concorrente](#competitor-tracking)
+* [Rastreamento de outros](#others-tracking)
 * [Aliases da marca](#brand-aliases)
 * [Insights de dados](#data-insights)
 * [Configuração de CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts e concorrentes, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts e concorrentes](/help/overview/best-practices-topics-prompts.md).
+> Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts](/help/overview/best-practices-topics-prompts.md).
 
 ## Categorias {#categories}
 
-Na guia Categorias, é possível definir categorias comerciais ou linhas de produtos que você deseja rastrear e associá-las a regiões específicas. Em geral, a guia Categorias está relacionada a quase todas as outras personalizações nesta página, pois as categorias aparecerão no campo de categoria para as outras personalizações (rastreamento de concorrente, aliases e assim por diante). Para adicionar uma nova categoria:
+Na guia Categorias, é possível definir categorias comerciais ou linhas de produtos que você deseja rastrear e associá-las a regiões específicas. Em geral, a guia Categorias está relacionada a quase todas as outras personalizações nesta página, pois as categorias aparecerão no campo de categoria para as outras personalizações (outros rastreamentos, aliases e assim por diante). Para adicionar uma nova categoria:
 
 1. Clique no botão **Adicionar**.
 2. Na nova janela de configuração, adicione o **Nome da Categoria**.
@@ -38,19 +38,19 @@ Na guia Categorias, é possível definir categorias comerciais ou linhas de prod
 
 A adição de novas categorias não gerará automaticamente tópicos e prompts; eles precisarão ser adicionados manualmente na guia [Data Insights](#data-insights).
 
-Para excluir uma categoria, clique no ícone excluir na lista de categorias. Cuidado, porque **a exclusão de uma categoria também excluirá os itens associados**, como concorrentes que você pode ter configurado ou aliases de marca vinculados a essa categoria específica.
+Para excluir uma categoria, clique no ícone excluir na lista de categorias. Cuidado, porque **a exclusão de uma categoria também excluirá os itens associados**, como aliases de marca, que estão vinculados a essa categoria específica.
 
-## Rastreamento do concorrente {#competitor-tracking}
+## Rastreamento de outros {#others-tracking}
 
-Ao usar o rastreamento de concorrentes, você pode acompanhar como seus concorrentes são mencionados em relação à sua marca em diferentes categorias e regiões. Monitore a presença e o desempenho nos segmentos de mercado. Para personalizar o rastreamento do concorrente:
+Ao usar essa guia, você pode acompanhar como os outros são mencionados em relação à sua marca em diferentes categorias e regiões. Monitore a presença e o desempenho nos segmentos de mercado. Para personalizar o rastreamento:
 
-1. Para adicionar um novo concorrente, clique no botão **Adicionar**.
+1. Clique no botão **Adicionar**.
 2. Na nova janela de configuração, selecione a **Categoria**. As categorias criadas anteriormente aparecerão aqui.
-3. Adicione o nome do concorrente.
-4. Personalize o Alias e os Domínios do concorrente, se necessário.
-5. Clique em **Salvar** e o novo concorrente aparecerá na lista de concorrentes.
+3. Adicione o nome do outro.
+4. Personalize os outros Alias e Domínios, se necessário.
+5. Clique em **Salvar**.
 
-Para excluir um concorrente, clique no ícone excluir da lista de concorrentes.
+Para excluir uma entrada na lista , clique no ícone delete.
 
 ## Aliases da marca {#brand-aliases}
 

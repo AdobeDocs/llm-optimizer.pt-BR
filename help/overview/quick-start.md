@@ -1,9 +1,9 @@
 ---
 title: Início rápido
 description: Introdução ao Adobe LLM Optimizer - integre sua marca, desbloqueie os insights de visibilidade da IA e explore painéis para aumentar o desempenho da pesquisa.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulte a seção abaixo para obter detalhes sobre como ativar a versão de ava
 
 ### Clientes da AEM Cloud
 
-Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Os prompts adicionados recentemente não aparecerão no [Painel de Presença da Marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído. Os clientes da AEM Cloud podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts requer um contrato de licença separado. O acesso é fornecido no &quot;estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu representante de conta para obter mais informações.
@@ -68,14 +68,14 @@ Nesse painel, é possível:
 * Insira **tópicos personalizados** ou subtópicos que você deseja rastrear. Tópicos podem ser temas específicos vinculados a palavras-chave sem marca de alto volume associadas ao seu domínio.
 * Crie **seus prompts** para monitorar a visibilidade em consultas específicas. Os prompts são consultas (com e sem marca) que fornecem uma visibilidade da linha de base. Somente um número limitado de prompts será gerado automaticamente com base nas categorias e tópicos fornecidos.
 * Defina a menção **aliases** para garantir que todas as menções de uma marca sejam capturadas e contabilizadas.
-* Defina **aliases de concorrentes** para rastrear os concorrentes com precisão.
+* Defina **outros aliases** para rastrear outras marcas com precisão.
 
 >[!NOTE]
 >Os prompts exatos que você solicita aos LLMs não estão disponíveis publicamente, pois não são divulgados pelos LLMs.
 
 >[!NOTE]
 >
-> Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts e concorrentes, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts e concorrentes](/help/overview/best-practices-topics-prompts.md).
+> Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts](/help/overview/best-practices-topics-prompts.md).
 
 ### Etapa 3: pré-preenchimento automático de insights
 
@@ -96,7 +96,7 @@ Como alternativa, se nenhum provedor de CDN tiver sido adicionado antecipadament
 
 Depois de fornecer informações sobre o Encaminhamento de Logs CDN, você poderá:
 
-* Exiba o painel [Presença da Marca](/help/dashboards/brand-presence.md), exiba sua pontuação de visibilidade e controle seu desempenho em relação aos seus concorrentes.
+* Exiba o painel [Presença da Marca](/help/dashboards/brand-presence.md) e exiba sua pontuação de visibilidade e controle seu desempenho em relação a outras marcas.
 * Explore os painéis de [Tráfego de Referência](/help/dashboards/agentic-traffic.md) e [Tráfego de Referência](/help/dashboards/referral-traffic.md) se o encaminhamento de log de CDN tiver sido configurado.
 * Use as [Oportunidades](/help/dashboards/opportunities.md) para identificar melhorias técnicas e de conteúdo.
 * Exporte dados e colabore com sua equipe ou convide seu colega de trabalho para usar o produto.
