@@ -1,9 +1,9 @@
 ---
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Tráfego de referência
 
-O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. Os dados são obtidos dos logs CDN ou da Telemetria Operacional do AEM. Ambas as fontes preservam a privacidade e não capturam dados pessoais do usuário.
+O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. Os dados são obtidos dos logs CDN ou da [Telemetria Operacional do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ambas as fontes preservam a privacidade e não capturam dados pessoais do usuário. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
-Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+![Página de indicação](/help/dashboards/assets/referral-traffic.png)
 
 Esta página detalha o seguinte:
 

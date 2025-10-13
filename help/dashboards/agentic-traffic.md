@@ -1,9 +1,9 @@
 ---
 title: Tráfego de agente
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Tráfego de agente {#agentic-traffic}
 
-O painel Tráfego do agente mostra como os agentes de IA (rastreadores e chatbots) interagem com o site. Com essa visualização é possível rastrear o número total de solicitações e as métricas gerais relacionadas ao desempenho. Você também pode visualizar a distribuição do tráfego entre mercados, categorias, páginas e agentes. Os dados usados por esse painel são provenientes dos logs CDN, portanto, você deve configurar o **encaminhamento de logs CDN** para exibir as métricas. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+O painel Tráfego do agente mostra como os agentes de IA (rastreadores e chatbots) interagem com o site. Ao usar essa visualização, você pode rastrear o número total de solicitações e as métricas gerais relacionadas ao desempenho. Você também pode visualizar a distribuição do tráfego entre mercados, categorias, páginas e agentes. Os dados usados por esse painel são provenientes dos logs CDN, portanto, você deve configurar o **encaminhamento de logs CDN** para exibir as métricas. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+
+![Distribuição de tráfego](/help/dashboards/assets/ag-main.png)
 
 Esta página detalha o seguinte:
 
@@ -34,8 +36,7 @@ Selecione **Ir para Configuração** e você navegará automaticamente para a gu
 
 Nesta guia, selecione **Onboard CDN**. E a janela do provedor CDN é exibida.
 
-![Provedor da CDN](/help/dashboards/assets/ag-log-forward3.png)
-
+<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
 Na janela **Onboard CDN Provider**:
 
 1. Selecione seu provedor de CDN (por exemplo, Akamai, Fastly gerenciado pela Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou Outro).
@@ -80,7 +81,7 @@ Use o gráfico de Tendências de Tráfego Agênico para rastrear os totais seman
 
 ## Movedores Superior e Inferior {#top-bottom-movers}
 
-A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. Os Top Movers mostram as páginas ganhando visibilidade ou engajamento, enquanto os Bottom Movers revelam URLs com os declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está com tendência para cima, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
+A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. Top Movers mostra páginas ganhando visibilidade ou engajamento, enquanto Bottom Movers revela URLs com os declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está com tendência para cima, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
 
 ![Movimentadores Superior e Inferior](/help/dashboards/assets/movers.png)
 
@@ -99,8 +100,6 @@ A tabela Análise do agente do usuário fornece um detalhamento do tráfego por 
 * **Tipo de página** - O tipo de página.
 * **Tipo de Agente** - O agente de IA que está rastreando a página, seja um rastreador ou um chatbot.
 * **Ocorrências** - O número total de solicitações feitas pelos agentes de IA para esse tipo de página específico.
-
-Você também pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar a análise do agente com sua equipe ou incluí-la nos relatórios executivos.
 
 >[!TAB Análise de Desempenho de URL]
 
@@ -122,4 +121,4 @@ A visualização Detalhes do URL fornece uma compreensão holística do desempen
 
 >[!ENDTABS]
 
-Para ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela em relatórios executivos.
+Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela em relatórios executivos.

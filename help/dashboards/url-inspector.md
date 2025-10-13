@@ -1,9 +1,9 @@
 ---
 title: Inspetor de URL
 description: Saiba como usar o Inspetor de URL para analisar o desempenho de páginas específicas do seu domínio em pesquisas de IA.
-source-git-commit: 6d845628264885fd40fc6e14dff89b8aa80f9ca5
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,13 @@ Os indicadores de tendência para cada métrica de visão geral mostram como ess
 
 ## Seus URLs citados
 
-A visualização do URL citado lista todos os URLs da sua marca que foram citados em respostas geradas por IA, com métricas de suporte. A tabela de dados também tem um campo de pesquisa para acesso rápido a URLs específicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos. As seguintes métricas são fornecidas:
+A visualização de URLs citados lista todos os URLs da sua marca que foram citados em respostas geradas por IA, com métricas de suporte. A tabela de dados também tem um campo de pesquisa para acesso rápido a URLs específicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
 
-* **URL** - a URL analisada
+![URLs citadas](/help/dashboards/assets/cited-urls.png)
+
+As seguintes métricas são fornecidas:
+
+* **URL** - a URL analisada.
 * **Citações** - O número de vezes que a URL foi citada em respostas geradas por IA.
 * **Solicitações citadas em** - O número de solicitações de IA exclusivas que citaram a URL.
 * **Categorias** - As categorias de produtos ou os tópicos associados à URL.
@@ -54,7 +58,7 @@ A visualização do URL citado lista todos os URLs da sua marca que foram citado
 
 ## URLs de tendência que competem por citações
 
-Os URLs de tendência que competem por visualizações de citações destacam URLs externos que são atualmente citados em respostas relevantes para sua marca, medindo quem está ganhando citações em seu espaço. A tabela de dados tem um campo de pesquisa para acesso rápido a URLs específicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
+Os URLs de tendência que competem pela visualização de citações destacam URLs externos que são atualmente citados em respostas relevantes para sua marca, medindo quem está ganhando citações em seu espaço. A tabela de dados tem um campo de pesquisa para acesso rápido a URLs específicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
 
 ![URLs de tendência competindo por Citações](/help/dashboards/assets/trend-url.png)
 
@@ -69,6 +73,6 @@ As seguintes métricas são fornecidas:
 
 ### Janela de detalhes
 
-Para as exibições citada e de tendências, os URLs têm um botão **Detalhes** quando você passa o mouse sobre um URL específico. Clicar no botão exibirá uma janela separada com mais detalhes. A janela de detalhes mostra a frequência com que o URL é citado, o sentimento das respostas da IA onde é mencionado, os tópicos e prompts em que ele aparece e as tendências no tráfego de referência e agêntica ao longo do tempo (para URLs próprios).
+Para as exibições citada e de tendências, os URLs têm um botão **Detalhes** quando você passa o mouse sobre um URL específico. Clicar no botão exibirá uma janela separada com detalhes adicionais. A janela de detalhes mostra a frequência com que o URL é citado, o sentimento das respostas da IA onde é mencionado, os tópicos e prompts em que ele aparece e as tendências no tráfego de referência e agêntica ao longo do tempo (para URLs próprios).
 
 ![Janela de detalhes](/help/dashboards/assets/details-url.png)
