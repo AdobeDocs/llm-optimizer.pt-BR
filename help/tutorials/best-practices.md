@@ -1,7 +1,8 @@
 ---
 title: Práticas recomendadas do LLM Optimizer
 description: Descubra as práticas recomendadas para a otimização de LLM para aumentar a visibilidade da marca na pesquisa de IA. Insights para avaliação de desempenho e otimização de conteúdo.
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Best Practices, Agentic Traffic, Brand Presence
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 0%
