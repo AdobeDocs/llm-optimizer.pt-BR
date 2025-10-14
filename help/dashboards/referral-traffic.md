@@ -1,9 +1,9 @@
 ---
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Tráfego de referência
 
-O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. Os dados são obtidos dos logs CDN ou da [Telemetria Operacional do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service). Ambas as fontes preservam a privacidade e não capturam dados pessoais do usuário. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
 ![Página de indicação](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ Esta página detalha o seguinte:
 
 ## Configurar {#setup}
 
-No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir seus dados, você deve configurar um provedor de tráfego de referência, selecionando **Ir para Configuração**.
+No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir seus dados, você deve configurar o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration), selecionando **Ir para a Configuração**.
 
 ![Configuração de Referência](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Par
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Depois que um provedor de tráfego de referência for selecionado, o painel será preenchido com métricas de tráfego de referência.
+Uma vez ativado, o painel será preenchido com métricas de tráfego de referência.
 
 ## Filtros {#filters}
 

@@ -1,9 +1,9 @@
 ---
 title: Início rápido
 description: Introdução ao Adobe LLM Optimizer - integre sua marca, desbloqueie os insights de visibilidade da IA e explore painéis para aumentar o desempenho da pesquisa.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulte a seção abaixo para obter detalhes sobre como ativar a versão de ava
 
 ### Clientes da AEM Cloud
 
-Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Os prompts adicionados recentemente não aparecerão no [Painel de Presença da Marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído. Os clientes da AEM Cloud podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts requer um contrato de licença separado. O acesso é fornecido no &quot;estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu representante de conta para obter mais informações.
@@ -83,11 +83,11 @@ Depois que o domínio for integrado e você tiver fornecido categorias e tópico
 
 ### Etapa 4: fornecer informações para encaminhamento de log CDN {#step-4}
 
-Para desbloquear os insights de Tráfego de agente e Tráfego de referência, é necessário fornecer informações para o encaminhamento de log CDN. Ele pode ser adicionado a partir do [painel de configuração do cliente](/help/dashboards/customer-configuration.md) navegando até a guia **Configuração de CDN** e clicando em **CDN integrada**.
+Para desbloquear os insights de Tráfego de agente e Tráfego de referência, é necessário fornecer informações para o encaminhamento de log CDN. Ele pode ser adicionado a partir do [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration) navegando até a guia **Configuração de CDN** e clicando em **CDN integrada**.
 
 ![CDN de Configuração de Cliente](/help/overview/assets/cc-cdn.png)
 
-Como alternativa, se nenhum provedor de CDN tiver sido adicionado antecipadamente como no exemplo acima, você será solicitado a adicionar o encaminhamento de log de CDN ao acessar os painéis de Controle de Tráfego de Referência e de Agente pela primeira vez. Para obter mais detalhes, consulte:
+Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente (conforme descrito acima), você será solicitado a adicionar o encaminhamento de log de CDN ao acessar os painéis de Controle de tráfego de Referência e de Agente pela primeira vez. Para obter mais detalhes, consulte:
 
 * [Tráfego de agente](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Tráfego de referência](/help/dashboards/referral-traffic.md#setup#setup)

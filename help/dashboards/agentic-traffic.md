@@ -1,7 +1,7 @@
 ---
 title: Tráfego de agente
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Na janela **Onboard CDN Provider**:
 1. Selecione seu provedor de CDN (por exemplo, Akamai, Fastly gerenciado pela Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou Outro).
 2. Clique em **Integrar** para habilitar o encaminhamento de log.
 
-Se você selecionar **Outros**, precisará entrar em contato com a Adobe para obter assistência.
+Se você selecionar **Outros**, precisará entrar em contato com llmo-now@adobe.com para obter assistência.
 
 Depois de ativados, os registros são assimilados e o painel é preenchido com métricas como total de interações do agente, taxa de sucesso, ocorrências por mercado, análise do agente do usuário e desempenho em nível de URL.
 
