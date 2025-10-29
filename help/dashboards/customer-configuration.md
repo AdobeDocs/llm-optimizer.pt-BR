@@ -2,10 +2,10 @@
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como sua marca será monitorada e analisada na plataforma do otimizador LLM.
 feature: Customer Configuration
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,7 @@ Na lista, você pode clicar em cada tópico e os prompts associados serão exibi
 
 ## Configuração de CDN {#cdn-configuration}
 
-Nessa guia, é possível configurar os fluxos de CDN para permitir que o Adobe LLM Optimizer analise os dados de CDN. Esses dados serão usados para alimentar painéis (como Tráfego de referência e de agente), fornecendo insights sobre padrões de tráfego, métricas de desempenho e oportunidades de otimização. Para integrar seu provedor de CDN, clique em **Integrar CDN**.
+Nessa guia, é possível configurar os fluxos de CDN para permitir que o Adobe LLM Optimizer analise os dados de CDN. Esses dados serão usados para alimentar painéis (como Tráfego de agente), fornecendo insights sobre padrões de tráfego, métricas de desempenho e oportunidades de otimização. Para integrar seu provedor de CDN, clique em **Integrar CDN**.
 
 ![CDN de Configuração de Cliente](/help/overview/assets/cc-cdn.png)
 

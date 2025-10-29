@@ -2,9 +2,9 @@
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,13 @@ Após selecionar o filtro desejado, clique em **Aplicar Filtros** para aplicar a
 O painel destaca o desempenho geral da indicação ao exibir as métricas principais, incluindo:
 
 * **Tráfego de Referência Total** - O tráfego de referência total de todas as fontes.
+* **Tráfego de Referência de LLM** - O tráfego de referência total de LLM.
 * **Taxa de consentimento** - A porcentagem de visitantes que aceitam um prompt de consentimento.
 * **Taxa de rejeição** - A porcentagem de sessões de fontes de referência que não tiveram evento de envolvimento.
 
 ![Página de indicação](/help/dashboards/assets/referral-traffic.png)
 
-Além das métricas de desempenho gerais apresentadas acima, o painel **Regiões principais** detalha o tráfego por região. Enquanto isso, o painel **Principais Fontes de Referência** mostra as plataformas que estão promovendo mais visitas. Os indicadores de tendência das métricas mostram como esses valores estão mudando com o tempo em comparação ao período anterior.
+Além das métricas de desempenho gerais apresentadas acima, há três painéis adicionais que mostram a distribuição do tráfego em diferentes mercados, fontes de referência e categorias de intenção de página <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ A visualização Análise de desempenho de URL classifica as páginas com melhor
 
 >[!ENDTABS]
 
-Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela de tráfego de referência em relatórios executivos.
+Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir as tabelas em relatórios executivos. Além disso, para ambas as tabelas, você pode personalizar quais métricas são exibidas clicando no botão **Configurar Colunas**.

@@ -2,9 +2,9 @@
 title: Tráfego de agente
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
 feature: Agentic Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Na parte superior da página, há três métricas principais que você precisa s
 
 * **Interações de agente** - Esta métrica representa o número total de solicitações feitas pelos agentes de IA ao seu site. Isso inclui todo o tráfego de mecanismos de pesquisa, chatbots e outro tráfego não humano.
 * **Taxa de sucesso** - Essa métrica representa a porcentagem de solicitações HTTP bem-sucedidas, incluindo respostas e redirecionamentos diretos bem-sucedidos.
-* **Média de TTFB** - Tempo até o Primeiro Byte (TTFB) mede o tempo necessário para o primeiro byte de dados ser recebido do servidor. Valores mais baixos indicam tempos de resposta mais rápidos do servidor.
+* **Média de TTFB** - Tempo até o Primeiro Byte (TTFB) mede o tempo necessário para o primeiro byte de dados ser recebido do servidor. O valor médio é ponderado com base no número de solicitações que retornam cada código e exclui solicitações que resultaram em respostas 5xx. Valores mais baixos indicam tempos de resposta mais rápidos do servidor.
 
 Os indicadores de tendência para cada métrica principal mostram como esses valores estão mudando com o tempo em comparação ao período anterior.
 
@@ -82,7 +82,7 @@ Use o gráfico de Tendências de Tráfego Agênico para rastrear os totais seman
 
 ## Movedores Superior e Inferior {#top-bottom-movers}
 
-A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. Top Movers mostra páginas ganhando visibilidade ou engajamento, enquanto Bottom Movers revela URLs com os declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está com tendência para cima, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
+A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. **Top Movers** mostra páginas ganhando visibilidade ou engajamento, enquanto **Bottom Movers** revela as URLs com declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está com tendência para cima, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
 
 ![Movimentadores Superior e Inferior](/help/dashboards/assets/movers.png)
 
@@ -102,6 +102,8 @@ A tabela Análise do agente do usuário fornece um detalhamento do tráfego por 
 * **Tipo de Agente** - O agente de IA que está rastreando a página, seja um rastreador ou um chatbot.
 * **Ocorrências** - O número total de solicitações feitas pelos agentes de IA para esse tipo de página específico.
 
+Você pode personalizar quais métricas serão exibidas clicando no botão **Configurar Colunas**.
+
 >[!TAB Análise de Desempenho de URL]
 
 A tabela Análise de desempenho de URL mostra uma exibição detalhada de URLs individuais. Isso inclui ocorrências, agentes exclusivos, agente principal, taxas de sucesso e categorias. Dessa forma, você pode identificar páginas de alto valor, detectar lacunas de rastreamento e otimizar o conteúdo para mecanismos de IA. Os URLs são classificados por volume de tráfego. A tabela contém as seguintes categorias:
@@ -113,13 +115,15 @@ A tabela Análise de desempenho de URL mostra uma exibição detalhada de URLs i
 * **Tipo de Agente Principal** - O tipo de agente de IA que gerou mais tráfego para esta URL.
 * **Taxa de Êxito** - A porcentagem de solicitações HTTP bem-sucedidas, incluindo respostas e redirecionamentos diretos bem-sucedidos.
 * **Categoria** - A categoria que melhor corresponde ao conteúdo da sua página.
+* **Média de TTFB (ms)** - Tempo até o Primeiro Byte (TTFB) mede o tempo necessário para o primeiro byte de dados ser recebido do servidor (em milissegundos). O valor médio é ponderado com base no número de solicitações que retornam cada código e exclui solicitações que resultaram em respostas 5xx. Valores mais baixos indicam tempos de resposta mais rápidos do servidor.
+* **Códigos de resposta** - os códigos de status HTTP observados para a URL.
 
-A tabela de desempenho de URL tem um campo de pesquisa para acesso rápido a URLs. Você também pode exibir detalhes adicionais para cada URL clicando no ícone de informações no final de cada linha.
+A tabela de desempenho de URL tem um campo de pesquisa para acesso rápido a URLs e você pode personalizar quais métricas serão exibidas clicando no botão **Configurar Colunas**. Você também pode exibir detalhes adicionais de cada URL clicando no ícone **Detalhes** no final de cada linha.
 
 ![Detalhes da URL](/help/dashboards/assets/details.png)
 
-A visualização Detalhes do URL fornece uma compreensão integral do desempenho de uma página, mostrando a frequência com que ela é citada, o sentimento das respostas da IA onde é mencionada, os tópicos e prompts em que ela aparece, e as tendências no tráfego de referência e agêntica ao longo do tempo.
+A visualização Detalhes do URL fornece uma compreensão holística do desempenho de uma página, mostrando a frequência com que ela é citada, o sentimento das respostas da IA onde é mencionada, os tópicos e prompts em que ela aparece, e as tendências no tráfego de referência e agêntica ao longo do tempo.
 
 >[!ENDTABS]
 
-Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela em relatórios executivos.
+Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir as tabelas em relatórios executivos.

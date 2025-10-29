@@ -2,9 +2,9 @@
 title: Inspetor de URL
 description: Saiba como usar o Inspetor de URL para analisar o desempenho de páginas específicas do seu domínio em pesquisas de IA.
 feature: URL Inspector
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ O Inspetor de URL fornece várias métricas de visão geral para que você possa
 * **Total de prompts exclusivos** - O número total de prompts exclusivos de IA.
 * **URLs citadas únicas** - O número de URLs de propriedade exclusiva que foram citadas.
 * **Total de citações** - Total de vezes que uma URL própria foi citada em respostas geradas por IA.
-<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
-* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
+* **Total de ocorrências de agente** - O número total de ocorrências de agentes de IA em suas URLs.
+* **Consulta de ocorrências de LLMs** - O número total de ocorrências direcionadas de respostas geradas por IA para suas URLs.
 
 Os indicadores de tendência para cada métrica de visão geral mostram como esses valores estão mudando com o tempo em comparação com o período anterior.
 
 ## Seus URLs citados
 
-A visualização de URLs citados lista todos os URLs da sua marca que foram citados em respostas geradas por IA, com métricas de suporte. A tabela de dados também tem um campo de pesquisa para acesso rápido a URLs específicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
+A visualização de URLs citados lista todos os URLs da sua marca que foram citados em respostas geradas por IA, com métricas de suporte. Ambas as tabelas têm um campo de pesquisa para acesso rápido a tópicos e você pode personalizar quais métricas são exibidas clicando no botão **Configurar Colunas**. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
 
 ![URLs citadas](/help/dashboards/assets/cited-urls.png)
 
@@ -74,6 +74,6 @@ As seguintes métricas são fornecidas:
 
 ### Janela de detalhes
 
-Para as exibições citada e de tendências, os URLs têm um botão **Detalhes** quando você passa o mouse sobre um URL específico. Clicar no botão exibirá uma janela separada com detalhes adicionais. A janela de detalhes mostra a frequência com que o URL é citado, o sentimento das respostas da IA onde é mencionado, os tópicos e prompts em que ele aparece e as tendências no tráfego de referência e agêntica ao longo do tempo (para URLs próprios).
+Para as exibições citada e de tendência, as URLs têm um botão **Detalhes** no final de cada linha. Clicar no botão exibirá uma janela separada com detalhes adicionais. A janela de detalhes mostra a frequência com que a URL é citada, <!--the sentiment of AI responses where it is mentioned,--> os tópicos e prompts em que ela aparece e as tendências no tráfego de referência e agêntica ao longo do tempo (para URLs próprias).
 
 ![Janela de detalhes](/help/dashboards/assets/details-url.png)

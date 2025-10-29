@@ -2,9 +2,9 @@
 title: Presença da marca
 description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
 feature: Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Na parte superior da página, é possível aplicar filtros para refinar a visual
 
 * **Intervalo de datas** - Selecione o intervalo de tempo para os dados exibidos. Por exemplo, as últimas 4 semanas. Você também pode personalizar o período de tempo selecionando a opção **Semanas personalizadas**.
 * **Categoria** - Filtre os resultados exibidos por categorias predefinidas ou personalizadas.
+* **Tópico** - Filtre por tópico para analisar temas de conteúdo e áreas de assunto em que sua marca aparece nas respostas da IA.
 * **Plataforma** - Escolha qual mecanismo de IA analisar.
 * **Origem dos Prompts** - Escolha a origem dos prompts. A origem pode ser inserida pelo usuário ou gerada pela IA.
 * **Marcas do Prompt** - Filtre os resultados com ou sem marcas.
@@ -47,9 +48,9 @@ O painel destaca três métricas muito importantes na parte superior da página:
 
 A pontuação de visibilidade é composta por fatores como: menções, citações, sentimento e classificação. Cada fator tem um certo &quot;peso&quot; associado a ele que aumenta na pontuação final.
 
-### Menções {#mentions}
+### Menções da marca {#mentions}
 
-Essa métrica representa o número total de vezes que sua marca ou categorias foram mencionadas nos prompts de IA de amostra. Por exemplo, você tem a marca &quot;Coffe B&quot;, com as categorias &quot;Máquinas&quot; e &quot;Acessórios&quot;, e essa métrica conta o número total de vezes que elas aparecem nas respostas de IA de amostra.
+Essa métrica representa o número total de vezes que sua marca ou categorias foram mencionadas nos prompts de IA de amostra. Por exemplo, se você tiver a marca &quot;Coffe B&quot;, com as categorias &quot;Máquinas&quot; e &quot;Acessórios&quot;, essa métrica conta o número total de vezes que elas aparecem nas respostas de IA de amostra.
 
 ### Citações {#citations}
 
@@ -63,11 +64,11 @@ Na seção de comparação de outras marcas, é possível selecionar até cinco 
 
 ![Outra Comparação](/help/dashboards/assets/other-comparison.png)
 
-As outras marcas são selecionadas na lista suspensa e os gráficos são atualizados quando você clica em **Aplicar Filtros**. Os gráficos exibem menções semanais e citações semanais lado a lado. Você também pode passar o mouse ao longo do gráfico para ver a evolução dos dados ao longo do período semanal.
+As outras marcas são selecionadas na lista suspensa e os gráficos são atualizados quando você clica em **Aplicar Filtros**. Os gráficos exibem menções de marca semanais e citações de marca semanais lado a lado. Você também pode passar o mouse ao longo do gráfico para ver a evolução dos dados ao longo do período semanal.
 
 ## Análise de tendência de sentimento {#sentiment-trend}
 
-Na seção Análise de tendência do sentimento, você pode acompanhar como sua marca é percebida nas respostas da IA de amostra. A métrica de tendência do sentimento pode ser positiva, neutra ou negativa. Por exemplo, pode ser positivo se as respostas destacarem a qualidade do produto ou negativo se mencionarem um serviço ruim. O gráfico de tendências mostra as mudanças na percepção da marca semana a semana. A seção é preenchida somente depois que sua marca é mencionada.
+Na seção Análise de tendência do sentimento, você pode acompanhar como sua marca é percebida nas respostas da IA de amostra. A métrica de tendência do sentimento pode ser positiva, neutra ou negativa. Por exemplo, pode ser positivo se as respostas destacarem a qualidade do produto ou negativo se mencionarem um serviço ruim. O gráfico de tendências mostra as mudanças na percepção da marca semana a semana. Esta seção é preenchida somente depois que sua marca é mencionada.
 
 ![Tendência de sentimento](/help/dashboards/assets/sentiment-trend.png)
 
@@ -79,7 +80,7 @@ Usando a tabela **insights de dados**, você pode explorar tópicos e perguntas 
 
 ![Insights de Dados](/help/dashboards/assets/data-insights.png)
 
-Ambas as tabelas têm um campo de pesquisa para acesso rápido aos tópicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
+Ambas as tabelas têm um campo de pesquisa para acesso rápido a tópicos e você pode personalizar quais métricas são exibidas clicando no botão **Configurar Colunas**. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir as tabelas em relatórios executivos.
 
 Clique nas guias abaixo para obter detalhes sobre cada tabela e as métricas associadas.
 
@@ -98,6 +99,9 @@ A tabela de insights de dados ajuda a explorar tópicos e prompts do usuário pa
 * **Posição** - A proeminência relativa da sua marca em respostas de IA, calculada como uma média em todas as semanas.
 * **Todas as citações** - O número de fontes exclusivas citadas nas respostas da IA para este tópico ou esta combinação de tópico/prompt (inclui citações próprias).
 * **Citações próprias** - O número de vezes que sua marca foi citada em respostas de IA para esta palavra-chave ou esta combinação de palavra-chave/pergunta.
+  <!--* **Executions**-->
+
+Você também pode exibir detalhes adicionais para cada tópico clicando no ícone **Detalhes** no final de cada linha.
 
 >[!TAB Compartilhamento de Voz]
 
@@ -119,6 +123,6 @@ A Tabela de insights de dados ajuda você a mover de métricas para ações, det
 Principais maneiras de usar a tabela:
 
 * Priorize tópicos de alta popularidade com baixa visibilidade - otimização de foco onde a demanda de público-alvo é forte, mas a presença da sua marca é fraca.
-* Rastrear as alterações do sentimento - detecte tópicos onde as menções são tendenciosas, negativas ou neutras, e coordene sua resposta.
+* Rastrear as alterações do sentimento - detecte tópicos onde as menções estão em tendência negativa ou neutra e coordene sua resposta.
 * Comparar citações versus citações próprias - identifique prompts nos quais sua marca é mencionada, mas o conteúdo de outra marca é citado, sinalizando uma lacuna de conteúdo.
 * Avaliar a faixa de posição - monitore se sua marca aparece antecipadamente nas respostas de IA (posições 1-3) ou mais abaixo (6-10).
