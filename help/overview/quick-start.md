@@ -2,9 +2,9 @@
 title: Início rápido
 description: Introdução ao Adobe LLM Optimizer - integre sua marca, desbloqueie os insights de visibilidade da IA e explore painéis para aumentar o desempenho da pesquisa.
 feature: Quickstart, Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Consulte a seção abaixo para obter detalhes sobre como ativar a versão de ava
 
 ### Clientes da AEM Cloud
 
-Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
 >Os prompts adicionados recentemente não aparecerão no [Painel de Presença da Marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído. Os clientes da AEM Cloud podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts requer um contrato de licença separado. O acesso é fornecido no &quot;estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu representante de conta para obter mais informações.
@@ -47,7 +47,7 @@ Depois de clicar no botão **Tentar LLM Optimizer**, você será redirecionado p
 >[!NOTE]
 >O domínio fornecido será usado por todos da organização e não poderá ser alterado.
 
-Para acionar a Análise de presença da marca, será necessário fornecer categorias, tópicos e prompts.
+Um pequeno conjunto de categorias, tópicos e prompts será gerado durante a fase de integração. A Análise de presença da marca nesses prompts estará disponível logo após a integração do seu site.
 
 ![Análise de presença de marca](/help/overview/assets/bp-analysis.png)
 
@@ -59,7 +59,7 @@ Depois que o contrato comercial for finalizado, você será integrado ao domíni
 
 ### Etapa 2: Personalizar categorias, tópicos e prompts
 
-Para acionar a análise de Presença da marca e preencher o painel com insights sobre a visibilidade da marca, é necessário personalizar Categorias, Tópicos e Avisos. Esta configuração foi criada no [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
+Depois que o site for integrado, você poderá exibir a Análise de presença da marca com base no pequeno conjunto de prompts que foram gerados automaticamente durante a fase de integração. Agora é possível personalizar as categorias, os tópicos e os prompts da sua marca. Esta configuração foi criada no [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
 
 ![Painel de configuração do cliente](/help/overview/assets/prompt-creation.png)
 
@@ -78,9 +78,9 @@ Nesse painel, é possível:
 >
 > Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Etapa 3: pré-preenchimento automático de insights
+### Etapa 3: insights de presença da marca
 
-Depois que o domínio for integrado e você tiver fornecido categorias e tópicos, a LLM Optimizer acionará automaticamente a análise de Presença da marca.
+Após a integração do seu domínio, você verá os insights iniciais na visualização de Presença da marca com base nos prompts que foram gerados automaticamente durante a integração. Depois de personalizar suas próprias categorias, tópicos e prompts, o LLM Optimizer acionará automaticamente a análise de Presença da Marca nos prompts fornecidos, e os resultados estarão disponíveis em 24 horas.
 
 ### Etapa 4: fornecer informações para encaminhamento de log CDN {#step-4}
 
