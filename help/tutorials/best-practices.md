@@ -2,9 +2,9 @@
 title: Práticas recomendadas do LLM Optimizer
 description: Descubra as práticas recomendadas para a otimização de LLM para aumentar a visibilidade da marca na pesquisa de IA. Insights para avaliação de desempenho e otimização de conteúdo.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ A otimização no local melhora o conteúdo próprio para obter visibilidade sob
 
 >[!TIP]
 >
->A LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md) para você. Essas oportunidades são específicas para o seu site. Geralmente, ela pode implantar otimizações diretamente no site.
+>A LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md) para você. Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente em seu site usando o LLM Optimizer.
 
 Estas são algumas das práticas recomendadas de otimização:
 
@@ -118,7 +118,7 @@ A otimização externa se concentra em melhorar a visibilidade da sua marca em r
 
 >[!TIP]
 >
->A LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md) para você. Essas oportunidades são específicas para o seu site. Geralmente, ela pode implantar otimizações diretamente no site.
+>A LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md) para você. Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente em seu site usando o LLM Optimizer.
 
 
 Principais canais externos:
