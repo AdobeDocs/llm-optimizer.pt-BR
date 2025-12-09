@@ -2,9 +2,9 @@
 title: Presença da marca
 description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
 feature: Brand Presence
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Na parte superior da página, é possível aplicar filtros para refinar a visual
 * **Intervalo de datas** - Selecione o intervalo de tempo para os dados exibidos. Por exemplo, as últimas 4 semanas. Você também pode personalizar o período de tempo selecionando a opção **Semanas personalizadas**.
 * **Categoria** - Filtre os resultados exibidos por categorias predefinidas ou personalizadas.
 * **Tópico** - Filtre por tópico para analisar temas de conteúdo e áreas de assunto em que sua marca aparece nas respostas da IA.
-* **Plataforma** - Escolha qual mecanismo de IA analisar.
+* **Plataforma** - Escolha qual mecanismo de IA analisar. Atualmente, o LLM Optimizer é compatível com ChatGPT, Visões gerais da IA do Google, Modo de IA do Google, Copiloto do Microsoft, Google Gemini e Perplexity.
 * **Origem dos Prompts** - Escolha a origem dos prompts. A origem pode ser inserida pelo usuário ou gerada pela IA.
 * **Marcas do Prompt** - Filtre os resultados com ou sem marcas.
 * **Região** - Filtrar os resultados por região. Nem todas as regiões estarão disponíveis no lançamento.
