@@ -457,7 +457,7 @@ Essa oportunidade sinaliza páginas em que o conteúdo principal está oculto pa
 
 #### Ferramentas adicionais
 
-Sua página da Web é citável? A [Adobe LLM Optimizer: sua página da Web é citável?A extensão do Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) permite ver exatamente quanto do conteúdo da sua página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não requer licença ou configuração do produto.
+Sua página da Web é citável? A [Adobe LLM Optimizer: sua página da Web é citável?A extensão do Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) permite ver exatamente quanto do conteúdo da sua página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não requer licença ou configuração do produto.
 
 Com um único clique, você pode avaliar a legibilidade automática de qualquer site, visualizar uma comparação lado a lado do que os agentes de IA veem com o que os usuários humanos veem e estimar quanto conteúdo pode ser recuperado usando o LLM Optimizer. Consulte [A IA pode ler o seu site?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) para obter mais informações.
 
