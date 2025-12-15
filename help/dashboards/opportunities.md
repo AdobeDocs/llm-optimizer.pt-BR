@@ -2,9 +2,9 @@
 title: Oportunidades de otimização
 description: Saiba como usar o painel de oportunidades para detectar automaticamente como seu site pode ser aprimorado para aumentar a visibilidade da marca.
 feature: Opportunities
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 | Detectar tráfego de agente bloqueado | GEO técnico | Analisa logs de CDN para solicitações bloqueadas de agentes de IA conhecidos (por exemplo, GPTBot, PerplexityBot). Os relatórios afetavam URLs e agentes. | Atualize o robots.txt ou as configurações do servidor para permitir o acesso a rastreadores de IA compatíveis, quando apropriado. |
 | Detectar problemas 404s / 403s / 5xx | GEO técnico | Monitora logs de CDN para obter respostas de erro. Frequência de relatórios, URLs afetados e perda estimada de ocorrências. | Corrigir links corrompidos, atualizar permissões e resolver problemas do lado do servidor para que o conteúdo principal retorne 200 respostas. |
 | Recuperar visibilidade do conteúdo (acesso antecipado) | GEO técnico | Sinaliza páginas em que o conteúdo crítico está oculto dos agentes de IA. Mostra as URLs afetadas e o conteúdo esperado que pode ser recuperado. | Pré-renderizar as páginas para que mais conteúdo esteja disponível para os agentes de IA sem execução do JavaScript. |
+
+## Otimização automática {#auto-optimization}
+
+A otimização automática permite a implantação de otimizações recomendadas com um só clique, reduzindo o esforço manual e o tempo de implantação. As otimizações podem ser aplicadas na fonte de conteúdo ou na borda do CDN. A otimização automática baseada em Edge está disponível atualmente no Acesso antecipado para oportunidades selecionadas. Para obter mais detalhes, consulte a página [Otimizar na Edge](/help/dashboards/optimize-at-edge.md).
 
 ### Recuperar oportunidade de visibilidade de conteúdo {#recover-contet}
 
