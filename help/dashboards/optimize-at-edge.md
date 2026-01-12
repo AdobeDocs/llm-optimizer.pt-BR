@@ -2,9 +2,9 @@
 title: Otimizar na Edge
 description: Saiba como fornecer otimizações no LLM Optimizer na borda da CDN sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
+source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -15,20 +15,20 @@ ht-degree: 1%
 Esta página fornece uma visão geral detalhada sobre como fornecer otimizações na borda da CDN sem alterações de criação. Ele aborda o processo de integração, as oportunidades de otimização disponíveis e como otimizar automaticamente na borda.
 
 >[!NOTE]
->Essa funcionalidade está atualmente em Acesso antecipado. Você pode saber mais sobre os programas de Acesso Antecipado [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Essa funcionalidade está atualmente em Acesso antecipado. Você pode saber mais sobre os programas de Acesso Antecipado [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## O que é otimizar na Edge?
 
 Otimizar na Edge é um recurso de implantação baseado em borda no LLM Optimizer que fornece alterações amigáveis para IA a agentes de usuário do LLM. No contexto atual, &quot;Edge&quot; significa que a otimização é aplicada na camada CDN. Como ela fornece otimizações na camada CDN, nenhuma alteração de criação no Sistema de gerenciamento de conteúdo (CMS) é necessária, portanto, o CMS de origem permanece inalterado. Essa separação permite melhorar a visibilidade do LLM sem alterar os workflows de publicação existentes. Ele é direcionado somente ao tráfego direto e não afeta usuários humanos nem bots de SEO. Quando o LLM Optimizer detecta oportunidades para otimizar uma página, os usuários podem implantar correções diretamente na borda do CDN.
 
-Otimizar na Edge é uma alternativa mais rápida e mais enxuta às correções tradicionais que exigem esforços complexos de engenharia. Como mencionado, após concluir uma configuração única, nenhuma alteração na plataforma ou ciclos de desenvolvimento longos são necessários para aplicar as alterações. Você pode publicar melhorias em minutos, sem exigir o envolvimento do desenvolvedor. É uma maneira não codificada de otimizar seu site para agentes de IA.
+Otimizar na Edge é uma alternativa mais rápida e mais enxuta às correções tradicionais que exigem esforços complexos de engenharia. Como mencionado, após concluir uma configuração única, nenhuma alteração na plataforma ou ciclos de desenvolvimento longos são necessários para aplicar as alterações. Você pode publicar melhorias em minutos sem exigir o envolvimento do desenvolvedor. É uma maneira não codificada de otimizar seu site para agentes de IA.
 
 Otimizar no Edge foi projetado para usuários empresariais em equipes de marketing, SEO, conteúdo e estratégia digital. Ele permite que os usuários empresariais concluam a jornada completa no LLM Optimizer: identificando oportunidades, entendendo sugestões e implantando facilmente as correções. Com a opção Otimizar na Edge, os usuários podem visualizar as alterações, implantá-las rapidamente na borda da CDN e validar se as otimizações estão ativas. O desempenho pode ser rastreado no ecossistema do LLM Optimizer.
 
 ### Principais benefícios
 
 * **Entrega somente IA:** oferece o HTML otimizado somente para agentes de IA, sem impacto para visitantes humanos ou bots de SEO.
-* **Ciclos mais rápidos:** Publique as alterações em minutos, não em semanas. Não são necessárias alterações na plataforma nem longos ciclos de engenharia.
+* **Ciclos mais rápidos:** Publicar alterações em minutos, não em semanas. Não são necessárias alterações na plataforma nem longos ciclos de engenharia.
 * **Reversível:** Compatível com um recurso de reversão de um clique que pode reverter a página em minutos.
 * **Nenhum impacto no desempenho:** as otimizações baseadas em Edge e o armazenamento em cache mantêm a latência do site inalterada.
 * **CDN e CMS-agnostic:** funciona com qualquer configuração de CDN e configuração de front-end, independentemente do Sistema de Gerenciamento de Conteúdo.
@@ -39,7 +39,7 @@ Oportunidades que podem melhorar a experiência online do agente são compatíve
 
 ## Integração
 
-Você deve entrar em contato com a equipe de conta da Adobe ou da FDE para iniciar o processo de integração. Sua equipe de TI ou CDN também é necessária para concluir os pré-requisitos e o processo de configuração. Além disso, você também pode entrar em contato com nossa equipe em `llmo-at-edge@adobe.com` para obter mais assistência de integração.
+Você deve entrar em contato com a equipe de conta da Adobe ou com a equipe do FDE para iniciar o processo de integração. Sua equipe de TI ou CDN também é necessária para concluir os pré-requisitos e o processo de configuração. Além disso, você também pode entrar em contato com `llmo-at-edge@adobe.com` para obter mais assistência de integração.
 
 Pré-requisitos para integração ao Otimizar no Edge:
 
@@ -55,7 +55,7 @@ Requisitos para sua equipe de TI/CDN:
 * Certifique-se de que `robots.txt` não bloqueie nenhum agente do usuário destinado ao direcionamento.
 * Confirme a Otimização no Edge Routing na interface do LLM Optimizer.
 
-Para orientar o processo de configuração, apresentado abaixo, são exemplos de configuração de várias configurações de CDN. Esses exemplos devem ser adaptados à sua configuração ativa real. Recomendamos aplicar as alterações nos ambientes inferiores primeiro.
+Para orientar o processo de configuração, apresentado abaixo, são exemplos de configurações para várias configurações de CDN. Lembre-se de que esses exemplos devem ser adaptados à sua configuração real em tempo real. Recomendamos aplicar as alterações nos ambientes inferiores primeiro.
 
 >[!NOTE]
 >Nas amostras de código abaixo, você pode ver referências a &quot;tokowaka&quot;, que é o nome do projeto de trabalho para Otimizar no Edge. Esses identificadores permanecem no código para fins de compatibilidade e se referem aos mesmos recursos descritos nesta documentação.
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-A configuração de roteamento é feita usando uma [regra CDN originSelector](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Os pré-requisitos são os seguintes:
+A configuração de roteamento é feita usando uma [regra CDN originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Os pré-requisitos são os seguintes:
 
 * decidir o domínio a ser roteado
 * decidir os caminhos a serem roteados
@@ -82,7 +82,7 @@ A configuração de roteamento é feita usando uma [regra CDN originSelector](ht
 
 Para implantar a regra, é necessário:
 
-* criar um [pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* criar um [pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * confirme o arquivo de configuração `cdn.yaml` no repositório
 * executar o pipeline de configuração
 
@@ -467,7 +467,7 @@ Na tabela a seguir, são apresentadas oportunidades que podem melhorar a experi�
 
 ### Ferramentas adicionais
 
-A [Adobe LLM Optimizer: sua página da Web é citável?A extensão do Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) permite ver exatamente quanto do conteúdo da sua página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não requer licença ou configuração do produto.
+A [Adobe LLM Optimizer: sua página da Web é citável?A extensão do Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) permite ver exatamente quanto do conteúdo da sua página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não requer licença ou configuração do produto.
 
 Com um clique único, você pode avaliar a legibilidade de máquina de qualquer site. Você pode fazer uma comparação lado a lado do que os agentes de IA veem com relação ao que os usuários humanos veem e estimar quanto conteúdo pode ser recuperado usando o LLM Optimizer. Consulte o [A IA pode ler o seu site?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) página para obter mais informações.
 
@@ -503,7 +503,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Para cada oportunidade, você pode visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
