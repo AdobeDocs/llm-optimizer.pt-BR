@@ -2,9 +2,9 @@
 title: Otimizar na Edge
 description: Saiba como fornecer otimizações no LLM Optimizer na borda da CDN sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 1ef457043d1ad06dc7fa19363fab232562b30d6c
+source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2188'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Esta página fornece uma visão geral detalhada sobre como fornecer otimizações na borda da CDN sem alterações de criação. Ele aborda o processo de integração, as oportunidades de otimização disponíveis e como otimizar automaticamente na borda.
 
 >[!NOTE]
->Essa funcionalidade está atualmente em Acesso antecipado.
+>Essa funcionalidade está atualmente em Acesso antecipado. Você pode saber mais sobre os programas de Acesso Antecipado [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## O que é otimizar na Edge?
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-A configuração de roteamento é feita usando uma [regra CDN originSelector](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Os pré-requisitos são os seguintes:
+A configuração de roteamento é feita usando uma [regra CDN originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Os pré-requisitos são os seguintes:
 
 * decidir o domínio a ser roteado
 * decidir os caminhos a serem roteados
@@ -82,7 +82,7 @@ A configuração de roteamento é feita usando uma [regra CDN originSelector](ht
 
 Para implantar a regra, é necessário:
 
-* criar um [pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* criar um [pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * confirme o arquivo de configuração `cdn.yaml` no repositório
 * executar o pipeline de configuração
 
@@ -467,7 +467,7 @@ Na tabela a seguir, são apresentadas oportunidades que podem melhorar a experi�
 
 ### Ferramentas adicionais
 
-A [Adobe LLM Optimizer: sua página da Web é citável?A extensão do Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) permite ver exatamente quanto do conteúdo da sua página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não requer licença ou configuração do produto.
+A [Adobe LLM Optimizer: sua página da Web é citável?A extensão do Chrome ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) permite ver exatamente quanto do conteúdo da sua página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não requer licença ou configuração do produto.
 
 Com um clique único, você pode avaliar a legibilidade de máquina de qualquer site. Você pode fazer uma comparação lado a lado do que os agentes de IA veem com relação ao que os usuários humanos veem e estimar quanto conteúdo pode ser recuperado usando o LLM Optimizer. Consulte o [A IA pode ler o seu site?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) página para obter mais informações.
 
@@ -503,7 +503,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Para cada oportunidade, você pode visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
