@@ -2,9 +2,9 @@
 title: Práticas recomendadas para categorias, tópicos, prompts e outros
 description: Otimize os insights do LLM configurando categorias, tópicos, prompts e outras marcas para rastrear, incluindo concorrentes para o monitoramento personalizado da marca e a análise estratégica de conteúdo.
 feature: Best Practices, Customer Configuration
-source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,18 @@ Para ajudar a começar a usar prompts e tópicos, a Adobe criou uma Biblioteca d
 
 Para usar a Biblioteca de prompts do setor:
 
-1. Baixe o arquivo da Biblioteca de Prompts da LLM Optimizer navegando até o painel **Configuração do cliente**.
-2. Revise os **Tópicos** e **Solicitações** sugeridos para o setor da sua marca na respectiva guia. Escolha as opções que forem mais relevantes.
-3. Revise a **coluna Estágio de Jornada do cliente** para visualizar as opções de prompt no ciclo de vida do cliente (por exemplo, descoberta para conversão em retenção). Os prompts de estágio inicial/início do funnel têm alta prioridade, mas também consideram opções de estágio posterior para promover a retenção, habilitar o suporte ao cliente e assim por diante.
-4. Modifique tópicos ou prompts, conforme necessário, para melhor suportar suas metas e objetivos, antes de fazer upload para a Adobe LLM Optimizer (por exemplo, adicione o nome da sua marca/produto, adicione a terminologia na marca). Os prompts podem ser adicionados manualmente ao LLMO ou carregados em massa usando o modelo *.csv* fornecido.
+1. Navegue até o painel **Configuração do cliente**.
+1. Selecione **Baixar biblioteca de prompts** para baixar o arquivo de biblioteca do LLM Optimizer.
+   ![Download da biblioteca de prompts do setor](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Revise os **Tópicos** e **Solicitações** sugeridos para o setor da sua marca na respectiva guia e escolha as opções mais relevantes.
+1. Revise a **coluna Estágio de Jornada do cliente** para visualizar as opções de prompt no ciclo de vida do cliente (por exemplo, descoberta para conversão em retenção). Os prompts de estágio inicial/início do funnel têm alta prioridade, mas também consideram opções de estágio posterior para promover a retenção, habilitar o suporte ao cliente e assim por diante.
+1. Modifique tópicos ou prompts, conforme necessário, para melhor suportar suas metas e objetivos, antes de fazer upload de seus tópicos e prompts para a Adobe LLM Optimizer (por exemplo, adicione o nome da sua marca/produto, adicione a terminologia na marca). Os prompts podem ser adicionados ao LLM Optimizer manualmente ou por meio de upload em massa usando o modelo *.csv* fornecido.
 
 >[!TIP]
 >
 > Use uma combinação de prompts específicos do domínio recomendados pela LLM Optimizer durante a configuração inicial e a Biblioteca de prompts do setor para preparar sua estratégia de prompt.
 
-### Prompt Library Research Foundation (Fundação de pesquisa da biblioteca de solicitações)
+### Fundação de pesquisa da Biblioteca de Solicitações
 
 A Industry Prompt Library foi desenvolvida por meio de uma iniciativa de pesquisa abrangente que combina:
 
