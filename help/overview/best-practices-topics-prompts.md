@@ -2,9 +2,9 @@
 title: Práticas recomendadas para categorias, tópicos, prompts e outros
 description: Otimize os insights do LLM configurando categorias, tópicos, prompts e outras marcas para rastrear, incluindo concorrentes para o monitoramento personalizado da marca e a análise estratégica de conteúdo.
 feature: Best Practices, Customer Configuration
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Práticas recomendadas para configurar categorias, tópicos, prompts e outros para rastrear
 
-Esta seção descreve as práticas recomendadas para decidir como você deseja configurar suas categorias, tópicos, prompts e outros para rastrear.
+Esta seção descreve as práticas recomendadas para decidir como você deseja configurar suas categorias, tópicos, prompts e outros para rastrear. Além disso, inclui informações sobre a Industry Prompt Library, desenvolvida pela Adobe com extensa pesquisa com especialistas do setor.
 
 Este é um primeiro passo vital. O que você decide agora determina como as informações são adaptadas ao seu contexto de negócios. Quaisquer alterações em categorias no futuro redefinirão os dados históricos.
 
@@ -21,6 +21,43 @@ O painel [[!UICONTROL Configuração do cliente]](/help/dashboards/customer-conf
 ![Janela de configuração do cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 No painel [!UICONTROL Configuração do cliente], você pode personalizar categorias (como unidades de negócios ou linhas de produtos), rastrear outras marcas e adicionar aliases de menção à marca para capturar todas as variações da sua marca em prompts. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
+
+## Biblioteca de prompts do setor
+
+Para ajudar a começar a usar prompts e tópicos, a Adobe criou uma Biblioteca de Prompts do Setor desenvolvida por meio de pesquisas abrangentes com especialistas do setor e análise do comportamento de pesquisa de IA em mais de 6.000 clientes. Essa biblioteca identifica os tópicos e prompts mais relevantes com base em tendências específicas do setor, objetivos de negócios validados e padrões de pesquisa de clientes reais.
+
+Para usar a Biblioteca de prompts do setor:
+
+1. Baixe o arquivo da Biblioteca de Prompts da LLM Optimizer navegando até o painel **Configuração do cliente**.
+2. Revise os **Tópicos** e **Solicitações** sugeridos para o setor da sua marca na respectiva guia. Escolha as opções que forem mais relevantes.
+3. Revise a **coluna Estágio de Jornada do cliente** para visualizar as opções de prompt no ciclo de vida do cliente (por exemplo, descoberta para conversão em retenção). Os prompts de estágio inicial/início do funnel têm alta prioridade, mas também consideram opções de estágio posterior para promover a retenção, habilitar o suporte ao cliente e assim por diante.
+4. Modifique tópicos ou prompts, conforme necessário, para melhor suportar suas metas e objetivos, antes de fazer upload para a Adobe LLM Optimizer (por exemplo, adicione o nome da sua marca/produto, adicione a terminologia na marca). Os prompts podem ser adicionados manualmente ao LLMO ou carregados em massa usando o modelo *.csv* fornecido.
+
+>[!TIP]
+>
+> Use uma combinação de prompts específicos do domínio recomendados pela LLM Optimizer durante a configuração inicial e a Biblioteca de prompts do setor para preparar sua estratégia de prompt.
+
+### Prompt Library Research Foundation (Fundação de pesquisa da biblioteca de solicitações)
+
+A Industry Prompt Library foi desenvolvida por meio de uma iniciativa de pesquisa abrangente que combina:
+
+* **Inteligência do cliente:** análise do comportamento e das preferências de pesquisa de IA em mais de 6.000 clientes
+* **Experiência do setor:** perspectivas de especialistas nos setores de Automóvel, Serviços Financeiros, Saúde, Telecom e Viagens.
+* **Insights orientados por dados:** identificação de tópicos e padrões de consulta de alto impacto que impulsionam a participação e a conversão do cliente.
+
+Principais tópicos pesquisados por clientes em todos os setores:
+
+* **Automático:** Solução de problemas automáticos, Comparação de veículos e Financiamento/Leasing
+* **Serviços Financeiros:** Pesquisando produtos financeiros
+* **Assistência médica:** Buscando sintomas ou problemas de saúde, Comparando opções de tratamento, Compreender resultados de laboratório ou termos médicos
+* **Telecom:** Comparando planos, termos de contrato e promoções, Verificando o serviço na área local
+* **Viagem:** Preparação para uma viagem, Pesquisa e reserva de viagem
+
+Tendências do cliente em relação à pesquisa de IA e ao comportamento de prompt nas ferramentas do LLM:
+
+* Os clientes preferem fazer perguntas e não usar palavras-chave ao usar as ferramentas de pesquisa do LLM.
+* Eles usam principalmente ferramentas de pesquisa LLM para pesquisa e descoberta em fase inicial.
+* Os clientes tendem a mencionar uma marca ou nome de produto específico em seus prompts.
 
 ## Práticas recomendadas para categorias
 
@@ -52,7 +89,7 @@ Como decidir como você configura categorias se baseia em uma pergunta: **Quem p
 >
 > * Escolha uma abordagem e siga-a.
 > * Você pode ter apenas **um** modelo de Categoria por conta/marca. Não misture **SBU** e **URL_DIR** ao mesmo tempo.
->   <!--Can you mix Product/Service with these?-->
+<!--Can you mix Product/Service with these?-->
 
 Exemplo:
 
