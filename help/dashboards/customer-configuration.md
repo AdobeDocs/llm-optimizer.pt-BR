@@ -2,10 +2,10 @@
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como sua marca será monitorada e analisada na plataforma do otimizador LLM.
 feature: Customer Configuration
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -18,15 +18,43 @@ O Painel de configuração do cliente é uma ferramenta poderosa que fornece ins
 
 Para configurar como o LLM Optimizer monitora e analisa a presença da sua marca em diferentes mercados e cenários competitivos, você tem acesso às seguintes guias:
 
+* [Prompts](#prompts-brand)
 * [Categorias](#categories)
-* [Rastreamento de outros](#others-tracking)
+* [Outras marcas](#other-brands)
 * [Aliases da marca](#brand-aliases)
-* [Insights de dados](#data-insights)
 * [Configuração de CDN](#agentic-cdn)
 
 >[!IMPORTANT]
 >
 > Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts](/help/overview/best-practices-topics-prompts.md).
+
+## Prompts {#prompts-brand}
+
+Nesta guia, é possível revisar, gerenciar e personalizar prompts. Você pode carregar uma [Análise de presença de marca](/help/dashboards/brand-presence.md).csv e a lista será preenchida com prompts e tópicos dessa análise ou [Baixar uma biblioteca de Prompts](/help/overview/best-practices-topics-prompts.md) criada pela Adobe. Você também pode excluir, modificar e adicionar tópicos e seus prompts associados, conforme necessário.
+
+Para importar um arquivo de insights de dados .csv, primeiro é necessário exportar um arquivo do painel Presença da marca. Consulte a seção [insights de dados](/help/dashboards/brand-presence.md#data-insights) para saber como fazer isso. Depois de ter o arquivo:
+
+1. No painel, clique em **Carregar CSV**.
+2. Na janela Importar insights de dados, arraste e solte ou escolha manualmente o arquivo.
+3. Clique em **Carregar dados**.
+
+Você também pode criar um novo arquivo CSV baixando o modelo da janela **Importar Insights de Dados**. Depois de ter o modelo, abra-o e insira seus tópicos junto com seus prompts associados, categorias e regiões, cada um em uma nova linha.
+
+Para saber como baixar e usar a Biblioteca de Prompts do Setor criada pela Adobe, consulte a seção Biblioteca de Prompts do Setor nesta [página](/help/overview/best-practices-topics-prompts.md)
+
+Além disso, você também pode adicionar tópicos/prompts à lista independentemente de um arquivo CSV ou biblioteca de prompts. Para isso, no painel, é necessário:
+
+1. Clique no botão **Adicionar tópico**.
+2. Na nova janela de configuração, selecione a **Categoria**. As categorias criadas anteriormente aparecerão aqui.
+3. Informe o nome do tópico.
+4. Adicione o texto do prompt.
+5. Selecione a região.
+6. Clique em **Adicionar prompt** e o tópico com o prompt aparecerá na lista.
+
+>[!NOTE]
+>Os prompts adicionados recentemente não aparecerão na Presença da Marca até que o processamento seja concluído.
+
+Na lista, você pode clicar em cada tópico e os prompts associados serão exibidos. Para excluir o tópico e seus prompts associados, clique no ícone excluir da lista.
 
 ## Categorias {#categories}
 
@@ -41,7 +69,7 @@ A adição de novas categorias não gerará automaticamente tópicos e prompts; 
 
 Para excluir uma categoria, clique no ícone excluir na lista de categorias. Cuidado, porque **a exclusão de uma categoria também excluirá os itens associados**, como aliases de marca, que estão vinculados a essa categoria específica.
 
-## Rastreamento de outros {#others-tracking}
+## Outras marcas {#others-tracking}
 
 Ao usar essa guia, você pode acompanhar como os outros são mencionados em relação à sua marca em diferentes categorias e regiões. Monitore a presença e o desempenho nos segmentos de mercado. Para personalizar o rastreamento:
 
@@ -64,32 +92,6 @@ Ao usar aliases de marca, você pode configurar nomes alternativos e variações
 5. Clique em **Salvar** e o alias da marca aparecerá na lista.
 
 Para excluir um alias de marca, clique no ícone excluir na lista de alias.
-
-## Insights de dados {#data-insights}
-
-Nesta guia, é possível revisar, gerenciar e personalizar prompts. Você pode carregar um [insights de dados de presença da marca](/help/dashboards/brand-presence.md#data-insights) .csv e a lista será preenchida com prompts e tópicos dessa análise. Você também pode excluir, modificar e adicionar tópicos e seus prompts associados, conforme necessário.
-
-Para importar um arquivo de insights de dados .csv, primeiro é necessário exportar um arquivo do painel Presença da marca. Consulte a seção [insights de dados](/help/dashboards/brand-presence.md#data-insights) para saber como fazer isso. Depois de ter o arquivo:
-
-1. No painel, clique em **Carregar CSV**.
-2. Na janela Importar insights de dados, arraste e solte ou escolha manualmente o arquivo.
-3. Clique em **Carregar dados**.
-
-Você também pode criar um novo arquivo CSV baixando o modelo da janela **Importar Insights de Dados**. Depois de ter o modelo, abra-o e insira seus tópicos junto com seus prompts associados, categorias e regiões, cada um em uma nova linha.
-
-Além disso, você também pode adicionar tópicos/prompts à lista independentemente de um arquivo CSV. Para isso, no painel, é necessário:
-
-1. Clique no botão **Adicionar tópico**.
-2. Na nova janela de configuração, selecione a **Categoria**. As categorias criadas anteriormente aparecerão aqui.
-3. Informe o nome do tópico.
-4. Adicione o texto do prompt.
-5. Selecione a região.
-6. Clique em **Adicionar prompt** e o tópico com o prompt aparecerá na lista.
-
->[!NOTE]
->Os prompts adicionados recentemente não aparecerão na Presença da Marca até que o processamento seja concluído.
-
-Na lista, você pode clicar em cada tópico e os prompts associados serão exibidos. Para excluir o tópico e seus prompts associados, clique no ícone excluir da lista.
 
 ## Configuração de CDN {#cdn-configuration}
 
