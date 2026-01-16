@@ -2,9 +2,9 @@
 title: Tráfego de agente
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
 feature: Agentic Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,18 @@ Na janela **Onboard CDN Provider**:
 Se você selecionar **Outros**, precisará entrar em contato com llmo-now@adobe.com para obter assistência.
 
 Depois de ativados, os registros são assimilados e o painel é preenchido com métricas como total de interações do agente, taxa de sucesso, ocorrências por mercado, análise do agente do usuário e desempenho em nível de URL.
+
+O LLM Optimizer assimila e processa apenas um subconjunto de campos dos logs CDN. Embora os nomes de campo de log bruto variem de acordo com o provedor CDN, eles são normalizados e apresentados como:
+
+* URL (somente caminho)
+* user_agent
+* status
+* referrer
+* host
+* Ttfb (tempo até o primeiro byte)
+* cdn_provider
+
+Esses campos normalizados são expostos por meio da visualização agêntica. No painel [Tráfego de indicação](/help/dashboards/referral-traffic.md), os logs de CDN são utilizados para exibir métricas de ocorrência da página. Nenhuma informação pessoal identificável (PII) é processada ou armazenada em qualquer estágio da assimilação de logs da CDN ou do tratamento de dados subsequente.
 
 ## Filtros {#filters}
 
