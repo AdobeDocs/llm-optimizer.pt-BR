@@ -2,9 +2,9 @@
 title: Tráfego de agente
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
 feature: Agentic Traffic
-source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
+source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -140,4 +140,4 @@ A visualização Detalhes do URL fornece uma compreensão holística do desempen
 
 >[!ENDTABS]
 
-Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir as tabelas em relatórios executivos.
+Em ambas as tabelas, você pode usar a opção **Exportar** para baixar a tabela `.csv` e compartilhar os insights com sua equipe ou incluir as tabelas em relatórios executivos.
