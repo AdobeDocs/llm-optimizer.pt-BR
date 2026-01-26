@@ -15,7 +15,7 @@ ht-degree: 1%
 Esta página fornece uma visão geral detalhada sobre como fornecer otimizações na borda da CDN sem alterações de criação. Ele aborda o processo de integração, as oportunidades de otimização disponíveis e como otimizar automaticamente na borda.
 
 >[!NOTE]
->Essa funcionalidade está atualmente em Acesso antecipado. Você pode saber mais sobre os programas de Acesso Antecipado [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Essa funcionalidade está atualmente em Acesso antecipado. Você pode saber mais sobre os programas de Acesso Antecipado [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## O que é otimizar na Edge?
 
@@ -71,7 +71,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-A configuração de roteamento é feita usando uma [regra CDN originSelector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Os pré-requisitos são os seguintes:
+A configuração de roteamento é feita usando uma [regra CDN originSelector](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Os pré-requisitos são os seguintes:
 
 * decidir o domínio a ser roteado
 * decidir os caminhos a serem roteados
@@ -79,7 +79,7 @@ A configuração de roteamento é feita usando uma [regra CDN originSelector](ht
 
 Para implantar a regra, é necessário:
 
-* criar um [pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* criar um [pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * confirme o arquivo de configuração `cdn.yaml` no repositório
 * executar o pipeline de configuração
 
