@@ -5,14 +5,14 @@ feature: Opportunities
 source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Oportunidades de otimização
 
-As oportunidades de otimização são insights detectados automaticamente que mostram onde o site e a presença externa podem ser aprimorados para aumentar a visibilidade da marca na pesquisa de IA.
+As oportunidades de otimização são insights detectados automaticamente que mostram onde o site e a presença externa podem ser aprimorados para aumentar a visibilidade da marca em Pesquisas com IA.
 
 Essas otimizações incluem correções na página (adição de conteúdo estruturado, canônicos ou resumos), ajustes técnicos (desbloqueio de rastreadores de IA ou resolução de erros) e influência no conteúdo em sites autorizados de terceiros. Lidar com essas oportunidades de otimização ajuda sua marca a ser representada com precisão e mais propensa a ser citada em respostas geradoras.
 
@@ -38,7 +38,7 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 | Detectar cabeçalhos duplicados | Conteúdo (no local) | Varre tags de cabeçalho e sinalizadores do HTML e cabeçalhos repetidos. Mostra URLs afetados e trechos de texto duplicados. | Revise os cabeçalhos para serem exclusivos e mantenha a hierarquia (H1 → H2 → H3). Mesclar ou renomear seções duplicadas. |
 | Detectar tráfego de agente bloqueado | GEO técnico | Analisa logs de CDN para solicitações bloqueadas de agentes de IA conhecidos (por exemplo, GPTBot, PerplexityBot). Os relatórios afetavam URLs e agentes. | Atualize o robots.txt ou as configurações do servidor para permitir o acesso a rastreadores de IA compatíveis, quando apropriado. |
 | Detectar problemas 404s / 403s / 5xx | GEO técnico | Monitora logs de CDN para obter respostas de erro. Frequência de relatórios, URLs afetados e perda estimada de ocorrências. | Corrigir links corrompidos, atualizar permissões e resolver problemas do lado do servidor para que o conteúdo principal retorne 200 respostas. |
-| Recuperar visibilidade do conteúdo (acesso antecipado) | GEO técnico | Sinaliza páginas em que o conteúdo crítico está oculto dos agentes de IA. Mostra as URLs afetadas e o conteúdo esperado que pode ser recuperado. | Pré-renderizar as páginas para que mais conteúdo esteja disponível para os agentes de IA sem execução do JavaScript. |
+| Recuperar Visibilidade do conteúdo (acesso antecipado) | GEO técnico | Sinaliza páginas em que o conteúdo crítico está oculto dos agentes de IA. Mostra as URLs afetadas e o conteúdo esperado que pode ser recuperado. | Pré-renderizar as páginas para que mais conteúdo esteja disponível para os agentes de IA sem execução do JavaScript. |
 
 ## Otimização automática {#auto-optimization}
 

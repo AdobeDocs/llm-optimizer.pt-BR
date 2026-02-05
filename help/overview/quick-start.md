@@ -20,7 +20,7 @@ O processo de integração começa com a integração do seu domínio. O process
 
 ### Permitir que o Adobe LLM Optimizer acesse páginas públicas
 
-Para fornecer conteúdo preciso e recomendações técnicas, o Adobe LLM Optimizer requer acesso às suas páginas direcionadas ao público. Isso é feito por meio de um crawler interno seguro (agente de usuário Spacecat/1.0).
+Para fornecer conteúdo preciso e recomendações técnicas, o Adobe LLM Optimizer requer acesso às suas páginas direcionadas ao público. Isso é feito por meio de um rastreador interno seguro (agente do usuário Spacecat/1.0).
 
 Requisitos de configuração:
 
@@ -44,10 +44,10 @@ Consulte a seção abaixo para obter detalhes sobre como ativar a versão de ava
 
 ### Clientes da AEM Cloud
 
-Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
+Se você for um cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de Anúncio do Produto no [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
 
 >[!NOTE]
->Os prompts adicionados recentemente não aparecerão no [Painel de Presença da Marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído. Os clientes da AEM Cloud podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts requer um contrato de licença separado. O acesso é fornecido no &quot;estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu representante de conta para obter mais informações.
+>Prompts adicionados recentemente não aparecerão no [Painel de Presenças da marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído. Os clientes da AEM Cloud podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts requer um contrato de licença separado. O acesso é fornecido no &quot;estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu representante de conta para obter mais informações.
 
 ![Avaliação do LLM Optimizer](/help/overview/assets/llm-trial.png)
 
@@ -58,11 +58,11 @@ Depois de clicar no botão **Tentar LLM Optimizer**, você será redirecionado p
 >[!NOTE]
 >O domínio fornecido será usado por todos da organização e não poderá ser alterado.
 
-Um pequeno conjunto de categorias, tópicos e prompts será gerado durante a fase de integração. A Análise de presença da marca nesses prompts estará disponível logo após a integração do seu site.
+Um pequeno conjunto de categorias, tópicos e prompts será gerado durante a fase de integração. A análise de Presença da marca nessas solicitações estará disponível logo após a integração do site.
 
 <!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
-Além disso, também é necessário configurar o [encaminhamento de logs da CDN](#step-4) para análise de tráfego. O LLM Optimizer exige dados e insights de presença da marca do tráfego de referência e de agente para identificar oportunidades e fornecer recomendações prescritivas a fim de aumentar a visibilidade da IA.
+Além disso, também é necessário configurar o [encaminhamento de logs da CDN](#step-4) para análise de tráfego. O LLM Optimizer exige dados e insights de Presença da marca do agente e do tráfego de referência para identificar oportunidades e fornecer recomendações prescritivas a fim de aumentar a visibilidade da IA.
 
 ### Clientes da nuvem que não são da AEM
 
@@ -70,7 +70,7 @@ Depois que o contrato comercial for finalizado, você será integrado ao domíni
 
 ### Etapa 2: Personalizar categorias, tópicos e prompts
 
-Depois que o site for integrado, você poderá exibir a Análise de presença da marca com base no pequeno conjunto de prompts que foram gerados automaticamente durante a fase de integração. Agora é possível personalizar as categorias, os tópicos e os prompts da sua marca. Esta configuração foi criada no [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
+Depois que o site for integrado, você poderá exibir a Análise de Presença da marca com base no pequeno conjunto de prompts que foram gerados automaticamente durante a fase de integração. Agora é possível personalizar as categorias, os tópicos e os prompts da sua marca. Esta configuração foi criada no [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
 
 ![Painel de configuração do cliente](/help/overview/assets/prompt-creation.png)
 
@@ -89,27 +89,27 @@ Nesse painel, é possível:
 >
 > Para obter mais detalhes sobre como configurar suas categorias, tópicos, prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos, prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Etapa 3: insights de presença da marca
+### Etapa 3: Presença da marca Insights
 
-Após a integração do seu domínio, você verá os insights iniciais na visualização de Presença da marca com base nos prompts que foram gerados automaticamente durante a integração. Depois de personalizar suas próprias categorias, tópicos e prompts, o LLM Optimizer acionará automaticamente a análise de Presença da Marca nos prompts fornecidos, e os resultados estarão disponíveis em 24 horas.
+Após a integração do seu domínio, você verá os insights iniciais na exibição do Presença da marca com base nos prompts que foram gerados automaticamente durante a integração. Depois de personalizar suas próprias categorias, tópicos e prompts, o LLM Optimizer acionará automaticamente a análise de Presença da marca nos prompts fornecidos e os resultados estarão disponíveis em 24 horas.
 
 ### Etapa 4: fornecer informações para encaminhamento de log CDN {#step-4}
 
-Para desbloquear os insights de Tráfego de agente e Tráfego de referência, é necessário fornecer informações para o encaminhamento de log CDN. Ele pode ser adicionado a partir do [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration) navegando até a guia **Configuração de CDN** e clicando em **CDN integrada**.
+Para desbloquear insights de tráfego e Tráfegos de referência do Agentic, é necessário fornecer informações para o encaminhamento de logs CDN. Ele pode ser adicionado a partir do [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration) navegando até a guia **Configuração de CDN** e clicando em **CDN integrada**.
 
 ![CDN de Configuração de Cliente](/help/overview/assets/cc-cdn.png)
 
-Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente (conforme descrito acima), você será solicitado a adicionar o encaminhamento de log de CDN ao acessar os painéis de Controle de tráfego de Referência e de Agente pela primeira vez. Para obter mais detalhes, consulte:
+Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente (conforme descrito acima), você será solicitado a adicionar o encaminhamento de log de CDN ao acessar os painéis de Agentes e Tráfegos de referência pela primeira vez. Para obter mais detalhes, consulte:
 
-* [Tráfego de agente](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [Tráfego de referência](/help/dashboards/referral-traffic.md#setup#setup)
+* [Tráfego de agentes](/help/dashboards/agentic-traffic.md#cdn-setup)
+* [Tráfego por indicação](/help/dashboards/referral-traffic.md#setup#setup)
 
 ### Etapa 5: Explorar painéis e agir
 
 Depois de fornecer informações sobre o Encaminhamento de Logs CDN, você poderá:
 
-* Exiba o painel [Presença da Marca](/help/dashboards/brand-presence.md) e exiba sua pontuação de visibilidade e controle seu desempenho em relação a outras marcas.
-* Explore os painéis de [Tráfego de Referência](/help/dashboards/agentic-traffic.md) e [Tráfego de Referência](/help/dashboards/referral-traffic.md) se o encaminhamento de log de CDN tiver sido configurado.
+* Exiba o painel da [Presença da marca](/help/dashboards/brand-presence.md), exiba sua pontuação de visibilidade e acompanhe seu desempenho em relação a outras marcas.
+* Explore os painéis [Agente](/help/dashboards/agentic-traffic.md) e [Tráfego de referência](/help/dashboards/referral-traffic.md), se o encaminhamento de log de CDN tiver sido configurado.
 * Use as [Oportunidades](/help/dashboards/opportunities.md) para identificar melhorias técnicas e de conteúdo.
 * Exporte dados e colabore com sua equipe ou convide seu colega de trabalho para usar o produto.
 

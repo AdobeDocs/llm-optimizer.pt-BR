@@ -1,18 +1,18 @@
 ---
-title: Tráfego de referência
-description: Saiba como usar o painel Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
+title: Tráfego por indicação
+description: Saiba como usar o painel do Tráfego de referência para ver como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Tráfego de referência
+# Tráfego por indicação
 
-O Tráfego de referência mostra como os visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
+O Tráfego de referência mostra como os visitantes chegam ao site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de sites e plataformas externas. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
 ![Página de indicação](/help/dashboards/assets/referral-traffic.png)
 
@@ -21,12 +21,12 @@ Esta página detalha o seguinte:
 * [Configurar](#setup)
 * [Filtros](#filters)
 * [Desempenho geral da referência](#overall-performance)
-* [Principais URLs de referência](#top-referrals)
-* [Detalhes do tráfego de referência](#traffic-details)
+* [Principais URLs de indicação](#top-referrals)
+* [Detalhes do tráfego de indicação](#traffic-details)
 
 ## Configurar {#setup}
 
-No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir seus dados, você deve configurar o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration), selecionando **Ir para a Configuração**.
+No primeiro logon, o painel de Tráfegos de referência pode aparecer em branco. Para exibir seus dados, você deve configurar o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration), selecionando **Ir para a Configuração**.
 
 ![Configuração de Referência](/help/dashboards/assets/referral-setup1.png)
 
@@ -42,7 +42,7 @@ Na parte superior da página, é possível aplicar filtros para refinar a visual
 
 * **Intervalo de datas** - Selecione o intervalo de tempo para os dados exibidos. Por exemplo, as últimas 4 semanas. Você também pode personalizar o período de tempo selecionando a opção **Semanas personalizadas**.
 * **Plataforma** - Escolha uma fonte de tráfego específica, como Google, OpenAI ou redes sociais.
-* **Intenção de página** - Filtrar o tráfego de referência por intenção de usuário.
+* **Intenção de página** - Filtrar tráfego de referência por intenção de usuário.
 * **Channel Source** - Filtrar pela origem do canal. as opções incluem: LLMs, canais de referência ganhos, pagos ou mistos.
 * **Tipo de dispositivo** - Analise o tráfego pelo tipo de dispositivo do visitante: desktop, dispositivo móvel ou todos os dispositivos.
   **Região** - Exibir padrões de referência em diferentes regiões.
@@ -53,8 +53,8 @@ Após selecionar o filtro desejado, clique em **Aplicar Filtros** para aplicar a
 
 O painel destaca o desempenho geral da indicação ao exibir as métricas principais, incluindo:
 
-* **Tráfego de Referência Total** - O tráfego de referência total de todas as fontes.
-* **Tráfego de Referência de LLM** - O tráfego de referência total de LLM.
+* **Tráfego de referência total** - O tráfego de referência total de todas as fontes.
+* **Tráfego de referência do LLM** - O tráfego de referência total do LLM.
 * **Taxa de consentimento** - A porcentagem de visitantes que aceitam um prompt de consentimento.
 * **Taxa de rejeição** - A porcentagem de sessões de fontes de referência que não tiveram evento de envolvimento.
 
@@ -72,7 +72,7 @@ The Top Referral URLs list surfaces your site's most visited pages from referral
 
 As tabelas Detalhes das fontes de referência e Análise de desempenho de URL ajudam a avaliar o volume de tráfego e a qualidade. Clique em cada guia abaixo para obter mais detalhes:
 
-![Detalhes do tráfego de referência](/help/dashboards/assets/traffic-details.png)
+![Detalhes do Tráfego de referência](/help/dashboards/assets/traffic-details.png)
 
 >[!BEGINTABS]
 
@@ -87,7 +87,7 @@ A visualização Detalhes das fontes de referência detalha o tráfego provenien
 
 >[!TAB Análise de Desempenho de URL]
 
-A visualização Análise de desempenho de URL classifica as páginas com melhor desempenho com base no volume de tráfego de referência de LLMs e outras fontes. Ele destaca métricas como tráfego, taxa de rejeição, taxa de consentimento e intenção de página, ajudando a identificar quais páginas atraem e retêm os visitantes mais envolvidos com as referências orientadas por IA. A tabela tem um campo de pesquisa para acesso rápido aos tópicos.
+A visualização Análise de desempenho de URL classifica as páginas com melhor desempenho com base no volume do tráfego de referência de LLMs e outras fontes. Ele destaca métricas como tráfego, taxa de rejeição, taxa de consentimento e intenção de página, ajudando a identificar quais páginas atraem e retêm os visitantes mais envolvidos com as referências orientadas por IA. A tabela tem um campo de pesquisa para acesso rápido aos tópicos.
 
 >[!ENDTABS]
 

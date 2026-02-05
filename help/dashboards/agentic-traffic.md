@@ -1,16 +1,16 @@
 ---
-title: Tráfego de agente
+title: Tráfego de agentes
 description: Saiba como usar o painel Tráfego do agente para ver como os agentes de IA interagem com seu site.
 feature: Agentic Traffic
 source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Tráfego de agente {#agentic-traffic}
+# Tráfego de agentes {#agentic-traffic}
 
 O painel Tráfego do agente mostra como os agentes de IA (rastreadores e chatbots) interagem com o site. Ao usar essa visualização, você pode rastrear o número total de solicitações e as métricas gerais relacionadas ao desempenho. Você também pode visualizar a distribuição do tráfego entre mercados, categorias, páginas e agentes. Os dados usados por esse painel são provenientes dos logs CDN, portanto, você deve configurar o **encaminhamento de logs CDN** para exibir as métricas. Também há filtros personalizáveis para ajudá-lo a refinar os dados exibidos.
 
@@ -21,7 +21,7 @@ Esta página detalha o seguinte:
 * [Filtros](#filters)
 * [Configuração da CDN](#cdn-setup)
 * [Distribuição de tráfego](#traffic-distribution)
-* [Tendências do tráfego de agente](#agentic-trends)
+* [Tendências do tráfego por agente](#agentic-trends)
 * [Movedores Superior e Inferior](#top-bottom-movers)
 * [Análise de desempenho de URL e agente de usuário](#user-url-performance)
 
@@ -59,7 +59,7 @@ O LLM Optimizer processa um subconjunto de campos dos logs CDN. Embora os nomes 
 * Carimbo de data e hora
 * Tipo de conteúdo
 
-Esses campos normalizados são expostos por meio da visualização agêntica. No painel [Tráfego de indicação](/help/dashboards/referral-traffic.md), os logs de CDN são utilizados para exibir métricas de ocorrência da página. Nenhuma informação pessoal identificável (PII) é processada ou armazenada em qualquer estágio da assimilação de logs da CDN ou do tratamento de dados subsequente.
+Esses campos normalizados são expostos por meio da visualização agêntica. No painel [Tráfego de referência](/help/dashboards/referral-traffic.md), os logs de CDN são utilizados para exibir métricas de ocorrência da página. Nenhuma informação pessoal identificável (PII) é processada ou armazenada em qualquer estágio da assimilação de logs da CDN ou do tratamento de dados subsequente.
 
 ## Filtros {#filters}
 
@@ -88,7 +88,7 @@ Na parte superior da página, há três métricas principais que você precisa s
 
 Os indicadores de tendência para cada métrica principal mostram como esses valores estão mudando com o tempo em comparação ao período anterior.
 
-## Tendências do tráfego de agente {#agentic-trends}
+## Tendências do tráfego por agente {#agentic-trends}
 
 Use o gráfico de Tendências de Tráfego Agênico para rastrear os totais semanais de ocorrências bem-sucedidas, com falha e gerais. Dessa forma, você pode monitorar as alterações na atividade e no desempenho do agente ao longo do tempo. Você também pode passar o mouse ao longo do gráfico para ver a evolução dos dados ao longo do período semanal.
 
@@ -110,17 +110,17 @@ As visualizações Agente do usuário e Análise de desempenho de URL fornecem d
 
 >[!TAB Análise de usuário-agente]
 
-A tabela Análise do agente do usuário fornece um detalhamento do tráfego por tipo de página e tipo de agente (por exemplo, crawlers versus chatbots). Dessa forma, é fácil entender quais agentes de IA estão rastreando quais partes do site. Ele contém as seguintes categorias:
+A tabela Análise do agente do usuário fornece um detalhamento do tráfego por tipo de página e tipo de agente (por exemplo, rastreadores versus chatbots). Dessa forma, é fácil entender quais agentes de IA estão rastreando quais partes do site. Ele contém as seguintes categorias:
 
 * **Tipo de página** - O tipo de página.
-* **Tipo de Agente** - O agente de IA que está rastreando a página, seja um rastreador ou um chatbot.
+* **Tipo de Agente** - O agente de IA que rastrea a página, seja um rastreador ou um chatbot.
 * **Ocorrências** - O número total de solicitações feitas pelos agentes de IA para esse tipo de página específico.
 
 Você pode personalizar quais métricas serão exibidas clicando no botão **Configurar Colunas**.
 
 >[!TAB Análise de Desempenho de URL]
 
-A tabela Análise de desempenho de URL mostra uma exibição detalhada de URLs individuais. Isso inclui ocorrências, agentes exclusivos, agente principal, taxas de sucesso e categorias. Dessa forma, você pode identificar páginas de alto valor, detectar lacunas de rastreamento e otimizar o conteúdo para mecanismos de IA. Os URLs são classificados por volume de tráfego. A tabela contém as seguintes categorias:
+A tabela Análise de desempenho de URL mostra uma exibição detalhada de URLs individuais. Isso inclui ocorrências, agentes exclusivos, agente principal, taxas de sucesso e categorias. Dessa forma, você pode identificar páginas de alto valor, detectar lacunas de rastreo e otimizar o conteúdo para mecanismos de IA. Os URLs são classificados por volume de tráfego. A tabela contém as seguintes categorias:
 
 * **URL** - A URL examinada.
 * **Total de ocorrências** - Número total de solicitações feitas pelos agentes de IA à URL.
@@ -136,7 +136,7 @@ A tabela de desempenho de URL tem um campo de pesquisa para acesso rápido a URL
 
 ![Detalhes da URL](/help/dashboards/assets/details.png)
 
-A visualização Detalhes do URL fornece uma compreensão holística do desempenho de uma página, mostrando a frequência com que ela é citada, o sentimento das respostas da IA onde é mencionada, os tópicos e prompts em que ela aparece, e as tendências no tráfego de referência e agêntica ao longo do tempo.
+A visualização Detalhes do URL fornece uma compreensão holística do desempenho de uma página, mostrando a frequência com que ela é citada, o sentimento de respostas de IA onde é mencionada, os tópicos e prompts em que ela aparece, e as tendências na agilidade e no tráfego de referência ao longo do tempo.
 
 >[!ENDTABS]
 

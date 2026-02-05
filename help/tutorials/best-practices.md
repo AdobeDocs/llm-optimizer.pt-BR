@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas do LLM Optimizer
-description: Descubra as práticas recomendadas para a otimização de LLM para aumentar a visibilidade da marca na pesquisa de IA. Insights para avaliação de desempenho e otimização de conteúdo.
+description: Descubra as práticas recomendadas para a otimização do LLM para aumentar a visibilidade da marca em Pesquisas com IA. Insights para avaliação de desempenho e otimização de conteúdo.
 feature: Best Practices, Agentic Traffic, Brand Presence
 source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
@@ -37,13 +37,13 @@ Uma base forte de SEO oferece suporte à otimização de LLM, mas são necessár
 | SEO | LLM |
 |---------|----------|
 | Baseado em índice | *Com base em token (dados treinados) |
-| Assuntos de autoridade de link | **As menções à marca são mais importantes |
+| Assuntos de autoridade de link | **As Menções de marca são mais importantes |
 | Renderização JS suportada | Renderização muito limitada de JS no lado do cliente |
 | Indexação em tempo real | ***RAG (Retrieval-Augmented Generation, geração aumentada para recuperação) para atualização |
 
 *Embora os resultados de LLM não usem páginas indexadas, os LLMs usam mecanismos de pesquisa para aprimorar as respostas de prompt por meio da Geração aumentada de nível de recuperação (RAG).
 
-** Os LLMs priorizam a relevância do conteúdo e a presença da marca nos backlinks.
+** Os LLMs priorizam a relevância do conteúdo e a presença da marca sobre os backlinks.
 
 *** RAG reduz alucinações
 
@@ -63,7 +63,7 @@ A criação de uma campanha de otimização do LLM bem-sucedida envolve:
 
 Essa abordagem estratégica garante melhorias direcionadas e orientadas por dados na visibilidade do LLM.
 
-### Desbloquear a visibilidade da marca LLM
+### Desbloqueando visibilidade da marca LLM
 
 A visibilidade do LLM diz respeito à frequência e ao destaque que sua marca aparece nas respostas geradas por IA.
 
@@ -92,7 +92,7 @@ Estas são algumas das práticas recomendadas de otimização:
 
 1. Garantir a acessibilidade técnica
 
-   * Revise as configurações de robots.txt e CDN para permitir que os agentes de IA rastreiem seu site.
+   * Revise as configurações de robots.txt e CDN para permitir que os agentes de IA rastreem do site.
    * Use o Inspetor de URL para identificar páginas bloqueadas ou inacessíveis. Consulte [Inspetor de URL](/help/dashboards/url-inspector.md).
 
 2. Atualizar e estruturar conteúdo
@@ -109,7 +109,7 @@ Estas são algumas das práticas recomendadas de otimização:
 4. Monitorar e iterar
 
    * Use o [Painel de oportunidades](/help/dashboards/opportunities.md) para identificar e seguir as recomendações.
-   * Rastrear a pontuação de visibilidade, o sentimento e a frequência de citação.
+   * Rastreie a frequência de pontuação de visibilidade, sentimento e citação.
    * Ajuste com base na atividade de outras pessoas (incluindo concorrentes) e tendências imediatas.
 
 ## Otimização externa - expandindo o espaço da sua marca
@@ -124,7 +124,7 @@ A otimização externa se concentra em melhorar a visibilidade da sua marca em r
 Principais canais externos:
 
 * Wikipedia: certifique-se de que as páginas estejam atualizadas, bem-originadas e escritas de forma neutra.
-* Reddit e Quora: Participe de discussões com contribuições autênticas e úteis e menções à marca.
+* Reddit e Quora: Participe de discussões com contribuições e menções de marca autênticas e úteis.
 * Artigos e análises de afiliados: colabore com editores para obter conteúdo de alta qualidade.
 * YouTube e redes sociais: crie vídeos e publicações que respondam a perguntas comuns.
 * Notícias e Relações Públicas: Cobertura segura em meios de comunicação respeitáveis.
@@ -132,7 +132,7 @@ Principais canais externos:
 Práticas recomendadas:
 
 * Diversifique sua área de ocupação externa.
-* Monitorar citações usando o Adobe LLM Optimizer. Consulte [Painel de presença da marca](/help/dashboards/brand-presence.md).
+* Monitorar citações usando o Adobe LLM Optimizer. Consulte [painel de Presenças da marca](/help/dashboards/brand-presence.md).
 * Atualize o conteúdo obsoleto e busque novas oportunidades de inclusão.
 * Coordenar com equipes de RP e sociais.
 * Garantir que as contribuições sejam imparciais e informativas.
@@ -165,10 +165,10 @@ Estas são as etapas que você pode seguir para monitorar o progresso:
 1. Monitore as alterações ao longo do tempo.
    * Use filtros de tempo para rastrear turnos semanais e mensais.
    * Fique atento a picos ou quedas na pontuação de visibilidade.
-   * Analise as tendências de sentimentos para entender a percepção da marca.
+   * Analise tendências de sentimento para entender a percepção da marca.
 1. Correlacione visibilidade com tráfego, engajamento e conversões.
    * Use recursos de atribuição para conectar melhorias de visibilidade ao tráfego, engajamento e conversões. Os recursos de atribuição no Adobe LLM Optimizer ajudam a conectar melhorias nas métricas de visibilidade (menções, citações, sentimento) aos resultados reais de negócios, como tráfego do site, envolvimento do usuário e conversões. Isso comprova o ROI de suas iniciativas de otimização.
-   * Rastreie alterações no tráfego de referência e de agente para validar o ROI da otimização.
+   * Rastreie alterações na agilidade e no tráfego de referência para validar o ROI da otimização.
 1. Melhorar o conteúdo
    * Use o [Painel de oportunidades](/help/dashboards/opportunities.md) da LLM Optimizer para identificar e fazer alterações imediatas e especificamente recomendadas para o seu site. Ver [Oportunidades](/help/dashboards/opportunities.md) (em seguida, meça os resultados). Revise a seção de oportunidades regularmente e aja de acordo com as recomendações fornecidas.
    * Priorizar páginas com visibilidade decrescente.
@@ -187,7 +187,7 @@ Estas são as etapas que você pode seguir para monitorar o progresso:
 
 ## Compreensão do tráfego de agente
 
-O tráfego de agente se refere às visitas de agentes de IA como ChatGPT, modo/visões gerais de IA do Google, Copilot ou Perplexidade. Esses agentes rastreiam o site para coletar informações para gerar respostas.
+O tráfego de agente se refere às visitas de agentes de IA como ChatGPT, modo/visões gerais de IA do Google, Copilot ou Perplexidade. Esses agentes rastream ao seu site para coletar informações para gerar respostas.
 
 O tráfego direto é exibido de duas maneiras: experiências com cliques nulos e visibilidade sem cliques.
 
@@ -209,7 +209,7 @@ O tráfego de agente se refere aos bots de IA que visitam seu site para coletar 
 
 Esses bots fazem o seguinte:
 
-1. Rastrear suas páginas para extrair fatos, estrutura e contexto.
+1. Rastree suas páginas para extrair fatos, estrutura e contexto.
 2. Use esses dados para gerar respostas para os usuários.
 3. Pode citar sua marca ou conteúdo, mesmo se nenhum humano clicar.
 
@@ -224,7 +224,7 @@ O rastreamento do tráfego de agente ajuda você a entender como a IA vê e usa 
 
 Para otimizar o tráfego agêntico:
 
-* Verifique a rastreabilidade revisando as configurações de robots.txt e CDN.
+* Garanta o rastreabilidade revisando as configurações de robots.txt e CDN.
 * Use o [Inspetor de URL](/help/dashboards/url-inspector.md) para analisar o desempenho da URL.
 * Acompanhe o comportamento do bot acessando seus logs de CDN no [Painel de tráfego de agente](/help/dashboards/agentic-traffic.md).
 * Segmente o tráfego para entender os resultados de negócios. Consulte [Práticas recomendadas para categorias, tópicos e prompts](/help/overview/best-practices-topics-prompts.md).
@@ -234,8 +234,8 @@ Estas são as métricas que devem ser monitoradas:
 * Ocorrências do agente por URL
 * Taxa de sucesso de solicitações de bot
 * Frequência de citação por página
-* Sentimento e colocação de menções à marca
-* Tendências de pontuação de visibilidade ao longo do tempo
+* Sentimento e colocação de menções de marca
+* Pontuação de visibilidade tendências ao longo do tempo
 
 <!-- Add screenshot when available in demo environment>
 

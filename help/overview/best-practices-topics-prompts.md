@@ -5,7 +5,7 @@ feature: Best Practices, Customer Configuration
 source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ O painel [[!UICONTROL Configuração do cliente]](/help/dashboards/customer-conf
 
 ![Janela de configuração do cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-No painel [!UICONTROL Configuração do cliente], você pode personalizar categorias (como unidades de negócios ou linhas de produtos), rastrear outras marcas e adicionar aliases de menção à marca para capturar todas as variações da sua marca em prompts. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
+No painel [!UICONTROL Configuração do cliente], você pode personalizar categorias (como unidades de negócios ou linhas de produtos), rastrear outras marcas e adicionar aliases de menção de marca para capturar todas as variações da sua marca em prompts. Essa configuração garante que a plataforma personalize insights para o contexto comercial, permitindo uma visibilidade precisa, tráfego e análise de oportunidades.
 
 ## Biblioteca de prompts do setor
 
-Para ajudar a começar a usar prompts e tópicos, a Adobe criou uma Biblioteca de Prompts do Setor desenvolvida por meio de pesquisas abrangentes com especialistas do setor e análise do comportamento de pesquisa de IA em mais de 6.000 clientes. Essa biblioteca identifica os tópicos e prompts mais relevantes com base em tendências específicas do setor, objetivos de negócios validados e padrões de pesquisa de clientes reais.
+Para ajudar a começar a usar prompts e tópicos, a Adobe criou uma Biblioteca de Prompts do Setor desenvolvida por meio de pesquisas abrangentes com especialistas do setor e análise do comportamento das Pesquisas com IA em mais de 6.000 clientes. Esta biblioteca identifica os tópicos e prompts mais relevantes com base em tendências específicas do setor, objetivos comerciais validados e padrões de pesquisa de clientes do mundo real.
 
 Para usar a Biblioteca de prompts do setor:
 
@@ -43,7 +43,7 @@ Para usar a Biblioteca de prompts do setor:
 
 A Industry Prompt Library foi desenvolvida por meio de uma iniciativa de pesquisa abrangente que combina:
 
-* **Inteligência do cliente:** análise do comportamento e das preferências de pesquisa de IA em mais de 6.000 clientes
+* **Inteligência do cliente:** Análise do comportamento e das preferências das Pesquisas com IA em mais de 6.000 clientes
 * **Experiência do setor:** perspectivas de especialistas nos setores de Automóvel, Serviços Financeiros, Saúde, Telecom e Viagens.
 * **Insights orientados por dados:** identificação de tópicos e padrões de consulta de alto impacto que impulsionam a participação e a conversão do cliente.
 
@@ -55,7 +55,7 @@ Principais tópicos pesquisados por clientes em todos os setores:
 * **Telecom:** Comparando planos, termos de contrato e promoções, Verificando o serviço na área local
 * **Viagem:** Preparação para uma viagem, Pesquisa e reserva de viagem
 
-Tendências do cliente em relação à pesquisa de IA e ao comportamento de prompt nas ferramentas do LLM:
+Tendências do cliente em Pesquisas com IA e comportamento imediato em ferramentas LLM:
 
 * Os clientes preferem fazer perguntas e não usar palavras-chave ao usar as ferramentas de pesquisa do LLM.
 * Eles usam principalmente ferramentas de pesquisa LLM para pesquisa e descoberta em fase inicial.

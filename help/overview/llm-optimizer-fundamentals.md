@@ -1,6 +1,6 @@
 ---
 title: Noções básicas do LLM Optimizer
-description: Saiba mais sobre como o Adobe LLM Optimizer aumenta a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Comece a otimizar hoje para obter melhor envolvimento e influência.
+description: Saiba mais sobre como o Adobe LLM Optimizer impulsiona a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Comece a otimizar hoje para obter melhor envolvimento e influência.
 source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
 source-wordcount: '498'
@@ -27,10 +27,10 @@ O Adobe LLM Optimizer é um aplicativo gerado pela primeira IA para a Otimizaç�
 
 O Adobe LLM Optimizer oferece um conjunto de ferramentas projetadas para a otimização gerativa de mecanismo:
 
-* Meça a visibilidade da marca: controle quando, onde e com que frequência sua marca aparece nos resultados de pesquisa alimentados por IA, com uma pontuação de visibilidade clara para benchmarking.
-* Benchmark Others: compare a participação da sua marca em voz e presença com os concorrentes e outros em mecanismos geradores.
-* Descubra oportunidades acionáveis: identifique melhorias técnicas e de conteúdo (como perguntas frequentes, resumos, esquema, rastreabilidade) para impulsionar menções e citações.
-* Rastrear o impacto do tráfego: monitore o tráfego agêntrico (assistente de IA) e de referência para suas propriedades, vinculando a visibilidade ao envolvimento.
+* Visibilidade da marca de medida: controle quando, onde e com que frequência sua marca aparece nos resultados de pesquisa alimentados por IA, com uma pontuação de visibilidade clara para avaliação de desempenho.
+* Benchmark Others: compare a &lt;strong>participação de voz&lt;/strong> e a presença da sua marca com os concorrentes e outros em mecanismos geradores.
+* Descubra oportunidades acionáveis: identifique melhorias técnicas e de conteúdo (como perguntas frequentes, resumos, esquemas, rastreabilidades) para impulsionar menções e citações.
+* Rastrear o impacto do tráfego: monitore as propriedades agenciais (assistente de IA) e de tráfego de referência para suas propriedades, vinculando a visibilidade ao envolvimento.
 * Ativar o Team Collaboration: compartilhe painéis, atribua proprietários e alinhe metas entre equipes de marketing, SEO e comunicações.
 
 ## Por que a otimização do LLM é importante para sua marca
@@ -44,18 +44,18 @@ O Adobe LLM Optimizer oferece um conjunto de ferramentas projetadas para a otimi
 
 A Otimização do Mecanismo Gerativo é multifuncional por natureza. O LLM Optimizer foi projetado com essas lentes para os diferentes perfis listados abaixo:
 
-* **Gerentes de marketing** medem a visibilidade da marca e a eficácia da campanha na pesquisa de IA.
-* **Analistas de SEO** rastreiam menções à marca, citações e outros insights para informar a estratégia de conteúdo.
-* **Gerentes de PR e de comunicações** rastreiam a percepção da marca em LLMs por plataformas de terceiros e abordam informações incorretas, gerenciam sentimentos e protegem a confiança da marca.
+* **Gerentes de marketing** medem a eficácia da visibilidade da marca e da campanha nas Pesquisas com IA.
+* **Analistas de SEO** rastreiam menções de marca, citações e outros insights para informar a estratégia de conteúdo.
+* **Gerentes de PR e de comunicações** controlam a percepção da marca em LLMs por plataformas de terceiros e solucionam informações incorretas, gerenciam sentimentos e protegem a confiança da marca.
 
 ## O que posso fazer com o Adobe LLM Optimizer?
 
 Com o Adobe LLM Optimizer, você pode:
 
-**Meça a visibilidade da marca** - rastreie quando, onde e com que frequência sua marca é mencionada nos resultados da pesquisa habilitada por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
-**Referencie outros** - Veja como sua marca se compara a outras pessoas em mecanismos geradores. Identifique a parcela de lacunas de voz e descubra vantagens competitivas.
+**Visibilidade da marca de Medida** - rastreie quando, onde e com que frequência sua marca é mencionada nos resultados da pesquisa habilitada por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
+**Referencie outros** - Veja como sua marca se compara a outras pessoas em mecanismos geradores. Identificar lacunas de &lt;strong>participação de voz&lt;/strong> e descobrir vantagens competitivas.
 **Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
-**Rastrear o impacto do tráfego da IA** - Monitore o tráfego de agente (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade da GEO a um engajamento real.
+**Rastrear o impacto do tráfego da IA** - Monitore o tráfego direto (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade da GEO a um engajamento real.
 **Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO e comunicações.
 
 

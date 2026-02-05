@@ -5,7 +5,7 @@ feature: URL Inspector
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Após selecionar o filtro desejado, clique em **Aplicar Filtros** para aplicar a
 
 O Inspetor de URL fornece várias métricas de visão geral para que você possa avaliar rapidamente o desempenho de suas páginas em pesquisas de IA. As seguintes métricas são fornecidas:
 
-* **Solicitações exclusivas com citações próprias** - O número total de solicitações exclusivas de IA com citações próprias.
+* **Solicitações exclusivas com o citação própria** - O número total de solicitações exclusivas do AI com o citação própria.
 * **Total de prompts exclusivos** - O número total de prompts exclusivos de IA.
 * **URLs citadas únicas** - O número de URLs de propriedade exclusiva que foram citadas.
 * **Total de citações** - Total de vezes que uma URL própria foi citada em respostas geradas por IA.
@@ -57,7 +57,7 @@ As seguintes métricas são fornecidas:
 * **Ocorrências de agente** - O número total de ocorrências de agentes de IA nas URLs.
 * **Ocorrências de referência** - O número de ocorrências direcionadas de respostas geradas por IA para as URLs.
 
-## URLs de tendência que competem por citações
+## URLs em alta competindo por citações
 
 Os URLs de tendência que competem pela visualização de citações destacam URLs externos que são atualmente citados em respostas relevantes para sua marca, medindo quem está ganhando citações em seu espaço. A tabela de dados tem um campo de pesquisa para acesso rápido a URLs específicos. Além disso, você pode usar a opção **Exportar** para baixar a tabela .csv e compartilhar os insights com sua equipe ou incluir a tabela nos relatórios executivos.
 
@@ -74,6 +74,6 @@ As seguintes métricas são fornecidas:
 
 ### Janela de detalhes
 
-Para as exibições citada e de tendência, as URLs têm um botão **Detalhes** no final de cada linha. Clicar no botão exibirá uma janela separada com detalhes adicionais. A janela de detalhes mostra a frequência com que a URL é citada, <!--the sentiment of AI responses where it is mentioned,--> os tópicos e prompts em que ela aparece e as tendências no tráfego de referência e agêntica ao longo do tempo (para URLs próprias).
+Para as exibições citada e de tendência, as URLs têm um botão **Detalhes** no final de cada linha. Clicar no botão exibirá uma janela separada com detalhes adicionais. A janela de detalhes mostra a frequência com que a URL é citada, <!--the sentiment of AI responses where it is mentioned,--> os tópicos e prompts em que ela aparece e as tendências na agilidade e no tráfego de referência ao longo do tempo (para URLs próprias).
 
 ![Janela de detalhes](/help/dashboards/assets/details-url.png)

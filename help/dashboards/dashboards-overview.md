@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # Visão geral dos painéis
 
-Bem-vindo à visão geral dos Painéis. Os painéis no LLM-Otimizer ajudam os profissionais de marketing a rastrear a visibilidade da marca e o sentimento nas plataformas de pesquisa de IA, identificar oportunidades de otimização e implementar alterações prescritivas para melhorar as citações e o desempenho.
+Bem-vindo à visão geral dos Painéis. Os painéis no Otimizador de LLM ajudam os profissionais de marketing a rastrear visibilidades da marca e sentimentos em plataformas de Pesquisas com IA, identificar oportunidades de otimização e implementar alterações prescritivas para melhorar as citações e o desempenho.
 
-As principais visualizações incluem Presença da marca, Tráfego de agente e referência, Inspetor de URL, Identificação da oportunidade, Collaboration e Configuração do cliente.
+As principais visualizações incluem Presença da marca, Agência e Tráfego de referência, Inspetor de URL, Identificação da oportunidade, Collaboration e Configuração do cliente.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ As principais visualizações incluem Presença da marca, Tráfego de agente e r
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Painel de presença da marca" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Painel de presença da marca"
+                    <a href="./brand-presence.md" title="Presença da marca painel" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Presença da marca painel"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,7 +77,7 @@ As principais visualizações incluem Presença da marca, Tráfego de agente e r
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Painel de presença da marca">Painel de presença da marca</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Presença da marca painel">painel de Presenças da marca</a>
                     </p>
                     <p class="is-size-6">Rastreia como sua marca aparece nas plataformas de pesquisa do LLM, incluindo análise de sentimento e benchmark de outras marcas.</p>
                 </div>
@@ -114,8 +114,8 @@ As principais visualizações incluem Presença da marca, Tráfego de agente e r
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="Painel de tráfego de referência" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Painel de tráfego de referência"
+                    <a href="./referral-traffic.md" title="Painel do tráfego de referência" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Painel do tráfego de referência"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,7 +123,7 @@ As principais visualizações incluem Presença da marca, Tráfego de agente e r
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Painel de tráfego de referência">Painel de tráfego de referência</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Painel do tráfego de referência">painel de Tráfegos de referência</a>
                     </p>
                     <p class="is-size-6">Mede as visitas humanas originadas de citações geradas por IA que permitem descobrir o engajamento real do usuário da IA</p>
                 </div>
@@ -171,7 +171,7 @@ As principais visualizações incluem Presença da marca, Tráfego de agente e r
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="Painel de oportunidades">Painel de oportunidades</a>
                     </p>
-                    <p class="is-size-6">Superfície e prioriza insights acionáveis que melhoram a visibilidade da marca e o desempenho da citação em plataformas de pesquisa alimentadas por IA</p>
+                    <p class="is-size-6">Superfície e prioriza insights acionáveis que melhoram o desempenho da visibilidade da marca e da citação em plataformas de pesquisa alimentadas por IA</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>

@@ -5,7 +5,7 @@ feature: Customer Configuration
 source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ O Painel de configuração do cliente é uma ferramenta poderosa que fornece ins
 
 ![Painel de configuração do cliente](/help/dashboards/assets/customer-config.png)
 
-Para configurar como o LLM Optimizer monitora e analisa a presença da sua marca em diferentes mercados e cenários competitivos, você tem acesso às seguintes guias:
+Para configurar como o LLM Optimizer monitora e analisa sua presença da marca em diferentes mercados e cenários competitivos, você tem acesso às seguintes guias:
 
 * [Prompts](#prompts-brand)
 * [Categorias](#categories)
@@ -30,9 +30,9 @@ Para configurar como o LLM Optimizer monitora e analisa a presença da sua marca
 
 ## Prompts {#prompts-brand}
 
-Nesta guia, é possível revisar, gerenciar e personalizar prompts. Você pode carregar uma [Análise de presença de marca](/help/dashboards/brand-presence.md).csv e a lista será preenchida com prompts e tópicos dessa análise ou [Baixar uma biblioteca de Prompts](/help/overview/best-practices-topics-prompts.md) criada pela Adobe. Você também pode excluir, modificar e adicionar tópicos e seus prompts associados, conforme necessário.
+Nesta guia, é possível revisar, gerenciar e personalizar prompts. Você pode carregar uma [análise de Presença da marca](/help/dashboards/brand-presence.md).csv e a lista será preenchida com prompts e tópicos dessa análise ou [Baixar uma biblioteca de Prompts](/help/overview/best-practices-topics-prompts.md) criada pela Adobe. Você também pode excluir, modificar e adicionar tópicos e seus prompts associados, conforme necessário.
 
-Para importar um arquivo de insights de dados .csv, primeiro é necessário exportar um arquivo do painel Presença da marca. Consulte a seção [insights de dados](/help/dashboards/brand-presence.md#data-insights) para saber como fazer isso. Depois de ter o arquivo:
+Para importar um arquivo .csv de insights de dados, primeiro é necessário exportar um arquivo do painel do Presença da marca. Consulte a seção [insights de dados](/help/dashboards/brand-presence.md#data-insights) para saber como fazer isso. Depois de ter o arquivo:
 
 1. No painel, clique em **Carregar CSV**.
 2. Na janela Importar insights de dados, arraste e solte ou escolha manualmente o arquivo.
@@ -52,7 +52,7 @@ Além disso, você também pode adicionar tópicos/prompts à lista independente
 6. Clique em **Adicionar prompt** e o tópico com o prompt aparecerá na lista.
 
 >[!NOTE]
->Os prompts adicionados recentemente não aparecerão na Presença da Marca até que o processamento seja concluído.
+>Os prompts recém-adicionados não aparecerão na presença da marca até que o processamento seja concluído.
 
 Na lista, você pode clicar em cada tópico e os prompts associados serão exibidos. Para excluir o tópico e seus prompts associados, clique no ícone excluir da lista.
 
@@ -83,7 +83,7 @@ Para excluir uma entrada na lista , clique no ícone delete.
 
 ## Aliases da marca {#brand-aliases}
 
-Ao usar aliases de marca, você pode configurar nomes alternativos e variações de sua marca que devem ser rastreados em diferentes categorias e regiões. Isso garante um monitoramento abrangente de todas as menções à marca. Para adicionar um alias de marca:
+Ao usar aliases de marca, você pode configurar nomes alternativos e variações de sua marca que devem ser rastreados em diferentes categorias e regiões. Isso garante o monitoramento abrangente de todas as menções de marca. Para adicionar um alias de marca:
 
 1. Clique no botão **Adicionar**.
 2. Na nova janela de configuração, selecione a **Categoria**. As categorias criadas anteriormente aparecerão aqui.
