@@ -38,7 +38,7 @@ Os clientes do AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service
 Alguns recursos do produto não estão disponíveis na versão gratuita:
 
 * A versão de avaliação está limitada a um domínio. Você não poderá alterar o domínio fornecido após concluir a configuração.
-* A capacidade de implantar otimizações está disponível em Acesso antecipado. Saiba mais em [Otimizar em Perguntas Frequentes da Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions).
+* A capacidade de implantar otimizações está disponível em Acesso antecipado. Saiba mais em [Otimizar em Perguntas Frequentes da Edge](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions).
 
 Consulte a seção abaixo para obter detalhes sobre como ativar a versão de avaliação gratuita e integrar seu domínio.
 
