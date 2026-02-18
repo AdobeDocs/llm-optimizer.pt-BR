@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '4843'
-ht-degree: 45%
+source-wordcount: '4708'
+ht-degree: 44%
 
 ---
 
@@ -800,7 +800,6 @@ A tabela a seguir apresenta oportunidades que podem melhorar a experiência agê
 | Oportunidade | Tipo | Identificação automática | Sugestão automática | Otimizar automaticamente |
 |---------|----------|----------|----------|----------|
 | Recuperar visibilidade do conteúdo | GEO técnico | Detecta páginas em que o conteúdo crítico não está visível para agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Realça o conteúdo que pode ser disponibilizado para agentes de IA e recomenda habilitar a pré-renderização para essas páginas. | Disponibiliza um instantâneo do HTML totalmente renderizado e compatível com IA para tráfego agêntico que recupera o conteúdo oculto anteriormente. |
-| Otimizar cabeçalhos para LLMs | Otimização de conteúdo | Detecta cabeçalhos em branco, duplicados, ausentes ou ambíguos que podem reduzir a legibilidade da máquina. | Propõe uma hierarquia de cabeçalho mais limpa e rótulos aprimorados, além de mostrar uma visualização da estrutura atualizada para cada página. | Injeta a estrutura de cabeçalho aprimorada para agentes de IA, preservando seu design visual e tornando a página mais legível para LLMs. |
 | Adicionar resumos compatíveis com LLM | Otimização de conteúdo | Identifica páginas longas ou complexas que não têm resumos concisos no nível da página ou da seção, dificultando a rápida análise e compreensão por parte da IA. | Recomenda resumos curtos e gerados por IA no nível da página e da seção que capturam o conteúdo principal. | Insere os resumos nas seções relevantes do HTML, melhorando a forma como os modelos interpretam e descrevem o conteúdo da página. |
 | Adicionar perguntas frequentes relevantes | Otimização de conteúdo | Detecta lacunas de intenção no conteúdo da página existente que podem se beneficiar de perguntas frequentes. | Sugere conteúdo de perguntas frequentes gerado por IA e alinhado à intenção do usuário e aos tópicos existentes. | Injeta conteúdo de perguntas frequentes no HTML, tornando as páginas mais visíveis e relevantes em respostas orientadas por IA. |
 | Simplificar conteúdo complexo | Otimização de conteúdo | Sinaliza páginas com texto complexo que pode atrapalhar a compreensão da IA. | Fornece versões simplificadas geradas por IA de texto complexo, preservando o significado original. | Reescreve seções complexas na página, melhorando a legibilidade da IA. |
@@ -823,10 +822,6 @@ Isso garante que a página fique totalmente visível primeiro para os agentes de
 >[!IMPORTANT]
 >Essa funcionalidade de pré-renderização se aplica automaticamente a todas as oportunidades apresentadas abaixo quando implantada com o recurso Otimização na borda, para garantir que a página esteja totalmente visível para os agentes de IA.
 
-### Otimizar cabeçalhos para LLMs
-
-Essa oportunidade detecta páginas em que a estrutura de cabeçalho dificulta a compreensão por parte dos agentes de IA devido a cabeçalhos vazios, duplicados, ausentes ou ambíguos. Em cada página afetada, a oportunidade exibe os cabeçalhos abaixo do ideal e recomenda uma hierarquia mais clara. Quando implantados com o recurso Otimização na borda, os cabeçalhos aprimorados são aplicados no HTML veiculado para o tráfego agêntico. Isso facilita a legibilidade para máquinas, sem alterar o layout para humanos.
-
 ### Adicionar resumos compatíveis com LLM
 
 Essa oportunidade identifica páginas que podem se beneficiar de resumos concisos, ajudando LLMs a entender rapidamente sobre o que se trata o conteúdo da página. Para cada página, a oportunidade detecta onde um resumo é mais necessário e cria resumos gerados por IA no nível da página ou da seção. Ao implantar com o recurso Otimização na borda, esses resumos são inseridos no HTML que os agentes de IA recuperam, melhorando as chances de ter seu conteúdo descrito com mais precisão.
@@ -843,7 +838,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
