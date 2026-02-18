@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: Promova sua marca com o Adobe LLM Optimizer. Acompanhe menções, descubra insights e domine a pesquisa orientada por IA. Comece a otimizar agora mesmo para assumir o controle de sua visualização
-source-git-commit: 8f914fb60036058870b63addae690c945127f349
-workflow-type: ht
-source-wordcount: '71'
-ht-degree: 100%
+source-git-commit: 26ee5a2412bccb955fee1c3aecf45ac918465e55
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 85%
 
 ---
 
@@ -28,4 +28,9 @@ ht-degree: 100%
    + [Configuração do cliente](/help/dashboards/customer-configuration.md)
    + [Colaboração](/help/dashboards/collaboration.md)
 + Recursos adicionais{#resources}
-   + [Otimizar na borda](/help/dashboards/optimize-at-edge.md)
+   + Otimizar na borda{#optimize-at-edge}
+      + [Visão geral](/help/dashboards/optimize-at-edge.md)
+      + [CDN gerenciada do AEM Cloud Service (Fastly)](/help/dashboards/optimize-at-edge-aem-managed-cdn.md)
+      + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge-fastly-byocdn.md)
+      + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge-akamai-byocdn.md)
+      + [Cloudflare (BYOCDN)](/help/dashboards/optimize-at-edge-cloudflare-byocdn.md)
