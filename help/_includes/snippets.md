@@ -1,99 +1,11 @@
 ---
-source-git-commit: beae935e7a34f5bccbe21578fa9a928912958710
+source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 # Trechos
-
-## Verifique a configuração - Adobe Managed CDN {#verify-setup-adobe-aem-cs-cdn}
-
-**Verificar a configuração**
-
-Após concluir a configuração, verifique se o tráfego de bot está sendo roteado para o Edge Otimize e se o tráfego humano não foi afetado.
-
-**1. Tráfego de bot de teste (deve ser otimizado)**
-
-Simular uma solicitação de bot de IA usando um user-agent agêntico:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`, confirmando que a solicitação foi roteada pelo Edge Otimize:
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. Testar tráfego humano (NÃO deve ser afetado)**
-
-Simular uma solicitação regular de navegador humano:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos a antes de habilitar a opção Otimizar no Edge.
-
-**3. Como diferenciar entre os dois cenários**
-
-| Cabeçalho | Tráfego de bot (otimizado) | Tráfego humano (não afetado) |
-|---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
-| `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
-
-O status do roteamento de tráfego também pode ser verificado na interface do usuário do LLM Optimizer. Navegue até **Configuração do cliente** e selecione a guia **Configuração da CDN**.
-
-![Status do Roteamento de Tráfego de IA com roteamento habilitado](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
-
-## Verificar a configuração - BYOCDN {#verify-setup-byocdn}
-
-**Verificar a configuração**
-
-Após concluir a configuração, verifique se o tráfego de bot está sendo roteado para o Edge Otimize e se o tráfego humano não foi afetado.
-
-**1. Tráfego de bot de teste (deve ser otimizado)**
-
-Simular uma solicitação de bot de IA usando um user-agent agêntico:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`, confirmando que a solicitação foi roteada pelo Edge Otimize:
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. Testar tráfego humano (NÃO deve ser afetado)**
-
-Simular uma solicitação regular de navegador humano:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos a antes de habilitar a opção Otimizar no Edge.
-
-**3. Como diferenciar entre os dois cenários**
-
-| Cabeçalho | Tráfego de bot (otimizado) | Tráfego humano (não afetado) |
-|---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
-| `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
-
-O status do roteamento de tráfego também pode ser verificado na interface do usuário do LLM Optimizer. Navegue até **Configuração do cliente** e selecione a guia **Configuração da CDN**.
-
-![Status do Roteamento de Tráfego de IA com roteamento habilitado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 ## Etapas de recuperação da chave de API {#retrieve-byocdn-api-key}
 
@@ -118,4 +30,4 @@ Além disso, se você precisar de ajuda com as etapas acima, entre em contato co
 
 ## Retornar à visão geral {#return-to-overview}
 
-Para saber mais sobre como Otimizar na Edge, incluindo oportunidades disponíveis, fluxos de trabalho de otimização automática e perguntas frequentes, volte para a [visão geral de Otimizar na Edge](/help/dashboards/optimize-at-edge.md).
+Para saber mais sobre como Otimizar na Edge, incluindo oportunidades disponíveis, fluxos de trabalho de otimização automática e perguntas frequentes, volte para a [visão geral de Otimizar na Edge](/help/dashboards/optimize-at-edge/overview.md).

@@ -2,8 +2,8 @@
 title: Oportunidades de otimização
 description: Saiba como usar o painel de oportunidades para detectar automaticamente como seu site pode ser aprimorado para aumentar a visibilidade da marca.
 feature: Opportunities
-source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: ht
+source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 
 ## Otimização automática {#auto-optimization}
 
-A otimização automática permite a implantação de otimizações recomendadas com um só clique, reduzindo as tarefas manuais e o tempo necessário para obter resultados. As otimizações podem ser aplicadas na fonte de conteúdo ou na borda da CDN. A otimização automática na borda está disponível atualmente em acesso antecipado para algumas oportunidades. Para obter mais detalhes, consulte a página do recurso [Otimização na borda](/help/dashboards/optimize-at-edge.md).
+A otimização automática permite a implantação de otimizações recomendadas com um só clique, reduzindo as tarefas manuais e o tempo necessário para obter resultados. As otimizações podem ser aplicadas na fonte de conteúdo ou na borda da CDN. A otimização automática na borda está disponível atualmente em acesso antecipado para algumas oportunidades. Para obter mais detalhes, consulte a página do recurso [Otimização na borda](/help/dashboards/optimize-at-edge/overview.md).
 
 <!--### Recover Content Visibility Opportunity {#recover-contet}
 

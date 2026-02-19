@@ -1,8 +1,8 @@
 ---
 title: Adobe LLM Optimizer
 description: Promova sua marca com o Adobe LLM Optimizer. Acompanhe menções, descubra insights e domine a pesquisa orientada por IA. Comece a otimizar agora mesmo para assumir o controle de sua visualização
-source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
-workflow-type: ht
+source-git-commit: 5af79711014a44e34a43babd60a5a7e18e333b92
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Adobe LLM Optimizer
 
-O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, projetado para ajudar marcas a melhorar sua visibilidade, precisão e influência em ambientes de pesquisa orientados por IA.Ele fornece insights sobre a presença da marca em respostas geradas por IA, oferece recomendações prescritivas de conteúdo e automatiza correções de otimização.
+O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, projetado para ajudar marcas a melhorar sua visibilidade, precisão e influência em ambientes de pesquisa orientados por IA. Ele fornece insights sobre a presença da marca em respostas geradas por IA, oferece recomendações prescritivas de conteúdo e automatiza correções de otimização.
 
 ## Introdução ao LLM Optimizer
 
@@ -126,7 +126,7 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/br/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -211,7 +211,7 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
 
 <!-- CARDS
 
-* ./dashboards/optimize-at-edge.md
+* ./dashboards/optimize-at-edge/overview.md
   {title= Optimize at Edge}
   {image= /help/assets/overview/optimize-on-edge-card.png}
   {description= Learn how to deliver optimizations in LLM Optimizer without any authoring changes required.}
@@ -225,7 +225,7 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/optimize-at-edge.md" title="Otimizar na borda" target="_blank" rel="referrer">
+                    <a href="./dashboards/optimize-at-edge/overview.md" title="Otimizar na borda" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/optimize-on-edge-card.png" alt="Otimizar na borda"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -234,11 +234,11 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" title="Otimizar na borda">Otimizar na borda</a>
+                        <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" title="Otimizar na borda">Otimizar na borda</a>
                     </p>
                     <p class="is-size-6">Saiba como fornecer otimizações no LLM Optimizer sem precisar de alterações de criação.</p>
                 </div>
-                <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="./dashboards/optimize-at-edge/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
