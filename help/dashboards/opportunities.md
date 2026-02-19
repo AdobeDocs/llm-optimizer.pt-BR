@@ -2,9 +2,9 @@
 title: Oportunidades de otimização
 description: Saiba como usar o painel de oportunidades para detectar automaticamente como seu site pode ser aprimorado para aumentar a visibilidade da marca.
 feature: Opportunities
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '512'
 ht-degree: 100%
 
 ---
@@ -32,8 +32,6 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 |---------|----------|----------|----------|
 | Resumir parágrafos longos | Conteúdo (no local) | Detecta parágrafos que excedem os limites de comprimento recomendados. Mostra URLs afetados e trechos de texto excessivamente longos. | Crie resumos ou divida textos longos em seções menores analisáveis. |
 | Conteúdo estruturado recomendado (Perguntas frequentes) | Conteúdo (no local) | Detecta prompts de alta popularidade que não possuam entradas correspondentes na seção de Perguntas frequentes. Mostra prompts relacionados, categorias e URLs afetados. | Adicione blocos de esquema de perguntas frequentes com respostas concisas para corresponder a consultas comuns. |
-| Detectar hreflang ausente | Conteúdo (no local) | Sinaliza páginas sem atributos hreflang. Fornece URLs afetados e cobertura esperada por idioma/região. | Implemente tags hreflang para indicar as versões localizadas corretas. |
-| Detectar canônicos ausentes | Conteúdo (no local) | Procura páginas sem tags canônicas ou com tags conflitantes. Lista URLs afetados e duplicados. | Adicione tags canônicas apontando para a versão preferida de cada página. Garanta um uso consistente entre as variantes. |
 | Detectar tráfego agêntico bloqueado | GEO técnico | Analisa logs da CDN em busca de solicitações bloqueadas de agentes de IA conhecidos (por exemplo, GPTBot, PerplexityBot). Os relatórios afetaram URLs e agentes. | Atualize o arquivo robots.txt ou as configurações do servidor para permitir o acesso de rastreadores de IA compatíveis, quando apropriado. |
 | Detectar problemas 404s/403s/5xx | GEO técnico | Monitora os registros da CDN em busca de respostas de erro. Frequência de relatórios, URLs afetados e perda estimada de ocorrências. | Corrigir links corrompidos, atualizar permissões e resolver problemas do lado do servidor para que o conteúdo principal retorne 200 respostas. |
 | Recuperar a visibilidade do conteúdo (acesso antecipado) | GEO técnico | Sinaliza páginas em que o conteúdo crítico está oculto de agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Pré-renderize as páginas para que haja mais conteúdo sem execução de JavaScript disponível para os agentes de IA. |
@@ -49,3 +47,6 @@ As stated above, the content visibility opportunity, flags pages where key conte
 ### Ferramentas adicionais
 
 O [Verificador de visibilidade de LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) é uma extensão do Chrome que permite ver exatamente quanto do conteúdo da sua página web os LLMs podem acessar e também o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não exige licença ou configuração do produto. Com um único clique, os usuários podem avaliar a legibilidade por máquina de qualquer site e visualizar uma comparação lado a lado do que os agentes de IA veem em relação ao que os usuários humanos veem. Além disso, ele estima quanto conteúdo poderia ser recuperado usando o LLM Optimizer.
+
+<!--| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
+| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |-->
