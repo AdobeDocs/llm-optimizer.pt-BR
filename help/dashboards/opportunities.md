@@ -2,10 +2,10 @@
 title: Oportunidades de otimização
 description: Saiba como usar o painel de oportunidades para detectar automaticamente como seu site pode ser aprimorado para aumentar a visibilidade da marca.
 feature: Opportunities
-source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
+source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 97%
 
 ---
 
@@ -34,6 +34,7 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 | Conteúdo estruturado recomendado (Perguntas frequentes) | Conteúdo (no local) | Detecta prompts de alta popularidade que não possuam entradas correspondentes na seção de Perguntas frequentes. Mostra prompts relacionados, categorias e URLs afetados. | Adicione blocos de esquema de perguntas frequentes com respostas concisas para corresponder a consultas comuns. |
 | Detectar tráfego agêntico bloqueado | GEO técnico | Analisa logs da CDN em busca de solicitações bloqueadas de agentes de IA conhecidos (por exemplo, GPTBot, PerplexityBot). Os relatórios afetaram URLs e agentes. | Atualize o arquivo robots.txt ou as configurações do servidor para permitir o acesso de rastreadores de IA compatíveis, quando apropriado. |
 | Detectar problemas 404s/403s/5xx | GEO técnico | Monitora os registros da CDN em busca de respostas de erro. Frequência de relatórios, URLs afetados e perda estimada de ocorrências. | Corrigir links corrompidos, atualizar permissões e resolver problemas do lado do servidor para que o conteúdo principal retorne 200 respostas. |
+| Simplificar conteúdo complexo | Conteúdo (no local) | Identifica parágrafos longos e complexos que excedem os limites de legibilidade que podem reduzir a compreensão da IA. | Pré-renderize as páginas para que haja mais conteúdo sem execução de JavaScript disponível para os agentes de IA. |
 | Recuperar a visibilidade do conteúdo (acesso antecipado) | GEO técnico | Sinaliza páginas em que o conteúdo crítico está oculto de agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Pré-renderize as páginas para que haja mais conteúdo sem execução de JavaScript disponível para os agentes de IA. |
 
 ## Otimização automática {#auto-optimization}
