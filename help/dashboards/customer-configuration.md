@@ -2,10 +2,10 @@
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como a marca será monitorada e analisada na plataforma do LLM Optimizer.
 feature: Customer Configuration
-source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
-workflow-type: ht
-source-wordcount: '836'
-ht-degree: 100%
+source-git-commit: 3fab5f21311a741e51e7a31cd3a26de79fcbff95
+workflow-type: tm+mt
+source-wordcount: '2100'
+ht-degree: 40%
 
 ---
 
@@ -23,6 +23,7 @@ Para configurar como o LLM Optimizer monitora e analisa a presença da marca em 
 * [Outras marcas](#other-brands)
 * [Aliases da marca](#brand-aliases)
 * [Configuração da CDN](#agentic-cdn)
+* [Google Search Console](#google-console)
 
 >[!IMPORTANT]
 >
@@ -91,7 +92,7 @@ Ao usar aliases de marca, é possível configurar nomes alternativos e variaçõ
 4. Adicione o alias da marca.
 5. Clique em **Salvar** e o alias da marca aparecerá na lista.
 
-Para excluir um alias de marca, clique no ícone de exclusão da lista de aliases.
+Para excluir um alias de marca, clique no ícone **Excluir** da lista de alias.
 
 ## Configuração da CDN {#cdn-configuration}
 
@@ -105,3 +106,132 @@ Na janela **Integrar provedor da CDN**:
 2. Clique em **Integrar** para habilitar o encaminhamento de logs.
 
 Caso selecione **Outro**, entre em contato com llmo-now@adobe.com para obter ajuda.
+
+## Google Search Console {#google-console}
+
+O Adobe LLM Optimizer permite integrar sua conta do Google Search Console para trazer consultas de pesquisa reais diretamente para a interface. Ao descobrir consultas reais do Google Search Console, você pode criar conjuntos de prompts baseados no comportamento de pesquisa real e nos padrões de descoberta de alta intenção. Isso ajuda a priorizar solicitações com base na demanda comprovada e alinha os esforços de otimização do LLM à forma como os usuários fazem a pesquisa no momento. Além disso, você permanece no controle total, pois as consultas nunca são adicionadas automaticamente e devem ser explicitamente selecionadas antes de se tornarem prompts ativos.
+
+### Como funciona {#how-it-works}
+
+O principal a ser lembrado sobre a integração entre o LLM Optimizer e o Google Search Console é o seguinte: em vez de adivinhar manualmente o que os clientes podem pedir a um assistente de IA, observamos o que eles **já estão procurando** e transformamos essas consultas reais em prompts naturais e conversacionais. Esse processo de mudança de consultas de pesquisa para prompts de IA é exemplificado no diagrama abaixo.
+
+![Fluxo do processo](/help/dashboards/assets/diagram-flow.png)
+
+De modo geral, o processo tem cinco etapas:
+
+#### Etapa 1 — Coletar os dados de pesquisa reais {#gsc-one}
+
+O processo começa com as palavras-chave que seu público-alvo está realmente usando quando encontra seu site por meio do Google. Esse conjunto de dados brutos (geralmente milhares de consultas exclusivas) é a base de tudo o que se segue.
+
+#### Etapa 2 — analisar o significado e o filtro para a segurança {#gsc-two}
+
+Cada consulta é analisada por seu significado semântico (sobre o que o usuário realmente está perguntando) e filtrada por um filtro de segurança que remove conteúdo inadequado ou fora da marca. Isso garante que somente palavras-chave limpas e relevantes avancem.
+
+#### Etapa 3 — Agrupar em categorias e tópicos {#gsc-three}
+
+As consultas relacionadas são automaticamente agrupadas em **categorias** (temas empresariais amplos) e **tópicos** (subtópicos focalizados em cada categoria). O sistema prioriza categorias que já estão configuradas na configuração do LLM Optimizer. Além disso, ele também pode exibir novas categorias reveladas pelos dados de pesquisa, mas que ainda não estão sendo monitoradas. O diagrama a seguir é um exemplo de categorias e tópicos para uma marca de mobília:
+
+![Marca de Mobília](/help/dashboards/assets/diagram-example.png)
+
+#### Etapa 4 — Gerar prompts com base em palavras-chave reais {#gsc-four}
+
+Para cada tópico, o sistema gera prompts semelhantes à forma como as pessoas reais conversam com os assistentes de IA. Cada prompt é diretamente influenciado por palavras-chave de pesquisa reais do Google Search Console, transformando a intenção de palavra-chave em perguntas de conversação naturais.
+
+Essa abordagem (baseada em palavras-chave) significa:
+
+* Os prompts refletem a demanda real, não questões hipotéticas.
+* O idioma reflete como seus clientes realmente formulam as coisas.
+* A cobertura abrange toda a amplitude do que as pessoas pesquisam no seu site.
+
+A geração de prompts também considera o perfil da sua marca, incluindo produtos, concorrentes, posicionamento do setor e público-alvo, para garantir que os prompts sejam contextualmente precisos.
+
+#### Etapa 5 - Garantia de qualidade e entrega {#gsc-five}
+
+Antes da entrega, cada prompt passa por várias verificações de qualidade automatizadas:
+
+* Desduplicação — prompts quase idênticos são removidos.
+* Equilíbrio de proporção de marca — garante uma combinação realista (aproximadamente 75% sem marca, ~25% com marca).
+* Qualidade da linguagem — desmonta frases robóticas de modo que incita o som natural.
+* Verificações de consistência — valida datas, remove frases de preenchimento e garante uma duração concisa.
+
+Além disso, cada prompt é marcado com sua categoria, tópico, tipo de intenção e classificação com/sem marca, pronto para o LLM Optimizer começar a monitorar.
+
+#### Anatomia do Prompt {#prompt-anatomy}
+
+Após a conclusão do processo acima, cada prompt entregue ao LLM Optimizer terá os seguintes atributos:
+
+| Texto | Descrição |
+|---------|----------|
+| Texto | O prompt, semelhante a como um usuário o digitaria em um assistente de IA |
+| Categoria | O tema de negócios amplo atribuído a este prompt. |
+| Tópico | O subtópico específico dentro da categoria. |
+| Região | O mercado alvo (por exemplo, EUA, Reino Unido e assim por diante). |
+| Intenção | A mentalidade do usuário: informativa, comparativa, transacional, instrutiva, de planejamento ou delegação. |
+| Tipo | O tipo pode ser de marca (menciona a marca/produtos) ou sem marca (questão genérica do setor). |
+
+### Como usar {#how-to-use}
+
+Siga as etapas apresentadas abaixo para integrar e usar as consultas do Google Search Console com o LLM Optimizer.
+
+#### Conectar o Google Search Console {#connect-console}
+
+Antes de usar esse recurso, é necessário integrar sua conta do Google Search Console ao LLM otimizer.
+
+1. Abra o painel Configuração do cliente.
+1. Navegue até a guia Google Search Console e clique em **Conectar conta**.
+   ![Console do Google Search](/help/dashboards/assets/google-console.png)
+1. Faça logon com uma conta do Google que tenha acesso à propriedade do Console de pesquisa desejada.
+   ![Conta do Google](/help/dashboards/assets/google-account.png)
+1. Escolha a propriedade que deseja conectar.
+   ![Propriedade do Console](/help/dashboards/assets/console-property.png)
+1. Após a conclusão da conexão, o LLM Optimizer começa a recuperar consultas de pesquisa relevantes.
+   ![Recuperando Dados](/help/dashboards/assets/console-complete.png)
+
+#### Revisar e pesquisar consultas {#search-query}
+
+Depois de integrar a conta do Google Search Console ao otimizador do LLM, você pode revisar a lista de tópicos e prompts originados do console de pesquisa e adicionar os prompts da lista.
+
+1. Na guia Google Search Console, revise a lista de tópicos e prompts originados no Search Console.
+   ![Lista de Solicitações](/help/dashboards/assets/prompts-list.png)
+1. Clique na categoria de tópico/prompt desejada para expandir a lista.
+1. Use o botão **Adicionar** para adicionar prompts da lista. Você também pode adicionar prompts e categorias em massa usando **Adicionar tudo**.
+   ![Adicionar Prompts](/help/dashboards/assets/add-prompts.png)
+1. Quando estiver satisfeito com a seleção, clique em **Salvar** na mensagem de notificação.
+
+#### Exibir consultas adicionadas na lista Prompts {#prompts-list}
+
+Depois que uma consulta é adicionada, ela aparece na guia [Prompts](#prompts-brand) no painel Configuração do cliente. Os prompts originados do Google Search Console são marcados com um ícone do Google Search Console na coluna **Origin**. O ícone ajuda a distinguir entre prompts baseados no comportamento de pesquisa do usuário real daqueles adicionados manualmente ou de outras fontes.
+
+### Perguntas frequentes {#gsc-faq}
+
+P: Com que frequência os prompts são atualizados no painel do Google Search Console?
+
+Os prompts originados no Google Search Console geralmente são atualizados uma vez por mês. Cada atualização extrai os dados de consulta de pesquisa mais recentes do Console de pesquisa do Google, executa novamente o pipeline de geração e atualiza o conjunto de prompts. Isso garante que seus prompts permaneçam alinhados às tendências de pesquisa atuais e às mudanças sazonais no comportamento do usuário.
+
+P: Quantos prompts normalmente são originados no Google Search Console?
+
+O número depende do tamanho da implantação e da quantidade de categorias rastreadas. Por exemplo:
+
+| Categorias | Total de tópicos | Solicitações Entregues |
+|---------|----------|----------|
+| 1-2 | 3-8 | ~65-180 |
+| 4-5 | 12-20 | ~270-450 |
+| 10 | 30-40 | ~675-900 |
+
+Nosso objetivo é fornecer conjuntos de solicitações que atendam às metas de qualidade comunicadas durante a avaliação e a integração: pelo menos 20 solicitações por tópico, com 3 a 4 tópicos por categoria e um equilíbrio saudável de marca/sem marca.
+
+P: Quando verei os prompts originados no Google Search Console depois que eu me conectar ao Google Search Console?
+
+Geralmente, os prompts estão disponíveis **dentro de algumas horas** após a conexão do Console de Pesquisa do Google ser estabelecida. O pipeline extrai automaticamente os dados de pesquisa, processa esses dados pelas etapas de geração e controle de qualidade e fornece o prompt final definido para o LLM Optimizer.
+
+P: Quem pode se conectar ao Google Search Console?
+
+Qualquer pessoa com **Proprietário** ou **Permissão Completa** na propriedade do Console de Pesquisa do Google pode autorizar a conexão. Esses são os níveis de permissão que concedem acesso de leitura aos dados de consulta de pesquisa. Se não tiver certeza sobre o seu nível de permissão, você poderá verificá-lo em **Configurações>Usuários** e permissões no Console do Google Search.
+
+P: Posso marcar os prompts como ignorados ou ignorados para que eu não os veja na lista de prompts do Google Search Console?
+
+Sim, você pode excluir qualquer prompt que não deseja monitorar. Os prompts excluídos são removidos da sua lista de prompts ativa e não aparecerão em relatórios futuros. Se um prompt excluído for gerado novamente em uma atualização mensal subsequente, você poderá removê-lo novamente.
+
+P: Depois que eu adicionar prompts do Console do Google Search à minha lista de prompts, dentro de quanto tempo eu verei os dados de Presença da marca desses prompts?
+
+Os dados de presença da marca para prompts adicionados recentemente serão exibidos durante a próxima atualização de dados programada, que normalmente é executada no início de cada semana. Dependendo de quando você adicionar os prompts, poderá ver os resultados em alguns dias.
