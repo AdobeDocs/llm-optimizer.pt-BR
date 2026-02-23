@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 85%
+source-wordcount: '2181'
+ht-degree: 84%
 
 ---
 
@@ -62,6 +62,7 @@ Para orientar o processo de configuração, selecione seu provedor de CDN abaixo
 | Fastly (BYOCDN) | Traga seu próprio CDN | [Exibir guia de instalação](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
 | Akamai (BYOCDN) | Traga seu próprio CDN | [Exibir guia de instalação](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | Traga seu próprio CDN | [Exibir guia de instalação](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | Traga seu próprio CDN | [Exibir guia de instalação](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
 >Se o provedor de CDN não estiver listado acima ou se você não encontrar o domínio ou email na interface do usuário do LLM Optimizer, entre em contato com `llmo-at-edge@adobe.com` para obter assistência de integração. Após a conclusão das configurações, você poderá enviar sugestões para o recurso Otimização na borda no LLM Optimizer.
@@ -113,7 +114,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
