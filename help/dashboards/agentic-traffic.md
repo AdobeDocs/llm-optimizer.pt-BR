@@ -2,10 +2,10 @@
 title: Tráfego agêntico
 description: Saiba como usar o painel Tráfego agêntico para ver como os agentes de IA interagem com o site.
 feature: Agentic Traffic
-source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
-workflow-type: ht
-source-wordcount: '1316'
-ht-degree: 100%
+source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+workflow-type: tm+mt
+source-wordcount: '1333'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,10 @@ Na janela **Integrar provedor de CDN**:
 1. Selecione seu provedor de CDN (por exemplo: Akamai, Fastly gerenciado pela Adobe, Fastly, AWS Cloudfront, Azure CDN, Cloudflare ou outro).
 2. Clique em **Integrar** para habilitar o encaminhamento de logs.
 
-Caso selecione **Outro**, você precisará entrar em contato com llmo-now@adobe.com para obter ajuda.
+Caso selecione **Outro**, entre em contato com llmo-now@adobe.com para obter ajuda.
+
+>[!NOTE]
+>Para obter detalhes sobre o encaminhamento de logs ao usar uma CDN gerenciada pelo cliente (BYOCDN), consulte [Visão geral do encaminhamento de logs BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Depois de ativados, os logs são ingeridos e o painel será preenchido com métricas como total de interações do agente, taxa de sucesso, ocorrências por mercado, análise do agente do usuário e desempenho no nível do URL.
 
@@ -59,13 +62,13 @@ O LLM Optimizer processa um subconjunto de campos dos logs da CDN. Embora os nom
 * Carimbo de data e hora
 * Tipo de conteúdo
 
-Esses campos normalizados são expostos por meio da visualização agêntica. No painel [Tráfego de referência](/help/dashboards/referral-traffic.md), os logs da CDN são utilizados para exibir as métricas de contagem de visitas.Nenhuma informação pessoal identificável (PII) é processada ou armazenada em qualquer estágio da ingestão de logs da CDN ou do tratamento de dados subsequente.
+Esses campos normalizados são expostos por meio da visualização agêntica. No painel [Tráfego de referência](/help/dashboards/referral-traffic.md), os logs da CDN são utilizados para exibir as métricas de contagem de visitas. Nenhuma informação pessoal identificável (PII) é processada ou armazenada em qualquer estágio da ingestão de logs da CDN ou do tratamento de dados subsequente.
 
 ## Filtros {#filters}
 
 Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetarão **todas** as seções presentes no painel. Você pode personalizar o seguinte:
 
-* **Intervalo de datas**: selecione o intervalo de tempo dos dados exibidos. Por exemplo, as últimas 4 semanas. Existe também a opção de personalizar o período de tempo ao selecionar **Semanas personalizadas**.
+* **Intervalo de datas**: selecione o intervalo de tempo dos dados exibidos. Por exemplo, as últimas 4 semanas. Também é possível personalizar o período selecionando a opção **Semanas personalizadas**.
 * **Categoria**: filtre os resultados exibidos por categorias predefinidas ou categorias personalizadas.
 * **Plataforma**: escolha um mecanismo de IA para analisar.
 * **Tipo de agente**: filtre pelo tipo de agente de IA que interagiu com o site. É possível filtrar entre rastreadores, chatbots ou todos os agentes.

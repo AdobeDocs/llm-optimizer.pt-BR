@@ -2,10 +2,10 @@
 title: Início rápido
 description: 'Introdução ao Adobe LLM Optimizer: integre sua marca, desbloqueie os insights de visibilidade da IA e explore painéis para aumentar o desempenho da pesquisa.'
 feature: Quickstart, Onboarding
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 93%
+source-wordcount: '1169'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Os clientes do AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service
 Alguns recursos do produto não estão disponíveis na versão gratuita:
 
 * A versão de avaliação está limitada a um domínio. Você não poderá alterar o domínio fornecido após concluir a configuração.
-* A capacidade de implantar otimizações está disponível em Acesso antecipado. Saiba mais em [Otimizar em Perguntas Frequentes da Edge](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+* A capacidade de implantar otimizações está disponível em Acesso antecipado. Saiba mais em [Otimizar em Perguntas Frequentes da Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Consulte a seção abaixo para obter detalhes sobre como ativar a versão de avaliação gratuita e integrar seu domínio.
 
@@ -103,6 +103,9 @@ Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente 
 
 * [Tráfego agêntico](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Tráfego de referência](/help/dashboards/referral-traffic.md#setup#setup)
+
+>[!NOTE]
+>Para obter detalhes sobre o encaminhamento de logs ao usar uma CDN gerenciada pelo cliente (BYOCDN), consulte [Visão geral do encaminhamento de logs BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 ## Etapa 5: explorar painéis e agir
 
