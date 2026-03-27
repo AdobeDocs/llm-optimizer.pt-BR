@@ -2,7 +2,7 @@
 title: Visão geral dos painéis
 description: Esta é a visão geral do artigo.
 feature: Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 93%
@@ -16,7 +16,8 @@ Boas-vindas à visão geral dos painéis. Os painéis do LLM Optimizer ajudam pr
 
 As principais visualizações incluem Visão geral, Presença da marca, Agente e Tráfego de referência, Inspetor de URL, Oportunidades, Collaboration e Configuração do cliente.
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}

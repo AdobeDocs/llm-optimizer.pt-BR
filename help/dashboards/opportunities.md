@@ -2,7 +2,7 @@
 title: Oportunidades de otimização
 description: Saiba como usar o painel de oportunidades para detectar automaticamente como seu site pode ser aprimorado para aumentar a visibilidade da marca.
 feature: Opportunities
-source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
+source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 97%
@@ -41,13 +41,17 @@ Apresentamos abaixo uma tabela de oportunidades aceitas no momento:
 
 A otimização automática permite a implantação de otimizações recomendadas com um só clique, reduzindo as tarefas manuais e o tempo necessário para obter resultados. As otimizações podem ser aplicadas na fonte de conteúdo ou na borda da CDN. A otimização automática na borda está disponível atualmente em acesso antecipado para algumas oportunidades. Para obter mais detalhes, consulte a página do recurso [Otimização na borda](/help/dashboards/optimize-at-edge/overview.md).
 
-<!--### Recover Content Visibility Opportunity {#recover-contet}
+<!--
+### Recover Content Visibility Opportunity {#recover-contet}
 
-As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.
+-->
 
 ### Ferramentas adicionais
 
 O [Verificador de visibilidade de LLM](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) é uma extensão do Chrome que permite ver exatamente quanto do conteúdo da sua página web os LLMs podem acessar e também o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, ele não exige licença ou configuração do produto. Com um único clique, os usuários podem avaliar a legibilidade por máquina de qualquer site e visualizar uma comparação lado a lado do que os agentes de IA veem em relação ao que os usuários humanos veem. Além disso, ele estima quanto conteúdo poderia ser recuperado usando o LLM Optimizer.
 
-<!--| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
-| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |-->
+<!--
+| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
+| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |
+-->

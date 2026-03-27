@@ -2,8 +2,8 @@
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 100%
 
@@ -30,17 +30,19 @@ No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Par
 
 ![Configuração de referência](/help/dashboards/assets/referral-setup1.png)
 
-<!--- 1. Select your Source (either CDN logs or AEM Operational Telemetry).
+<!--
+1. Select your Source (either CDN logs or AEM Operational Telemetry).
 2. Enter a primary contact email.
-3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
+3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM
+-->
 
 Uma vez ativado, o painel será preenchido com métricas de tráfego de referência.
 
 ## Filtros {#filters}
 
-Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetam **todas** as seções presentes no painel. Você pode personalizar o seguinte:
+Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetarão **todas** as seções presentes no painel. Você pode personalizar o seguinte:
 
-* **Intervalo de datas**: selecione o intervalo de tempo dos dados exibidos. Por exemplo, as últimas 4 semanas. Você também pode personalizar o período selecionando a opção **Semanas personalizadas**.
+* **Intervalo de datas**: selecione o intervalo de tempo dos dados exibidos. Por exemplo, as últimas 4 semanas. Também é possível personalizar o período selecionando a opção **Semanas personalizadas**.
 * **Plataforma**: escolha uma fonte de tráfego específica, como Google, OpenAI ou redes sociais.
 * **Intenção da página**: filtre o tráfego de referência por intenção do usuário.
 * **Origem do canal**: filtre pela origem do canal. As opções incluem: LLMs, canais de referência orgânica, pagos ou mistos.
@@ -62,11 +64,13 @@ O painel destaca o desempenho geral da referência ao exibir as métricas princi
 
 Além das métricas de desempenho gerais apresentadas acima, há três painéis adicionais que mostram a distribuição do tráfego em diferentes mercados, fontes de referência e categorias de intenção de página <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
-<!--## Top Referral URLs {#top-referrals}
+<!--
+## Top Referral URLs {#top-referrals}
 
 The Top Referral URLs list surfaces your site's most visited pages from referrals.
 
-![Top Referral URLs](/help/dashboards/assets/top-url.png)-->
+![Top Referral URLs](/help/dashboards/assets/top-url.png)
+-->
 
 ## Detalhes de fontes de referência e Análise de desempenho do URL {#traffic-details}
 

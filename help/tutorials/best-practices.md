@@ -2,8 +2,8 @@
 title: Práticas recomendadas do LLM Optimizer
 description: Descubra as práticas recomendadas da otimização de LLM para aumentar a visibilidade da marca em pesquisas com IA. Insights para avaliação de desempenho e otimização de conteúdo.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
 
@@ -57,8 +57,8 @@ Outras considerações para a otimização de LLM:
 A criação de uma campanha de otimização de LLM bem-sucedida envolve:
 
 * Identificar tópicos de alto valor alinhados à intenção do cliente. Alinhar a intenção do prompt com metas de negócios e necessidades do consumidor.
-* Detectar menções a outros, incluindo concorrentes, para encontrar lacunas e oportunidades.Concentre-se nos prompts em que outros são citados, indicando oportunidades de inclusão da marca.
-* Agrupar prompts por intenção com o agrupamento de tópicos: use tópicos e campos de pesquisa e agrupe metas do usuário semelhantes para avaliar a visibilidade. 
+* Detectar menções a outros, incluindo concorrentes, para encontrar lacunas e oportunidades. Concentre-se nos prompts em que outros são citados, indicando oportunidades de inclusão da marca.
+* Agrupar prompts por intenção com o agrupamento de tópicos: use tópicos e campos de pesquisa e agrupe metas do usuário semelhantes para avaliar a visibilidade.
 * Avalie a credibilidade da marca com padrões EEAT (Experiência, Perícia, Autoridade, Confiabilidade) e YMYL (Seu Dinheiro ou Sua Vida).
 
 Essa abordagem estratégica garante melhorias direcionadas e orientadas por dados na visibilidade em LLM.
@@ -82,7 +82,7 @@ Entender e aproveitar essas etapas pode ajudar a marca a permanecer relevante à
 
 ## Otimização no site – fortalecimento do conteúdo próprio
 
-A otimização no site aprimora o conteúdo próprio para visibilidade em LLM.Essas são ações realizadas no seu próprio site e propriedades digitais para melhorar como os LLMs percebem, acessam e citam sua marca.
+A otimização no site aprimora o conteúdo próprio para visibilidade em LLM. Essas são ações realizadas no seu próprio site e propriedades digitais para melhorar como os LLMs percebem, acessam e citam sua marca.
 
 >[!TIP]
 >
@@ -118,7 +118,7 @@ A Otimização externa se concentra em melhorar a visibilidade da marca em respo
 
 >[!TIP]
 >
->O LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md).Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente no site com o LLM Optimizer.
+>O LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md). Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente no site com o LLM Optimizer.
 
 
 Principais canais externos:
@@ -237,12 +237,14 @@ Estas são as métricas a serem monitoradas:
 * Sentimento e posicionamento das menções à marca
 * Tendências da pontuação de visibilidade ao longo do tempo
 
-<!-- Add screenshot when available in demo environment>
-
+<!--
+Add screenshot when available in demo environment>
+-->
 
 <!-- Use the "Share of Voice" feature to see which competitors are dominating specific topics and adjust your strategy accordingly.-->
 
-<!-- Purpose: Measure how much of the conversation your brand owns compared to competitors.
+<!--
+Purpose: Measure how much of the conversation your brand owns compared to competitors.
 Insight:
 
 This feature shows the percentage of visibility your brand has for specific topics compared to competitors.
@@ -250,9 +252,11 @@ This feature shows the percentage of visibility your brand has for specific topi
 
 Best Practice:
 
-Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.-->
+Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.
+-->
 
-<!--6. Content Visibility
+<!--
+6. Content Visibility
 
 Purpose: Ensure LLMs can access and render your content.
 Insight:
@@ -264,7 +268,5 @@ It provides a percentage of content visibility, highlighting areas where LLMs ma
 Best Practice:
 
 Use nametbd feature to render static HTML versions of your pages for LLM bots, ensuring full content visibility.
-Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.-->
-
-
-
+Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.
+-->

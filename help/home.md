@@ -1,7 +1,7 @@
 ---
 title: Adobe LLM Optimizer
 description: Promova sua marca com o Adobe LLM Optimizer. Acompanhe menções, descubra insights e domine a pesquisa orientada por IA. Comece a otimizar agora mesmo para assumir o controle de sua visualização
-source-git-commit: 5af79711014a44e34a43babd60a5a7e18e333b92
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -15,7 +15,8 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
 
 ## Introdução ao LLM Optimizer
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./overview/overview.md
   {title= LLM Optimizer overview}
@@ -112,7 +113,8 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
 
 ## Saiba mais sobre o LLM Optimizer
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./overview/best-practices-topics-prompts.md
   {title= Best practices for setting up categories, topics, prompts, and tracking others}
@@ -126,7 +128,7 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/br/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -209,7 +211,8 @@ O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO, proje
 
 ## Otimizar na borda
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./dashboards/optimize-at-edge/overview.md
   {title= Optimize at Edge}

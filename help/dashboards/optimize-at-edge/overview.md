@@ -2,7 +2,7 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
 workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 84%
@@ -15,6 +15,7 @@ ht-degree: 84%
 Esta página oferece uma visão geral detalhada sobre como fornecer otimizações na borda da CDN sem realizar alterações de criação. Ela aborda o processo de integração, as oportunidades de otimização disponíveis e como otimizar automaticamente na borda.
 
 >[!NOTE]
+>
 >Essa funcionalidade está atualmente em disponibilidade antecipada. Saiba mais sobre os programas de acesso antecipado [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## O que é a otimização na borda?
@@ -47,6 +48,7 @@ Pré-requisitos para a integração à Otimização na borda:
 * Conclua o processo de encaminhamento de logs da CDN.
 
 Requisitos para a equipe de TI/CDN:
+
 * Adicione o agente-usuário `*AdobeEdgeOptimize/1.0*` ao Incluo na lista de permissões no arquivo robots.txt do site ou nas regras de gerenciamento de tráfego de bot.
 * Verifique se as páginas não estão bloqueadas no nível de domínio ou da CDN.
 * Adicionar regras de roteamento para o recurso Otimização na borda da CDN.
@@ -65,6 +67,7 @@ Para orientar o processo de configuração, selecione seu provedor de CDN abaixo
 | CloudFront (BYOCDN) | Traga seu próprio CDN | [Exibir guia de instalação](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
+>
 >Se o provedor de CDN não estiver listado acima ou se você não encontrar o domínio ou email na interface do usuário do LLM Optimizer, entre em contato com `llmo-at-edge@adobe.com` para obter assistência de integração. Após a conclusão das configurações, você poderá enviar sugestões para o recurso Otimização na borda no LLM Optimizer.
 
 Cada guia de configuração de CDN acima inclui etapas de verificação detalhadas no final para confirmar que o tráfego agêntrico está sendo roteado corretamente e que o tráfego humano não é afetado.
@@ -114,7 +117,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
@@ -152,13 +155,15 @@ P. Que tipo de LLMs são direcionados com o recurso Otimização na borda?
 
 A lista de agentes de usuário a serem direcionados é definida por você durante o processo de integração.
 
-<!--Q. What does "Edge" in Optimize at Edge mean?
+<!--
+Q. What does "Edge" in Optimize at Edge mean?
 
 In our context, "Edge" means that the optimization is applied at the CDN layer and not inside your CMS.
 
 Q. Why does this optimization require a CDN?
 
-The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.-->
+The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.
+-->
 
 P. O que acontece se eu ainda não estiver integrado(a) ao recurso Otimização na borda?
 
