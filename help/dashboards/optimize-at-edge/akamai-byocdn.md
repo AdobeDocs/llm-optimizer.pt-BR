@@ -2,10 +2,10 @@
 title: Otimizar na Edge - Akamai (BYOCDN)
 description: Saiba como configurar o Akamai BYOCDN para Otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 14%
+source-wordcount: '745'
+ht-degree: 11%
 
 ---
 
@@ -47,6 +47,10 @@ Definir roteamento para os seguintes user-agents:image.png
 **2. Definir origem e comportamento do SSL**
 
 Definir origem como `live.edgeoptimize.net` e Corresponder SAN a `*.edgeoptimize.net`
+
+>[!NOTE]
+>
+>Se a ativação de propriedades falhar depois de adicionar a regra Otimizar no Edge, verifique se a regra usa um modo de verificação SSL do Servidor de Origem diferente da regra padrão. Se isso acontecer, atualize a regra Otimizar no Edge para corresponder à regra padrão. Por exemplo, se a regra padrão usa **Configurações de plataforma**, use **Configurações de plataforma** aqui também. Se não conseguir usar a configuração necessária, entre em contato com o suporte da Akamai.
 
 ![Definir origem e comportamento do SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ A configuração de failover do site tem duas partes: o comportamento de failove
 
 Dentro da regra de roteamento principal, configure o comportamento Failover do site e o trecho XML avançado da seguinte maneira:
 
+>[!IMPORTANT]
+>
+>O trecho XML nesta etapa requer o comportamento **Avançado**. Em alguns ambientes do Akamai, esse comportamento não está disponível para edição de autoatendimento. Se você não vir a opção **Avançado**, entre em contato com a equipe de conta do Akamai ou com o suporte do Akamai para habilitar a configuração necessária.
+
 ![Failover de site](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo` por meio do XML Avançado:
@@ -120,6 +128,8 @@ Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo`
 >```
 >
 >Isso garante que a regra de cabeçalho de teste de failover seja avaliada para **todas** regras de roteamento, não apenas uma.
+>
+>Além disso, certifique-se de que a regra **Otimizar no Edge Routing** não seja substituída por nenhuma regra correspondente posterior que altere a origem, o comportamento de cache ou a ID do cache para as mesmas solicitações. Se outra regra de correspondência redefinir esses comportamentos, Otimizar no roteamento ou cache do Edge pode não funcionar conforme esperado.
 
 Se o valor `x-edgeoptimize-request` do cabeçalho da solicitação for `fo`, defina o cabeçalho de resposta de saída `x-edgeoptimize-fo` como `true`.
 
