@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 84%
+source-wordcount: '2240'
+ht-degree: 77%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 84%
 # Otimizar na borda
 
 Esta página oferece uma visão geral detalhada sobre como fornecer otimizações na borda da CDN sem realizar alterações de criação. Ela aborda o processo de integração, as oportunidades de otimização disponíveis e como otimizar automaticamente na borda.
-
->[!NOTE]
->
->Essa funcionalidade está atualmente em disponibilidade antecipada. Saiba mais sobre os programas de acesso antecipado [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## O que é a otimização na borda?
 
@@ -40,7 +36,17 @@ Algumas oportunidades que podem melhorar a experiência agêntica na web são co
 
 ## Integração
 
-Entre em contato com a equipe de contas da Adobe ou com a equipe do FDE para iniciar o processo de integração. Sua equipe de TI ou CDN também é necessária para concluir os pré-requisitos e o processo de configuração. Além disso, também é possível entrar em contato com `llmo-at-edge@adobe.com` para obter maior assistência na integração.
+<!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
+
+Inicie o processo de integração na sua conta da LLM Optimizer:
+
+1. No painel **Configuração do cliente** n, selecione a guia **Configuração de CDN**.
+1. Clique em **CDN integrada**.
+   ![Guia Configuração de CDN](/help/overview/assets/cc-cdn.png)
+1. Para clientes do AEM Fastly, a Adobe pode ajudar na conclusão do processo de integração. Para clientes que usam outros provedores de CDN, sua equipe de TI/CDN precisa concluir a configuração e os pré-requisitos necessários. Você também pode consultar os guias de CDN de exemplo fornecidos abaixo para obter orientação adicional.
+
+>[!NOTE]
+>Consulte os guias passo a passo abaixo que abordam o fluxo completo de integração. Para problemas não resolvidos pelos guias, entre em contato com `llmo-at-edge@adobe.com`.
 
 Pré-requisitos para a integração à Otimização na borda:
 
@@ -85,7 +91,7 @@ A tabela a seguir apresenta oportunidades que podem melhorar a experiência agê
 
 ### Ferramentas adicionais
 
-O [Adobe LLM Optimizer: sua página da web pode ser citada?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) A extensão do Chrome mostra quanto do conteúdo da sua página da web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, não exige licença ou configuração do produto.
+A extensão de navegador [Verificador de Visibilidade do conteúdo de IA](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) mostra quanto do seu conteúdo de página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, não exige licença ou configuração do produto.
 
 Com um clique único, você pode avaliar a legibilidade por máquina de qualquer site. Você pode visualizar uma comparação lado a lado do que os agentes de IA veem em comparação com o que os usuários humanos veem e estimar quanto conteúdo poderia ser recuperado usando o LLM Optimizer. Acesse a página [A IA pode ler o seu site?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) para obter mais informações.
 
@@ -117,7 +123,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
@@ -150,6 +156,10 @@ A reversão reverte com segurança uma otimização implantada anteriormente. A 
 ![Reversão](/help/assets/optimize-at-edge/rollback.png)
 
 ## Perguntas frequentes
+
+P: Os clientes de avaliação podem experimentar o Otimize na Edge?
+
+Sim, os clientes de avaliação podem acessar uma oportunidade de otimização e implantá-la por até 10 páginas. Por padrão, a oportunidade é Recuperar Visibilidade do conteúdo, o que permite que os agentes de IA acessem a versão completa do conteúdo da página.
 
 P. Que tipo de LLMs são direcionados com o recurso Otimização na borda?
 
