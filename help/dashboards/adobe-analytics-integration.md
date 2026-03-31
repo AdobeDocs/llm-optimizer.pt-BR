@@ -86,7 +86,7 @@ Durante a configuração, você define qual conjunto de relatórios e dimensão 
 
 ### Como o tráfego LLM é identificado
 
-O tráfego originado por LLM é identificado com o uso do [Tipo de referenciador — Ferramentas de IA de conversação](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools) do Adobe Analytics.
+O tráfego originado por LLM é identificado com o uso do [Tipo de referenciador — Ferramentas de IA de conversação](https://experienceleague.adobe.com/pt-br/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools) do Adobe Analytics.
 
 ### Dados assimilados {#data-ingested}
 
