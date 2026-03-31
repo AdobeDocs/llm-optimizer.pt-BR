@@ -1,22 +1,22 @@
 ---
 title: Início rápido
-description: 'Introdução ao Adobe LLM Optimizer: integre sua marca, desbloqueie os insights de visibilidade da IA e explore painéis para aumentar o desempenho da pesquisa.'
+description: Saiba como integrar o nome da marca e o domínio, ativar a avaliação no Experience Hub ou no Experience Cloud e concluir a configuração do Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 92%
+source-wordcount: '1208'
+ht-degree: 47%
 
 ---
 
 
 # Início rápido
 
-Para começar a usar o LLM Optimizer, é necessário concluir o processo de integração conforme detalhado nas etapas apresentadas abaixo. Após concluir o processo, você terá acesso total aos [painéis do LLM Optimizer](/help/dashboards/dashboards-overview.md) e a outras funcionalidades.
+Para começar a usar o LLM Optimizer, é necessário concluir o processo de integração. Após a integração, você poderá personalizar categorias, tópicos, prompts e configurar o encaminhamento de logs para obter insights mais precisos e acesso total aos [painéis do LLM Optimizer](/help/dashboards/dashboards-overview.md) e outras funcionalidades.
 
 ## Visão geral da integração
 
-O processo de integração começa com a integração do seu domínio. O processo é diferente dependendo se você é cliente da AEM Cloud ou não. Após concluir o processo, será necessário fornecer informações para o Encaminhamento de logs da CDN e, por fim, personalizar categorias, tópicos e prompts. Cada parte do processo é detalhada abaixo, juntamente com dicas úteis sobre como começar a usar o LLM Optimizer o mais rápido possível.
+O processo de integração começa com a integração do domínio e do nome da marca. Cada parte da jornada de integração é detalhada abaixo, juntamente com dicas úteis sobre como começar a usar o LLM Optimizer o mais rápido possível.
 
 ### Permitir que o Adobe LLM Optimizer acesse páginas públicas
 
@@ -24,49 +24,78 @@ Para fornecer conteúdo preciso e recomendações técnicas, o Adobe LLM Optimiz
 
 Requisitos de configuração:
 
-* Adicione o agente de usuário Spacecat/1.0 à lista de permissões no arquivo robots.txt do seu site ou nas regras de gerenciamento de tráfego de bots
-* Verifique se as páginas não estão bloqueadas no nível de domínio ou da CDN. Páginas bloqueadas não podem ser indexadas, o que significa que tarefas de otimização e insights não podem ser gerados para elas.
+* Adicione o agente de usuário Spacecat/1.0 ao Incluo na lista de permissões nas regras de gerenciamento de tráfego de bot ou robots.txt do site.
+* Certifique-se de que as páginas não estejam bloqueadas no nível de domínio ou CDN. Páginas bloqueadas não podem ser indexadas, o que significa que tarefas de otimização e insights não podem ser gerados para elas.
 
 Se a visibilidade do conteúdo parecer baixa no painel, verifique se o rastreador tem acesso aos seus domínios. O acesso restrito é uma causa comum de indexação incompleta.
 
-## Etapa 1: integrar seu domínio
+## Etapa 1: integre o nome da sua marca e domínio {#step-1-onboard-your-domain}
 
-### Experimentar antes de comprar
+Para começar a usar o LLM Optimizer, primeiro ative sua versão de avaliação (se elegível) e integre o nome da marca e o domínio.
 
-Os clientes do AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) têm a opção de usar a oferta **Experimentar antes de comprar**. É uma versão de avaliação gratuita do LLM Optimizer com até 200 prompts gratuitos. O uso de mais de 200 prompts exige um contrato de licença separado. O acesso é fornecido no “estado em que se encontra” e “conforme disponível” e pode ser modificado, limitado ou removido pela Adobe a qualquer momento.
+### Ativar sua versão de avaliação
 
-Alguns recursos do produto não estão disponíveis na versão gratuita:
+O fluxo de ativação é diferente dependendo do produto Adobe.
 
-* A versão de avaliação está limitada a um domínio. Você não poderá alterar o domínio fornecido após concluir a configuração.
-* A capacidade de implantar otimizações está disponível em Acesso antecipado. Saiba mais em [Otimizar em Perguntas Frequentes da Edge](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+#### Clientes da AEM Cloud
 
-Consulte a seção abaixo para obter detalhes sobre como ativar a versão de avaliação gratuita e integrar seu domínio.
+Para ativar sua avaliação, como cliente da AEM Cloud, você pode:
 
-### Clientes da AEM Cloud
-
-Se você é cliente da AEM Cloud, tem a opção de experimentar o LLM Optimizer usando o cartão de anúncio do produto no [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub).
-
->[!NOTE]
->Os prompts adicionados recentemente não aparecerão no [Painel de presença da marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído. Os clientes da AEM Cloud podem usar a versão de avaliação gratuita do LLM Optimizer. O uso de mais de 200 prompts exige um contrato de licença separado. O acesso é fornecido no “estado em que se encontra” e “conforme disponível” e pode ser modificado, limitado ou removido pela Adobe a qualquer momento. Entre em contato com o seu representante de conta para obter mais informações.
+* Navegue até [Experience Hub](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) e use o cartão Anúncio do Produto para ativar o LLM Optimizer. Após selecionar **Tentar LLM Optimizer**, você será redirecionado para [https://llmo.now](https://llmo.now). Faça logon por meio do IMS e insira um domínio e um nome de marca para iniciar o processo de integração.
+* Ou vá diretamente para [https://llmo.now](https://llmo.now) e entre.
 
 ![Versão de avaliação do LLM Optimizer](/help/overview/assets/llm-trial.png)
 
-Depois de clicar no botão **Testar o LLM Optimizer**, haverá um redirecionamento para [https://llmo.now](https://llmo.now). Em seguida, será necessário fazer logon via IMS. Depois de fazer logon, você deve iniciar o processo de integração fornecendo um domínio e o nome da marca.
+#### Clientes do Adobe Analytics
+
+Se você for cliente do Adobe Analytics, verá um banner na página inicial do Experience Cloud.
+
+![Página inicial do Experience Cloud com o banner Iniciar avaliação do Adobe LLM Optimizer](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+
+Você pode ativar sua versão de avaliação de uma das seguintes maneiras:
+
+* Selecione **Iniciar sua avaliação do Adobe LLM Optimizer** no banner.
+* Vá diretamente para [https://llmo.now](https://llmo.now) e entre.
+
+Quando a versão de avaliação estiver ativa, continue com a integração do nome da marca e do domínio.
+
+>[!NOTE]
+>
+> * **Avaliação gratuita:** os clientes da AEM Cloud e da Adobe Analytics podem usar a versão de avaliação gratuita do LLM Optimizer.
+> * **Os clientes que ativarem a avaliação em ou após 1º de abril de 2026** poderão usar até 100 prompts, um domínio e implantar otimizações em até 10 URLs para um único tipo de oportunidade.
+> * **Os clientes que ativaram a avaliação antes de 1º de abril de 2026** continuam a ter acesso a até 200 prompts de acordo com seus termos existentes.
+>
+>O uso além dos limites incluídos requer um contrato de licença separado. O acesso é fornecido &quot;no estado em que se encontra&quot; e &quot;conforme disponível&quot; e pode ser modificado, limitado ou removido a qualquer momento. Entre em contato com seu representante de conta para obter mais informações.
+
+#### Integre o nome da sua marca e domínio
+
+Integre o nome da marca e o domínio para começar a usar o LLM Optimizer.
+
+1. Insira o nome da sua marca e o domínio associado.
+
+   * Esse deve ser o domínio principal onde você deseja analisar e otimizar o conteúdo.
+
+1. Integração concluída.
+
+   * Depois de enviado, o LLM Optimizer começa a analisar seu domínio e gerar insights.
 
 ![Domínio do LLM Optimizer](/help/overview/assets/domain.png)
+
+>[!NOTE]
+>Os prompts adicionados recentemente não aparecerão no [Painel de presença da marca](/help/dashboards/brand-presence.md) até que o processamento seja concluído.
 
 >[!NOTE]
 >O domínio fornecido será usado por todos da sua organização e não poderá ser alterado.
 
 Um pequeno conjunto de categorias, tópicos e prompts é gerado durante a fase de integração. A análise de presença da marca nesses prompts estará disponível logo após a integração do site.
 
-<!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
+A capacidade de implantar otimizações na borda também está disponível. Saiba mais em [Otimizar na Edge — Perguntas frequentes](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
-Além disso, você também precisa configurar o [encaminhamento de logs da CDN](#step-4) para análise de tráfego. O LLM Optimizer exige dados de presença da marca e insights do tráfego agêntico e de referência para identificar oportunidades e fornecer recomendações prescritivas a fim de aumentar a visibilidade da IA.
+Além disso, configure o [encaminhamento de logs da CDN](#step-4) para análise de tráfego. O LLM Optimizer exige dados e insights de Presença da marca do agente e do tráfego de referência para identificar oportunidades e fornecer recomendações prescritivas que aumentem a visibilidade da IA.
 
 ### Clientes que não usam a AEM Cloud
 
-Após a finalização do contrato comercial, você será integrado ao domínio que deseja integrar no LLM Optimizer. Assim que a integração for concluída, você poderá fazer logon no LLM Optimizer por meio de [https://llmo.now](https://llmo.now).
+Depois que sua organização finalizar o contrato comercial, você será integrado à LLM Optimizer com o domínio selecionado por sua organização. Quando a integração terminar, entre em [https://llmo.now](https://llmo.now).
 
 ## Etapa 2: personalizar categorias, tópicos e prompts
 
@@ -95,14 +124,14 @@ Após a integração do domínio, você verá informações iniciais na visualiz
 
 ## Etapa 4: fornecer informações para encaminhamento de logs da CDN {#step-4}
 
-Para obter insights sobre tráfego agêntico e tráfego de referência, você precisa fornecer informações para o encaminhamento de logs da CDN. Elas podem ser adicionadas a partir do [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration), acessado pela guia **Configuração de CDN** e por clicar em **Integrar CDN**.
+Para desbloquear os insights de Tráfego e Tráfegos de referência do Agente, adicione informações de encaminhamento de log CDN no [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra a guia **Configuração de CDN** e selecione **CDN integrada**.
 
 ![CDN de configuração do cliente](/help/overview/assets/cc-cdn.png)
 
 Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente (conforme descrito acima), será solicitado que você adicione o encaminhamento de logs de CDN ao acessar os painéis de tráfego agêntico e de referência pela primeira vez. Para obter mais detalhes, consulte:
 
 * [Tráfego agêntico](/help/dashboards/agentic-traffic.md#cdn-setup)
-* [Tráfego de referência](/help/dashboards/referral-traffic.md#setup#setup)
+* [Tráfego de referência](/help/dashboards/referral-traffic.md#setup)
 
 >[!NOTE]
 >Para obter detalhes sobre o encaminhamento de logs ao usar uma CDN gerenciada pelo cliente (BYOCDN), consulte [Visão geral do encaminhamento de logs BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
@@ -112,7 +141,7 @@ Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente 
 Depois de fornecer informações sobre o encaminhamento de logs da CDN, você poderá:
 
 * Visualizar o painel de [Presença da marca](/help/dashboards/brand-presence.md), ver sua pontuação de visibilidade e acompanhar seu desempenho em relação a outras marcas.
-* Explorar os painéis de [Tráfego agêntico](/help/dashboards/agentic-traffic.md) e [Tráfego de referência](/help/dashboards/referral-traffic.md), se o encaminhamento de logs da CDN tiver sido configurado.
+* Explore os painéis [Agente](/help/dashboards/agentic-traffic.md) e [Tráfego de referência](/help/dashboards/referral-traffic.md), se o encaminhamento de log de CDN tiver sido configurado.
 * Usar [oportunidades](/help/dashboards/opportunities.md) para identificar melhorias técnicas e de conteúdo.
 * Exportar dados e colaborar com sua equipe ou convidar um colega de trabalho para usar o produto.
 
