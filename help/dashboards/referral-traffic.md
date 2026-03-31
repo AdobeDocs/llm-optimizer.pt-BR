@@ -2,10 +2,10 @@
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 90%
 
 ---
 
@@ -13,6 +13,9 @@ ht-degree: 100%
 # Tráfego de referência
 
 O Tráfego de referência mostra como os visitantes chegam ao site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de plataformas e sites externos. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Também há filtros personalizáveis para ajudar você a refinar os dados exibidos.
+
+>[!NOTE]
+>Por padrão, este painel cria insights de tráfego dos **logs de CDN**. Se sua organização possui uma oferta paga, você pode conectar o **Adobe Analytics** para adicionar dados que medem a descoberta orientada por IA e o envolvimento do site. Estes dados estão disponíveis na guia **Impacto nos Negócios**. Sem a integração com o Adobe Analytics, a guia não é preenchida. Consulte [Integração do Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) para obter mais detalhes.
 
 ![Página de referência](/help/dashboards/assets/referral-traffic.png)
 
@@ -47,7 +50,7 @@ Na parte superior da página, é possível aplicar filtros para refinar a visual
 * **Intenção da página**: filtre o tráfego de referência por intenção do usuário.
 * **Origem do canal**: filtre pela origem do canal. As opções incluem: LLMs, canais de referência orgânica, pagos ou mistos.
 * **Tipo de dispositivo**: analise o tráfego pelo tipo de dispositivo do visitante: desktop, dispositivo móvel ou todos os dispositivos.
-  **Região**: visualize padrões de referência em diferentes regiões.
+* **Região**: visualize padrões de referência em diferentes regiões.
 
 Após selecionar o filtro desejado, clique em **Aplicar filtros** para aplicar a seleção ao painel.
 
