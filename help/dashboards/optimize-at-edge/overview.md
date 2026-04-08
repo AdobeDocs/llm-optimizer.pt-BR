@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 77%
+source-wordcount: '2348'
+ht-degree: 73%
 
 ---
 
@@ -40,7 +40,7 @@ Algumas oportunidades que podem melhorar a experiência agêntica na web são co
 
 Inicie o processo de integração na sua conta da LLM Optimizer:
 
-1. No painel **Configuração do cliente** n, selecione a guia **Configuração de CDN**.
+1. No painel **Configuração do cliente**, selecione a guia **Configuração de CDN**.
 1. Clique em **CDN integrada**.
    ![Guia Configuração de CDN](/help/overview/assets/cc-cdn.png)
 1. Para clientes do AEM Fastly, a Adobe pode ajudar na conclusão do processo de integração. Para clientes que usam outros provedores de CDN, sua equipe de TI/CDN precisa concluir a configuração e os pré-requisitos necessários. Você também pode consultar os guias de CDN de exemplo fornecidos abaixo para obter orientação adicional.
@@ -60,7 +60,14 @@ Requisitos para a equipe de TI/CDN:
 * Adicionar regras de roteamento para o recurso Otimização na borda da CDN.
 * Confirme o roteamento do recurso Otimização na borda na interface do LLM Optimizer.
 
+>[!IMPORTANT]
+>O roteamento deve ser configurado no CDN externo (o CDN mais próximo ao cliente). Se você tiver vários CDNs, o roteamento só poderá ser feito no CDN externo.
+
 Para orientar o processo de configuração, selecione seu provedor de CDN abaixo e siga o guia de configuração correspondente. Lembre-se de que esses exemplos devem ser adaptados à sua configuração atualmente ativa. Recomendamos aplicar as alterações nos ambientes inferiores primeiro.
+
+### Preparando chaves de API do domínio (opcional)
+
+Se você testar em um nome de host de preparo antes da produção, use o LLM Optimizer para registrar um **um** domínio de preparo e copiar sua chave de API de Otimização do Edge **de preparo** de **Configuração do cliente** → **Configuração do CDN** → **Implantar otimizações para agentes de IA** → **Adicionar domínio de preparo** (ou **Domínio de preparo**). O nome de host de preparo deve compartilhar o mesmo domínio registrável do site de produção. Os guias **Trazer Seu Próprio CDN** incluem as etapas completas para recuperar a chave de preparo e verificar o roteamento na URL de preparo.
 
 ### Guias de configuração da CDN
 
@@ -123,7 +130,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
