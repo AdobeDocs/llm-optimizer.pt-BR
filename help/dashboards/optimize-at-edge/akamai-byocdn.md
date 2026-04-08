@@ -2,10 +2,10 @@
 title: Otimizar na Edge - Akamai (BYOCDN)
 description: Saiba como configurar o Akamai BYOCDN para Otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
+source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 11%
+source-wordcount: '849'
+ht-degree: 9%
 
 ---
 
@@ -22,25 +22,32 @@ Antes de configurar as regras do Akamai Property Manager, verifique se você tem
 * O processo de integração do LLM Optimizer foi concluído.
 * Encaminhamento de log CDN concluído para o LLM Optimizer.
 * Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer.
+* (Opcional) Uma chave de API de otimização do Edge de preparo se você testar o roteamento em um nome de host de preparo primeiro.
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **Configuração**
 
-A seguinte regra do Akamai Property Manager roteia agentes de usuário do LLM para o Edge Otimize. A configuração inclui as seguintes etapas:
+A seguinte regra do Akamai Property Manager roteia o tráfego de página de HTML para o Edge Otimize. A configuração inclui as seguintes etapas:
 
-**1. Definir critérios de roteamento (correspondência de usuário e agente)**
+**1. Definir critérios de roteamento (correspondência de tráfego de usuário-agente e HTML)**
 
-Definir roteamento para os seguintes user-agents:image.png
+Defina o roteamento para os seguintes agentes do usuário:
 
 ```
- *AdobeEdgeOptimize-AI*,
- *ChatGPT-User*,
- *GPTBot*,
- *OAI-SearchBot*,
- *PerplexityBot*,
+ *AdobeEdgeOptimize-AI*
+ *ChatGPT-User*
+ *GPTBot*
+ *OAI-SearchBot*
+ *PerplexityBot*
  *Perplexity-User*
 ```
+
+>[!NOTE]
+>
+>Aplique a regra de roteamento Otimizar no Edge somente ao tráfego de página agêntico do HTML. Uma configuração comum é usar os critérios do lado da solicitação, como **Extensão de arquivo**, para corresponder a `html` e `EMPTY_STRING` para URLs de página sem extensão. Se o site serve o HTML a partir de outros padrões de URL, ou inclui rotas não relacionadas à página sem extensão, como endpoints de API, refine a regra com critérios adicionais baseados em caminho.
 
 ![Definir critérios de roteamento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -68,7 +75,7 @@ Definir a variável de chave de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` como `LLM
 
 Defina os seguintes cabeçalhos de solicitação recebidos:
 `x-edgeoptimize-api-key` para a chave de API recuperada de LLMO
-`x-edgeoptimize-config` a `LLMCLIENT=TRUE;`
+`x-edgeoptimize-config` para `LLMCLIENT=TRUE;`
 `x-edgeoptimize-url` a `{{builtin.AK_URL}}`
 
 ![Modificar cabeçalhos de solicitação de entrada](/help/assets/optimize-at-edge/akamai-step5-request.png)
@@ -180,8 +187,17 @@ A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O cont
 | `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
 | `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
 
-O status do roteamento de tráfego também pode ser verificado na interface do usuário do LLM Optimizer. Navegue até **Configuração do cliente** e selecione a guia **Configuração da CDN**.
+**4. Domínio de preparo (opcional)**
 
-![Status do Roteamento de Tráfego de IA com roteamento habilitado](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Se você usar um nome de host de preparo e uma chave de API de preparo da LLM Optimizer, implante o mesmo padrão de roteamento na sua propriedade Akamai **de preparo** usando a chave **de preparo** nas suas regras. Em seguida, verifique o tráfego de bot no host de preparo:
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Substitua `https://staging.example.com/page.html` com seu caminho e URL de preparo real. Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
