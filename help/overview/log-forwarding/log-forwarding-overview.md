@@ -2,10 +2,10 @@
 title: Visão geral do encaminhamento de log BYOCDN
 description: Saiba como encaminhar logs de CDN do seu provedor para o bucket do S3 da Adobe para coleta de dados de tráfego direto no LLM Optimizer.
 feature: Agentic Traffic
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 3%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ O encaminhamento de logs para um CDN gerenciado pelo cliente (BYOCDN) é o proce
 Os guias fornecidos abaixo seguem o mesmo fluxo de trabalho de duas fases:
 
 1. **Integrar no LLM Optimizer** — registre sua CDN na página [Configuração da CDN](/help/dashboards/customer-configuration.md) para gerar as credenciais S3 e os detalhes de caminho necessários.
-2. **Configurar sua CDN** — use esses detalhes para criar um trabalho de encaminhamento de log (ou carregar logs manualmente) no console do seu provedor de CDN.
+2. **Configurar sua CDN** — use esses detalhes para criar um trabalho de encaminhamento de log (ou carregar logs manualmente) no console do seu provedor de CDN. Para o CloudFront, você pode usar o console ou concluir a configuração de entrega somente com a **CLI do AWS**; consulte [CloudFront (CLI do AWS)](/help/overview/log-forwarding/cloudfront-cli.md).
 
 ## Provedores de CDN {#cdn-providers}
 
@@ -27,7 +27,8 @@ Siga o guia correspondente para seu provedor de CDN.
 |---|---|
 | Akamai | [Exibir guia](/help/overview/log-forwarding/akamai.md) |
 | Cloudflare | [Exibir guia](/help/overview/log-forwarding/cloudflare.md) |
-| CloudFront | [Exibir guia](/help/overview/log-forwarding/cloudfront.md) |
+| CloudFront (console) | [Exibir guia](/help/overview/log-forwarding/cloudfront.md) |
+| CloudFront (CLI do AWS) | [Exibir guia](/help/overview/log-forwarding/cloudfront-cli.md) |
 | Fastly | [Exibir guia](/help/overview/log-forwarding/fastly.md) |
 | Imperva | [Exibir guia](/help/overview/log-forwarding/imperva.md) |
 | Outro (CDN manual/não compatível) | [Exibir guia](/help/overview/log-forwarding/other.md) |
