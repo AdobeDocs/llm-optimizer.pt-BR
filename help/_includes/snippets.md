@@ -1,7 +1,7 @@
 ---
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: e9309dc8f8d1d81b953483f17dcb424e46d5cd3b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -32,28 +32,31 @@ ht-degree: 0%
 
 Além disso, se você precisar de ajuda com as etapas acima, entre em contato com a equipe de conta da Adobe ou com o `llmo-at-edge@adobe.com`.
 
-## Chave de API do domínio de preparo (opcional) {#retrieve-staging-edge-optimize-api-key}
+## Opcional: testar o roteamento em um nome de host de preparo {#retrieve-staging-edge-optimize-api-key}
 
-Use um nome de host de preparo quando quiser testar Otimizar no Edge em um ambiente inferior antes que o tráfego de produção use as regras de roteamento.
+**Opcional: Testar roteamento em um nome de host de preparo**
 
-**Pré-requisitos**
+Se você quiser validar o roteamento em um ambiente inferior antes de habilitar o roteamento de produção, poderá configurar um nome de host de preparo.
 
-* O nome do host de preparo deve pertencer ao **mesmo domínio registrável** do site de produção (por exemplo, `https://staging.example.com` quando a produção for `https://www.example.com`).
-* Somente **um** domínio de preparo pode ser configurado para o site. Depois de salvo, não pode ser alterado sem ajuda.
+**Requisitos**
 
-**Etapas**
+* O nome de host de preparo deve estar no **mesmo domínio registrável** que a produção (por exemplo, `https://staging.example.com` quando a produção for `https://www.example.com`).
+* Apenas **um** domínio de preparo por site. Depois de salvo, não é possível alterá-lo sem entrar em contato com a Adobe.
 
-1. Na LLM Optimizer, abra **Configuração do cliente** e selecione a guia **Configuração de CDN**.
+**Obtenha sua chave de API de preparo**
 
-2. Na seção **Implantar otimizações em agentes de IA**, selecione **Adicionar domínio de preparo** (ou **Domínio de preparo** se um domínio de preparo já estiver configurado).
+1. Abra **Configuração do cliente** e selecione **Configuração da CDN**.
+2. Em **Implantar otimizações para agentes de IA**, selecione **Adicionar domínio de preparo** (ou **Domínio de preparo** se um domínio de preparo já estiver configurado).
+3. Insira a URL de preparo completa incluindo `https://` e selecione **Definir Domínio**.
+4. Copie a chave de API de **preparo** da caixa de diálogo de confirmação.
 
-3. Na caixa de diálogo **Domínio de Preparo**, insira a URL de preparo completa incluindo `https://` e selecione **Definir Domínio**.
+![Chave de API do domínio de preparo](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-   ![Caixa de diálogo de entrada Domínio de Preparo](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
+Implante as mesmas regras de roteamento no ambiente de preparo usando a chave de API de preparo.
 
-4. Confirme o domínio no próximo prompt. Quando o fluxo de trabalho for concluído, a caixa de diálogo **Domínios de Preparo** mostrará o domínio configurado e sua **chave de API**. Selecione **Copiar** para copiar a chave de API de preparo.
+**Testar tráfego de bot de preparo**
 
-   ![Chave de API do domínio de preparo](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
+Substitua `https://staging.example.com/page.html` com seu caminho e URL de preparo real. **Êxito:** a resposta inclui o cabeçalho `x-edgeoptimize-request-id`.
 
 Se precisar de ajuda, contate `llmo-at-edge@adobe.com`.
 
@@ -62,6 +65,16 @@ Se precisar de ajuda, contate `llmo-at-edge@adobe.com`.
 O status do roteamento de tráfego também pode ser verificado na interface do usuário do LLM Optimizer. Navegue até **Configuração do cliente** e selecione a guia **Configuração de CDN**.
 
 ![Implantação de otimizações em agentes de IA — concluída](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+
+## Permitindo a otimização no Edge por meio de regras de firewall (opcional) {#waf-allowlist-setup}
+
+Se o CDN usar um WAF ou Gerenciador de bot:
+
+* Inclua na lista de permissões o agente de usuário `*AdobeEdgeOptimize/1.0*` no WAF ou no Gerenciador de bot para que o serviço Otimizar na Edge possa buscar o conteúdo de origem.
+* Se o firewall exigir verificação adicional além do agente do usuário, gere um segredo (por exemplo, `openssl rand -hex 32`) e:
+   * Adicione `x-edgeoptimize-fetcher-key` com o segredo em suas regras de roteamento junto com os outros cabeçalhos `x-edgeoptimize-*`.
+   * Adicione uma regra do WAF ou do Gerenciador de bot para permitir solicitações em que `x-edgeoptimize-fetcher-key` corresponde ao mesmo segredo.
+* Otimizar no Edge encaminha esse cabeçalho como está — você é o proprietário do ciclo de vida completo da chave.
 
 ## Retornar à visão geral {#return-to-overview}
 

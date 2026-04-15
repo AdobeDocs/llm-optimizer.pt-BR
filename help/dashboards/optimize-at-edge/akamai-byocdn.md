@@ -2,9 +2,9 @@
 title: Otimizar na Edge - Akamai (BYOCDN)
 description: Saiba como configurar o Akamai BYOCDN para Otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
+source-git-commit: 66b058734597c378040e77a23a4023bed9273427
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '825'
 ht-degree: 9%
 
 ---
@@ -22,11 +22,9 @@ Antes de configurar as regras do Akamai Property Manager, verifique se você tem
 * O processo de integração do LLM Optimizer foi concluído.
 * Encaminhamento de log CDN concluído para o LLM Optimizer.
 * Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer.
-* (Opcional) Uma chave de API de otimização do Edge de preparo se você testar o roteamento em um nome de host de preparo primeiro.
+* (Opcional) Para testar o roteamento de preparo, consulte **Opcional: Testar roteamento em um nome de host de preparo** no final desta página.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Configuração**
 
@@ -79,6 +77,16 @@ Defina os seguintes cabeçalhos de solicitação recebidos:
 `x-edgeoptimize-url` a `{{builtin.AK_URL}}`
 
 ![Modificar cabeçalhos de solicitação de entrada](/help/assets/optimize-at-edge/akamai-step5-request.png)
+
+**Permitir otimização na Edge por meio de regras de firewall (opcional)**
+
+{{waf-allowlist-setup}}
+
+![Definir cabeçalho x-edgeotimize-fetcher-key no Gerenciador de Propriedades](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+
+>[!NOTE]
+>
+>Inclua na lista de permissões também o agente de usuário `*AdobeEdgeOptimize/1.0*` e o cabeçalho `x-edgeoptimize-fetcher-key` no Akamai Bot Manager.
 
 **6. Modificar cabeçalhos de resposta de entrada**
 
@@ -187,17 +195,13 @@ A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O cont
 | `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
 | `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
 
-**4. Domínio de preparo (opcional)**
+{{verify-routing-status-in-ui}}
 
-Se você usar um nome de host de preparo e uma chave de API de preparo da LLM Optimizer, implante o mesmo padrão de roteamento na sua propriedade Akamai **de preparo** usando a chave **de preparo** nas suas regras. Em seguida, verifique o tráfego de bot no host de preparo:
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-Substitua `https://staging.example.com/page.html` com seu caminho e URL de preparo real. Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`.
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

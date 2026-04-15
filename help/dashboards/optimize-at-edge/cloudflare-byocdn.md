@@ -2,9 +2,9 @@
 title: Otimizar na Edge - Cloud Flare (BYOCDN)
 description: Saiba como configurar o Cloudflare BYOCDN para otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 14dbee36f39b0d993d448edccb63fb8a519704a1
+source-git-commit: 66b058734597c378040e77a23a4023bed9273427
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,9 @@ Antes de configurar as regras de roteamento do Cloud Worker, verifique se você:
 * O processo de integração do LLM Optimizer foi concluído.
 * Encaminhamento de log CDN concluído para o LLM Optimizer.
 * Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer.
-* (Opcional) Uma chave de API de otimização do Edge de preparo se você testar o roteamento em um nome de host de preparo primeiro.
+* (Opcional) Para testar o roteamento de preparo, consulte **Opcional: Testar roteamento em um nome de host de preparo** no final desta página.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Como funciona o roteamento**
 
@@ -193,6 +191,7 @@ async function handleRequest(request, env, ctx) {
     edgeOptimizeHeaders.delete("x-edgeoptimize-api-key");
     edgeOptimizeHeaders.delete("x-edgeoptimize-url");
     edgeOptimizeHeaders.delete("x-edgeoptimize-config");
+    edgeOptimizeHeaders.delete("x-edgeoptimize-fetcher-key"); // Optional (required only in case of WAF)
 
     // x-forwarded-host: The original site domain
     // Use environment variable if set, otherwise use the request host
@@ -206,6 +205,8 @@ async function handleRequest(request, env, ctx) {
 
     // x-edgeoptimize-config: Configuration for cache key differentiation
     edgeOptimizeHeaders.set("x-edgeoptimize-config", "LLMCLIENT=TRUE;");
+
+    // edgeOptimizeHeaders.set("x-edgeoptimize-fetcher-key", "<YOUR FETCHER KEY>"); // Optional (required only in case of WAF)
 
     try {
       // Send request to Edge Optimize backend
@@ -434,6 +435,10 @@ const FAILOVER_ON_5XX = false;
 | Solicitações que falham com host inválido | `EDGE_OPTIMIZE_TARGET_HOST` inclui o protocolo (por exemplo, `https://`). | Use apenas o nome de domínio sem protocolo (por exemplo, `example.com`, não `https://example.com`). |
 | Erro 530 durante failover | A nuvem não pode se conectar à origem ou a solicitação de failover tem cabeçalhos inválidos. | Certifique-se de que a função de failover remova os cabeçalhos Edge Otimize. Verifique se a origem está acessível e se o DNS está configurado corretamente. |
 
+**Permitir otimização na Edge por meio de regras de firewall (opcional)**
+
+{{waf-allowlist-setup}}
+
 **Verificar a configuração**
 
 Após concluir a configuração, verifique se o tráfego de bot está sendo roteado para o Edge Otimize e se o tráfego humano não foi afetado.
@@ -472,17 +477,13 @@ A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O cont
 | `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
 | `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
 
-**4. Domínio de preparo (opcional)**
+{{verify-routing-status-in-ui}}
 
-Se você usar um nome de host de preparo e uma chave de API de preparo da LLM Optimizer, implante a mesma lógica de Worker na zona **de preparo** usando a chave de API **de preparo**. Em seguida, verifique o tráfego de bot no host de preparo:
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-Substitua `https://staging.example.com/page.html` com seu caminho e URL de preparo real. Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`.
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
