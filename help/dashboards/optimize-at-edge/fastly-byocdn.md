@@ -2,9 +2,9 @@
 title: Otimizar no Edge - Fastly (BYOCDN)
 description: Saiba como configurar o Fastly BYOCDN para Otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: 412500d2a95d66a5c9bf6fa88efc62c6244834c8
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '364'
 ht-degree: 5%
 
 ---
@@ -22,11 +22,9 @@ Antes de configurar as regras do Fastly VCL, verifique se você tem:
 * O processo de integração do LLM Optimizer foi concluído.
 * Encaminhamento de log CDN concluído para o LLM Optimizer.
 * Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer.
-* (Opcional) Uma chave de API de otimização do Edge de preparo se você testar o roteamento em um nome de host de preparo primeiro.
+* (Opcional) Para testar o roteamento de preparo, consulte **Opcional: Testar roteamento em um nome de host de preparo** no final desta página.
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **Configuração**
 
@@ -42,6 +40,7 @@ Adicione os três trechos de VCL a seguir ao serviço Fastly. Esses snippets lid
 unset req.http.x-edgeoptimize-url;
 unset req.http.x-edgeoptimize-config;
 unset req.http.x-edgeoptimize-api-key;
+unset req.http.x-edgeoptimize-fetcher-key; # Optional (required only in case of WAF)
 
 if (!req.http.x-edgeoptimize-request
     && req.http.user-agent ~ "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
@@ -49,6 +48,7 @@ if (!req.http.x-edgeoptimize-request
   set req.http.x-edgeoptimize-url = req.url; # required for identifying the original url
   set req.http.x-edgeoptimize-config = "LLMCLIENT=TRUE;"; # required for cache key
   set req.http.x-edgeoptimize-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.http.x-edgeoptimize-fetcher-key = "<YOUR FETCHER KEY>"; # Optional (required only in case of WAF)
   set req.backend = F_EDGE_OPTIMIZE;
 }
 ```
@@ -85,6 +85,10 @@ O trecho `vcl_deliver` trata o failover automaticamente. Se o Edge Otimize retor
 | O Edge Otimize retorna `2XX` | A resposta otimizada é fornecida ao cliente. |
 | O Edge Otimize retorna `4XX` ou `5XX` | A solicitação é reiniciada e veiculada a partir da origem padrão. |
 | Resposta de failover | Inclui o cabeçalho `x-edgeoptimize-fo: 1`. |
+
+**Permitir otimização na Edge por meio de regras de firewall (opcional)**
+
+{{waf-allowlist-setup}}
 
 **Verificar a configuração**
 
@@ -124,17 +128,13 @@ A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O cont
 | `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
 | `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
 
-**4. Domínio de preparo (opcional)**
+{{verify-routing-status-in-ui}}
 
-Se você usar um nome de host de preparo e uma chave de API de preparo da LLM Optimizer, adicione os mesmos trechos de VCL ao serviço Fastly **staging** usando a chave de API **staging**. Em seguida, verifique o tráfego de bot no host de preparo:
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-Substitua `https://staging.example.com/page.html` com seu caminho e URL de preparo real. Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`.
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

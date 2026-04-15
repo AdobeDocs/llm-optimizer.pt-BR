@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
+source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 73%
+source-wordcount: '2312'
+ht-degree: 75%
 
 ---
 
@@ -58,16 +58,13 @@ Requisitos para a equipe de TI/CDN:
 * Adicione o agente-usuário `*AdobeEdgeOptimize/1.0*` ao Incluo na lista de permissões no arquivo robots.txt do site ou nas regras de gerenciamento de tráfego de bot.
 * Verifique se as páginas não estão bloqueadas no nível de domínio ou da CDN.
 * Adicionar regras de roteamento para o recurso Otimização na borda da CDN.
+* Se sua CDN tiver regras do WAF ou do Gerenciador de Bots, inclua na lista de permissões o agente de usuário `*AdobeEdgeOptimize/1.0*`. Se uma verificação adicional for necessária, configure o cabeçalho `x-edgeoptimize-fetcher-key`. Cada guia BYOCDN abaixo inclui as etapas.
 * Confirme o roteamento do recurso Otimização na borda na interface do LLM Optimizer.
 
 >[!IMPORTANT]
 >O roteamento deve ser configurado no CDN externo (o CDN mais próximo ao cliente). Se você tiver vários CDNs, o roteamento só poderá ser feito no CDN externo.
 
-Para orientar o processo de configuração, selecione seu provedor de CDN abaixo e siga o guia de configuração correspondente. Lembre-se de que esses exemplos devem ser adaptados à sua configuração atualmente ativa. Recomendamos aplicar as alterações nos ambientes inferiores primeiro.
-
-### Preparando chaves de API do domínio (opcional)
-
-Se você testar em um nome de host de preparo antes da produção, use o LLM Optimizer para registrar um **um** domínio de preparo e copiar sua chave de API de Otimização do Edge **de preparo** de **Configuração do cliente** → **Configuração do CDN** → **Implantar otimizações para agentes de IA** → **Adicionar domínio de preparo** (ou **Domínio de preparo**). O nome de host de preparo deve compartilhar o mesmo domínio registrável do site de produção. Os guias **Trazer Seu Próprio CDN** incluem as etapas completas para recuperar a chave de preparo e verificar o roteamento na URL de preparo.
+Para orientar o processo de configuração, selecione seu provedor de CDN abaixo e siga o guia de configuração correspondente. Lembre-se de que esses exemplos devem ser adaptados à sua configuração atualmente ativa. Recomendamos aplicar as alterações nos ambientes inferiores primeiro. **Traga seus próprios guias de CDN** incluem testes opcionais de nome de host de preparo no final de cada página.
 
 ### Guias de configuração da CDN
 
@@ -130,7 +127,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
