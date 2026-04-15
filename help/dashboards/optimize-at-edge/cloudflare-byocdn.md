@@ -2,9 +2,9 @@
 title: Otimizar na Edge - Cloud Flare (BYOCDN)
 description: Saiba como configurar o Cloudflare BYOCDN para otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Os seguintes cabeçalhos devem ser definidos nas solicitações para o back-end 
 Há duas maneiras de configurar o Cloud Worker para otimização do Edge:
 
 * [**Opção 1: Implantar no Cloudflare (recomendado)**](#option-1-deploy-to-cloudflare) — Cria automaticamente um novo trabalhador e solicita as variáveis e os segredos de ambiente necessários. Use esta opção se você não tiver um Cloud Worker existente para este domínio.
-* [**Opção 2: Configuração manual**](#option-2-manual-setup) — instruções passo a passo para criar e configurar o funcionário você mesmo. Use esta opção se você já tiver um Cloud Worker existente que deseja estender ou se preferir ter controle total sobre a implantação.
+* [**Opção 2: Configuração manual**](#option-2-manual-setup) — instruções passo a passo para criar e configurar o funcionário você mesmo. Use esta opção se você já tiver um Cloud Worker configurado no seu domínio — será necessário mesclar o código de Otimização do Edge ao seu trabalhador existente (consulte [Etapa 2: adicionar o código do Worker](#option-2-manual-setup)) ou se você preferir controle total sobre a implantação.
 
 Independentemente da opção escolhida, você deve vincular manualmente o trabalhador ao seu domínio. Consulte [Etapa: adicionar uma rota ao seu domínio](#add-a-route-to-your-domain).
 
@@ -113,7 +113,7 @@ Siga estas etapas para criar e configurar o trabalhador manualmente.
 
 **Etapa 2: adicionar o código do Trabalhador**
 
-Depois de criar o trabalhador, clique em **Editar código** e substitua o código padrão pelo seguinte:
+Depois de criar o trabalhador, clique em **Editar código** e substitua o código padrão pelo seguinte. Se você já tiver um Cloud Worker existente, mescle o código abaixo com seu código de trabalhador existente, em vez de substituí-lo totalmente.
 
 ```javascript
 /**
