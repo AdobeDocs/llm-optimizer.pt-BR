@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 75%
+source-wordcount: '2323'
+ht-degree: 74%
 
 ---
 
@@ -43,7 +43,7 @@ Inicie o processo de integração na sua conta da LLM Optimizer:
 1. No painel **Configuração do cliente**, selecione a guia **Configuração de CDN**.
 1. Clique em **CDN integrada**.
    ![Guia Configuração de CDN](/help/overview/assets/cc-cdn.png)
-1. Para clientes do AEM Fastly, a Adobe pode ajudar na conclusão do processo de integração. Para clientes que usam outros provedores de CDN, sua equipe de TI/CDN precisa concluir a configuração e os pré-requisitos necessários. Você também pode consultar os guias de CDN de exemplo fornecidos abaixo para obter orientação adicional.
+1. Para clientes do Fastly gerenciados pelo AEM Cloud Service, a configuração do roteamento é de autoatendimento e pode ser concluída diretamente na interface do usuário do LLM Optimizer. Para clientes que usam outros provedores de CDN, sua equipe de TI/CDN precisa concluir a configuração e os pré-requisitos necessários. Você também pode consultar os guias de CDN de exemplo fornecidos abaixo para obter orientação adicional.
 
 >[!NOTE]
 >Consulte os guias passo a passo abaixo que abordam o fluxo completo de integração. Para problemas não resolvidos pelos guias, entre em contato com `llmo-at-edge@adobe.com`.
@@ -127,7 +127,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
