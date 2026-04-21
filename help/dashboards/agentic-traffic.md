@@ -2,10 +2,10 @@
 title: Tráfego agêntico
 description: Saiba como usar o painel Tráfego agêntico para ver como os agentes de IA interagem com o site.
 feature: Agentic Traffic
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Depois de ativados, os logs são ingeridos e o painel será preenchido com métr
 
 O LLM Optimizer processa um subconjunto de campos dos logs da CDN. Embora os nomes de campo brutos de logs variem de acordo com o provedor da CDN, eles são normalizados e apresentados como:
 
-* URL (somente caminho)
+* URL (Caminho e parâmetros de consulta)
 * Agente do usuário
 * Código de status
 * Cabeçalho do referenciador
@@ -99,7 +99,7 @@ Use o gráfico de tendências do tráfego agêntico para monitorar os totais sem
 
 ## Melhor e pior desempenho {#top-bottom-movers}
 
-A exibição Desempenhos superiores e inferiores destaca os URLs com as maiores alterações de semana a semana no tráfego agêntico: visitas ou ocorrências de sistemas de IA que acessam o conteúdo. **Desempenhos superiores** mostra páginas ganhando visibilidade ou engajamento, enquanto **Desempenhos inferiores** revela os URLs com declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está em tendência de crescimento, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
+A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. **Top Movers** mostra páginas ganhando visibilidade ou engajamento, enquanto **Bottom Movers** revela as URLs com declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está em tendência de crescimento, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
 
 ![Desempenhos superiores e inferiores](/help/dashboards/assets/movers.png)
 
