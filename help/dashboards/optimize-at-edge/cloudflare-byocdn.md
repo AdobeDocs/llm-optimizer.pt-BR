@@ -2,9 +2,9 @@
 title: Otimizar na Edge - Cloud Flare (BYOCDN)
 description: Saiba como configurar o Cloudflare BYOCDN para otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1906'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Antes de configurar as regras de roteamento do Cloud Worker, verifique se você:
 
 * Uma conta CloudFlare com Workers ativados em seu domínio.
 * Acesso às configurações de DNS do seu domínio no Cloud Flare.
-* O processo de integração do LLM Optimizer foi concluído.
-* Encaminhamento de log CDN concluído para o LLM Optimizer.
-* Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer.
-* (Opcional) Para testar o roteamento de preparo, consulte **Opcional: Testar roteamento em um nome de host de preparo** no final desta página.
-
-{{retrieve-byocdn-api-key}}
+* Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Opcional) Para testar o roteamento de preparo, consulte [Chave de API de preparo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Como funciona o roteamento**
 
@@ -478,12 +474,5 @@ A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O cont
 | `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}

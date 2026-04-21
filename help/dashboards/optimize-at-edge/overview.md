@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
+source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 74%
+source-wordcount: '2283'
+ht-degree: 75%
 
 ---
 
@@ -48,11 +48,6 @@ Inicie o processo de integração na sua conta da LLM Optimizer:
 >[!NOTE]
 >Consulte os guias passo a passo abaixo que abordam o fluxo completo de integração. Para problemas não resolvidos pelos guias, entre em contato com `llmo-at-edge@adobe.com`.
 
-Pré-requisitos para a integração à Otimização na borda:
-
-* Conclua o processo de integração com o LLM Optimizer.
-* Conclua o processo de encaminhamento de logs da CDN.
-
 Requisitos para a equipe de TI/CDN:
 
 * Adicione o agente-usuário `*AdobeEdgeOptimize/1.0*` ao Incluo na lista de permissões no arquivo robots.txt do site ou nas regras de gerenciamento de tráfego de bot.
@@ -64,7 +59,7 @@ Requisitos para a equipe de TI/CDN:
 >[!IMPORTANT]
 >O roteamento deve ser configurado no CDN externo (o CDN mais próximo ao cliente). Se você tiver vários CDNs, o roteamento só poderá ser feito no CDN externo.
 
-Para orientar o processo de configuração, selecione seu provedor de CDN abaixo e siga o guia de configuração correspondente. Lembre-se de que esses exemplos devem ser adaptados à sua configuração atualmente ativa. Recomendamos aplicar as alterações nos ambientes inferiores primeiro. **Traga seus próprios guias de CDN** incluem testes opcionais de nome de host de preparo no final de cada página.
+Para orientar o processo de configuração, selecione seu provedor de CDN abaixo e siga o guia de configuração correspondente. Lembre-se de que esses exemplos devem ser adaptados à sua configuração atualmente ativa. Recomendamos aplicar as alterações nos ambientes inferiores primeiro.
 
 ### Guias de configuração da CDN
 
@@ -127,7 +122,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
