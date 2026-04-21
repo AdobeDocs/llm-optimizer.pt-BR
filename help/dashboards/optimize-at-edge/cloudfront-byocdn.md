@@ -2,9 +2,9 @@
 title: Otimizar no Edge - CloudFront (BYOCDN)
 description: Saiba como configurar o CloudFront BYOCDN para Otimizar no Edge no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Antes de definir a configuração do CloudFront, verifique se você tem:
 
 * Uma distribuição CloudFront existente que atende ao seu site.
 * Permissões do AWS IAM para criar funções Lambda, funções IAM, distribuições CloudFront e políticas de cache.
-* O processo de integração do LLM Optimizer foi concluído.
-* Encaminhamento de log CDN concluído para o LLM Optimizer.
-* Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer.
-* (Opcional) Para testar o roteamento de preparo, consulte **Opcional: Testar roteamento em um nome de host de preparo** no final desta página.
-
-{{retrieve-byocdn-api-key}}
+* Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Opcional) Para testar o roteamento de preparo, consulte [Chave de API de preparo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Etapa 1: Criar Edge Otimizar Origem**
 
@@ -403,12 +399,5 @@ Depois de implantado, todo o tráfego é roteado diretamente para sua origem pad
 4. Clique em **Salvar alterações**.
 
 5. Aguarde a implantação da distribuição ser concluída e, em seguida, verifique se as solicitações de agente retornam o cabeçalho `x-edgeoptimize-request-id` conforme descrito na Etapa 6.
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
