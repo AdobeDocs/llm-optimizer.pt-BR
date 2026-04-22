@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 75%
+source-wordcount: '2301'
+ht-degree: 74%
 
 ---
 
@@ -55,6 +55,10 @@ Requisitos para a equipe de TI/CDN:
 * Adicionar regras de roteamento para o recurso Otimização na borda da CDN.
 * Se sua CDN tiver regras do WAF ou do Gerenciador de Bots, inclua na lista de permissões o agente de usuário `*AdobeEdgeOptimize/1.0*`. Se uma verificação adicional for necessária, configure o cabeçalho `x-edgeoptimize-fetcher-key`. Cada guia BYOCDN abaixo inclui as etapas.
 * Confirme o roteamento do recurso Otimização na borda na interface do LLM Optimizer.
+
+O diagrama a seguir ilustra como as solicitações fluem por uma configuração BYOCDN com Otimizar no Edge:
+
+![Fluxo de Solicitação BYOCDN](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >O roteamento deve ser configurado no CDN externo (o CDN mais próximo ao cliente). Se você tiver vários CDNs, o roteamento só poderá ser feito no CDN externo.
@@ -122,7 +126,7 @@ Essa oportunidade encontra páginas com parágrafos longos e complexos que podem
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Visualização
 
