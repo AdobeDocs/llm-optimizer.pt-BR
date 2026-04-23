@@ -2,7 +2,7 @@
 title: Tráfego agêntico
 description: Saiba como usar o painel Tráfego agêntico para ver como os agentes de IA interagem com o site.
 feature: Agentic Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 90%
@@ -33,7 +33,7 @@ Se você estiver na [experiência centrada na marca](/help/overview/quick-start.
 
 Sem o **encaminhamento de logs da CDN**, o painel Tráfego agêntico fica em branco. Para exibir interações agênticas, é necessário configurar o **encaminhamento de logs da CDN**.
 
-### Configuração do cliente (navegação clássica):
+### Configuração do cliente (navegação clássica)
 
 No primeiro logon, uma mensagem será visualizada, conforme exibido na imagem abaixo.
 

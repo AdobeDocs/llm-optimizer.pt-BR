@@ -2,9 +2,9 @@
 title: Início rápido
 description: Saiba como integrar o nome da marca e o domínio, ativar a avaliação no Experience Hub ou no Experience Cloud e concluir a configuração do Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -95,7 +95,7 @@ Integre o nome da marca e o domínio para começar a usar o LLM Optimizer.
 
 Um pequeno conjunto de categorias, tópicos e prompts é gerado durante a fase de integração. A análise de presença da marca nesses prompts estará disponível logo após a integração do site.
 
-A capacidade de implantar otimizações na borda também está disponível. Saiba mais em [Otimizar na Edge — Perguntas frequentes](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+A capacidade de implantar otimizações na borda também está disponível. Saiba mais em [Otimizar na Edge — Perguntas frequentes](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Além disso, configure o [encaminhamento de logs da CDN](#step-4) para análise de tráfego. O LLM Optimizer exige dados e insights de Presença da marca do agente e do tráfego de referência para identificar oportunidades e fornecer recomendações prescritivas que aumentem a visibilidade da IA.
 
@@ -128,7 +128,7 @@ No painel Configuração do cliente, é possível:
 >
 > Para obter mais detalhes sobre como configurar categorias, tópicos e prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos e prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Experiência centrada na marca
+### Categorias de experiência, tópicos e prompts centrados na marca
 
 Para clientes que estão na experiência centrada na marca, você pode adicionar categorias, tópicos e prompts da seguinte maneira:
 
