@@ -2,10 +2,10 @@
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
-source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 90%
+source-wordcount: '740'
+ht-degree: 79%
 
 ---
 
@@ -27,9 +27,17 @@ Esta página detalha o seguinte:
 * [Principais URLs de referência](#top-referrals)
 * [Detalhes do tráfego de referência](#traffic-details)
 
+Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até o **Tráfego de referência** e selecione o site para o qual deseja exibir os insights do Tráfego de referência LLM.
+
+![Tráfego de referência — seletor de sites (experiência centrada na marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 ## Configuração {#setup}
 
-No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir os dados, você deve configurar o [Encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration), selecionando **Ir para a configuração**.
+No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir seus dados, você deve configurar o encaminhamento de log CDN.
+
+Para clientes que estão na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), você pode adicionar informações de encaminhamento de logs CDN navegando até o **Brands Management** e clicando no rótulo **CDN**. Consulte também [Tráfego de agente — Configuração de CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+
+**Configuração do Cliente (experiência clássica):** Configure o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selecionando **Ir para a Configuração**.
 
 ![Configuração de referência](/help/dashboards/assets/referral-setup1.png)
 
