@@ -2,10 +2,10 @@
 title: Inspetor de URL
 description: Aprenda a usar o Inspetor de URL para analisar o desempenho de páginas específicas do seu domínio nas pesquisas de IA.
 feature: URL Inspector
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 95%
 
 ---
 
@@ -16,9 +16,13 @@ O Inspetor de URL ajuda você a analisar o desempenho de páginas específicas d
 
 ![Inspetor de URL](/help/dashboards/assets/url-insp.png)
 
+Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até o **Inspetor de URL** e selecione o site para o qual deseja exibir os insights.
+
+![Inspetor de URL — seletor de sites (experiência centrada na marca)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+
 ## Filtros
 
-Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetam **todas** as seções presentes no painel. Você pode personalizar o seguinte:
+Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetarão **todas** as seções presentes no painel. Você pode personalizar o seguinte:
 
 * **Intervalo de datas**: selecione o intervalo de tempo dos dados exibidos. Por exemplo, as últimas 4 semanas. Também é possível personalizar o período selecionando a opção **Semanas personalizadas**.
 * **Categoria**: filtre os resultados exibidos por categorias.
@@ -69,7 +73,7 @@ As seguintes métricas são fornecidas:
 * **Tipo de conteúdo**: o tipo de conteúdo (próprio, social, orgânico, outro).
 * **Vezes citado**: o número de vezes que o URL foi citado em respostas geradas por IA.
 * **Prompts que citaram**: o número de prompts de IA exclusivos que citaram o URL.
-* **Categorias**: as categorias ou tópicos de produtos associados ao URL.
+* **Categorias**: as categorias de produto ou tópicos associados ao URL.
 * **Regiões**: a região geográfica onde o URL foi citado.
 
 ### Janela de detalhes

@@ -2,10 +2,10 @@
 title: Tráfego agêntico
 description: Saiba como usar o painel Tráfego agêntico para ver como os agentes de IA interagem com o site.
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 94%
+source-wordcount: '1407'
+ht-degree: 90%
 
 ---
 
@@ -25,9 +25,17 @@ Esta página detalha o seguinte:
 * [Melhor e pior desempenho](#top-bottom-movers)
 * [Agente de usuário e a análise de desempenho do URL](#user-url-performance)
 
+Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até **Tráfego de agente** e selecione o site para o qual deseja exibir os insights de tráfego de agente.
+
+![Tráfego de agente — seletor de sites (experiência centrada na marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## Encaminhamento de logs da CDN {#cdn-setup}
 
-Sem o **encaminhamento de logs da CDN**, o painel Tráfego agêntico fica em branco. Para exibir interações agênticas, é necessário configurar o **encaminhamento de logs da CDN**.  No primeiro logon, uma mensagem será visualizada, conforme exibido na imagem abaixo.
+Sem o **encaminhamento de logs da CDN**, o painel Tráfego agêntico fica em branco. Para exibir interações agênticas, é necessário configurar o **encaminhamento de logs da CDN**.
+
+### Configuração do cliente (navegação clássica):
+
+No primeiro logon, uma mensagem será visualizada, conforme exibido na imagem abaixo.
 
 ![Configuração da CDN](/help/dashboards/assets/ag-log-forward1.png)
 
@@ -49,6 +57,12 @@ Caso selecione **Outro**, entre em contato com llmo-now@adobe.com para obter aju
 >Para obter detalhes sobre o encaminhamento de logs ao usar uma CDN gerenciada pelo cliente (BYOCDN), consulte [Visão geral do encaminhamento de logs BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Depois de ativados, os logs são ingeridos e o painel será preenchido com métricas como total de interações do agente, taxa de sucesso, ocorrências por mercado, análise do agente do usuário e desempenho no nível do URL.
+
+### Experiência centrada na marca
+
+Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), poderá adicionar informações de encaminhamento de logs CDN navegando até o **Brands Management** e clicando no rótulo **CDN**.
+
+![Gerenciamento de Marcas — Encaminhamento de log da CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 O LLM Optimizer processa um subconjunto de campos dos logs da CDN. Embora os nomes de campo brutos de logs variem de acordo com o provedor da CDN, eles são normalizados e apresentados como:
 

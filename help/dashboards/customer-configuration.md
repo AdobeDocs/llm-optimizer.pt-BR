@@ -2,10 +2,10 @@
 title: Configuração do cliente
 description: Use a configuração do cliente para definir como a marca será monitorada e analisada na plataforma do LLM Optimizer.
 feature: Customer Configuration
-source-git-commit: 3fab5f21311a741e51e7a31cd3a26de79fcbff95
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 40%
+source-wordcount: '2249'
+ht-degree: 37%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 40%
 # Configuração do cliente {#customer-configuration}
 
 O painel Configuração do cliente é uma ferramenta poderosa que fornece insights sobre a visibilidade da marca em LLMs. Ao configurar corretamente categorias, tópicos e prompts é possível garantir que a marca esteja bem posicionada para aparecer em respostas geradas pelo LLM. Essa configuração garante que a plataforma personalize insights para o contexto empresarial, permitindo visibilidade, tráfego e análise de oportunidades precisos.
+
+O Painel de configuração do cliente (mostrado abaixo) se aplica quando sua organização ainda usa essa navegação.
 
 ![Painel Configuração do cliente](/help/dashboards/assets/customer-config.png)
 
@@ -25,13 +27,19 @@ Para configurar como o LLM Optimizer monitora e analisa a presença da marca em 
 * [Configuração da CDN](#agentic-cdn)
 * [Google Search Console](#google-console)
 
+Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até o **Gerenciamento de marcas** para configurar marcas, aliases de marcas e definir concorrentes para acompanhar. O **Brands Management** também é usado para configurar integrações como o Google Search Console, o Adobe Analytics e o encaminhamento de logs da CDN relacionados a URLs associadas a marcas. Você pode fazer isso clicando nas guias correspondentes: GSC, CDN e assim por diante.
+
+![Gerenciamento de marcas — navegação pelo aplicativo (experiência centrada na marca)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Gerenciamento de marcas — visão geral da configuração (experiência centrada na marca)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
 >[!IMPORTANT]
 >
 > Para obter mais detalhes sobre como configurar categorias, tópicos e prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos e prompts](/help/overview/best-practices-topics-prompts.md).
 
 ## Prompts {#prompts-brand}
 
-Nesta guia, é possível revisar, gerenciar e personalizar prompts. É possível fazer upload de um arquivo .csv de [Análise de presença da marca](/help/dashboards/brand-presence.md) e a lista será preenchida com prompts e tópicos dessa análise, ou [Baixar uma biblioteca de prompts](/help/overview/best-practices-topics-prompts.md) criada pela Adobe. Também é possível excluir, modificar e adicionar tópicos e seus prompts associados, conforme necessário.
+Na guia **Prompts**, você pode revisar, gerenciar e personalizar prompts. É possível fazer upload de um arquivo .csv de [Análise de presença da marca](/help/dashboards/brand-presence.md) e a lista será preenchida com prompts e tópicos dessa análise, ou [Baixar uma biblioteca de prompts](/help/overview/best-practices-topics-prompts.md) criada pela Adobe. Também é possível excluir, modificar e adicionar tópicos e seus prompts associados, conforme necessário.
 
 Para importar um arquivo .csv de insights de dados, primeiro é necessário exportar um arquivo do painel Presença da marca. Consulte a seção [insights de dados](/help/dashboards/brand-presence.md#data-insights) para saber como fazer isso. Depois de obter o arquivo:
 
@@ -51,6 +59,10 @@ Além disso, é possível adicionar tópicos/prompts à lista, independentemente
 4. Adicione o texto do prompt.
 5. Selecione a região.
 6. Clique em **Adicionar prompt** e o tópico com o prompt aparecerá na lista.
+
+Para clientes na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), para adicionar Tópicos e Avisos, navegue até o **Gerenciamento de Avisos**.
+
+![Gerenciamento de prompts (experiência centrada na marca)](/help/assets/brand-centric-experience/prompts-management.png)
 
 >[!NOTE]
 >Os prompts recém-adicionados não aparecerão na presença da marca até que o processamento seja concluído.
@@ -177,7 +189,7 @@ Siga as etapas apresentadas abaixo para integrar e usar as consultas do Google S
 
 Antes de usar esse recurso, é necessário integrar sua conta do Google Search Console ao LLM otimizer.
 
-1. Abra o painel Configuração do cliente.
+1. Abra o painel **Configuração do cliente** (navegação clássica) ou o **Gerenciamento de marcas** (experiência centrada na marca) e vá para a integração do Google Search Console (marca GSC na experiência centrada na marca).
 1. Navegue até a guia Google Search Console e clique em **Conectar conta**.
    ![Console do Google Search](/help/dashboards/assets/google-console.png)
 1. Faça logon com uma conta do Google que tenha acesso à propriedade do Console de pesquisa desejada.
@@ -200,7 +212,7 @@ Depois de integrar a conta do Google Search Console ao otimizador do LLM, você 
 
 #### Exibir consultas adicionadas na lista Prompts {#prompts-list}
 
-Depois que uma consulta é adicionada, ela aparece na guia [Prompts](#prompts-brand) no painel Configuração do cliente. Os prompts originados do Google Search Console são marcados com um ícone do Google Search Console na coluna **Origin**. O ícone ajuda a distinguir entre prompts baseados no comportamento de pesquisa do usuário real daqueles adicionados manualmente ou de outras fontes.
+Após a adição de uma consulta, ela aparece na guia [Prompts](#prompts-brand), no painel Configuração do cliente (navegação clássica) ou no **Gerenciamento de prompts** (experiência centrada na marca). Os prompts originados do Google Search Console são marcados com um ícone do Google Search Console na coluna **Origin**. O ícone ajuda a distinguir entre prompts baseados no comportamento de pesquisa do usuário real daqueles adicionados manualmente ou de outras fontes.
 
 ### Perguntas frequentes {#gsc-faq}
 

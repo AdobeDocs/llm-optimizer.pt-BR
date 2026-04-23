@@ -2,10 +2,10 @@
 title: Presença da marca
 description: Saiba como usar o painel Presença da marca para entender como sua marca é percebida no nível de respostas geradas por IA.
 feature: Brand Presence
-source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
-workflow-type: ht
-source-wordcount: '1299'
-ht-degree: 100%
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+workflow-type: tm+mt
+source-wordcount: '1346'
+ht-degree: 96%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 O painel Presença da marca fornece uma visão geral detalhada sobre como sua marca é percebida no nível de respostas geradas por IA. Ele mostra onde, com que frequência e em que contexto sua marca é mencionada. Você pode usar o painel para medir a visibilidade, monitorar as citações e explorar tendências de sentimento. O painel é dividido em várias seções, cada uma com insights diferentes. Também há filtros personalizáveis para ajudar você a refinar os dados exibidos.
 
-![Presença da marca](/help/dashboards/assets/brand-main.png)
+![visão geral da Presença da marca](/help/dashboards/assets/brand-main.png)
 
 Esta página detalha o seguinte:
 
@@ -24,9 +24,13 @@ Esta página detalha o seguinte:
 * [Tendência de sentimentos](#sentiment-trend)
 * [Insights de dados](#data-insights)
 
+Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até a **Presença da marca**. Na lista suspensa de marcas, selecione a marca que deseja analisar ou escolha **Todas as Marcas** para revisar a visibilidade em todo o seu conjunto de marcas.
+
+![Presença da marca com o seletor de marcas (experiência centrada na marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
 ## Filtros {#filters}
 
-Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetam **todas** as seções presentes no painel. Você pode personalizar o seguinte:
+Na parte superior da página, é possível aplicar filtros para refinar a visualização. Os filtros escolhidos afetarão **todas** as seções presentes no painel. Você pode personalizar o seguinte:
 
 * **Intervalo de datas**: selecione o intervalo de tempo dos dados exibidos. Por exemplo, as últimas 4 semanas. Também é possível personalizar o período selecionando a opção **Semanas personalizadas**.
 * **Categoria**: filtre os resultados exibidos por categorias predefinidas ou personalizadas.

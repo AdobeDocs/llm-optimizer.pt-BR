@@ -2,10 +2,10 @@
 title: Práticas recomendadas para categorias, tópicos, prompts e outros
 description: Otimize os insights do LLM ao configurar categorias, tópicos, prompts e outras marcas para acompanhar, incluindo concorrentes, para o monitoramento personalizado da marca e a análise de conteúdo estratégica.
 feature: Best Practices, Customer Configuration
-source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -21,6 +21,20 @@ O painel [[!UICONTROL Configuração do cliente]](/help/dashboards/customer-conf
 ![Janela Configuração do cliente](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 No painel [!UICONTROL Configuração do cliente], é possível personalizar categorias (como unidades de negócios ou linhas de produtos), monitorar outras marcas e adicionar aliases de menção da marca para capturar todas as variações de sua marca nos prompts. Essa configuração garante que a plataforma personalize insights para o contexto empresarial, permitindo visibilidade, tráfego e análise de oportunidades precisos.
+
+## Experiência centrada na marca
+
+Por padrão, novos clientes começam em uma interface focada e de primeira linha com configuração orientada por integração. Nesta nova interface, cada organização começa com uma marca ativa e outras marcas sugeridas para escolher. Os clientes atuais do LLM Optimizer mudarão gradualmente para essa experiência centrada na marca.
+
+Se você está na experiência centrada na Marca, o **Gerenciamento de Marcas** é o local onde você define como a sua marca é monitorada e analisada.
+
+![Gerenciamento de marcas — navegação pelo aplicativo (experiência centrada na marca)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Gerenciamento de marcas — visão geral da configuração](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
+Para configurar tópicos e solicitações para uma marca específica, use o **Gerenciamento de Solicitações**.
+
+![Gerenciamento de Solicitações](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Biblioteca de prompts do setor
 

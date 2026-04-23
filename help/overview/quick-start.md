@@ -2,17 +2,23 @@
 title: Início rápido
 description: Saiba como integrar o nome da marca e o domínio, ativar a avaliação no Experience Hub ou no Experience Cloud e concluir a configuração do Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 47%
+source-wordcount: '1459'
+ht-degree: 37%
 
 ---
 
 
 # Início rápido
 
-Para começar a usar o LLM Optimizer, é necessário concluir o processo de integração. Após a integração, você poderá personalizar categorias, tópicos, prompts e configurar o encaminhamento de logs para obter insights mais precisos e acesso total aos [painéis do LLM Optimizer](/help/dashboards/dashboards-overview.md) e outras funcionalidades.
+Para começar a usar o LLM Optimizer, conclua o processo de integração. Em seguida, personalize categorias, tópicos e prompts, configure o encaminhamento de log da CDN e abra os [painéis](/help/dashboards/dashboards-overview.md) para obter insights mais completos.
+
+<!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## Experiência centrada na marca {#brand-centric-experience}
+
+Por padrão, novos clientes começam em uma interface focada e de primeira linha com configuração orientada por integração. Nesta nova interface, cada organização começa com uma marca ativa e outras marcas sugeridas para escolher. Os clientes atuais do LLM Optimizer mudarão gradualmente para essa experiência centrada na marca.
 
 ## Visão geral da integração
 
@@ -97,13 +103,17 @@ Além disso, configure o [encaminhamento de logs da CDN](#step-4) para análise 
 
 Depois que sua organização finalizar o contrato comercial, você será integrado à LLM Optimizer com o domínio selecionado por sua organização. Quando a integração terminar, entre em [https://llmo.now](https://llmo.now).
 
-## Etapa 2: personalizar categorias, tópicos e prompts
+## Etapa 2: personalizar categorias, tópicos e prompts {#step-2-customize-categories-topics-and-prompts}
 
-Após a integração do site, você poderá visualizar a análise de presença da marca com base no pequeno conjunto de prompts gerados automaticamente durante a fase de integração. Agora é possível personalizar as categorias, os tópicos e os prompts da sua marca. Esta configuração é criada no [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
+Após a integração do site, você poderá visualizar a análise de presença da marca com base no pequeno conjunto de prompts gerados automaticamente durante a fase de integração. Agora é possível personalizar categorias, tópicos e prompts da sua marca.
+
+### Configuração do cliente (navegação clássica)
+
+Se você estiver usando a navegação clássica (não a experiência centrada na marca), é possível personalizar categorias, tópicos e prompts para sua marca no [painel de configuração do cliente](/help/dashboards/customer-configuration.md).
 
 ![Painel de configuração do cliente](/help/overview/assets/prompt-creation.png)
 
-Nesse painel, é possível:
+No painel Configuração do cliente, é possível:
 
 * Adicionar **novas categorias** alinhadas às suas prioridades comerciais. As categorias podem ser áreas de conteúdo amplas e relevantes para o seu domínio.
 * Inserir **tópicos personalizados** ou subtópicos que você deseja rastrear. Os tópicos podem ser temas específicos vinculados a palavras-chave não relacionadas à marca e de alto volume associadas ao seu domínio.
@@ -118,13 +128,33 @@ Nesse painel, é possível:
 >
 > Para obter mais detalhes sobre como configurar categorias, tópicos e prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos e prompts](/help/overview/best-practices-topics-prompts.md).
 
+### Experiência centrada na marca
+
+Para clientes que estão na experiência centrada na marca, você pode adicionar categorias, tópicos e prompts da seguinte maneira:
+
+* **Categorias** — Navegue até **Gerenciamento de Marcas** e clique em **Categorias**. As categorias são definidas em nível global e se aplicam a todas as marcas no Gerenciamento de marcas.
+
+  ![Gerenciamento de marcas com categorias na navegação](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+* **Tópicos e prompts** — Navegue até **Gerenciamento de Prompts** para criar tópicos e prompts, incluindo prompts para uma marca específica.
+
+  ![Gerenciamento de Solicitações](/help/assets/brand-centric-experience/prompts-management.png)
+
 ## Etapa 3: insights de presença da marca
 
 Após a integração do domínio, você verá informações iniciais na visualização Presença da marca, com base nos prompts gerados automaticamente durante a integração. Depois de personalizar suas próprias categorias, tópicos e prompts, o LLM Optimizer acionará automaticamente a análise de presença da marca nos prompts fornecidos e os resultados estarão disponíveis em 24 horas.
 
+>[!NOTE]
+>
+> Para clientes que estão na experiência Centrada na Marca, navegue até **Presença da marca** e selecione uma marca para a qual deseja exibir Presença da marca usando a lista suspensa de marcas. Você também pode exibir a visibilidade da marca em um nível de **Todas as marcas** com essa experiência.
+
 ## Etapa 4: fornecer informações para encaminhamento de logs da CDN {#step-4}
 
-Para desbloquear os insights de Tráfego e Tráfegos de referência do Agente, adicione informações de encaminhamento de log CDN no [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra a guia **Configuração de CDN** e selecione **CDN integrada**.
+Para desbloquear insights de tráfego e Tráfegos de referência do Agentic, registre o encaminhamento de logs CDN para que o LLM Optimizer possa ler seus logs de acesso.
+
+### Configuração do cliente (navegação clássica)
+
+Se você estiver usando a navegação clássica, poderá adicionar informações de encaminhamento de log CDN pelo [painel de configuração do cliente](/help/dashboards/customer-configuration.md#cdn-configuration). Abra a guia **Configuração de CDN** e selecione **CDN integrada**.
 
 ![CDN de configuração do cliente](/help/overview/assets/cc-cdn.png)
 
@@ -136,6 +166,12 @@ Como alternativa, se nenhum provedor de CDN tiver sido adicionado anteriormente 
 >[!NOTE]
 >Para obter detalhes sobre o encaminhamento de logs ao usar uma CDN gerenciada pelo cliente (BYOCDN), consulte [Visão geral do encaminhamento de logs BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
+### Encaminhamento de registro CDN de experiência centrada na marca
+
+Para clientes que estão na experiência Centrada na Marca, você pode adicionar informações de encaminhamento de log CDN do **Brands Management** da seguinte maneira: abra o **Brands Management** e clique no rótulo **CDN**.
+
+![Gerenciamento de Marcas — Encaminhamento de log da CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
 ## Etapa 5: explorar painéis e agir
 
 Depois de fornecer informações sobre o encaminhamento de logs da CDN, você poderá:
@@ -144,5 +180,8 @@ Depois de fornecer informações sobre o encaminhamento de logs da CDN, você po
 * Explore os painéis [Agente](/help/dashboards/agentic-traffic.md) e [Tráfego de referência](/help/dashboards/referral-traffic.md), se o encaminhamento de log de CDN tiver sido configurado.
 * Usar [oportunidades](/help/dashboards/opportunities.md) para identificar melhorias técnicas e de conteúdo.
 * Exportar dados e colaborar com sua equipe ou convidar um colega de trabalho para usar o produto.
+
+>[!NOTE]
+> Na experiência Centrada na Marca, acesse a visualização desejada na seção de navegação à esquerda.
 
 Por fim, para entender totalmente os recursos do LLM Optimizer, você deve explorar todos os [painéis](/help/dashboards/dashboards-overview.md) disponíveis.
