@@ -2,9 +2,9 @@
 title: Início rápido
 description: Saiba como integrar o nome da marca e o domínio, ativar a avaliação no Experience Hub ou no Experience Cloud e concluir a configuração do Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -128,7 +128,7 @@ No painel Configuração do cliente, é possível:
 >
 > Para obter mais detalhes sobre como configurar categorias, tópicos e prompts, consulte a página [Práticas recomendadas para configurar categorias, tópicos e prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Experiência centrada na marca
+### Categorias de experiência, tópicos e prompts centrados na marca
 
 Para clientes que estão na experiência centrada na marca, você pode adicionar categorias, tópicos e prompts da seguinte maneira:
 

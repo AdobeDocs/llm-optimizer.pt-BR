@@ -2,10 +2,10 @@
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Se você estiver na [experiência centrada na marca](/help/overview/quick-start.
 
 No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir seus dados, você deve configurar o encaminhamento de log CDN.
 
-Para clientes que estão na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), você pode adicionar informações de encaminhamento de logs CDN navegando até o **Brands Management** e clicando no rótulo **CDN**. Consulte também [Tráfego de agente — Configuração de CDN](/help/dashboards/agentic-traffic.md#cdn-setup).
+Para clientes que estão na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), você pode adicionar informações de encaminhamento de logs CDN navegando até o **Brands Management** e clicando no rótulo **CDN**.
 
 **Configuração do Cliente (experiência clássica):** Configure o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selecionando **Ir para a Configuração**.
 
