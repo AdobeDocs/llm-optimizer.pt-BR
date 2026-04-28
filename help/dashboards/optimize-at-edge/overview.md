@@ -2,10 +2,10 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
+source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
 workflow-type: tm+mt
-source-wordcount: '2301'
-ht-degree: 74%
+source-wordcount: '2315'
+ht-degree: 73%
 
 ---
 
@@ -87,7 +87,7 @@ A tabela a seguir apresenta oportunidades que podem melhorar a experiência agê
 
 | Oportunidade | Tipo | Identificação automática | Sugestão automática | Otimizar automaticamente |
 |---------|----------|----------|----------|----------|
-| Recuperar visibilidade do conteúdo | GEO técnico | Detecta páginas em que o conteúdo crítico não está visível para agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Realça o conteúdo que pode ser disponibilizado para agentes de IA e recomenda habilitar a pré-renderização para essas páginas. | Disponibiliza um instantâneo do HTML totalmente renderizado e compatível com IA para tráfego agêntico que recupera o conteúdo oculto anteriormente. |
+| [Recuperar Visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md) | GEO técnico | Detecta páginas em que o conteúdo crítico não está visível para agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Realça o conteúdo que pode ser disponibilizado para agentes de IA e recomenda habilitar a pré-renderização para essas páginas. | Disponibiliza um instantâneo do HTML totalmente renderizado e compatível com IA para tráfego agêntico que recupera o conteúdo oculto anteriormente. |
 | Adicionar resumos compatíveis com LLM | Otimização de conteúdo | Identifica páginas longas ou complexas que não têm resumos concisos no nível da página ou da seção, dificultando a rápida análise e compreensão por parte da IA. | Recomenda resumos curtos e gerados por IA no nível da página e da seção que capturam o conteúdo principal. | Insere os resumos nas seções relevantes do HTML, melhorando a forma como os modelos interpretam e descrevem o conteúdo da página. |
 | Adicionar perguntas frequentes relevantes | Otimização de conteúdo | Detecta lacunas de intenção no conteúdo da página existente que podem se beneficiar de perguntas frequentes. | Sugere conteúdo de perguntas frequentes gerado por IA e alinhado à intenção do usuário e aos tópicos existentes. | Injeta conteúdo de perguntas frequentes no HTML, tornando as páginas mais visíveis e relevantes em respostas orientadas por IA. |
 | Simplificar conteúdo complexo | Otimização de conteúdo | Sinaliza páginas com texto complexo que pode atrapalhar a compreensão da IA. | Fornece versões simplificadas geradas por IA de texto complexo, preservando o significado original. | Reescreve seções complexas na página, melhorando a legibilidade da IA. |
@@ -109,6 +109,8 @@ Isso garante que a página fique totalmente visível primeiro para os agentes de
 
 >[!IMPORTANT]
 >Essa funcionalidade de pré-renderização se aplica automaticamente a todas as oportunidades apresentadas abaixo quando implantada com o recurso Otimização na borda, para garantir que a página esteja totalmente visível para os agentes de IA.
+
+Consulte [Recuperar Visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md) para obter uma apresentação do painel, etapas de implantação e perguntas frequentes.
 
 ### Adicionar resumos compatíveis com LLM
 
