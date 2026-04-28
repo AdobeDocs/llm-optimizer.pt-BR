@@ -2,7 +2,7 @@
 title: Práticas recomendadas do LLM Optimizer
 description: Descubra as práticas recomendadas da otimização de LLM para aumentar a visibilidade da marca em pesquisas com IA. Insights para avaliação de desempenho e otimização de conteúdo.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
@@ -86,7 +86,7 @@ A otimização no site aprimora o conteúdo próprio para visibilidade em LLM. E
 
 >[!TIP]
 >
->O LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md). Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente no site com o LLM Optimizer.
+>O LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities-overview.md). Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente no site com o LLM Optimizer.
 
 Estas são algumas das práticas recomendadas de otimização:
 
@@ -108,7 +108,7 @@ Estas são algumas das práticas recomendadas de otimização:
 
 4. Monitore e repita
 
-   * Use o [Painel de oportunidades](/help/dashboards/opportunities.md) para identificar e seguir as recomendações.
+   * Use o [Painel de oportunidades](/help/dashboards/opportunities-overview.md) para identificar e seguir as recomendações.
    * Acompanhe a pontuação de visibilidade, o sentimento e a frequência de citação.
    * Ajuste com base nas atividades de outros (incluindo concorrentes) e tendências de prompts.
 
@@ -118,7 +118,7 @@ A Otimização externa se concentra em melhorar a visibilidade da marca em respo
 
 >[!TIP]
 >
->O LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities.md). Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente no site com o LLM Optimizer.
+>O LLM Optimizer sugere oportunidades de otimização no site e fora dele no painel [Oportunidades](/help/dashboards/opportunities-overview.md). Essas oportunidades são específicas para o seu site. Muitas dessas sugestões podem ser implantadas diretamente no site com o LLM Optimizer.
 
 
 Principais canais externos:
@@ -170,7 +170,7 @@ Estas são as etapas que você pode seguir para monitorar o progresso:
    * Use recursos de atribuição para vincular melhorias de visibilidade ao tráfego, ao engajamento e às conversões. Os recursos de atribuição no Adobe LLM Optimizer ajudam a vincular melhorias nas métricas de visibilidade (menções, citações, sentimento) a resultados reais de negócios, como tráfego no site, engajamento do usuário e conversões. Isso comprova o ROI das iniciativas de otimização.
    * Acompanhe as mudanças no tráfego agêntico e de referência para validar o ROI da otimização.
 1. Melhore o conteúdo
-   * Use o [Painel de oportunidades](/help/dashboards/opportunities.md) do LLM Optimizer para identificar e fazer alterações imediatas e especificamente recomendadas para o seu site. Consulte [Oportunidades](/help/dashboards/opportunities.md) (em seguida, meça os resultados). Consulte regularmente a seção de oportunidades e tome medidas de acordo com as recomendações apresentadas.
+   * Use o [Painel de oportunidades](/help/dashboards/opportunities-overview.md) do LLM Optimizer para identificar e fazer alterações imediatas e especificamente recomendadas para o seu site. Consulte [Oportunidades](/help/dashboards/opportunities-overview.md) (em seguida, meça os resultados). Consulte regularmente a seção de oportunidades e tome medidas de acordo com as recomendações apresentadas.
    * Priorize as páginas com visibilidade decrescente.
    * Atualize seu site e outros conteúdos para torná-los mais relevantes para os públicos-alvo que você deseja atingir.
    * Adicione perguntas frequentes às suas páginas que respondam a perguntas comuns que as pessoas possam fazer.

@@ -2,7 +2,7 @@
 title: Início rápido
 description: Saiba como integrar o nome da marca e o domínio, ativar a avaliação no Experience Hub ou no Experience Cloud e concluir a configuração do Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 37%
@@ -178,7 +178,7 @@ Depois de fornecer informações sobre o encaminhamento de logs da CDN, você po
 
 * Visualizar o painel de [Presença da marca](/help/dashboards/brand-presence.md), ver sua pontuação de visibilidade e acompanhar seu desempenho em relação a outras marcas.
 * Explore os painéis [Agente](/help/dashboards/agentic-traffic.md) e [Tráfego de referência](/help/dashboards/referral-traffic.md), se o encaminhamento de log de CDN tiver sido configurado.
-* Usar [oportunidades](/help/dashboards/opportunities.md) para identificar melhorias técnicas e de conteúdo.
+* Usar [oportunidades](/help/dashboards/opportunities-overview.md) para identificar melhorias técnicas e de conteúdo.
 * Exportar dados e colaborar com sua equipe ou convidar um colega de trabalho para usar o produto.
 
 >[!NOTE]

@@ -2,7 +2,7 @@
 title: Otimizar na borda
 description: Saiba como fornecer otimizações na borda da CDN, no LLM Optimizer, sem precisar fazer alterações de criação.
 feature: Opportunities
-source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
 source-wordcount: '2315'
 ht-degree: 73%
@@ -32,7 +32,7 @@ A otimização na borda foi projetada para usuários empresariais em equipes de 
 
 ### Quais oportunidades são compatíveis com a Otimização na borda?
 
-Algumas oportunidades que podem melhorar a experiência agêntica na web são compatíveis com a Otimização na borda. Saiba mais sobre cada oportunidade na página [Painel de oportunidades](/help/dashboards/opportunities.md) e na seção de oportunidades da página atual.
+Algumas oportunidades que podem melhorar a experiência agêntica na web são compatíveis com a Otimização na borda. Saiba mais sobre cada oportunidade na página [Painel de oportunidades](/help/dashboards/opportunities-overview.md) e na seção de oportunidades da página atual.
 
 ## Integração
 
