@@ -2,9 +2,9 @@
 title: Análise de Sentimento do YouTube
 description: Saiba como o LLM Optimizer analisa vídeos e comentários do YouTube para exibir recomendações que melhoram a percepção e a visibilidade de sua marca nos resultados de Pesquisas com IA.
 feature: Opportunities
-source-git-commit: 101a0582a5112c7fdf1871a938b773b7159a9d4c
+source-git-commit: 91fcd44f97e996fa7eb712928aba5dda250ea55b
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1255'
 ht-degree: 0%
 
 ---
@@ -119,11 +119,11 @@ Uma tabela de tópicos recorrentes identificados no conteúdo analisado, mostran
 - **Menções de marca** — Número de menções de marca associadas ao tópico.
 - **Sentimento** — sentimento geral associado ao tópico.
 
-A tabela **Tópicos** aparece na mesma exibição de Desempenho da tabela Vídeos; consulte a figura na seção [Vídeos](#videos) acima.
+A tabela **Tópicos** aparece na mesma exibição de Desempenho da tabela Vídeos. Consulte a figura na seção [Vídeos](#videos) acima.
 
 ## Experimente na demonstração
 
-Veja a oportunidade Análise de Sentimento do YouTube em ação usando o ambiente de demonstração Frescopa.
+Veja a oportunidade de Análise de Sentimento do YouTube em ação usando o ambiente de demonstração Frescopa.
 
 [Ver análise do Sentimento YouTube na demonstração do Frescopa](https://play.llmo.now/org/demo-org/opportunities/youtube-analysis/971280f5-6a07-4506-85bf-d7419dca9803?siteId=frescopa-demo)
 
