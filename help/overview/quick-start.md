@@ -2,10 +2,15 @@
 title: Início rápido
 description: Saiba como integrar o nome da marca e o domínio, ativar a avaliação no Experience Hub ou no Experience Cloud e concluir a configuração do Adobe LLM Optimizer.
 feature: Quickstart, Onboarding
-source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+autotag-review: '2026-04-30T18:12:24.085Z'
+source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 37%
+source-wordcount: 1463
+ht-degree: 38%
 
 ---
 
