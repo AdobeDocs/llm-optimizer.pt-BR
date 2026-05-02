@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: Promova sua marca com o Adobe LLM Optimizer. Acompanhe menções, descubra insights e domine a pesquisa orientada por IA. Comece a otimizar agora mesmo para assumir o controle de sua visualização
-source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 60%
+source-wordcount: '161'
+ht-degree: 62%
 
 ---
 
@@ -29,10 +29,17 @@ ht-degree: 60%
       + [Erros de tráfego de agente](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [Tráfego bloqueado por robots.txt](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [Recuperar visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [Adicionar resumos amigáveis ao LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+      + [Adicionar perguntas frequentes relevantes](/help/dashboards/opportunities/add-relevant-faqs.md)
+      + [Adicionar Resumos de Transcrição de Multimídia](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+      + [Adicionar sumário](/help/dashboards/opportunities/add-table-of-contents.md)
+      + [Simplificar conteúdo complexo](/help/dashboards/opportunities/simplify-complex-content.md)
       + [Análise da Wikipédia](/help/dashboards/opportunities/wikipedia-analysis.md)
       + [Análise de Sentimento do YouTube](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
       + [Editar análise de Sentimento](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
       + [Análise de Sentimento citada](/help/dashboards/opportunities/cited-sentiment-analysis.md)
+      + [Enriquecer catálogo de produtos](/help/dashboards/opportunities/enrich-product-catalog.md)
+      + [Enriquecer páginas de detalhes do produto](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [Configuração do cliente](/help/dashboards/customer-configuration.md)
    + [Colaboração](/help/dashboards/collaboration.md)
 + Encaminhamento de Log BYOCDN{#log-forwarding}

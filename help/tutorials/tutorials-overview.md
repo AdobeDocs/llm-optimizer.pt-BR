@@ -1,10 +1,20 @@
 ---
 title: Visão geral do LLM Optimizer
 description: Saiba mais sobre como o Adobe LLM Optimizer impulsiona a visibilidade da marca na pesquisa orientada por IA. Rastreie menções, citações e insights. Comece a otimizar hoje para melhor engajamento e influência.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
-workflow-type: ht
-source-wordcount: '499'
-ht-degree: 100%
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+autotag-review: '2026-04-30T18:09:46.095Z'
+source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
+workflow-type: tm+mt
+source-wordcount: 499
+ht-degree: 83%
 
 ---
 
@@ -22,7 +32,7 @@ Esta página detalha o seguinte:
 ## O que é o Adobe LLM Optimizer?
 
 O Adobe LLM Optimizer é um aplicativo com foco em IA generativa para GEO (também chamada de 
-otimização para mecanismo de resposta), projetado para ajudar marcas a melhorar sua visibilidade, precisão e influência em ambientes de pesquisa orientados por IA.Ele fornece insights sobre a presença da marca em respostas geradas por IA, oferece recomendações prescritivas de conteúdo e automatiza correções de otimização.
+otimização para mecanismo generativo), projetado para ajudar marcas a melhorar sua visibilidade, precisão e influência em ambientes de pesquisa orientados por IA. Ele fornece insights sobre a presença da marca em respostas geradas por IA, oferece recomendações prescritivas de conteúdo e automatiza correções de otimização.
 
 ## Quais são os recursos do LLM Optimizer?
 
@@ -43,21 +53,21 @@ O Adobe LLM Optimizer oferece um conjunto de ferramentas projetadas para a GEO:
 
 ## Quem deve usar o Adobe LLM Optimizer?
 
-A GEO é multifuncional por natureza.O LLM Optimizer é projetado com essas lentes para os diferentes perfis listados abaixo:
+A GEO é multifuncional por natureza. O LLM Optimizer é projetado com essas lentes para os diferentes perfis listados abaixo:
 
-* Os **gerentes de marketing** medem a eficácia da visibilidade da marca e da campanha na pesquisa com IA.
-* Os **Analistas de SEO** monitoram as menções, citações e outros insights sobre a marca para informar a estratégia de conteúdo.
-* Os **Gerentes de relações públicas e comunicações** rastreiam a percepção da marca em LLMs por plataformas de terceiros e solucionam informações incorretas, gerenciam sentimentos e protegem a confiança da marca.
+* **Gerentes de marketing** medem a eficácia da visibilidade da marca e da campanha nas pesquisas com IA.
+* **Analistas de SEO** monitoram menções de marca, citações e outros insights para informar a estratégia de conteúdo.
+* **Gerentes de RP e comunicações** acompanham a percepção da marca em LLMs de plataformas de terceiros e atuam para corrigir informações erradas, gerenciar o sentimento e proteger a confiança na marca.
 
 ## O que posso fazer com o Adobe LLM Optimizer?
 
 Com o Adobe LLM Optimizer, é possível:
 
-**Mensurar a visibilidade da marca**: monitore quando, onde e com que frequência a marca é mencionada em resultados de pesquisas com IA.Vá além das suposições com uma pontuação de visibilidade clara para se referenciar ao longo do tempo.
-**Comparação com concorrentes**: veja como sua marca se compara aos concorrentes em mecanismos generativos. Identifique lacunas de participação de voz e descubra vantagens competitivas.
-**Descobrir oportunidades acionáveis**: identifique oportunidades de conteúdo (por exemplo: perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
-**Rastrear o impacto no tráfego da IA**: monitorar o tráfego agêntico (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) das suas propriedades. Vincule a visibilidade da GEO ao engajamento real.
-**Habilitar a colaboração de equipes**: compartilhe painéis, atribua proprietários a prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas nas funções de marketing, SEO e comunicações.
+**Medir a visibilidade da marca**: monitore quando, onde e com que frequência sua marca é mencionada nos resultados de pesquisa viabilizados por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
+**Concorrentes de Benchmark** - Veja como sua marca se compara aos concorrentes em mecanismos geradores. Identifique as lacunas de participação de voz e descubra vantagens competitivas.
+**Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
+**Rastrear o impacto do tráfego da IA** - Monitore o tráfego direto (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade geográfica ao engajamento real.
+**Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO e comunicações.
 
 
 
