@@ -5,7 +5,7 @@ feature: Onboarding
 source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Boas-vindas à visão geral dos painéis. Os painéis do LLM Optimizer ajudam profissionais de marketing a monitorar a visibilidade da marca e o sentimento em plataformas de pesquisas com IA, identificar oportunidades de otimização e implementar alterações prescritivas para melhorar as citações e o desempenho.
 
-As principais visualizações incluem Visão geral, Presença da marca, Agente e Tráfego de referência, Inspetor de URL, Oportunidades, Collaboration e Configuração do cliente.
+As principais visualizações incluem a Visão geral, Presença da marca, Tráfego agêntico e Tráfego de referência, Inspetor de URL, Oportunidades, Colaboração e Configuração do cliente.
 
 <!--
 CARDS
