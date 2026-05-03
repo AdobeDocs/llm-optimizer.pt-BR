@@ -1,18 +1,18 @@
 ---
-title: Otimizar na Edge - CDN gerenciada pelo AEM Cloud Service (Fastly)
-description: Saiba como configurar o AEM Cloud Service Managed CDN (Fastly) para Otimizar no Edge no LLM Optimizer.
+title: Otimizar na borda – CDN gerenciada pelo AEM Cloud Service (Fastly)
+description: Saiba como configurar a CDN gerenciada do AEM Cloud Service (Fastly) para a otimização na borda no LLM Optimizer.
 feature: Opportunities
 source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 
 # CDN gerenciada do AEM Cloud Service (Fastly)
 
-Essa configuração roteia o tráfego de agente (solicitações de bots de IA e agentes de usuário LLM) para o serviço de back-end de Otimização da Edge (`live.edgeoptimize.net`). Visitantes humanos e bots de SEO continuam a ser oferecidos de sua origem como de costume. Para testar a configuração, após a conclusão da instalação, verifique o cabeçalho `x-edgeoptimize-request-id` na resposta.
+Essa configuração roteia o tráfego agêntico (solicitações de bots de IA e agentes de usuário LLM) para o serviço de back-end do Edge Optimize (`live.edgeoptimize.net`). Visitantes humanos e bots de SEO continuam sendo atendidos a partir da sua origem normalmente. Para testar a configuração, após a conclusão da instalação, verifique o cabeçalho `x-edgeoptimize-request-id` na resposta.
 
 ## Pré-requisitos
 
@@ -28,11 +28,11 @@ Para acessar esse recurso:
 
 ## Etapas para ativar o roteamento
 
-Para começar a rotear o tráfego de agente para o Edge Otimize:
+Para iniciar o roteamento do tráfego agêntico para o Edge Otimize:
 
 1. Na LLM Optimizer, abra **Configuração do cliente** e selecione a guia **Configuração de CDN**.
 
-   ![Navegar até a Configuração do Cliente](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
+   ![Acesse a Configuração do cliente](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
 
 2. Localize a seção **Implantar otimizações em agentes de IA**. Clique no botão **Habilitar**.
 
@@ -52,7 +52,7 @@ Para começar a rotear o tráfego de agente para o Edge Otimize:
 
    Para desabilitar o roteamento a qualquer momento, retorne à seção **Implantar otimizações em agentes de IA** da guia **Configuração de CDN** e clique em **Desabilitar**.
 
-Além disso, se você precisar de ajuda com as etapas acima, entre em contato com a equipe de conta da Adobe ou com o `llmo-at-edge@adobe.com`.
+Além disso, se você precisar de ajuda com as etapas acima, entre em contato com a equipe de contas da Adobe ou com `llmo-at-edge@adobe.com`.
 
 ## Solução de problemas
 
@@ -106,7 +106,7 @@ Após a conclusão da configuração de roteamento, você pode, opcionalmente, v
 
 1. **Testar tráfego de bot (deve ser otimizado)**
 
-   Simular uma solicitação de bot de IA usando um user-agent agêntico:
+   Simular uma solicitação de bot de IA usando um agente de usuário agêntico:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
@@ -122,21 +122,21 @@ Após a conclusão da configuração de roteamento, você pode, opcionalmente, v
 
 2. **Testar tráfego humano (NÃO deve ser afetado)**
 
-   Simular uma solicitação regular de navegador humano:
+   Simule uma solicitação regular de navegador humano:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
      --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
    ```
 
-   A resposta não deve conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos a antes de habilitar a opção Otimizar no Edge.
+   A resposta não deve conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos aos de antes da habilitação da otimização na borda.
 
 3. **Como diferenciar entre os dois cenários**
 
-   | Cabeçalho | Tráfego de bot (otimizado) | Tráfego humano (não afetado) |
+   | Cabeçalho | Tráfego de bots (otimizado) | Tráfego humano (não afetado) |
    |---|---|---|
-   | `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
-   | `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
+   | `x-edgeoptimize-request-id` | Presente — contém uma ID de solicitação exclusiva | Ausente |
+   | `x-edgeoptimize-fo` | Presente somente se houver um failover (valor: `1`) | Ausente |
 
 4. **Verificar status do roteamento no LLM Optimizer**
 

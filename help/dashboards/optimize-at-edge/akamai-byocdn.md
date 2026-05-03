@@ -1,25 +1,25 @@
 ---
-title: Otimizar na Edge - Akamai (BYOCDN)
-description: Saiba como configurar o Akamai BYOCDN para Otimizar no Edge no LLM Optimizer.
+title: Otimizar na borda – Akamai (BYOCDN)
+description: Saiba como configurar o Akamai BYOCDN para a otimização na borda no LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 9%
+ht-degree: 61%
 
 ---
 
 
 # Akamai (BYOCDN)
 
-Essa configuração roteia o tráfego de agente (solicitações de bots de IA e agentes de usuário LLM) para o serviço de back-end de Otimização da Edge (`live.edgeoptimize.net`). Visitantes humanos e bots de SEO continuam a ser oferecidos de sua origem como de costume. Para testar a configuração, após a conclusão da instalação, procure o cabeçalho `x-edgeoptimize-request-id` na resposta.
+Essa configuração roteia o tráfego agêntico (solicitações de bots de IA e agentes de usuário LLM) para o serviço de back-end do Edge Optimize (`live.edgeoptimize.net`). Visitantes humanos e bots de SEO continuam sendo atendidos a partir da sua origem normalmente. Para testar a configuração, após sua conclusão, procure o cabeçalho `x-edgeoptimize-request-id` na resposta.
 
 **Pré-requisitos**
 
 Antes de configurar as regras do Akamai Property Manager, verifique se você tem:
 
 * Acesso ao Akamai Property Manager para o seu domínio.
-* Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Uma chave da API do Edge Optimize obtida na interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para testar o roteamento de preparo, consulte [Chave de API de preparo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuração**
@@ -57,7 +57,7 @@ Definir origem como `live.edgeoptimize.net` e Corresponder SAN a `*.edgeoptimize
 
 **3. Definir variável de chave de cache**
 
-Definir a variável de chave de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` como `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
+Defina a variável de chave de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` como `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Definir variável de chave de cache](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
@@ -92,19 +92,19 @@ Defina os seguintes cabeçalhos de solicitação recebidos:
 
 ![Modificação da ID do cache](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Modificar Cabeçalhos de Solicitação de Saída**
+**8. Modificar cabeçalhos de solicitações enviadas**
 
 Definir cabeçalho `x-forwarded-host` como `{{builtin.AK_HOST}}`
 
-![Modificar Cabeçalhos de Solicitação Enviados](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
+![Modificar cabeçalhos de solicitações de saída](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
 **9. Failover de site**
 
-A configuração de failover do site tem duas partes: o comportamento de failover (configurado na regra de roteamento principal de otimização na borda) e uma regra de cabeçalho de teste de failover separada.
+A configuração de failover do site tem duas partes: o comportamento de failover (configurado dentro da regra principal de roteamento da otimização-na-borda) e uma regra separada de cabeçalho de teste de failover.
 
-**9a Comportamento de Failover de Site (dentro da regra de roteamento principal de otimização de borda)**
+**9a. Comportamento de failover do site (dentro da regra principal de roteamento da otimização-na-borda)**
 
-Dentro da regra de roteamento principal, configure o comportamento Failover do site e o trecho XML avançado da seguinte maneira:
+Dentro da regra de roteamento principal, configure o comportamento de failover do site e o trecho XML avançado da seguinte maneira:
 
 >[!IMPORTANT]
 >
@@ -112,7 +112,7 @@ Dentro da regra de roteamento principal, configure o comportamento Failover do s
 
 ![Failover de site](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo` por meio do XML Avançado:
+Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo` por meio de XML avançado:
 
 ```
 <forward:availability.fail-action2>
@@ -126,11 +126,11 @@ Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo`
 
 ![Comportamentos de failover](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
 
-**9b Regra de Cabeçalho de Teste de Failover (regra irmã)**
+**9b. Regra de cabeçalho de teste de failover (regra irmã)**
 
 >[!IMPORTANT]
 >
->Crie a regra **EdgeOtimize Failover - Cabeçalho de Teste** como um **irmão** (no mesmo nível) das regras de roteamento — **não** aninhadas dentro delas. Na árvore de regras do Akamai Property Manager, a hierarquia deve ser semelhante a:
+>Crie a regra **EdgeOtimize Failover – Cabeçalho de Teste** como uma **irmã** (no mesmo nível) das regras de roteamento — **não** aninhadas dentro delas. Na árvore de regras do Akamai Property Manager, a hierarquia deve ser semelhante a:
 >
 >```
 >▼ Parent Rule
@@ -138,7 +138,7 @@ Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo`
 >       EdgeOptimize Failover - Test Header       ← sibling, same level
 >```
 >
->Isso garante que a regra de cabeçalho de teste de failover seja avaliada para **todas** regras de roteamento, não apenas uma.
+>Isso garante que a regra de cabeçalho de teste de failover seja avaliada para **todas** as regras de roteamento, e não apenas para uma.
 >
 >Além disso, certifique-se de que a regra **Otimizar no Edge Routing** não seja substituída por nenhuma regra correspondente posterior que altere a origem, o comportamento de cache ou a ID do cache para as mesmas solicitações. Se outra regra de correspondência redefinir esses comportamentos, Otimizar no roteamento ou cache do Edge pode não funcionar conforme esperado.
 
@@ -146,7 +146,7 @@ Se o valor `x-edgeoptimize-request` do cabeçalho da solicitação for `fo`, def
 
 ![Regras de failover](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
 
-O Site Failover garante que, se o Edge Otimize retornar um erro `4XX` ou `5XX`, a solicitação será automaticamente encaminhada de volta à origem padrão para que o usuário final ainda receba uma resposta.
+O failover do site garante que, se o Edge Optimize retornar um erro `4XX` ou `5XX`, a solicitação será automaticamente direcionada de volta para sua origem padrão para que o usuário final ainda receba uma resposta.
 
 | Cenário | Comportamento |
 | --- | --- |
@@ -155,11 +155,11 @@ O Site Failover garante que, se o Edge Otimize retornar um erro `4XX` ou `5XX`, 
 
 **Verificar a configuração**
 
-Após concluir a configuração, verifique se o tráfego de bot está sendo roteado para o Edge Otimize e se o tráfego humano não foi afetado.
+Após concluir a configuração, verifique se o tráfego de bots está sendo roteado para o Edge Optimize e se o tráfego humano permanece inalterado.
 
-**1. Tráfego de bot de teste (deve ser otimizado)**
+**1. Tráfego de bots de teste (deve ser otimizado)**
 
-Simular uma solicitação de bot de IA usando um user-agent agêntico:
+Simular uma solicitação de bot de IA usando um agente de usuário agêntico:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -173,23 +173,23 @@ Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`, confi
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-**2. Testar tráfego humano (NÃO deve ser afetado)**
+**2. Teste o tráfego humano (NÃO deve ser afetado)**
 
-Simular uma solicitação regular de navegador humano:
+Simule uma solicitação regular de navegador humano:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos a antes de habilitar a opção Otimizar no Edge.
+A resposta **não** deve conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos aos de antes da habilitação da otimização na borda.
 
 **3. Como diferenciar entre os dois cenários**
 
-| Cabeçalho | Tráfego de bot (otimizado) | Tráfego humano (não afetado) |
+| Cabeçalho | Tráfego de bots (otimizado) | Tráfego humano (não afetado) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
-| `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
+| `x-edgeoptimize-request-id` | Presente — contém uma ID de solicitação exclusiva | Ausente |
+| `x-edgeoptimize-fo` | Presente somente se houver um failover (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
 

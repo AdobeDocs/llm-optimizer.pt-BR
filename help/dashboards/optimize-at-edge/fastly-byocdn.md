@@ -1,30 +1,30 @@
 ---
-title: Otimizar no Edge - Fastly (BYOCDN)
-description: Saiba como configurar o Fastly BYOCDN para Otimizar no Edge no LLM Optimizer.
+title: Otimizar na borda – Fastly (BYOCDN)
+description: Saiba como configurar o Fastly BYOCDN para a otimização na borda no LLM Optimizer.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 6%
+ht-degree: 93%
 
 ---
 
 
 # Fastly (BYOCDN)
 
-Essa configuração roteia o tráfego de agente (solicitações de bots de IA e agentes de usuário LLM) para o serviço de back-end de Otimização da Edge (`live.edgeoptimize.net`). Visitantes humanos e bots de SEO continuam a ser oferecidos de sua origem como de costume. Para testar a configuração, após a conclusão da instalação, procure o cabeçalho `x-edgeoptimize-request-id` na resposta.
+Essa configuração roteia o tráfego agêntico (solicitações de bots de IA e agentes de usuário LLM) para o serviço de back-end do Edge Optimize (`live.edgeoptimize.net`). Visitantes humanos e bots de SEO continuam sendo atendidos a partir da sua origem normalmente. Para testar a configuração, após sua conclusão, procure o cabeçalho `x-edgeoptimize-request-id` na resposta.
 
 **Pré-requisitos**
 
 Antes de configurar as regras do Fastly VCL, verifique se você tem:
 
-* Acesso ao Fastly no seu domínio.
-* Uma chave de API de otimização do Edge recuperada da interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Acesso ao Fastly para o seu domínio.
+* Uma chave da API do Edge Optimize obtida na interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Opcional) Para testar o roteamento de preparo, consulte [Chave de API de preparo](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Configuração**
 
-Adicione os três trechos de VCL a seguir ao serviço Fastly. Esses snippets lidam com solicitações de agente de roteamento para o Edge Otimize, separação de chaves de cache e failover para sua origem padrão.
+Adicione os três trechos de VCL a seguir ao serviço Fastly. Esses trechos lidam com solicitações agênticas de roteamento para o Edge Otimize, separação de chaves de cache e failover para a sua origem padrão.
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -88,11 +88,11 @@ O trecho `vcl_deliver` trata o failover automaticamente. Se o Edge Otimize retor
 
 **Verificar a configuração**
 
-Após concluir a configuração, verifique se o tráfego de bot está sendo roteado para o Edge Otimize e se o tráfego humano não foi afetado.
+Após concluir a configuração, verifique se o tráfego de bots está sendo roteado para o Edge Optimize e se o tráfego humano permanece inalterado.
 
-**1. Tráfego de bot de teste (deve ser otimizado)**
+**1. Tráfego de bots de teste (deve ser otimizado)**
 
-Simular uma solicitação de bot de IA usando um user-agent agêntico:
+Simular uma solicitação de bot de IA usando um agente de usuário agêntico:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -106,23 +106,23 @@ Uma resposta bem-sucedida inclui o cabeçalho `x-edgeoptimize-request-id`, confi
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-**2. Testar tráfego humano (NÃO deve ser afetado)**
+**2. Teste o tráfego humano (NÃO deve ser afetado)**
 
-Simular uma solicitação regular de navegador humano:
+Simule uma solicitação regular de navegador humano:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-A resposta deve **não** conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos a antes de habilitar a opção Otimizar no Edge.
+A resposta **não** deve conter o cabeçalho `x-edgeoptimize-request-id`. O conteúdo da página e o tempo de resposta devem permanecer idênticos aos de antes da habilitação da otimização na borda.
 
 **3. Como diferenciar entre os dois cenários**
 
-| Cabeçalho | Tráfego de bot (otimizado) | Tráfego humano (não afetado) |
+| Cabeçalho | Tráfego de bots (otimizado) | Tráfego humano (não afetado) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Presente — contém um ID de solicitação exclusivo | Ausente |
-| `x-edgeoptimize-fo` | Presente somente se houver failover (valor: `1`) | Ausente |
+| `x-edgeoptimize-request-id` | Presente — contém uma ID de solicitação exclusiva | Ausente |
+| `x-edgeoptimize-fo` | Presente somente se houver um failover (valor: `1`) | Ausente |
 
 {{verify-routing-status-in-ui}}
 
