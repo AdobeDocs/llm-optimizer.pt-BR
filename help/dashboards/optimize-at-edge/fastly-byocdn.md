@@ -2,10 +2,10 @@
 title: Otimizar na borda – Fastly (BYOCDN)
 description: Saiba como configurar o Fastly BYOCDN para a otimização na borda no LLM Optimizer.
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
+source-git-commit: 0c5ab87db0856dcce4be4ab34b9725b9bef788dd
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 93%
+source-wordcount: '349'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Antes de configurar as regras do Fastly VCL, verifique se você tem:
 
 Adicione os três trechos de VCL a seguir ao serviço Fastly. Esses trechos lidam com solicitações agênticas de roteamento para o Edge Otimize, separação de chaves de cache e failover para a sua origem padrão.
 
-![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
+![Configuração de back-end rápida](/help/assets/optimize-at-edge/fastly-backend-config.png)
 
 ![Adicionar snippets de VCL](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
@@ -46,6 +46,7 @@ if (!req.http.x-edgeoptimize-request
   set req.http.x-edgeoptimize-api-key = "<YOUR API KEY>"; # required for identifying the client
   set req.http.x-edgeoptimize-fetcher-key = "<YOUR FETCHER KEY>"; # Optional (required only in case of WAF)
   set req.backend = F_EDGE_OPTIMIZE;
+  return(lookup);
 }
 ```
 
@@ -63,8 +64,11 @@ if (req.http.x-edgeoptimize-config) {
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {
   set req.http.x-edgeoptimize-request = "failover";
-  set req.backend = F_Default_Origin;
   restart;
+}
+
+if (req.http.x-edgeoptimize-config) {
+  return(deliver);
 }
 
 if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failover") {
