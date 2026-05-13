@@ -2,10 +2,10 @@
 title: Tráfego de referência
 description: Saiba como usar o painel Tráfego de referência para ver como visitantes chegam ao seu site a partir de plataformas externas, citações de IA e links de referência.
 feature: Referral Traffic
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 80%
+source-wordcount: '750'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 O Tráfego de referência mostra como os visitantes chegam ao site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de plataformas e sites externos. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Também há filtros personalizáveis para ajudar você a refinar os dados exibidos.
 
 >[!NOTE]
->Por padrão, este painel cria insights de tráfego dos **logs de CDN**. Se sua organização possui uma oferta paga, você pode conectar o **Adobe Analytics** para adicionar dados que medem a descoberta orientada por IA e o envolvimento do site. Estes dados estão disponíveis na guia **Impacto nos Negócios**. Sem a integração com o Adobe Analytics, a guia não é preenchida. Consulte [Integração do Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) para obter mais detalhes.
+>Por padrão, este painel cria insights de tráfego dos **logs de CDN**. Se sua organização possui uma oferta paga, você pode conectar o **Adobe Analytics** ou o **Google Analytics 4**(GA4) para adicionar dados que medem a descoberta orientada por IA e o envolvimento do site. Estes dados estão disponíveis na guia **Impacto nos Negócios**. Observe que sem a integração ao Adobe Analytics ou GA4, a guia não é preenchida. Dessa forma, consulte [Integração do Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) ou [Integração do Google Analytics](/help/dashboards/google-analytics-integration.md) para obter mais detalhes.
 
 ![Página de referência](/help/dashboards/assets/referral-traffic.png)
 
