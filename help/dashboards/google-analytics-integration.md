@@ -2,10 +2,10 @@
 title: Integração do Google Analytics
 description: Saiba como conectar o Google Analytics 4 com o LLM Optimizer para medir a descoberta orientada por IA, o envolvimento do site e os resultados comerciais no painel do Tráfego de referência.
 feature: Referral Traffic
-source-git-commit: abf88fc3e141e12d6b5c826e35d4590ae6407c9b
+source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 1%
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
@@ -13,8 +13,6 @@ ht-degree: 1%
 # Integração do Google Analytics
 
 A integração do Google Analytics 4 (GA4) conecta o LLM Optimizer aos dados GA4 de sua organização para que você possa medir como a descoberta orientada por IA em plataformas como ChatGPT, Gemini, Copilot, Claude e Perplexity se traduz em envolvimento real do site e resultados de negócios. Após conectar uma propriedade do GA4, a LLM Optimizer extrai as métricas de tráfego de referência, envolvimento e conversão que o GA4 atribui a essas fontes e as exibe no painel **Tráfego de referência** na guia **Impacto nos negócios**.
-
-## Disponibilidade {#availability}
 
 >[!IMPORTANT]
 >
@@ -40,11 +38,11 @@ O fluxo de conexão começa no painel [Tráfego de referência](/help/dashboards
 
    ![painel do Tráfego de referência, guia Impacto nos Negócios](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Selecione **Conectar ao Analytics**. O LLM Optimizer direciona você para **Configuração do cliente > Analytics**. No seletor de Provedor do Analytics, selecione **Google Analytics 4**.
+1. Selecione **Conectar ao Analytics**. O LLM Optimizer direciona você para **Configuração do cliente > Analytics**. No seletor de Provedor do Analytics, selecione **Conectar Google Analytics 4**.
 
    ![Configuração do cliente, guia Analytics com GA4 selecionado](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
-1. Selecione **Conectar**. Uma nova guia do navegador é aberta na tela de logon do Google.
+1. Selecione **Conectar conta**. Uma nova guia do navegador é aberta na tela de logon do Google.
 
    ![Entrada do Google para conexão GA4](/help/dashboards/assets/ga4-integration-03-google-sign-in.png)
 
