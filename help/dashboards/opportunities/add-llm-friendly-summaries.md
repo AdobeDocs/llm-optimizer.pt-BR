@@ -2,9 +2,19 @@
 title: Adicionar resumos amigáveis ao LLM
 description: Saiba como o LLM Optimizer identifica páginas de alto tráfego que não têm resumos concisos e pontos-chave para agentes de IA e como analisá-las e implantá-las com a opção Otimizar no Edge.
 feature: Opportunities
-source-git-commit: 7f0729839d761ca57236da935c8c7638dd92f32a
+autotag-review: '2026-05-15T17:27:51.631Z'
+TQID: 'https://experienceleague.adobe.com/QpBdx3B-qg41ZWtPU2R4CNq-POrSs31UIb0kms1H3GU'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2:
+  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: 793
 ht-degree: 0%
 
 ---

@@ -2,9 +2,19 @@
 title: Encaminhamento de logs - Akamai
 description: Saiba como encaminhar logs de CDN do Akamai para o bucket do S3 da Adobe para a coleta de dados de tráfego direto no LLM Optimizer.
 feature: Agentic Traffic
-source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
+autotag-review: '2026-05-15T17:35:22.816Z'
+TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: 595
 ht-degree: 0%
 
 ---
@@ -54,9 +64,9 @@ Depois de criar o fluxo, no painel de controle do Akamai, clique em Avançar par
 
 O mapeamento deve ser o seguinte:
 
-* **Informações de Log**
+* **Informações de log**
 reqTimeSec -> Tempo de solicitação
-* **Dados Geográficos**
+* **Dados geográficos**
 país -> País/região
 * **Dados de troca de mensagens**
 reqHost -> Solicitar host

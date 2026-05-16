@@ -2,9 +2,20 @@
 title: Inspetor de URL
 description: Aprenda a usar o Inspetor de URL para analisar o desempenho de páginas específicas do seu domínio nas pesquisas de IA.
 feature: URL Inspector
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+autotag-review: '2026-05-15T18:10:59.172Z'
+TQID: 'https://experienceleague.adobe.com/n5IgVprujFrB8bImxkgzcAzK1fT6bsvnwNzSdBaV-4E'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2:
+  - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: 718
 ht-degree: 95%
 
 ---
@@ -56,7 +67,7 @@ As seguintes métricas são fornecidas:
 * **URL**: o URL analisado.
 * **Vezes citado**: o número de vezes que o URL foi citado em respostas geradas por IA.
 * **Prompts que citaram**: o número de prompts únicos de IA que citaram o URL.
-* **Categorias**: as categorias de produto ou tópicos associados ao URL.
+* **Categorias**: as categorias ou tópicos de produtos associados ao URL.
 * **Regiões**: a região geográfica onde o URL foi citado.
 * **Ocorrências agênticas**: o número total de ocorrências de agentes de IA nos URLs.
 * **Ocorrências de referência**: o número de ocorrências direcionadas de respostas geradas por IA para os URLs.
@@ -72,8 +83,8 @@ As seguintes métricas são fornecidas:
 * **URL**: o URL analisado
 * **Tipo de conteúdo**: o tipo de conteúdo (próprio, social, orgânico, outro).
 * **Vezes citado**: o número de vezes que o URL foi citado em respostas geradas por IA.
-* **Prompts que citaram**: o número de prompts de IA exclusivos que citaram o URL.
-* **Categorias**: as categorias de produto ou tópicos associados ao URL.
+* **Prompts que citaram**: o número de prompts únicos de IA que citaram o URL.
+* **Categorias**: as categorias ou tópicos de produtos associados ao URL.
 * **Regiões**: a região geográfica onde o URL foi citado.
 
 ### Janela de detalhes
