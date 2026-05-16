@@ -2,9 +2,15 @@
 title: Enriquecimento da página de detalhes do produto
 description: Saiba como o LLM Optimizer identifica páginas de produtos em que os dados de catálogo estão ocultos dos agentes de IA e como recuperar essa visibilidade usando otimização baseada em borda e insights de catálogo de produtos viabilizados pelo Adobe Commerce.
 feature: Opportunities
-source-git-commit: c0e4c82a5eedd864d654557173dd1dcfa5b78362
+autotag-review: '2026-05-15T17:46:41.487Z'
+TQID: 'https://experienceleague.adobe.com/l4hTGNNg1NW40ceI00P41KZBSGcqmr-t1RWM-NXtRV4'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: 1210
 ht-degree: 0%
 
 ---
@@ -23,7 +29,7 @@ Ele apresenta as seguintes métricas principais rapidamente:
 
 ![Enriquecer Painel das Páginas de Detalhes do Produto](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Esta oportunidade pode ser otimizada usando a [Otimizar na Edge](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). As otimizações são fornecidas exclusivamente para agentes de IA sem impacto para visitantes humanos (entrega somente de bot), aplicadas na camada CDN sem a necessidade de alterações no CMS ou catálogo, e podem ter efeito em minutos sem envolvimento do desenvolvedor, tornando-o um caminho de implantação rápido e de baixo risco para catálogos de produtos grandes.
+Esta oportunidade pode ser otimizada usando a [Otimizar na Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). As otimizações são fornecidas exclusivamente para agentes de IA sem impacto para visitantes humanos (entrega somente de bot), aplicadas na camada CDN sem a necessidade de alterações no CMS ou catálogo, e podem ter efeito em minutos sem envolvimento do desenvolvedor, tornando-o um caminho de implantação rápido e de baixo risco para catálogos de produtos grandes.
 
 ## Como funciona
 
@@ -33,7 +39,7 @@ Para cada página de produto afetada, o LLM Optimizer fornece:
 
 - **Visualização da análise de IA** — uma lista completa de quais informações de catálogo estão ausentes na exibição do agente de IA e por que elas são importantes para a descoberta de produtos orientada por LLM, incluindo uma lista de pontos de dados recuperáveis, como variantes de produtos, opções de tamanho, especificações de material e detalhes de compatibilidade, entre outros.
 
-A correção é aplicada usando [Otimizar no Edge](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge) — o recurso de implantação em borda da Adobe que fornece um instantâneo do HTML totalmente pré-renderizado e amigável para IA a agentes de usuário do LLM na camada de CDN. Isso recupera todos os dados de catálogo ocultos anteriormente (incluindo variantes de produtos, especificações técnicas e detalhes de recursos) sem tocar no catálogo do Commerce ou na interface visível humana da loja.
+A correção é aplicada usando [Otimizar no Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge) — o recurso de implantação em borda da Adobe que fornece um instantâneo do HTML totalmente pré-renderizado e amigável para IA a agentes de usuário do LLM na camada de CDN. Isso recupera todos os dados de catálogo ocultos anteriormente (incluindo variantes de produtos, especificações técnicas e detalhes de recursos) sem tocar no catálogo do Commerce ou na interface visível humana da loja.
 
 ![URLs com tabela de sugestões](/help/dashboards/opportunities/assets/enrich-product-detail-pages-suggestions.png)
 
@@ -59,7 +65,7 @@ A otimização é entregue exclusivamente aos agentes de usuário de IA por meio
 
 Se a sua instância do Commerce ainda não estiver conectada ao LLM Optimizer, você será direcionado para a configuração da conexão antes que os enriquecimentos possam ser aplicados.
 
-Se ainda não tiver integrado, clique em **Implantar otimizações** para direcioná-lo para o processo de integração. Para obter detalhes completos sobre como Otimizar no Edge funciona, provedores de CDN compatíveis e o processo de integração, consulte a página [Otimizar no Edge](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
+Se ainda não tiver integrado, clique em **Implantar otimizações** para direcioná-lo para o processo de integração. Para obter detalhes completos sobre como Otimizar no Edge funciona, provedores de CDN compatíveis e o processo de integração, consulte a página [Otimizar no Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
 
 ![Caixa de diálogo Implantar no Edge](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
 
