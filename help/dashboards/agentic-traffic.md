@@ -4,21 +4,14 @@ description: Saiba como usar o painel Tráfego agêntico para ver como os agente
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:33:15.711Z'
 TQID: 'https://experienceleague.adobe.com/3dWNUxcquDVip4Gg1WMYfwv8MUSbZYWqJYnkQ3aZkmc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1407
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +31,9 @@ Esta página detalha o seguinte:
 * [Melhor e pior desempenho](#top-bottom-movers)
 * [Agente de usuário e a análise de desempenho do URL](#user-url-performance)
 
-Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até **Tráfego de agente** e selecione o site para o qual deseja exibir os insights de tráfego de agente.
+Se você estiver na [Experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até **Tráfego agêntico** e selecione o site para o qual deseja exibir os insights de tráfego agêntico.
 
-![Tráfego de agente — seletor de sites (experiência centrada na marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+![Tráfego agêntico: seletor de sites (Experiência centrada na marca)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
 ## Encaminhamento de logs da CDN {#cdn-setup}
 
@@ -73,9 +66,9 @@ Depois de ativados, os logs são ingeridos e o painel será preenchido com métr
 
 ### Experiência centrada na marca
 
-Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), poderá adicionar informações de encaminhamento de logs CDN navegando até o **Brands Management** e clicando no rótulo **CDN**.
+Se você estiver na [Experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), poderá adicionar informações de encaminhamento de logs da CDN navegando até o **Gerenciamento de marcas** e clicando no rótulo **CDN**.
 
-![Gerenciamento de Marcas — Encaminhamento de log da CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![Gerenciamento de marcas: encaminhamento de log da CDN](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 O LLM Optimizer processa um subconjunto de campos dos logs da CDN. Embora os nomes de campo brutos de logs variem de acordo com o provedor da CDN, eles são normalizados e apresentados como:
 
@@ -126,7 +119,7 @@ Use o gráfico de tendências do tráfego agêntico para monitorar os totais sem
 
 ## Melhor e pior desempenho {#top-bottom-movers}
 
-A visualização Top and Bottom Movers destaca os URLs com as maiores alterações semana a semana no tráfego de agentes — visitas ou ocorrências de sistemas de IA que acessam seu conteúdo. **Top Movers** mostra páginas ganhando visibilidade ou engajamento, enquanto **Bottom Movers** revela as URLs com declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está em tendência de crescimento, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
+A exibição Desempenhos superiores e inferiores destaca os URLs com as maiores variações semanais no tráfego agêntico — visitas ou acessos provenientes de sistemas de IA que acessam seu conteúdo. **Desempenhos superiores** mostra as páginas que estão ganhando visibilidade ou engajamento, enquanto **Desempenhos inferiores** destaca os URLs com os declínios mais acentuados. Isso ajuda a identificar rapidamente qual conteúdo está em tendência de crescimento, qual pode precisar de atenção e onde os padrões de descoberta orientados por IA estão mudando.
 
 ![Desempenhos superiores e inferiores](/help/dashboards/assets/movers.png)
 

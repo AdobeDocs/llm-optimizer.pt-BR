@@ -4,16 +4,13 @@ description: Saiba como configurar o Fastly BYOCDN para a otimização na borda 
 feature: Opportunities
 autotag-review: '2026-05-15T17:51:24.924Z'
 TQID: 'https://experienceleague.adobe.com/qXp1pbmZrxahHFOUzIuo-WEawdgNWIIQKDyy0yL2MLA'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -94,7 +91,7 @@ O trecho `vcl_deliver` trata o failover automaticamente. Se o Edge Otimize retor
 | O Edge Otimize retorna `4XX` ou `5XX` | A solicitação é reiniciada e veiculada a partir da origem padrão. |
 | Resposta de failover | Inclui o cabeçalho `x-edgeoptimize-fo: 1`. |
 
-**Permitir otimização na Edge por meio de regras de firewall (opcional)**
+**Permitir a otimização na borda por meio de regras de firewall (opcional)**
 
 {{waf-allowlist-setup}}
 

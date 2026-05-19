@@ -4,16 +4,13 @@ description: Saiba como configurar o Akamai BYOCDN para a otimização na borda 
 feature: Opportunities
 autotag-review: '2026-05-15T17:34:47.891Z'
 TQID: 'https://experienceleague.adobe.com/oGtqsnvHYn0BSNLl40-KpVl0TjCZHESRgH1LcVmjOiY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 809
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +29,11 @@ Antes de configurar as regras do Akamai Property Manager, verifique se você tem
 
 **Configuração**
 
-A seguinte regra do Akamai Property Manager roteia o tráfego de página de HTML para o Edge Otimize. A configuração inclui as seguintes etapas:
+A seguinte regra do Akamai Property Manager roteia o tráfego agêntico da página HTML para o Edge Optimize. A configuração inclui as seguintes etapas:
 
-**1. Definir critérios de roteamento (correspondência de tráfego de usuário-agente e HTML)**
+**1. Definir critérios de roteamento (correspondência de tráfego HTML e usuário e agente)**
 
-Defina o roteamento para os seguintes agentes do usuário:
+Definir roteamento para os seguintes agentes de usuário:
 
 ```
  *AdobeEdgeOptimize-AI*
@@ -49,7 +46,7 @@ Defina o roteamento para os seguintes agentes do usuário:
 
 >[!NOTE]
 >
->Aplique a regra de roteamento Otimizar no Edge somente ao tráfego de página agêntico do HTML. Uma configuração comum é usar os critérios do lado da solicitação, como **Extensão de arquivo**, para corresponder a `html` e `EMPTY_STRING` para URLs de página sem extensão. Se o site serve o HTML a partir de outros padrões de URL, ou inclui rotas não relacionadas à página sem extensão, como endpoints de API, refine a regra com critérios adicionais baseados em caminho.
+>Aplique a regra de roteamento Otimizar no Edge somente ao tráfego agêntico de página HTML. Uma configuração comum é usar os critérios do lado da solicitação, como **Extensão de arquivo**, para corresponder a `html` e `EMPTY_STRING` em URLs de página sem extensão. Se seu site fornece HTML de outros padrões de URL ou inclui rotas não relacionadas à página sem extensão, como pontos de acesso de API, refine a regra com critérios adicionais baseados em caminho.
 
 ![Definir critérios de roteamento](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -59,7 +56,7 @@ Definir origem como `live.edgeoptimize.net` e Corresponder SAN a `*.edgeoptimize
 
 >[!NOTE]
 >
->Se a ativação de propriedades falhar depois de adicionar a regra Otimizar no Edge, verifique se a regra usa um modo de verificação SSL do Servidor de Origem diferente da regra padrão. Se isso acontecer, atualize a regra Otimizar no Edge para corresponder à regra padrão. Por exemplo, se a regra padrão usa **Configurações de plataforma**, use **Configurações de plataforma** aqui também. Se não conseguir usar a configuração necessária, entre em contato com o suporte da Akamai.
+>Se a ativação de propriedade falhar depois que você adicionar a regra Otimizar na borda, verifique se a regra usa um modo de verificação SSL do servidor de origem diferente da regra padrão. Se isso acontecer, atualize a regra Otimizar na borda de forma que corresponda à regra padrão. Por exemplo, se a regra padrão usa **Configurações de plataforma**, use **Configurações de plataforma** aqui também. Se não conseguir usar a configuração necessária, entre em contato com o suporte da Akamai.
 
 ![Definir origem e comportamento do SSL](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -75,14 +72,14 @@ Defina a variável de chave de cache `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` como `LLMC
 
 **5. Modificar cabeçalhos de solicitação de entrada**
 
-Defina os seguintes cabeçalhos de solicitação recebidos:
+Defina os seguintes cabeçalhos de solicitação recebida:
 `x-edgeoptimize-api-key` para a chave de API recuperada de LLMO
 `x-edgeoptimize-config` para `LLMCLIENT=TRUE;`
-`x-edgeoptimize-url` a `{{builtin.AK_URL}}`
+`x-edgeoptimize-url` para `{{builtin.AK_URL}}`
 
 ![Modificar cabeçalhos de solicitação de entrada](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Permitir otimização na Edge por meio de regras de firewall (opcional)**
+**Permitir a otimização na borda por meio de regras de firewall (opcional)**
 
 {{waf-allowlist-setup}}
 
@@ -90,7 +87,7 @@ Defina os seguintes cabeçalhos de solicitação recebidos:
 
 >[!NOTE]
 >
->Inclua na lista de permissões também o agente de usuário `*AdobeEdgeOptimize/1.0*` e o cabeçalho `x-edgeoptimize-fetcher-key` no Akamai Bot Manager.
+>Adicione também o agente de usuário `*AdobeEdgeOptimize/1.0*` e o cabeçalho `x-edgeoptimize-fetcher-key` à lista de permissões no Akamai Bot Manager.
 
 **6. Modificar cabeçalhos de resposta de entrada**
 
@@ -116,7 +113,7 @@ Dentro da regra de roteamento principal, configure o comportamento de failover d
 
 >[!IMPORTANT]
 >
->O trecho XML nesta etapa requer o comportamento **Avançado**. Em alguns ambientes do Akamai, esse comportamento não está disponível para edição de autoatendimento. Se você não vir a opção **Avançado**, entre em contato com a equipe de conta do Akamai ou com o suporte do Akamai para habilitar a configuração necessária.
+>O trecho XML nesta etapa requer comportamento **Avançado**. Em alguns ambientes do Akamai, esse comportamento não está disponível para edição no autoatendimento. Se você não vir a opção **Avançado**, entre em contato com a equipe de conta do Akamai ou com o suporte do Akamai para habilitar a configuração necessária.
 
 ![Failover de site](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -148,7 +145,7 @@ Adicione o cabeçalho da solicitação `x-edgeoptimize-request` com o valor `fo`
 >
 >Isso garante que a regra de cabeçalho de teste de failover seja avaliada para **todas** as regras de roteamento, e não apenas para uma.
 >
->Além disso, certifique-se de que a regra **Otimizar no Edge Routing** não seja substituída por nenhuma regra correspondente posterior que altere a origem, o comportamento de cache ou a ID do cache para as mesmas solicitações. Se outra regra de correspondência redefinir esses comportamentos, Otimizar no roteamento ou cache do Edge pode não funcionar conforme esperado.
+>Além disso, certifique-se de que a regra **Roteamento de otimização na borda** não seja substituída por nenhuma regra correspondente posterior que altere a origem, o comportamento de armazenamento em cache ou a ID de cache para as mesmas solicitações. Se outra regra correspondente redefinir esses comportamentos, o roteamento ou o armazenamento em cache da Otimização na borda poderá não funcionar como esperado.
 
 Se o valor `x-edgeoptimize-request` do cabeçalho da solicitação for `fo`, defina o cabeçalho de resposta de saída `x-edgeoptimize-fo` como `true`.
 

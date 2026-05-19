@@ -1,82 +1,78 @@
 ---
-title: Encaminhamento de logs - Outro (upload manual)
-description: Saiba como fazer upload manual de logs CDN no bucket do S3 da Adobe para coleta de dados de tráfego agenciados no LLM Optimizer ao usar um provedor CDN não compatível.
+title: Encaminhamento de logs – Outros (upload manual)
+description: Saiba como fazer upload manual de logs da CDN para o bloco S3 da Adobe para coleção de dados de tráfego agêntico no LLM Optimizer ao usar um provedor de CDN incompatível.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:54:15.685Z'
 TQID: 'https://experienceleague.adobe.com/YBfhS4oM0qYRkFvS3zPzzcFAeLNBucRH5QmMBUH8h4E'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 670
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Encaminhamento de Log: Outro (Upload Manual) {#log-forwarding-other}
+# Encaminhamento de logs: outros (upload manual) {#log-forwarding-other}
 
-O método de provisionamento **Outro BYOCDN** é uma opção abrangente para clientes que desejam fornecer logs de CDN à LLM Optimizer quando:
+O método de provisionamento **Outro BYOCDN** é uma opção abrangente para clientes que desejam fornecer logs da CDN ao LLM Optimizer quando:
 
-- **Uploads manuais** são preferíveis - por exemplo, as equipes operacionais exportam logs e os carregam periodicamente.
-- **Processos automatizados ad hoc** são usados - scripts únicos, exportações agendadas, trabalhos sem servidor.
-- O cliente usa uma **CDN que não tem suporte nativo** pelas integrações de encaminhamento de log integradas.
+- **Uploads manuais** são preferíveis, por exemplo, as equipes operacionais exportam logs e fazem upload deles periodicamente.
+- São utilizados **processos automatizados ad-hoc**: scripts pontuais, exportações programadas, trabalhos sem servidor.
+- O cliente usa uma **CDN que não é suportada nativamente** pelas integrações de encaminhamento de logs integradas.
 
-Esse método imita o modelo de &quot;encaminhamento contínuo&quot;: os logs são produzidos e carregados no local S3 esperado e eventualmente são processados automaticamente pelos pipelines de assimilação.
+Este método imita o modelo de “encaminhamento contínuo”: os registros são produzidos e enviados como upload no local esperado do S3 e, eventualmente, sendo posteriormente processados automaticamente pelos pipelines de ingestão.
 
 ## Etapa 1: integrar no LLM Optimizer {#step-1}
 
-No [LLM Optimizer](https://llmo.now/):
+Em [LLM Optimizer](https://llmo.now/):
 
-1. Ir para **Configuração**.
+1. Vá para **Configuração**.
 
    ![Botão Configuração](/help/overview/assets/log-forwarding/common/config-button.png)
 
 1. Clique na guia **Configuração da CDN**.
 
-   ![Guia Configuração de CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Guia de Configuração da CDN](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Clique em **Introdução**.
+1. Clique em **Começar**.
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
-1. Ao lado de **Ativar insights de tráfego de IA**, clique em **Configurar**.
+1. Ao lado de **Ativar insights de tráfego com IA**, clique em **Configurar**.
 
    ![Configurar](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Selecione **Outros**.
+1. Selecione **Outro**.
 
-   ![Selecionar outro](/help/overview/assets/log-forwarding/other/other-select.png)
+   ![Selecione Outro](/help/overview/assets/log-forwarding/other/other-select.png)
 
 1. Clique em **Integrar**.
 
 <!--   ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## Etapa 2: Preparar e fazer upload de logs {#step-2}
+## Passo 2: Preparar e fazer upload dos logs {#step-2}
 
-### Formato de log necessário (Linhas JSON) {#log-format}
+### Formato de log obrigatório (linhas JSON) {#log-format}
 
-Os logs devem ser carregados como JSON delimitado por nova linha (**um objeto JSON por linha**). Cada linha de log deve incluir os seguintes campos **exatamente como escrito abaixo**.
+Os logs devem ser enviados como JSON delimitado por nova linha (**um objeto JSON por linha**). Cada linha de log deve incluir os seguintes campos **exatamente como escrito abaixo**.
 
-#### Esquema campo a campo {#schema}
+#### Esquema campo por campo {#schema}
 
 | Texto | Tipo | Descrição | Exemplo |
 |---|---|---|---|
-| **carimbo de data/hora** | String | O carimbo de data/hora da solicitação seguindo o formato **ISO 8601**. | `"2025-02-01T23:00:05Z"` |
-| **host** | String | O domínio da Web que o cliente solicitou. | `"www.example.com"` |
+| **Carimbo de data e hora** | String | O carimbo de data e hora da solicitação seguindo o formato **ISO 8601**. | `"2025-02-01T23:00:05Z"` |
+| **host** | String | O domínio da web solicitado pelo cliente. | `"www.example.com"` |
 | **url** | String | O **caminho** e os **parâmetros de consulta** são obrigatórios, enquanto o domínio **não** deve ser incluído. | `"/home?utm_source=google"` |
-| **método_de_solicitação** | String | O método de solicitação HTTP, às vezes chamado de verbos HTTP. | `"GET"` |
-| **request_user_agent** | String | O cabeçalho da solicitação do Agente do usuário HTTP. | `"Mozilla/5.0 (compatible; GPTBot/1.0"` |
-| **request_referer** | String | O cabeçalho da solicitação Referenciador de HTTP (pode estar vazio). | `"https://chatgpt.com"` |
-| **status_de_resposta** | Número inteiro | O código do status da resposta HTTP. | `200` |
-| **tipo_de_conteúdo_de_resposta** | String | O cabeçalho de resposta HTTP Content-Type. | `"text/html; charset=utf-8"` |
-| **tempo_até_o_primeiro_byte** | Número inteiro | O tempo entre a criação de uma conexão com o servidor e o download do conteúdo de uma página da Web em **milissegundos**. Defina como zero se for desconhecido ou não estiver disponível. | `42` |
+| **request_method** | String | O método de solicitação HTTP, às vezes chamado de verbos HTTP. | `"GET"` |
+| **request_user_agent** | String | O cabeçalho de solicitação HTTP User-Agent. | `"Mozilla/5.0 (compatible; GPTBot/1.0"` |
+| **request_referer** | String | O cabeçalho de solicitação HTTP Referer (pode estar em branco). | `"https://chatgpt.com"` |
+| **response_status** | Número inteiro | Código do status da resposta HTTP. | `200` |
+| **response_content_type** | String | Cabeçalho de resposta HTTP Content-Type. | `"text/html; charset=utf-8"` |
+| **time_to_first_byte** | Número inteiro | O tempo entre a criação de uma conexão com o servidor e o download do conteúdo de uma página da Web em **milissegundos**. Defina como zero se for desconhecido ou indisponível. | `42` |
 
 #### Exemplo de linhas de log {#example}
 
@@ -88,49 +84,49 @@ O exemplo a seguir mostra três linhas de log:
 {"timestamp":"2025-02-01T23:44:05Z","host":"www.example.com","url":"/products/pricing/enterprise?utm_medium=social","request_method":"GET","request_user_agent":"ClaudeBot/1.0 (+https://www.anthropic.com)","response_status":200,"request_referer":"","response_content_type":"application/pdf","time_to_first_byte":312}
 ```
 
-### Isenção de responsabilidade crítica (ortografia e tipos) {#disclaimer}
+### Aviso importante (ortografia e tipos) {#disclaimer}
 
-Os pipelines de assimilação e agregação são estritos em relação a **nomes de campo e tipos de dados**.
+Os pipelines de ingestão e agregação são estritos em relação a **nomes de campo e tipos de dados**.
 
-- Os nomes de campos devem corresponder a **exatamente** (letra maiúscula e minúscula).
+- Os nomes de campos devem corresponder a **exatamente** (maiúsculas/minúsculas e ortografia).
 - Os Tipos de dados devem estar corretos, como se segue:
-   - **carimbo de data/hora** deve ser uma cadeia de caracteres com o formato **ISO 8601**. Os carimbos de data e hora semelhantes ao UNIX podem não funcionar.
-   - **response_status** deve ser um inteiro.
-   - **time_to_first_byte** deve ser um inteiro e usar milissegundos.
-   - As cadeias de caracteres devem ser cadeias JSON válidas.
-- Campos JSON malformados ou ausentes/incorretos podem fazer com que os registros sejam ignorados ou não sejam analisados, resultando em dados ausentes nos relatórios.
+   - **carimbo de data e hora** deve ser uma string de caracteres com o formato **ISO 8601**. Os carimbos de data e hora semelhantes ao UNIX podem não funcionar.
+   - **response_status** deve ser um número inteiro.
+   - **time_to_first_byte** deve ser um número inteiro e usar milissegundos.
+   - Strings devem ser strings JSON válidas.
+- Campos JSON malformados ou ausentes/incorretos podem fazer com que os logs sejam ignorados ou não sejam analisados, resultando em dados ausentes nos relatórios.
 
 ### Localização de upload e cadência de processamento {#upload-location}
 
 #### Regra de caminho {#path-rule}
 
-Carregar logs no caminho de pasta apropriado usando o formato: **`yyyy/mm/dd/`** (com barras).
+Fazer upload de logs no caminho de pasta apropriado usando o formato: **`yyyy/mm/dd/`** (com barras).
 
 Um exemplo de log de 1º de fevereiro de 2025 UTC: `ABC123AdobeOrg/raw/byocdn-other/2025/02/01/`
 
 #### Regra de processamento {#processing-rule}
 
 - Os logs carregados durante um determinado **dia UTC** são processados pelos pipelines **perto do fim desse dia UTC** (execução diária).
-- Os logs carregados nas **pastas de dias anteriores** (preenchimento retroativo) foram **detectados e processados** em 24 horas.
+- Os logs enviados nas **pastas de dias anteriores** (preenchimento retroativo) são **detectados e processados** dentro de 24 horas.
 
 ## Cenários {#scenarios}
 
-### Cenário 1: Logs no Splunk / Elasticsearch — exportar e carregar para S3 {#scenario-splunk}
+### Cenário 1: logs no Splunk / Elasticsearch — exportar e fazer upload para o S3 {#scenario-splunk}
 
-**Meta**: recuperar logs de plataformas de observação existentes e entregá-los ao local S3.
+**Meta**: recuperar logs de plataformas de observação existentes e entregá-los ao local do S3.
 
 - Extraia os campos obrigatórios dos eventos de pesquisa do Splunk/Elastic.
 - Transforme cada evento em um objeto JSON seguindo o esquema acima (linhas JSON).
-- Carregue os arquivos resultantes no compartimento S3 designado e no caminho **dia UTC atual**: `…/byocdn-other/yyyy/mm/dd/`
+- Faça upload do(s) arquivo(s) resultante(s) no bloco S3 designado e no caminho do **dia UTC atual**: `…/byocdn-other/yyyy/mm/dd/`
 - Os logs serão processados automaticamente até o final do dia UTC.
 
-### Cenário 2: Lambda / Azure Function — formatar e enviar para S3 {#scenario-serverless}
+### Cenário 2: Lambda / Azure Function — formatar e fazer upload para o S3 {#scenario-serverless}
 
-**Meta**: usar a computação sem servidor para buscar/receber logs de CDN, normalizá-los e entregá-los ao local S3.
+**Meta**: usar a computação sem servidor para buscar/receber logs da CDN, normalizá-los e entregá-los ao local do S3.
 
-- A função recupera logs da origem do cliente (armazenamento de log, fila, armazenamento de blob etc.).
+- A função recupera logs da origem do cliente (armazenamento de log, fila, armazenamento de blob, etc.).
 - A função mapeia campos para o esquema esperado e emite **Linhas JSON**.
-- A função carrega a saída para: `…/byocdn-other/yyyy/mm/dd/`
+- A função faz upload da saída para: `…/byocdn-other/yyyy/mm/dd/`
 - Os logs serão processados automaticamente até o final do dia UTC.
 
 ## Lista de verificação rápida {#checklist}
@@ -139,4 +135,4 @@ Um exemplo de log de 1º de fevereiro de 2025 UTC: `ABC123AdobeOrg/raw/byocdn-ot
 - **Ortografia exata do campo** conforme especificado
 - Tipos de dados corretos
 - **time_to_first_byte** em milissegundos (número inteiro)
-- Carregue para a pasta UTC apropriada: **aaaa/mm/dd/** em **byocdn-other**
+- Fazer upload para a pasta UTC apropriada: **dd/mm/yyyy/** em **byocdn-other**

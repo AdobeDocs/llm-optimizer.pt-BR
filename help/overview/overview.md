@@ -4,19 +4,13 @@ description: Saiba mais sobre como o Adobe LLM Optimizer impulsiona a visibilida
 feature: Onboarding
 autotag-review: '2026-05-15T17:54:37.542Z'
 TQID: 'https://experienceleague.adobe.com/5qyk6PCTaT93tz-UUnYRYznylOh4lXHuH1yN98g3wIE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -70,10 +64,10 @@ A GEO é multifuncional por natureza. O LLM Optimizer foi projetado sob esta per
 Com o Adobe LLM Optimizer, é possível:
 
 **Medir a visibilidade da marca**: monitore quando, onde e com que frequência sua marca é mencionada nos resultados de pesquisa viabilizados por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo. Consulte o [Painel de presença da marca](/help/dashboards/brand-presence.md).
-**Referencie outros** - Veja como sua marca se compara a outras pessoas, incluindo concorrentes em mecanismos geradores. Identifique as lacunas de participação de voz e descubra vantagens competitivas. Consulte o [Painel de presença da marca](/help/dashboards/brand-presence.md).
-**Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações. Consulte [Painel de oportunidades](/help/dashboards/opportunities-overview.md).
-**Rastrear o impacto do tráfego da IA** - Monitore o tráfego direto (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade geográfica ao engajamento real. Consulte [Painel de Tráfego da Agência](/help/dashboards/agentic-traffic.md) e [painel de Tráfegos de referência](/help/dashboards/referral-traffic.md).
-**Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO (otimização de mecanismo de pesquisa) e comunicações. Consulte o [Painel de colaboração](/help/dashboards/collaboration.md).
+**Comparar com outras marcas**: veja como sua marca se sai em relação a outras, incluindo concorrentes, em mecanismos generativos. Identifique as lacunas de participação de voz e descubra vantagens competitivas. Consulte o [Painel de presença da marca](/help/dashboards/brand-presence.md).
+**Descobrir oportunidades acionáveis**: identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquemas) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações. Consulte o [Painel de oportunidades](/help/dashboards/opportunities-overview.md).
+**Acompanhar o impacto do tráfego da IA**: monitore o tráfego agêntico (de Assistentes de IA) e o tráfego de referência (cliques de usuários em citações) em suas propriedades. Vincule a visibilidade geográfica ao engajamento real. Consulte o [painel de Tráfego agêntico](/help/dashboards/agentic-traffic.md) e o [painel de Tráfego de referência](/help/dashboards/referral-traffic.md).
+**Habilitar a colaboração em equipe**: compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO (otimização de mecanismo de pesquisa) e comunicações. Consulte o [Painel de colaboração](/help/dashboards/collaboration.md).
 
 ## Saiba mais
 
