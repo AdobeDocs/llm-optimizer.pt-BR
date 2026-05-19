@@ -168,7 +168,7 @@ Consulte [Adicionar resumos da transcrição de multimídia](/help/dashboards/op
 
 Em cada oportunidade, é possível visualizar, editar, implantar, exibir em tempo real e reverter as otimizações na borda.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477989/?captions=por_br&learn=on&enablevpops)
 
 ### Visualização
 
