@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
 workflow-type: tm+mt
 source-wordcount: 750
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 78%
 O Tráfego de referência mostra como os visitantes chegam ao site a partir de plataformas externas, citações de IA e links de referência. Ele rastreia e analisa fontes de tráfego, padrões de referência e métricas de conversão de plataformas e sites externos. Isso ajudará você a entender quais fontes, regiões e páginas direcionam o tráfego mais engajado. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Também há filtros personalizáveis para ajudar você a refinar os dados exibidos.
 
 >[!NOTE]
->Por padrão, este painel cria insights de tráfego dos **logs de CDN**. Se sua organização possui uma oferta paga, você pode conectar o **Adobe Analytics** ou o **Google Analytics 4**(GA4) para adicionar dados que medem a descoberta orientada por IA e o envolvimento do site. Estes dados estão disponíveis na guia **Impacto nos Negócios**. Observe que sem a integração ao Adobe Analytics ou GA4, a guia não é preenchida. Dessa forma, consulte [Integração do Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) ou [Integração do Google Analytics](/help/dashboards/google-analytics-integration.md) para obter mais detalhes.
+>Por padrão, este painel cria insights de tráfego dos **logs da CDN**. Se sua organização possui uma oferta paga, você pode conectar o **Adobe Analytics** ou o **Google Analytics 4**(GA4) para adicionar dados que medem a descoberta orientada por IA e o envolvimento do site. Estes dados estão disponíveis na guia **Impacto nos negócios**. Observe que sem a integração ao Adobe Analytics ou GA4, a guia não é preenchida. Dessa forma, consulte [Integração do Adobe Analytics](/help/dashboards/adobe-analytics-integration.md) ou [Integração do Google Analytics](/help/dashboards/google-analytics-integration.md) para obter mais detalhes.
 
 ![Página de referência](/help/dashboards/assets/referral-traffic.png)
 
@@ -39,17 +39,17 @@ Esta página detalha o seguinte:
 * [Principais URLs de referência](#top-referrals)
 * [Detalhes do tráfego de referência](#traffic-details)
 
-Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até o **Tráfego de referência** e selecione o site para o qual deseja exibir os insights do Tráfego de referência LLM.
+Se você estiver na [Experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até o **Tráfego de referência** e selecione o site para o qual deseja exibir os insights do Tráfego de referência de LLM.
 
-![Tráfego de referência — seletor de sites (experiência centrada na marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+![Tráfego de referência: seletor de sites (Experiência centrada na marca)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
 ## Configuração {#setup}
 
-No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir seus dados, você deve configurar o encaminhamento de log CDN.
+No primeiro logon, o painel Tráfego de referência pode aparecer em branco. Para exibir os dados, você deve configurar o Encaminhamento de logs da CDN.
 
-Para clientes que estão na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), você pode adicionar informações de encaminhamento de logs CDN navegando até o **Brands Management** e clicando no rótulo **CDN**.
+Para clientes que estão na [Experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), você pode adicionar informações de encaminhamento de logs da CDN navegando até **Gestão de marcas** e clicando no rótulo **CDN**.
 
-**Configuração do Cliente (experiência clássica):** Configure o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selecionando **Ir para a Configuração**.
+**Configuração do cliente (experiência clássica):** configure o [encaminhamento de logs da CDN](/help/dashboards/customer-configuration.md#cdn-configuration) selecionando **Ir para a configuração**.
 
 ![Configuração de referência](/help/dashboards/assets/referral-setup1.png)
 

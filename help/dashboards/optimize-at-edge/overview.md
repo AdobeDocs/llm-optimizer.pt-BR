@@ -18,7 +18,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 3108
-ht-degree: 57%
+ht-degree: 67%
 
 ---
 
@@ -51,30 +51,30 @@ Algumas oportunidades que podem melhorar a experiência agêntica na web são co
 
 <!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
 
-Inicie o processo de integração na sua conta da LLM Optimizer:
+Inicie o processo de integração na sua conta do LLM Optimizer:
 
-1. No painel **Configuração do cliente**, selecione a guia **Configuração de CDN**.
-1. Clique em **CDN integrada**.
-   ![Guia Configuração de CDN](/help/overview/assets/cc-cdn.png)
-1. Para clientes do Fastly gerenciados pelo AEM Cloud Service, a configuração do roteamento é de autoatendimento e pode ser concluída diretamente na interface do usuário do LLM Optimizer. Para clientes que usam outros provedores de CDN, sua equipe de TI/CDN precisa concluir a configuração e os pré-requisitos necessários. Você também pode consultar os guias de CDN de exemplo fornecidos abaixo para obter orientação adicional.
+1. No painel **Configuração do cliente**, selecione a guia **Configuração da CDN**.
+1. Clique em **Integrar CDN**.
+   ![Guia de Configuração da CDN](/help/overview/assets/cc-cdn.png)
+1. Para os clientes do Fastly gerenciados pelo AEM Cloud Service, a configuração do roteamento é autônoma e pode ser concluída diretamente na interface do usuário do LLM Optimizer. Para os clientes que utilizam outros provedores de CDN, sua equipe de TI/CDN precisa concluir a configuração necessária e os pré-requisitos. Você também pode consultar os guias de CDN de exemplo fornecidos abaixo para obter orientações adicionais.
 
 >[!NOTE]
->Consulte os guias passo a passo abaixo que abordam o fluxo completo de integração. Para problemas não resolvidos pelos guias, entre em contato com `llmo-at-edge@adobe.com`.
+>Consulte os guias passo a passo abaixo, que abrangem todo o fluxo de integração. Para problemas não resolvidos pelos guias, você pode entrar em contato com `llmo-at-edge@adobe.com`.
 
 Requisitos para a equipe de TI/CDN:
 
 * Adicione o user-agent `*AdobeEdgeOptimize/1.0*` à lista de permissões no arquivo robots.txt do site ou nas regras de gerenciamento de bot-traffic.
 * Verifique se as páginas não estão bloqueadas no nível de domínio ou da CDN.
 * Adicionar regras de roteamento para o recurso Otimização na borda da CDN.
-* Se sua CDN tiver regras do WAF ou do Gerenciador de Bots, inclua na lista de permissões o agente de usuário `*AdobeEdgeOptimize/1.0*`. Se uma verificação adicional for necessária, configure o cabeçalho `x-edgeoptimize-fetcher-key`. Cada guia BYOCDN abaixo inclui as etapas.
+* Se a CDN tiver regras de WAF ou do Bot Manager, inclua o agente de usuário `*AdobeEdgeOptimize/1.0*` na lista de permissões. Caso seja necessária verificação adicional, configure o cabeçalho `x-edgeoptimize-fetcher-key`. Cada guia BYOCDN abaixo inclui as etapas.
 * Confirme o roteamento do recurso Otimização na borda na interface do LLM Optimizer.
 
-O diagrama a seguir ilustra como as solicitações fluem por uma configuração BYOCDN com Otimizar no Edge:
+O diagrama a seguir ilustra como as solicitações fluem por meio de uma configuração BYOCDN com a Otimização na borda:
 
-![Fluxo de Solicitação BYOCDN](/help/assets/optimize-at-edge/byocdn-request-flow.png)
+![Fluxo de solicitação BYOCDN](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
->O roteamento deve ser configurado no CDN externo (o CDN mais próximo ao cliente). Se você tiver vários CDNs, o roteamento só poderá ser feito no CDN externo.
+>O roteamento deve ser configurado na CDN externa (a CDN mais próxima do cliente). Se você tiver várias CDNs, o roteamento só poderá ser feito na CDN externa.
 
 Para orientar o processo de configuração, selecione seu provedor de CDN abaixo e siga o guia de configuração correspondente. Lembre-se de que esses exemplos devem ser adaptados à sua configuração atualmente ativa. Recomendamos aplicar as alterações nos ambientes inferiores primeiro.
 
@@ -100,7 +100,7 @@ A tabela a seguir apresenta oportunidades que podem melhorar a experiência agê
 
 | Oportunidade | Tipo | Identificação automática | Sugestão automática | Otimizar automaticamente |
 |---------|----------|----------|----------|----------|
-| [Recuperar Visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md) | GEO técnico | Detecta páginas em que o conteúdo crítico não está visível para agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Realça o conteúdo que pode ser disponibilizado para agentes de IA e recomenda habilitar a pré-renderização para essas páginas. | Disponibiliza um instantâneo do HTML totalmente renderizado e compatível com IA para tráfego agêntico que recupera o conteúdo oculto anteriormente. |
+| [Recuperar visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md) | GEO técnico | Detecta páginas em que o conteúdo crítico não está visível para agentes de IA. Mostra os URLs afetados e o conteúdo esperado que pode ser recuperado. | Realça o conteúdo que pode ser disponibilizado para agentes de IA e recomenda habilitar a pré-renderização para essas páginas. | Disponibiliza um instantâneo do HTML totalmente renderizado e compatível com IA para tráfego agêntico que recupera o conteúdo oculto anteriormente. |
 | [Enriquecer Páginas De Detalhes Do Produto](/help/dashboards/opportunities/enrich-product-detail-pages.md) | GEO técnico | Para as vitrines do Adobe Commerce, compara os dados completos do catálogo ao que os agentes de IA podem acessar em cada página de detalhes do produto; mostra PDPs em que as variantes, as especificações, os atributos e os campos de catálogo relacionados estão ausentes no HTML visível para agentes, priorizados pelo tráfego de agente. | Destaca as informações recuperáveis do catálogo que estão faltando na visualização do agente e por que isso é importante para a detecção de produtos orientada por LLM. | Disponibiliza um instantâneo do HTML totalmente pré-renderizado e compatível com IA para tráfego de agente na borda da CDN, para que os agentes recebam um contexto de produto avançado do seu catálogo sem alterações no CMS ou catálogo. |
 | [Adicionar Resumos Amigáveis a LLM](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | Otimização de conteúdo | O código identifica páginas de alto tráfego que não têm resumos concisos e pontos-chave estruturados no nível da página ou da seção, dificultando a digitalização e a interpretação pelos agentes de IA. | Recomenda resumos curtos gerados por IA e pontos-chave com base no conteúdo existente. | Insere resumos e pontos principais nas seções relevantes do HTML, melhorando a forma como os modelos interpretam e descrevem o conteúdo da página. |
 | [Adicionar perguntas frequentes relevantes](/help/dashboards/opportunities/add-relevant-faqs.md) | Otimização de conteúdo | O código identifica páginas de alto tráfego que não têm conteúdo estruturado de perguntas e respostas alinhado ao seu conjunto de prompts, dificultando aos agentes de IA corresponder as perguntas do usuário à sua página. | Sugere conteúdo de perguntas frequentes gerado por IA alinhado à intenção do usuário e aos tópicos da página existentes. | Injeta conteúdo de perguntas frequentes no HTML, tornando as páginas mais visíveis e relevantes em respostas orientadas por IA. |
@@ -110,7 +110,7 @@ A tabela a seguir apresenta oportunidades que podem melhorar a experiência agê
 
 ### Ferramentas adicionais
 
-A extensão de navegador [Verificador de Visibilidade do conteúdo de IA](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) mostra quanto do seu conteúdo de página da Web os LLMs podem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, não exige licença ou configuração do produto.
+A extensão de navegador [Verificador de visibilidade do conteúdo de IA](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) mostra quanto do conteúdo da sua página da web os LLMs conseguem acessar e o que permanece oculto. Projetado como uma ferramenta de diagnóstico independente e gratuita, não exige licença ou configuração do produto.
 
 Com um clique único, você pode avaliar a legibilidade por máquina de qualquer site. Você pode visualizar uma comparação lado a lado do que os agentes de IA veem em comparação com o que os usuários humanos veem e estimar quanto conteúdo poderia ser recuperado usando o LLM Optimizer. Acesse a página [A IA pode ler o seu site?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) para obter mais informações.
 
@@ -126,7 +126,7 @@ Isso garante que a página fique totalmente visível primeiro para os agentes de
 >[!IMPORTANT]
 >Essa funcionalidade de pré-renderização se aplica automaticamente a todas as oportunidades apresentadas abaixo quando implantada com o recurso Otimização na borda, para garantir que a página esteja totalmente visível para os agentes de IA.
 
-Consulte [Recuperar Visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md) para obter uma apresentação do painel, etapas de implantação e perguntas frequentes.
+Consulte [Recuperar a visibilidade do conteúdo](/help/dashboards/opportunities/recover-content-visibility.md) para obter um passo a passo do painel, etapas de implantação e perguntas frequentes.
 
 ### Enriquecer páginas de detalhes do produto
 
@@ -206,9 +206,9 @@ Para obter detalhes adicionais sobre o recurso Otimizar no Edge, consulte a segu
 
 ## Perguntas frequentes
 
-P: Os clientes de avaliação podem experimentar o Otimize na Edge?
+P: Os clientes em período de avaliação podem experimentar a Otimização na borda?
 
-Sim, os clientes de avaliação podem acessar uma oportunidade de otimização e implantá-la por até 10 páginas. Por padrão, a oportunidade é Recuperar Visibilidade do conteúdo, o que permite que os agentes de IA acessem a versão completa do conteúdo da página.
+Sim, os clientes em período de avaliação podem acessar uma oportunidade de otimização e implementá-la em até 10 páginas. Por padrão, a oportunidade é Recuperar visibilidade do conteúdo, que permite que os agentes de IA acessem a versão completa do conteúdo da página.
 
 P. Que tipo de LLMs são direcionados com o recurso Otimização na borda?
 
@@ -230,7 +230,7 @@ Se você clicar em **Implantar otimizações** antes de concluir a instalação 
 
 P: O que acontece quando o conteúdo é atualizado na origem?
 
-Exibimos a versão otimizada da sua página a partir do cache, desde que a página de origem subjacente não tenha sido alterada. No entanto, quando a origem é alterada para **Recuperar visibilidade do conteúdo**, nosso sistema é atualizado automaticamente para que os agentes de IA recebam sempre o conteúdo mais atualizado. Isso ocorre porque usamos configurações de tempo de vida (TTL) de cache curto (na ordem de minutos), de forma que qualquer atualização de conteúdo no site aciona uma nova otimização dentro desse período. Para oportunidades de conteúdo como **Adicionar resumos compatíveis com LLM**, o LLM Optimizer monitora as alterações na página de origem. Se uma alteração for detectada, pausaremos a otimização e a sinalizaremos para revisão humana para evitar o descompasso do conteúdo entre a página visível por agente e a página visível por humanos.
+Exibimos a versão otimizada da sua página a partir do cache, desde que a página de origem subjacente não tenha sido alterada. No entanto, quando a origem é alterada para **Recuperar visibilidade do conteúdo**, nosso sistema é atualizado automaticamente para que os agentes de IA recebam sempre o conteúdo mais atualizado. Isso ocorre porque usamos configurações de tempo de vida (TTL) de cache curto (na ordem de minutos), de forma que qualquer atualização de conteúdo no site aciona uma nova otimização dentro desse período. Para oportunidades de conteúdo como **Adicionar resumos compatíveis com LLM**, o LLM Optimizer monitora as alterações na página de origem. Se for detectada uma alteração, suspendemos a otimização e a sinalizamos para revisão humana, a fim de evitar divergências de conteúdo entre a página visível para o agente e a página visível para o usuário.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 P. O recurso Otimização na borda é somente para sites que usam o Adobe Edge Delivery Service (EDS)?

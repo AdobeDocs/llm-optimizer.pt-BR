@@ -15,7 +15,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 508
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -65,10 +65,10 @@ A GEO é multifuncional por natureza. O LLM Optimizer é projetado com essas len
 Com o Adobe LLM Optimizer, é possível:
 
 **Medir a visibilidade da marca**: monitore quando, onde e com que frequência sua marca é mencionada nos resultados de pesquisa viabilizados por IA. Vá além das suposições com uma pontuação de visibilidade clara que você pode comparar ao longo do tempo.
-**Referencie outros** - Veja como sua marca se compara a outras pessoas em mecanismos geradores. Identifique as lacunas de participação de voz e descubra vantagens competitivas.
-**Descubra Oportunidades Acionáveis** - Identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquema) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
-**Rastrear o impacto do tráfego da IA** - Monitore o tráfego direto (dos assistentes de IA) e o tráfego de referência (cliques do usuário nas citações) para suas propriedades. Vincule a visibilidade geográfica ao engajamento real.
-**Habilitar o Team Collaboration** - Compartilhe painéis, atribua proprietários para prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas em todas as funções de marketing, SEO e comunicações.
+**Comparar com outras marcas**: veja como sua marca se sai em relação a outras, em mecanismos generativos. Identifique as lacunas de participação de voz e descubra vantagens competitivas.
+**Descobrir oportunidades acionáveis**: identifique oportunidades de conteúdo (por exemplo, perguntas frequentes, resumos, esquemas) e oportunidades técnicas (rastreabilidade, problemas de indexação) que aumentam diretamente as menções e citações.
+**Acompanhar o impacto do tráfego da IA**: monitore o tráfego agêntico (de Assistentes de IA) e o tráfego de referência (cliques de usuários em citações) em suas propriedades. Vincule a visibilidade geográfica ao engajamento real.
+**Habilitar a colaboração de equipes**: compartilhe painéis, atribua proprietários a prompts ou categorias e garanta que as metas de visibilidade sejam rastreadas nas funções de marketing, SEO e comunicações.
 
 
 ## Referências

@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ O trecho `vcl_deliver` trata o failover automaticamente. Se o Edge Otimize retor
 | O Edge Otimize retorna `4XX` ou `5XX` | A solicitação é reiniciada e veiculada a partir da origem padrão. |
 | Resposta de failover | Inclui o cabeçalho `x-edgeoptimize-fo: 1`. |
 
-**Permitir otimização na Edge por meio de regras de firewall (opcional)**
+**Permitir a otimização na borda por meio de regras de firewall (opcional)**
 
 {{waf-allowlist-setup}}
 

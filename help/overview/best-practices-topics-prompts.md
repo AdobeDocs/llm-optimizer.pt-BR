@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1530
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ No painel [!UICONTROL Configuração do cliente], é possível personalizar cate
 
 ## Experiência centrada na marca
 
-Por padrão, novos clientes começam em uma interface focada e de primeira linha com configuração orientada por integração. Nesta nova interface, cada organização começa com uma marca ativa e outras marcas sugeridas para escolher. Os clientes atuais do LLM Optimizer mudarão gradualmente para essa experiência centrada na marca.
+Por padrão, novos clientes começam com uma interface focada na marca e uma configuração orientada pela integração. Nesta nova interface, cada organização começa com uma marca ativa e outras marcas sugeridas à sua escolha. Clientes atuais do LLM Optimizer passarão a utilizar essa experiência centrada na marca de forma gradual.
 
-Se você está na experiência centrada na Marca, o **Gerenciamento de Marcas** é o local onde você define como a sua marca é monitorada e analisada.
+Se você está na experiência centrada na marca, o **Gerenciamento de marcas** é o local onde você define como a sua marca é monitorada e analisada.
 
 ![Gerenciamento de marcas — navegação pelo aplicativo (experiência centrada na marca)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
 ![Gerenciamento de marcas — visão geral da configuração](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Para configurar tópicos e solicitações para uma marca específica, use o **Gerenciamento de Solicitações**.
+Para configurar tópicos e solicitações para uma marca específica, use o **Gerenciamento de solicitações**.
 
-![Gerenciamento de Solicitações](/help/assets/brand-centric-experience/prompts-management.png)
+![Gerenciamento de solicitações](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Biblioteca de prompts do setor
 

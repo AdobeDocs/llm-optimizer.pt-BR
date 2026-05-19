@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 928
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -25,32 +25,32 @@ ht-degree: 1%
 
 Os agentes de IA só podem citar o conteúdo que podem acessar. Quando o conteúdo principal de suas páginas está oculto atrás da renderização do lado do cliente e de carregamentos dinâmicos (como descrições de produtos, classificações de usuário, receitas e comentários), os agentes de IA não o veem totalmente, deixando o conteúdo valioso invisível para os sistemas que poderiam citá-lo.
 
-A oportunidade de Visibilidade do conteúdo de recuperação identifica páginas em seu site onde existe essa lacuna de visibilidade. Para cada página afetada, ela mostra exatamente qual conteúdo está faltando na visualização do agente de IA, destaca a lacuna e permite que você aplique correções sem alterações no CMS ou envolvimento do desenvolvedor.
+A oportunidade “Recuperar visibilidade do conteúdo” identifica páginas no seu site em que essa lacuna de visibilidade existe. Para cada página afetada, ela mostra exatamente qual conteúdo está ausente na visualização do agente de IA, destaca a lacuna e permite aplicar correções sem alterações no CMS nem envolvimento de desenvolvedores.
 
-Ele apresenta três métricas principais rapidamente:
+Ela apresenta três métricas principais rapidamente:
 
 - **URLs** — Número de páginas identificadas com uma lacuna de visibilidade do conteúdo.
-- **Ganho Estimado de Conteúdo** — O multiplicador estimado de conteúdo que pode ser recuperado aplicando a otimização.
-- **Visibilidade do conteúdo média** — o percentual médio do conteúdo visível atualmente para os agentes de IA nas páginas afetadas.
+- **Ganho estimado de conteúdo** — O multiplicador estimado de conteúdo que pode ser recuperado aplicando a otimização.
+- **Visibilidade média do conteúdo** — A porcentagem média do conteúdo atualmente visível aos agentes de IA nas páginas afetadas.
 
-![Recuperar painel de Visibilidades do conteúdo](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
+![Painel Recuperar visibilidade do conteúdo](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
 
-Para obter uma visão geral em vídeo desta oportunidade, você pode assistir a [Recuperar Visibilidade do conteúdo](https://www.youtube.com/watch?v=BigPyJssFCw).
+Para obter uma visão geral em vídeo desta oportunidade, você pode assistir a [Recuperar visibilidade do conteúdo](https://www.youtube.com/watch?v=BigPyJssFCw).
 
-Esta oportunidade pode ser otimizada usando a [Otimizar na Edge](/help/dashboards/optimize-at-edge/overview.md). As otimizações são entregues exclusivamente a agentes de IA, sem impacto em visitantes humanos (entrega somente de bot). As otimizações são aplicadas na camada CDN sem a necessidade de alterações no CMS e podem ter efeito em minutos sem envolvimento do desenvolvedor, tornando-a uma implantação rápida e de baixo risco.
+Esta oportunidade pode ser otimizada via [Otimizar na borda](/help/dashboards/optimize-at-edge/overview.md). As otimizações são entregues exclusivamente a agentes de IA, sem impacto em visitantes humanos (entrega somente de bot). As otimizações são aplicadas na camada CDN sem a necessidade de alterações no CMS e podem ter efeito em minutos sem engajamento do desenvolvedor, tornando-a uma implantação rápida e de baixo risco.
 
 ## Como funciona
 
-O LLM Optimizer analisa suas páginas comparando o que os agentes de IA podem acessar com o que está realmente presente na página. As páginas que recebem alto tráfego agêntrico, mas têm baixa visibilidade do conteúdo, são exibidas na tabela **URLs com sugestões**, priorizadas por volume de tráfego agêntrico.
+O LLM Optimizer analisa suas páginas comparando o que os agentes de IA podem acessar com o que está realmente presente na página. As páginas que recebem alto tráfego agêntico, mas têm baixa visibilidade do conteúdo, são exibidas na tabela **URLs com sugestões**, priorizadas por volume de tráfego agêntico.
 
 Para cada URL afetado, o LLM Optimizer fornece:
 
-- **Análise de IA** — Uma descrição do conteúdo ausente e por que ele é importante para a citação do LLM, juntamente com uma lista de referências de conteúdo que podem ser recuperadas
+- **Análise de IA** — Uma descrição do conteúdo ausente e do motivo pelo qual ele é importante para a capacidade de citação por LLMs, juntamente com uma lista de referências de conteúdos que poderiam ser recuperados
 - **Visibilidade do conteúdo** — A porcentagem do conteúdo visível atualmente para os agentes de IA nessa página
-- **Taxa de Ganho de Conteúdo** — O multiplicador estimado do conteúdo recuperável se a otimização for aplicada
-- **Visualização** — uma comparação lado a lado do HTML mostrando como a página será exibida agora vs. pós-otimização, para que você possa validar a alteração antes de implantar
+- **Taxa de ganho de conteúdo** — O multiplicador estimado do conteúdo recuperável se a otimização for aplicada
+- **Visualização** — uma comparação lado a lado do HTML mostrando como a página será exibida agora versus pós-otimização, para que você possa validar a alteração antes de implantar
 
-A correção é aplicada usando [Otimizar no Edge](/help/dashboards/optimize-at-edge/overview.md) — o recurso de implantação baseado em borda da Adobe que fornece um instantâneo do HTML totalmente pré-renderizado e amigável para IA a agentes de usuário do LLM na camada de CDN, recuperando conteúdo oculto anteriormente sem tocar em seu CMS.
+A correção é aplicada usando [Otimizar na borda](/help/dashboards/optimize-at-edge/overview.md) — o recurso de implantação baseado em borda da Adobe que fornece um instantâneo do HTML totalmente pré-renderizado e otimizado para IA aos agentes de usuário do LLM na camada de CDN, recuperando conteúdo anteriormente oculto sem alterar o CMS.
 
 <!-- [URLs with suggestions](/help/dashboards/opportunities/assets/recover-content-visibility-urls.png)-->
 
@@ -59,48 +59,48 @@ A correção é aplicada usando [Otimizar no Edge](/help/dashboards/optimize-at-
 A tabela **URLs com sugestões** lista todas as páginas afetadas e pode ser filtrada por classificação. Para cada URL é possível:
 
 - **Expanda a linha** para exibir a Análise de IA, incluindo qual conteúdo está ausente e por que ele é importante.
-- **Visualizar** a comparação lado a lado do HTML da página atual com a versão de pós-otimização.
+- **Visualização** a comparação lado a lado do HTML da página atual com a versão de pós-otimização.
 - **Marcar como Corrigido** depois que o problema for resolvido.
 - **Ignorar** sugestões que não são relevantes.
 
-As sugestões são organizadas em três modos de exibição: **Sugestões Atuais**, **Sugestões Fixas** e **Sugestões Ignoradas**. Depois que uma sugestão é implantada, ela é movida para Sugestões Fixas com um status de **Otimizado** e uma ação **Exibir Em Tempo Real** para verificar se a otimização está ativa para tráfego de agente. Sugestões fixas também podem ser revertidas a qualquer momento.
+As sugestões são organizadas em três modos de exibição: **Sugestões atuais**, **Sugestões corrigidas** e **Sugestões ignoradas**. Depois que uma sugestão é implantada, ela é movida para Sugestões corrigidas com status de **Otimizado** e uma ação **Visualizar ao vivo** para verificar se a otimização está ativa para tráfego agêntico. Sugestões corrigidas também podem ser revertidas a qualquer momento.
 
 ![Sugestões corrigidas com status Otimizado](/help/dashboards/opportunities/assets/recover-content-visibility-fixed.png)
 
-## Implantar a otimização
+## Implantação da otimização
 
-Depois de revisar as sugestões e selecionar as URLs a serem otimizadas, clique em **Implantar otimizações** para publicar a correção na borda da CDN. Uma caixa de diálogo de confirmação **Implantar no Edge** mostra as URLs selecionadas, seu tipo (Pré-renderização) e a sugestão que está sendo aplicada. Após a implantação, uma tela de confirmação confirma quais URLs foram otimizados com êxito.
+Depois de revisar as sugestões e selecionar os URLs a serem otimizados, clique em **Implantar otimizações** para publicar a correção na borda da CDN. Uma caixa de diálogo de confirmação **Implantar na borda** mostra os URLs selecionados, seu tipo (pré-renderização) e a sugestão que está sendo aplicada. Após a implantação, uma tela de confirmação confirma quais URLs foram otimizados com êxito.
 
 >[!NOTE]
 >
->A implantação de otimizações exige a conclusão do processo de integração Otimizar na Edge. Se ainda não tiver integrado, clique em **Implantar otimizações** para direcioná-lo para o processo de integração. Para obter detalhes completos sobre como Otimizar no Edge funciona, provedores de CDN compatíveis e o processo de integração, consulte a página [Otimizar no Edge](/help/dashboards/optimize-at-edge/overview.md).
+>A implantação de otimizações exige a conclusão do processo de integração da Otimização na borda. Se ainda não tiver integrado, clique em **Implantar otimizações** para direcioná-lo para o processo de integração. Para obter detalhes completos sobre como a Otimização na borda funciona, provedores de CDN compatíveis e o processo de integração, consulte a página [Otimizar na borda](/help/dashboards/optimize-at-edge/overview.md).
 
-![Caixa de diálogo Implantar no Edge](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
+![Caixa de diálogo Implantar na borda](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
 
 ## Experimente na demonstração
 
-Veja a oportunidade de Visibilidade do conteúdo de recuperação em ação usando o ambiente de demonstração Frescopa.
+Veja a oportunidade Recuperar visibilidade do conteúdo em ação usando o ambiente de demonstração do Frescopa.
 
-[Ver Recuperar Visibilidade do conteúdo na demonstração Frescopa](https://play.llmo.now/org/demo-org/opportunities/prerender/75729489-756a-4c2b-9905-155b1715da5c)
+[Ver Recuperar visibilidade do conteúdo na demonstração do Frescopa](https://play.llmo.now/org/demo-org/opportunities/prerender/75729489-756a-4c2b-9905-155b1715da5c)
 
 ## Perguntas frequentes
 
-**Por que o conteúdo da minha página está oculto dos agentes de IA?**
+**Por que o conteúdo da minha página fica oculto para agentes de IA?**
 
 A maioria dos sites modernos depende do JavaScript para carregar conteúdo dinamicamente após a solicitação de página inicial. Os agentes de IA normalmente não executam o JavaScript, de modo que o conteúdo renderizado no lado do cliente — listas de produtos, análises de usuários, links de artigos de blog e elementos semelhantes — nunca é visto pelo agente de IA, mesmo que seja totalmente visível para visitantes humanos.
 
 **Essa otimização afetará meus visitantes humanos ou bots de SEO?**
 
-Não. Otimizar no Edge direciona apenas agentes de usuário de IA. Os visitantes humanos e os bots de SEO recebem a página original exatamente como antes, sem alterações na experiência ou no desempenho.
+Não. Otimizar na borda direciona apenas agentes de usuário de IA. Os visitantes humanos e os bots de SEO recebem a página original exatamente como antes, sem alterações na experiência ou no desempenho.
 
 **Preciso alterar minha CMS ou envolver desenvolvedores?**
 
-Não. A otimização é aplicada na borda da CDN e não requer alterações de criação, implantações de código ou envolvimento de desenvolvedor. Depois de integrado ao Otimize at Edge, você pode implantar e reverter as alterações em minutos diretamente da interface do LLM Optimizer.
+Não. A otimização é aplicada na borda da CDN e não requer alterações de criação, implantações de código ou engajamento de desenvolvedores. Depois de integrado à Otimização na borda, você pode implantar e reverter as alterações em minutos diretamente da interface do LLM Optimizer.
 
 **O que acontece se o conteúdo da minha página for alterado após a implantação?**
 
-Para a Visibilidade do conteúdo de recuperação, o LLM Optimizer usa configurações de TTL de cache baixo para que qualquer atualização de conteúdo no site acione uma atualização em minutos. Os agentes de IA sempre receberão a versão mais atualizada do seu conteúdo.
+Para Recuperar visibilidade do conteúdo, o LLM Optimizer usa configurações de TTL de cache baixo para que qualquer atualização de conteúdo no site acione uma atualização em minutos. Os agentes de IA sempre receberão a versão mais atualizada do seu conteúdo.
 
-**Como começar a otimizar na Edge?**
+**Como começar a Otimização na borda?**
 
-Consulte a página [Otimizar no Edge](/help/dashboards/optimize-at-edge/overview.md) para obter o processo de integração completo, os guias de configuração de CDN e os pré-requisitos.
+Consulte a página [Otimizar na borda](/help/dashboards/optimize-at-edge/overview.md) para obter o processo de integração completo, os guias de configuração de CDN e os pré-requisitos.

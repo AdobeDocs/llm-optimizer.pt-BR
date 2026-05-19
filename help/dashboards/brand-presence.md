@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1346
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 O painel Presença da marca fornece uma visão geral detalhada sobre como sua marca é percebida no nível de respostas geradas por IA. Ele mostra onde, com que frequência e em que contexto sua marca é mencionada. Você pode usar o painel para medir a visibilidade, monitorar as citações e explorar tendências de sentimento. O painel é dividido em várias seções, cada uma com insights diferentes. Também há filtros personalizáveis para ajudar você a refinar os dados exibidos.
 
-![visão geral da Presença da marca](/help/dashboards/assets/brand-main.png)
+![Visão geral da presença da marca](/help/dashboards/assets/brand-main.png)
 
 Esta página detalha o seguinte:
 
@@ -36,9 +36,9 @@ Esta página detalha o seguinte:
 * [Tendência de sentimentos](#sentiment-trend)
 * [Insights de dados](#data-insights)
 
-Se você estiver na [experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até a **Presença da marca**. Na lista suspensa de marcas, selecione a marca que deseja analisar ou escolha **Todas as Marcas** para revisar a visibilidade em todo o seu conjunto de marcas.
+Se você estiver na [Experiência centrada na marca](/help/overview/quick-start.md#brand-centric-experience), navegue até a **Presença da marca**. Na lista suspensa de marcas, selecione a marca que deseja analisar ou escolha **Todas as marcas** para revisar a visibilidade em todo o conjunto de marcas.
 
-![Presença da marca com o seletor de marcas (experiência centrada na marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+![Presença da marca com o seletor de marcas (Experiência centrada na marca)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filtros {#filters}
 

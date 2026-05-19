@@ -1,6 +1,6 @@
 ---
-title: Visão geral do encaminhamento de log BYOCDN
-description: Saiba como encaminhar logs de CDN do seu provedor para o bucket do S3 da Adobe para coleta de dados de tráfego direto no LLM Optimizer.
+title: Visão geral do encaminhamento de logs BYOCDN
+description: Aprenda como encaminhar os logs da CDN do seu provedor para o bloco S3 da Adobe para coleção de dados de tráfego agêntico no LLM Optimizer.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:53:26.846Z'
 TQID: 'https://experienceleague.adobe.com/EPQ6GBjNXpIwYTuzj1xDKkIzuFLOWFPmu0lqSGUAX3I'
@@ -16,34 +16,34 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 215
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Visão geral do encaminhamento de log BYOCDN {#cdn-log-forwarding}
+# Visão geral do encaminhamento de logs BYOCDN {#cdn-log-forwarding}
 
-O encaminhamento de logs para um CDN gerenciado pelo cliente (BYOCDN) é o processo de enviar os logs de acesso do CDN para o bucket do Amazon S3 da Adobe, para que o LLM Optimizer possa coletar e analisar dados de tráfego de agentes. Sem o encaminhamento de log CDN, o painel [Tráfego Agencial](/help/dashboards/agentic-traffic.md) não pode exibir métricas.
+O encaminhamento de logs para uma CDN gerenciada pelo cliente (BYOCDN) é o processo de enviar os logs de acesso da sua CDN para o bloco do Amazon S3 da Adobe, para que o LLM Optimizer possa coletar e analisar os dados de tráfego agêntico. Sem o encaminhamento de logs da CDN, o painel de controle do [Tráfego agêntico](/help/dashboards/agentic-traffic.md) não pode exibir métricas.
 
 Os guias fornecidos abaixo seguem o mesmo fluxo de trabalho de duas fases:
 
-1. **Integrar no LLM Optimizer** — registre sua CDN na página [Configuração da CDN](/help/dashboards/customer-configuration.md) para gerar as credenciais S3 e os detalhes de caminho necessários.
-2. **Configurar sua CDN** — use esses detalhes para criar um trabalho de encaminhamento de log (ou carregar logs manualmente) no console do seu provedor de CDN. Para o CloudFront, você pode usar o console ou concluir a configuração de entrega somente com a **CLI do AWS**; consulte [CloudFront (CLI do AWS)](/help/overview/log-forwarding/cloudfront-cli.md).
+1. **Integração no LLM Optimizer**: registre a CDN na página [Configuração da CDN](/help/dashboards/customer-configuration.md) para gerar as credenciais S3 necessárias e os detalhes do caminho.
+2. **Configurar a CDN**: use esses detalhes para criar um trabalho de encaminhamento de logs (ou carregue logs manualmente) no console do seu provedor de CDN. Para o CloudFront, você pode usar o console ou concluir a configuração de entrega somente com a **CLI da AWS**; consulte[CloudFront (CLI da AWS)](/help/overview/log-forwarding/cloudfront-cli.md).
 
 ## Provedores de CDN {#cdn-providers}
 
-Siga o guia correspondente para seu provedor de CDN.
+Siga o guia correspondente ao seu provedor de CDN.
 
 | Provedor de CDN | Guia |
 |---|---|
-| Akamai | [Exibir guia](/help/overview/log-forwarding/akamai.md) |
-| Cloudflare | [Exibir guia](/help/overview/log-forwarding/cloudflare.md) |
-| CloudFront (console) | [Exibir guia](/help/overview/log-forwarding/cloudfront.md) |
-| CloudFront (CLI do AWS) | [Exibir guia](/help/overview/log-forwarding/cloudfront-cli.md) |
-| Fastly | [Exibir guia](/help/overview/log-forwarding/fastly.md) |
-| Imperva | [Exibir guia](/help/overview/log-forwarding/imperva.md) |
-| Outro (CDN manual/não compatível) | [Exibir guia](/help/overview/log-forwarding/other.md) |
+| Akamai | [Ver guia](/help/overview/log-forwarding/akamai.md) |
+| Cloudflare | [Ver guia](/help/overview/log-forwarding/cloudflare.md) |
+| CloudFront (console) | [Ver guia](/help/overview/log-forwarding/cloudfront.md) |
+| CloudFront (CLI da AWS) | [Ver guia](/help/overview/log-forwarding/cloudfront-cli.md) |
+| Fastly | [Ver guia](/help/overview/log-forwarding/fastly.md) |
+| Imperva | [Ver guia](/help/overview/log-forwarding/imperva.md) |
+| Outro (CDN manual/sem suporte) | [Ver guia](/help/overview/log-forwarding/other.md) |
 
 >[!NOTE]
 >
->Se seu provedor de CDN não estiver listado acima, use o guia **Outros (CDN manual/não compatível)** que abrange uploads manuais, scripts ad-hoc e qualquer CDN que não seja nativamente compatível.
+>Se o seu provedor de CDN não estiver listado acima, use o guia **Outro (CDN manual/sem suporte)** que abrange uploads manuais, scripts ad-hoc e qualquer CDN que não seja nativamente aceita.
