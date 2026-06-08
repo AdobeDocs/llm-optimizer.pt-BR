@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: f1c0ad79ff4e71515da0b0d86632a558b0e99661
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 1915
-ht-degree: 97%
+source-wordcount: 1916
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Essa configuração roteia o tráfego agêntico (solicitações de bots de IA e 
 
 **Pré-requisitos**
 
-Antes de configurar as regras de roteamento do Cloudflare Worker, certifique-se de ter:
+Antes de configurar as regras de roteamento do Cloud Worker, verifique se você:
 
 * Uma conta da Cloudflare com o Workers habilitado no seu domínio.
 * Acesse as configurações de DNS do seu domínio no Cloudflare.
