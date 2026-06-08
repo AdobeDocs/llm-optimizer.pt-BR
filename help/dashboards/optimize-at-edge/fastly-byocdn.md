@@ -4,16 +4,13 @@ description: Saiba como configurar o Fastly BYOCDN para a otimização na borda 
 feature: Opportunities
 autotag-review: '2026-05-15T17:51:24.924Z'
 TQID: 'https://experienceleague.adobe.com/qXp1pbmZrxahHFOUzIuo-WEawdgNWIIQKDyy0yL2MLA'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 34837b04c48141b8c3657b8f07cb3c2e4852a9ea
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 349
-ht-degree: 99%
+source-wordcount: 350
+ht-degree: 96%
 
 ---
 
@@ -24,7 +21,7 @@ Essa configuração roteia o tráfego agêntico (solicitações de bots de IA e 
 
 **Pré-requisitos**
 
-Antes de configurar as regras do Fastly VCL, verifique se você tem:
+Antes de configurar as regras de VCL do Fastly, verifique se você tem:
 
 * Acesso ao Fastly para o seu domínio.
 * Uma chave da API do Edge Optimize obtida na interface do usuário do LLM Optimizer. Para obter as etapas, consulte [Recuperar suas chaves de API](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
