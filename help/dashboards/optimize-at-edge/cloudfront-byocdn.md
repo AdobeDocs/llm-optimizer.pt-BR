@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 2217
-ht-degree: 99%
+source-wordcount: 2204
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ Antes de definir a configuração do CloudFront, verifique se você tem:
    * **Nome:** `edgeoptimize-routing`
    * **Tempo de execução:** `cloudfront-js-2.0`
 
-3. Substitua o código padrão pelo código de [viewer-request.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/cloudfront-function/viewer-request.js).
+3. Substitua o código padrão pelo código de [viewer-request.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/cloudfront-function/viewer-request.js).
 
    Antes de publicar, personalize os seguintes valores no código:
 
@@ -120,7 +120,7 @@ Se o seu comportamento já utiliza uma política de cache personalizada (uma que
 
 2. Clique em **Editar**.
 
-3. Recomenda-se definir **TTL mínimo** para `0`. No entanto, se o TTL mínimo atual já for muito curto, talvez não seja necessário alterá-lo.
+3. É recomendável definir **TTL Mínimo** como `0`. No entanto, se o TTL mínimo atual já for muito curto, talvez não seja necessário alterá-lo.
    ![Configurações de TTL da política de cache](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. Em **Configurações de chave de cache** >**Cabeçalhos**, juntamente com suas inclusões existentes, adicione `x-edgeoptimize-config` e `x-edgeoptimize-url`.
@@ -195,7 +195,7 @@ Se o seu comportamento utiliza uma política de cache gerenciada pelo AWS (por e
 
 4. Clique em **Criar função**.
 
-5. No editor de código, substitua o código padrão pelo código de [origin-request-response.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/origin-request-response.js).
+5. No editor de código, substitua o código padrão pelo código de [origin-request-response.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/origin-request-response.js).
 
 6. Clique em **Implantar** para salvar o código.
 
@@ -209,7 +209,7 @@ A função criada automaticamente só confia em `lambda.amazonaws.com`. Para Lam
 
 1. Clique em **Editar política de confiança**.
 
-2. Substitua a política pelo conteúdo de [trust-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/trust-policy.json).
+2. Substitua a política pelo conteúdo de [trust-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/trust-policy.json).
 
 3. Clique em **Atualizar política**.
 
@@ -224,7 +224,7 @@ A função criada automaticamente vem com uma política `AWSLambdaBasicExecution
 
 1. Clique em **Editar**.
 
-2. Substitua a política pelo conteúdo de [cloudwatch-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/cloudwatch-policy.json).
+2. Substitua a política pelo conteúdo de [cloudwatch-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/cloudwatch-policy.json).
 
    No JSON, substitua `ACCOUNT_ID` pela sua ID da conta AWS real (encontrada no canto superior direito do Console do AWS) e `FUNCTION_NAME` pelo nome da sua função Lambda (por exemplo, `edgeoptimize-origin`).
 
