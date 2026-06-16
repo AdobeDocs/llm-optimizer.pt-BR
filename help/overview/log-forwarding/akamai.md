@@ -4,18 +4,14 @@ description: Saiba como encaminhar logs da CDN do Akamai para o bloco do S3 da A
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 76d1b915d41771580544d3d87732092cfecda6d5
 workflow-type: tm+mt
 source-wordcount: 612
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -58,7 +54,7 @@ No painel de controle do Akamai [https://control.akamai.com/](https://control.ak
 
 ## Etapa 3: escolha parâmetros de dados {#step-3}
 
-Depois de criar o fluxo, no painel de controle do Akamai, clique em Avançar para continuar na guia **Conjuntos de dados**. Siga as etapas da documentação oficial do Akamai para escolher os [parâmetros de dados](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Os seguintes campos da configuração do LLM Optimizer serão necessários:
+Depois de criar o fluxo, no painel de controle do Akamai, clique em **Avançar** para continuar na guia **Conjuntos de dados**. Siga as etapas da documentação oficial do Akamai para escolher os [parâmetros de dados](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Os seguintes campos da configuração do LLM Optimizer serão necessários:
 
 ![Campos de configuração do LLMO](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
