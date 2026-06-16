@@ -4,16 +4,13 @@ description: Saiba como configurar o CloudFront BYOCDN para otimizar na borda no
 feature: Opportunities
 autotag-review: '2026-05-15T17:41:48.977Z'
 TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 7097550211d1570d6ff65ab980f9a160f8d2a9e0
 workflow-type: tm+mt
-source-wordcount: 2204
-ht-degree: 96%
+source-wordcount: 2343
+ht-degree: 90%
 
 ---
 
@@ -232,6 +229,27 @@ A função criada automaticamente vem com uma política `AWSLambdaBasicExecution
 
 >[!WARNING]
 >A região no ARN deve ser `*` — a Lambda@Edge é executada no local de borda mais próximo do visualizador, portanto, os logs são gravados no CloudWatch na região do local de borda (por exemplo, `ap-south-1`, `eu-west-1`), não necessariamente `us-east-1`. O grupo de logs usa um nome com prefixo de região: `/aws/lambda/us-east-1.FUNCTION_NAME`, onde `us-east-1` é sempre a região de origem da função.
+
+**Corrigir o link de logs do CloudWatch**
+
+Por padrão, o atalho **Exibir logs do CloudWatch** no console Lambda vincula-se a `/aws/lambda/FUNCTION_NAME` em `us-east-1` — o grupo de log incorreto para Lambda@Edge. Configure um grupo de log personalizado para que o link aponte para o caminho correto.
+
+**Navegação:** Console do AWS > Lambda > [sua função] > Configuração > Ferramentas de monitoramento e operações
+
+1. Clique em **Editar**.
+
+2. Em **grupo de logs do CloudWatch**, selecione **Personalizado**.
+
+3. Defina o nome do grupo de logs personalizado como `/aws/lambda/us-east-1.edgeoptimize-origin`.
+
+4. Em **Permissões**, deixe a caixa de seleção **Adicionar permissões necessárias** desmarcada **.**
+
+   ![Configuração de grupo de log personalizado lambda](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
+
+5. Clique em **Salvar**.
+
+>[!NOTE]
+>Mesmo após essa correção, o link **Exibir logs do CloudWatch** abre o nome correto do grupo de logs, mas poderá não mostrar dados se você estiver na região errada. Os logs Lambda@Edge são gravados na região de borda que atendeu à solicitação (por exemplo, `eu-west-1`, `ap-south-1`), não `us-east-1`. Você ainda precisa alternar para a região correta no CloudWatch para ver os logs.
 
 **Publicar uma versão**
 
