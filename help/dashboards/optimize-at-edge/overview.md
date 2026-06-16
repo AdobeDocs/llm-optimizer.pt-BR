@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
 workflow-type: tm+mt
-source-wordcount: 3108
-ht-degree: 67%
+source-wordcount: 2931
+ht-degree: 63%
 
 ---
 
@@ -87,6 +87,7 @@ Para orientar o processo de configuração, selecione seu provedor de CDN abaixo
 | Akamai (BYOCDN) | Traga sua própria CDN | [Exibir guia de configuração](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | Traga sua própria CDN | [Exibir guia de configuração](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | Traga sua própria CDN | [Exibir guia de configuração](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| Porta frontal do Azure (BYOCDN) | Traga sua própria CDN | [Exibir guia de configuração](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
 
 >[!NOTE]
 >
@@ -120,8 +121,8 @@ Nas seções a seguir, é possível ver detalhes adicionais sobre cada oportunid
 
 ### Recuperar visibilidade do conteúdo
 
-Essa oportunidade sinaliza páginas em que o conteúdo principal está oculto para agentes de IA devido à renderização do lado do cliente. Em cada página identificada, é possível ver exatamente qual conteúdo está faltando na visualização do agente de IA, as lacunas de visibilidade e aplicar alterações diretas para recuperar o conteúdo oculto. Ao implantar essa oportunidade com o recurso Otimização na borda, uma versão pré-renderizada e otimizada para IA da página é disponibilizada aos agentes de usuário de LLM para que possam acessar o contexto completo sem executar o Javascript.
-Isso garante que a página fique totalmente visível primeiro para os agentes de IA. Aprimoramentos adicionais são aplicados sobre o HTML pré-renderizado.
+Essa oportunidade sinaliza páginas em que o conteúdo principal está oculto para agentes de IA devido à renderização do lado do cliente. Para cada página identificada, ele mostra exatamente qual conteúdo está faltando na visualização do agente de IA, destaca as lacunas de visibilidade e permite aplicar as alterações diretamente para recuperar o conteúdo oculto. Ao implantar essa oportunidade com a opção Otimizar no Edge, uma versão pré-renderizada e otimizada para IA da página é disponibilizada aos agentes do usuário do LLM para que eles possam acessar o contexto completo sem executar o Javascript.
+Isso garante que a página fique totalmente visível para os agentes de IA. Aprimoramentos adicionais são aplicados sobre o HTML pré-renderizado.
 
 >[!IMPORTANT]
 >Essa funcionalidade de pré-renderização se aplica automaticamente a todas as oportunidades apresentadas abaixo quando implantada com o recurso Otimização na borda, para garantir que a página esteja totalmente visível para os agentes de IA.
@@ -230,7 +231,7 @@ Se você clicar em **Implantar otimizações** antes de concluir a instalação 
 
 P: O que acontece quando o conteúdo é atualizado na origem?
 
-Exibimos a versão otimizada da sua página a partir do cache, desde que a página de origem subjacente não tenha sido alterada. No entanto, quando a origem é alterada para **Recuperar visibilidade do conteúdo**, nosso sistema é atualizado automaticamente para que os agentes de IA recebam sempre o conteúdo mais atualizado. Isso ocorre porque usamos configurações de tempo de vida (TTL) de cache curto (na ordem de minutos), de forma que qualquer atualização de conteúdo no site aciona uma nova otimização dentro desse período. Para oportunidades de conteúdo como **Adicionar resumos compatíveis com LLM**, o LLM Optimizer monitora as alterações na página de origem. Se for detectada uma alteração, suspendemos a otimização e a sinalizamos para revisão humana, a fim de evitar divergências de conteúdo entre a página visível para o agente e a página visível para o usuário.
+Oferecemos a versão otimizada da sua página do cache, desde que a página de origem subjacente não tenha sido alterada. No entanto, quando a origem é alterada para **Recuperar Visibilidade do conteúdo**, nosso sistema é atualizado automaticamente para que os agentes de IA sempre recebam o conteúdo mais atualizado. Isso ocorre porque usamos configurações de TTL (low cache time to live) (por ordem de minutos) para que qualquer atualização de conteúdo em seu site acione uma nova otimização dentro dessa janela. Para oportunidades de conteúdo como **Adicionar Resumos Amigáveis a LLM**, o LLM Optimizer monitora as alterações na página de origem. Se uma alteração for detectada, pausaremos a otimização e a sinalizaremos para revisão humana para evitar o descompasso do conteúdo entre a página visível por agente e a página visível por humanos.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 P. O recurso Otimização na borda é somente para sites que usam o Adobe Edge Delivery Service (EDS)?
