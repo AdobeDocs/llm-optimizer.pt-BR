@@ -4,18 +4,14 @@ description: Saiba como encaminhar logs da CDN do Akamai para o bloco do S3 da A
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 100%
+source-wordcount: 612
+ht-degree: 96%
 
 ---
 
@@ -71,7 +67,7 @@ país -> País/Região
 * **Dados de troca de mensagens**
 reqHost -> Host de solicitação
 reqPath -> Caminho da solicitação
-queryStr -> String de consulta
+queryStr -> Sequência de consulta (opcional)
 reqMethod -> Método de solicitação
 ua -> User-Agent
 statusCode -> Código de status HTTP
@@ -81,13 +77,17 @@ referer -> Referenciador
 * **Dados de desempenho da rede**
 timeToFirstByte -> Tempo até o primeiro byte
 
+>[!NOTE]
+>
+>O parâmetro `queryStr` é opcional. É possível omitir se a sequência de consulta incluir informações de PII.
+
 Os campos do conjunto de dados da Akamai (incluindo IDs) são os seguintes:
 
 1100, # reqTimeSec -> Tempo de solicitação
 2012, # país -> País/Região
 1011, # reqHost -> Host de solicitação
 1013, # reqPath -> Request path
-2009, # queryStr -> String de consulta
+2009, # queryStr -> Sequência de consulta (opcional)
 1012, # reqMethod -> Método de solicitação
 1017, # ua -> Agente do usuário
 1008, # statusCode -> Código de status HTTP
